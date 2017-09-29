@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="alex.mulatinho.net/feed.xml" rel="self" type="application/atom+xml" /><link href="alex.mulatinho.net/" rel="alternate" type="text/html" /><updated>2017-09-29T11:33:47-03:00</updated><id>alex.mulatinho.net/</id><title type="html">Mulatinho’s Blog</title><subtitle>Thoughts about linux, open source, development and life ;)</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="alex.mulatinho.net/jekyll/update/2017/09/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-09-28T23:55:38-03:00</published><updated>2017-09-28T23:55:38-03:00</updated><id>alex.mulatinho.net/jekyll/update/2017/09/28/welcome-to-jekyll</id><content type="html" xml:base="alex.mulatinho.net/jekyll/update/2017/09/28/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Two years of remote working: What I learned</title><link href="alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html" rel="alternate" type="text/html" title="Two years of remote working: What I learned" /><published>2017-07-27T00:00:00-03:00</published><updated>2017-07-27T00:00:00-03:00</updated><id>alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned</id><content type="html" xml:base="alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html">&lt;p&gt;&lt;img src=&quot;https://mulatinho.files.wordpress.com/2017/07/img_20170322_140523390.jpg&quot; alt=&quot;IMG_20170322_140523390&quot; /&gt;In this month I completed exactly two years of remote working, what adventure! To remind me about this in future and also to share with you all I resolve to write about that here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FEAR&lt;/strong&gt;
+, that was the first emotion that I felt when I decide to abandon my last physical work where I was in job for at least 5 (five) years. I was not happy at all but only who pass for something like that knows what I am talking about, 
+it is not easy to change.&lt;/p&gt;
+
+&lt;p&gt;Do I have all the skills to make a change?
+Would I get the same status of my work in another company?
+Would I have the same stability in another company?
+And if I lose my job after the change?
+And if I don’t achieve do the new job that I will be contracted?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FREEDOM&lt;/strong&gt;
+, was the first feeling that I felt when I subjugate all those doubts. Why we have so much fear of changes? After reading some books I thought about this for a lot of time and it seems to me that is something that we acquire after youthness, at school we are taught so hard that we need something stable, something to catch us, that we forget about how importantly if sometimes we take risks.&lt;/p&gt;
+
+&lt;p&gt;Ohh, the changes! In these two years my whole life changed a lot! I had my first kid, my marriage get even better, my financial life is growing exponencial because now I have the time to study and make investments in market, and I just have to thanks God for all that. I always ask myself: “and if I wouldnt change ten years ago? and if I wouldnt change my last job five years ago too? Would I had the same happiness that I have now?”. Changes are important, you have to make a move sometimes, you need to take risks. You need to make mistakes but you have to fix your life before get old and frustrated.&lt;/p&gt;
+
+&lt;p&gt;I mean, I already worked for about 15 (fiveteen) years. So I know how is lose a job, unjustly and justly. It is a type of change too but you don’t decide about that at least almost every time. So I had a sensation of freedom when I choice to quit my stable job to a new adventure that would test my skills.&lt;/p&gt;
+
+&lt;p&gt;The first thing that almost everyone asks me when I say that I work in my home is: “How is to work at home? Seems pretty awesome!” and I always answer at this with “Indeed, it is, but it is not too easy as you think.”*You have to be organized.&lt;/p&gt;
+
+&lt;p&gt;*You have to motivate yourself everyday.&lt;/p&gt;
+
+&lt;p&gt;*You have to adapt to changes in your company.&lt;/p&gt;
+
+&lt;p&gt;*You need to be sociable with the people you work.&lt;/p&gt;
+
+&lt;p&gt;*You NEED to document all you do and log your hours and your work.&lt;/p&gt;
+
+&lt;p&gt;*And principally, you need to organize your life: do some exercises, organize your food and separate your free time from your job time. Don’t be mad.
+Be warned, If you work remote and other people don’t, some changes will happen and sometimes they will forget to consult you, you need to adapt. Some people, like any other job, will had envy or just will try to turn things dificult for you, you have to adapt.&lt;/p&gt;
+
+&lt;p&gt;Be 
+&lt;strong&gt;trustable&lt;/strong&gt;
+, be 
+&lt;strong&gt;productive&lt;/strong&gt;
+.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Don’t bother&lt;/strong&gt;
+ yourself with 
+&lt;strong&gt;little things&lt;/strong&gt;
+.
+Instead, be clever. Work on 
+&lt;strong&gt;solutions&lt;/strong&gt;
+ and 
+&lt;strong&gt;be the solutions&lt;/strong&gt;
+.&lt;/p&gt;
+
+&lt;p&gt;If you do a little half of that perhaps you enjoy working remotely too. Otherwise probably you will get disappointed and be the same you was when you decide change, a person with a lot of fears hidden.&lt;/p&gt;
+
+&lt;p&gt;Do you need a change too? Do your soul claims for that?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Start now&lt;/strong&gt;
+, put the things 
+you need to do in a paper and 
+after some time, be the change!&lt;/p&gt;</content><author><name></name></author><category term="life" /><summary type="html">In this month I completed exactly two years of remote working, what adventure! To remind me about this in future and also to share with you all I resolve to write about that here.</summary></entry><entry><title type="html">Devops Docker Basics</title><link href="alex.mulatinho.net/2017/01/29/devops-docker-basics.html" rel="alternate" type="text/html" title="Devops Docker Basics" /><published>2017-01-29T00:00:00-03:00</published><updated>2017-01-29T00:00:00-03:00</updated><id>alex.mulatinho.net/2017/01/29/devops-docker-basics</id><content type="html" xml:base="alex.mulatinho.net/2017/01/29/devops-docker-basics.html">&lt;hr /&gt;
+&lt;p&gt;layout: post
+title: ‘DevOps: Docker Basics’
+tags: []
+—bash-3.2$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND              CREATED             STATUS                        PORTS               NAMES
+acae55758f11        ubuntu              “/bin/bash”          4 weeks ago         Exited (0) 4 weeks ago                            boring_kare
+9579f27a986b        busybox             “echo hello world”   4 weeks ago         Exited (0) 4 weeks ago                            sick_swirles
+e8e52def42dc        busybox             “echo hello”         4 weeks ago         Exited (0) 4 weeks ago                            small_wilson
+6b5cf9296bdd        1efc1d465fd6        “sh”                 4 weeks ago         Exited (255) 49 minutes ago                       mad_babbage
+15980471bb2a        1efc1d465fd6        “sh”                 4 weeks ago         Exited (255) 49 minutes ago                       elegant_jones
+cb996f69c278        1efc1d465fd6        “sh”                 4 weeks ago         Exited (255) 49 minutes ago                       serene_swanson
+7f52d7e2cc2f        1efc1d465fd6        “-p”                 4 weeks ago         Created                                           pensive_hopper
+05f66ca019b6        1efc1d465fd6        “-t”                 4 weeks ago         Created                                           trusting_goldwasser
+83148d91945c        1efc1d465fd6        “sh”                 4 weeks ago         Exited (0) 4 weeks ago                            silly_rosalind
+d6612b9f2995        busybox             “echo hello world”   5 weeks ago         Exited (0) 5 weeks ago                            dreamy_leavitt&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;bash-3.2$ docker ps -a&lt;/td&gt;
+      &lt;td&gt;awk -F’ ‘ ‘{ print $NF; } ‘&lt;/td&gt;
+      &lt;td&gt;xargs -L1&lt;/td&gt;
+      &lt;td&gt;grep -v NAME&lt;/td&gt;
+      &lt;td&gt;while read image; do echo docker rm $image; done&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name></name></author><summary type="html">layout: post title: ‘DevOps: Docker Basics’ tags: [] —bash-3.2$ docker ps -a CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES acae55758f11 ubuntu “/bin/bash” 4 weeks ago Exited (0) 4 weeks ago boring_kare 9579f27a986b busybox “echo hello world” 4 weeks ago Exited (0) 4 weeks ago sick_swirles e8e52def42dc busybox “echo hello” 4 weeks ago Exited (0) 4 weeks ago small_wilson 6b5cf9296bdd 1efc1d465fd6 “sh” 4 weeks ago Exited (255) 49 minutes ago mad_babbage 15980471bb2a 1efc1d465fd6 “sh” 4 weeks ago Exited (255) 49 minutes ago elegant_jones cb996f69c278 1efc1d465fd6 “sh” 4 weeks ago Exited (255) 49 minutes ago serene_swanson 7f52d7e2cc2f 1efc1d465fd6 “-p” 4 weeks ago Created pensive_hopper 05f66ca019b6 1efc1d465fd6 “-t” 4 weeks ago Created trusting_goldwasser 83148d91945c 1efc1d465fd6 “sh” 4 weeks ago Exited (0) 4 weeks ago silly_rosalind d6612b9f2995 busybox “echo hello world” 5 weeks ago Exited (0) 5 weeks ago dreamy_leavitt</summary></entry><entry><title type="html">DevOps: Ansible Basics</title><link href="alex.mulatinho.net/2017/01/27/devops-ansible-basics.html" rel="alternate" type="text/html" title="DevOps: Ansible Basics" /><published>2017-01-27T00:00:00-03:00</published><updated>2017-01-27T00:00:00-03:00</updated><id>alex.mulatinho.net/2017/01/27/devops-ansible-basics</id><content type="html" xml:base="alex.mulatinho.net/2017/01/27/devops-ansible-basics.html">&lt;p&gt;&lt;a href=&quot;http://docs.ansible.com&quot;&gt;Ansible&lt;/a&gt; is one of the best tools in DevOps that I like, he just need a simply configuration and can help you with a lot of tasks in your day by day on your infrastructure, today I will show to you how to configure him to work with a lot of servers and how to automate some simple tasks.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Advantages of Ansible&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Easy to use and fast response&lt;/li&gt;
+  &lt;li&gt;Highly configurable to almost every task you need to do&lt;/li&gt;
+  &lt;li&gt;SSH based, just use &lt;strong&gt;ssh-keygen, ssh-copy-id&lt;/strong&gt; and &lt;strong&gt;ssh-add&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Free software sponsored by Red Hat&lt;/li&gt;
+  &lt;li&gt;Playbooks to make complex tasks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;So how we begin use this tool?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The very first thing you need to do is obviously install Ansible on your system. You can do this by typing on linux&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# yum install ansible # (redhat)
+# apt-get install ansible # (debian/ubuntu)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Or on your OSX:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ /usr/bin/ruby -e &quot;$(curl -fsSL \
+https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+$ brew install ansible
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;The inventory file&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ansible needs a file to specify all servers you want to control, you can use a tag name to make an group  to all servers you want by category, below we set two groups: &lt;strong&gt;appservers&lt;/strong&gt; and &lt;strong&gt;databases&lt;/strong&gt;, note that you don’t need to specify one by one in a line, you can use regex to simplify (this is awesome!)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[appservers]
+staging1.dev.yourcompany.com
+staging2.dev.yourcompany.com
+staging3.dev.yourcompany.com
+
+[databases]
+db[1:5].dev.yourcompany.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After that, or perhaps before that, as told before Ansible needs a SSH master key that need to be added on &lt;strong&gt;/.ssh/authorize_keys&lt;/strong&gt; file into each of your slave servers, to do that you just need to proceed like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ssh-keygen -t rsa # (to generate your key, enter until finish)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And you will get a &lt;strong&gt;~/.ssh/id_rsa.pub&lt;/strong&gt; public key file in your &lt;strong&gt;$HOME&lt;/strong&gt; directory; So now you need to distribute your public-key to all servers you need control, this can be easy if you have only ten servers to administer or a pain if you have to do this in more than 100+ servers, so here’s a tip:&lt;/p&gt;
+
+&lt;p&gt;*Create a file with all your servers like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@server1.dev.company.com
+root@server2.dev.company.com
+(I will not show to you how to make this with inventory file as input, but you can!)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;*Use this command-line to copy your keys to each server and insert root-password&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ while read LINE; do ssh-copy-id $LINE; done &amp;lt; /tmp/servers
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Using Ansible in command-line&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;All set? So lets try do something really cool here. This is the most basic syntax of ansible:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ ansible :target: -i inventory-file :actions:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Where
+&lt;strong&gt;:target:&lt;/strong&gt;
+ is the group of servers in your inventory file or just an string
+&lt;strong&gt;all&lt;/strong&gt;
+ to contemplate all servers in your inventory, the
+&lt;strong&gt;:actions:&lt;/strong&gt;
+ can be a simply command like below or a more complex command-line using
+ansible modules.&lt;/p&gt;
+
+&lt;p&gt;*Get all kernel versions of our servers&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ ansible all -i yourcompany.conf -u root -a “uname -a”&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;staging1.dev.yourcompany.com | SUCCESS | rc=0 »
+Linux staging1.dev 3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux&lt;/p&gt;
+
+&lt;p&gt;staging3.dev.yourcompany.com | SUCCESS | rc=0 »
+Linux staging3.dev 3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux&lt;/p&gt;
+
+&lt;p&gt;db2.dev.yourcompany.com | SUCCESS | rc=0 »
+Linux db2.dev 3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux&lt;/p&gt;
+
+&lt;p&gt;staging2.dev.yourcompany.com | SUCCESS | rc=0 »
+Linux staging2.dev.yourcompany.com 3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+(Note that all servers responded with your kernel)&lt;/p&gt;
+
+&lt;p&gt;*Use a default module
+&lt;strong&gt;ping&lt;/strong&gt;
+ to check if
+databases are alive&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ ansible databases -i yourcompany.conf -m ping&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;db1.dev.yourcompany.com | SUCCESS =&amp;gt; {
+    “changed”: false,
+    “ping”: “pong”
+}
+db2.dev.yourcompany.com | SUCCESS =&amp;gt; {
+    “changed”: false,
+    “ping”: “pong”
+}
+….&lt;/p&gt;
+
+&lt;p&gt;*Use a default module
+&lt;strong&gt;apt&lt;/strong&gt;
+ to install a mysql database&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ ansible databases -i yourcompany.conf \
+-m apt -a “name=mysql-server state=latest”&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;So how can I know what modules are available?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;They are listed here -&amp;gt;
+&lt;a href=&quot;http://docs.ansible.com/ansible/list_of_all_modules.html&quot;&gt;http://docs.ansible.com/ansible/list_of_all_modules.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Playbooks: The real thing&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Okay, now you know that you can send commands and use modules to process in all your servers with just one command line, thats cool! But what really amazing in Ansible are the playbooks! A playbook is just a file with a template engine called
+&lt;a href=&quot;http://yaml.org&quot;&gt;YAML&lt;/a&gt; and
+&lt;a href=&quot;http://jinja.pocoo.org/docs/2.9/templates/#builtin-filters&quot;&gt;Jinja&lt;/a&gt; to apply some filters, variables and others, with that you can do a lot of automate complex tasks in your servers. Lets take a look into a sample file called ‘
+&lt;strong&gt;install_apache.yml&lt;/strong&gt;
+‘:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;-
+hosts:
+appservers&lt;/p&gt;
+
+&lt;p&gt;vars:&lt;/p&gt;
+
+&lt;p&gt;http_port:
+80&lt;/p&gt;
+
+&lt;p&gt;max_clients:
+200&lt;/p&gt;
+
+&lt;p&gt;remote_user:
+root&lt;/p&gt;
+
+&lt;p&gt;tasks:&lt;/p&gt;
+
+&lt;p&gt;-
+name: install or upgrade
+apache to latest version&lt;/p&gt;
+
+&lt;p&gt;yum:
+name=httpd state=latest&lt;/p&gt;
+
+&lt;p&gt;-
+name:
+write the apache config file&lt;/p&gt;
+
+&lt;p&gt;template:
+src=./httpd.j2 dest=/etc/httpd.conf&lt;/p&gt;
+
+&lt;p&gt;notify:&lt;/p&gt;
+
+&lt;p&gt;-
+restart apache&lt;/p&gt;
+
+&lt;p&gt;-
+name:
+ensure apache is running (and enable it at boot)&lt;/p&gt;
+
+&lt;p&gt;service:
+name=httpd state=started enabled=yes&lt;/p&gt;
+
+&lt;p&gt;handlers:&lt;/p&gt;
+
+&lt;p&gt;-
+name:
+restart apache&lt;/p&gt;
+
+&lt;p&gt;service:
+name=httpd state=restarted
+There’s a lot of information and process automation here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;*hosts&lt;/strong&gt;
+ -&amp;gt; means that all these tasks will only be executed in the group defined after the word, here
+&lt;strong&gt;appservers,&lt;/strong&gt;
+defined by our
+inventory file in the begin of this post.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;*vars&lt;/strong&gt;
+ -&amp;gt; are variables you define to process tasks with it, note that variables are defined line by line.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;*remote_user &lt;/strong&gt;
+-&amp;gt; another way to use
+&lt;strong&gt;-u root&lt;/strong&gt;
+ without need to put in cmd.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;*name&lt;/strong&gt;
+ -&amp;gt; is just a name you define to implement a task&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;*template&lt;/strong&gt;
+ -&amp;gt; in this case is just a way to say, copy my source file defined as .
+/httpd.j2 to destination server on
+/etc/httpd.conf&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;*notify&lt;/strong&gt;
+ -&amp;gt; is a tag that call a job (
+&lt;strong&gt;restart apache&lt;/strong&gt;
+) in handlers block at the end of execution of the current block
+Or, to resume this playbook will:&lt;/p&gt;
+
+&lt;p&gt;*Install the latest version of httpd apache on all your
+&lt;strong&gt;appservers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;*Copy your local
+&lt;strong&gt;httpd.j2&lt;/strong&gt;
+ file to remote server on
+&lt;strong&gt;/etc/httpd.conf&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;*Put your variables where you set in
+&lt;strong&gt;httpd.j2&lt;/strong&gt;
+ file&lt;/p&gt;
+
+&lt;p&gt;*Restart apache after that&lt;/p&gt;
+
+&lt;p&gt;*Set apache to
+run automatically after a boot/reboot
+As you see you can do a lot with this, without this you would need to enter in each server and make these tasks one by one without any human mistake, with ansible you just need to type this:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ ansible-playbook -i yourcompany.conf install_apache.yml&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;On next time we will show to you how to do more complex examples, best practices and directory structure to help on your day tasks.&lt;/p&gt;
+
+&lt;p&gt;Thats it for now! What are you waiting for? Use ansible to automate your tasks now!! :)&lt;/p&gt;</content><author><name></name></author><category term="artigos" /><category term="devops" /><category term="sysadm" /><summary type="html">Ansible is one of the best tools in DevOps that I like, he just need a simply configuration and can help you with a lot of tasks in your day by day on your infrastructure, today I will show to you how to configure him to work with a lot of servers and how to automate some simple tasks.</summary></entry><entry><title type="html">How to upload to Amazon S3 using REST</title><link href="alex.mulatinho.net/2016/10/26/how-to-upload-to-amazon-s3-using-rest.html" rel="alternate" type="text/html" title="How to upload to Amazon S3 using REST" /><published>2016-10-26T00:00:00-03:00</published><updated>2016-10-26T00:00:00-03:00</updated><id>alex.mulatinho.net/2016/10/26/how-to-upload-to-amazon-s3-using-rest</id><content type="html" xml:base="alex.mulatinho.net/2016/10/26/how-to-upload-to-amazon-s3-using-rest.html">&lt;p&gt;Hello friends!&lt;/p&gt;
+
+&lt;p&gt;Look on the internet a alternative way to upload files on Amazon S3 without 
+&lt;strong&gt;AWS-SDK&lt;/strong&gt;
+ and then you will know that is a dificult thing for many; Wait a second, why someone will need to use S3 without the Amazon SDK? That’s the problem! We all know that sometimes you can’t do simple a import/require in some lib written by another guy/girl to turn things to into a easy way. That’s the beauty of an challenge.&lt;/p&gt;
+
+&lt;p&gt;So to win that, all you need to do is read two docs of Amazon:*[1] 
+&lt;a href=&quot;http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPUT.html&quot;&gt;http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPUT.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;*[2] 
+&lt;a href=&quot;http://docs.aws.amazon.com/general/latest/gr/signature-version-4.html&quot;&gt;http://docs.aws.amazon.com/general/latest/gr/signature-version-4.html&lt;/a&gt;
+The first documentation describes how you handle the HTTP PUT using simple REST and the second describes how to implements the Amazon signature based on 
+&lt;strong&gt;AWS_ACCESS_KEY&lt;/strong&gt;
+ and 
+&lt;strong&gt;AWS_SECRET_KEY&lt;/strong&gt;
+;&lt;/p&gt;
+
+&lt;p&gt;Backing to the problem, days ago in my work we need to face this problem: the development version of a framework that we use can’t import AWS-SDK into project and after the mess that this problem caused, it make me think in do this post on blog;&lt;/p&gt;
+
+&lt;p&gt;I was already do it a year ago using shell-script when I need to automatize a build process of MacOS to send the 
+.IPA into S3, so I start to do some changes in code and finally written two new version: one in shell script and other in node.js; The principal problem found, the root of many problems to some guys is the signature process, as described on Amazon docs all you need to sign is:&lt;/p&gt;
+
+&lt;p&gt;HTTP-RESOURCE
+MD5_BASE64_HASH
+mimetype
+DateInIsoUTCTime
+someHeadersOfAmazon
+fullPathOfObjectFile&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;*HTTP-RESOURCE&lt;/strong&gt;
+ is just the HTTP REQUEST TYPE: PUT/GET..&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;*MD5_BASE64_HASH&lt;/strong&gt;
+ is one of the tricks of Amazon Doc (bad trick)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;*mimetype&lt;/strong&gt;
+ i just use 
+&lt;strong&gt;application/octet-stream&lt;/strong&gt;
+works for all types of file&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;*DateInIsoUTCTime&lt;/strong&gt;
+ like -&amp;gt; Wed, 26 Oct 2016 12:09:45 +0000&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;*someHeadersOfAmazon&lt;/strong&gt;
+ extra header of Amazon that you need to pass&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;*fullPathOfObjectFile&lt;/strong&gt;
+ /yourBucketName/dir1/subdir2/yourFile.jpg
+Or in resume:&lt;/p&gt;
+
+&lt;p&gt;PUT
+YUORQaKyyJWlorHlFqBtCQ==
+application/octet-stream
+Fri, 25 Nov 2016 14:27:42 +0000
+x-amz-acl:public-read
+/2e8dae9c-aad2-4d10-8abc-a7e24d80b4af/darwinorigins.jpg
+If you type one character byte wrong then your signature will receive the error below when you try to send your file:&lt;/p&gt;
+
+&lt;Error&gt;&lt;code&gt;SignatureDoesNotMatch&lt;/code&gt;&lt;Message&gt;The request signature we calculated does not match the signature you provided. Check your key and signing method.&lt;/Message&gt;&lt;AWSAccessKeyId&gt;AKIAIJ5QILNVUULONEGQ&lt;/AWSAccessKeyId&gt;
+
+So, later I will post more details here if someone needs and also the node.js code using just the builtin libs: crypto, fs, https and buffer; until then that's the cURL version
+
+https://gist.github.com/mulatinho/cf148b96248ad5d1d49e8fd84c982454
+
+And the node.JS version, using just native modules;
+
+https://gist.github.com/mulatinho/28e01801d92d3d0000e7935d854b9fd8
+
+Hope it helps someone! :)
+&lt;/Error&gt;</content><author><name></name></author><category term="artigos" /><category term="bash" /><category term="programming" /><summary type="html">Hello friends!</summary></entry><entry><title type="html">Back! - The Tao of Programming</title><link href="alex.mulatinho.net/2016/10/13/the-tao-of-programming.html" rel="alternate" type="text/html" title="Back! - The Tao of Programming" /><published>2016-10-13T00:00:00-03:00</published><updated>2016-10-13T00:00:00-03:00</updated><id>alex.mulatinho.net/2016/10/13/the-tao-of-programming</id><content type="html" xml:base="alex.mulatinho.net/2016/10/13/the-tao-of-programming.html">&lt;p&gt;&lt;img src=&quot;https://mulatinho.files.wordpress.com/2016/10/taoofprogramming.jpg&quot; alt=&quot;taoofprogramming&quot; /&gt;I’m back from holidays! And with a new job! :D Still working remote now with something that I like more, Linux and software development! Just a little change: now its for web! When I get things okay here I will continue write some articles here.&lt;/p&gt;
+
+&lt;p&gt;For now just a good quote from a book that I recommend: 
+&lt;a href=&quot;https://www.amazon.com/Tao-Programming-Geoffrey-James/dp/0931137071&quot;&gt;The Tao of Programming&lt;/a&gt;. I hope you get a copy and have a good read!Price Wang’s programmer was coding software. His fingers danced upon the keyboard. The program compiled without an error message, and the program ran like a gentle wind. Excellent!” the Price exclaimed, “Your technique is faultless!”&lt;/p&gt;
+
+&lt;p&gt;“Technique?” said the programmer, turning from his terminal, “What I follow is the Tao – beyond all technique. When I first began to program I would see before me the whole program in one mass. After three years I no longer saw this mass. Instead, I used subroutines. But now I  see nothing.&lt;/p&gt;
+
+&lt;p&gt;My whole being exists in a formless void. My senses are idle. My spirit, free to work without a plan, follows its own instinct. In short, my program writes itself. True, sometimes there are difficult problems. I see them coming, I slow down, I watch silently. Then I change a single line of code and the difficulties vanish like puffs of idle smoke. I then compile the program. I sit still and let the joy of the work fill my being. I close myeyes for a moment and then log off.”&lt;/p&gt;
+
+&lt;p&gt;Price Wang said, “Would that all of my programmers were as wise!”
+– Geoffrey James, “The Tao of Programming”&lt;/p&gt;</content><author><name></name></author><category term="life" /><category term="references" /><summary type="html">I’m back from holidays! And with a new job! :D Still working remote now with something that I like more, Linux and software development! Just a little change: now its for web! When I get things okay here I will continue write some articles here.</summary></entry><entry><title type="html">Upgrade your #Slackware #Linux to (i486|x86_64) -current version</title><link href="alex.mulatinho.net/2016/08/25/upgrade-your-slackware-linux-to-i486x86_64-current-version.html" rel="alternate" type="text/html" title="Upgrade your #Slackware #Linux to (i486|x86_64) -current version" /><published>2016-08-25T00:00:00-03:00</published><updated>2016-08-25T00:00:00-03:00</updated><id>alex.mulatinho.net/2016/08/25/upgrade-your-slackware-linux-to-i486x86_64-current-version</id><content type="html" xml:base="alex.mulatinho.net/2016/08/25/upgrade-your-slackware-linux-to-i486x86_64-current-version.html">&lt;p&gt;Hello friends!&lt;/p&gt;
+
+&lt;p&gt;Today is 2016/08/25, 
+&lt;strong&gt;25 years of Linux&lt;/strong&gt;
+! Happy Birthday!! :D :D&lt;/p&gt;
+
+&lt;p&gt;Today we gonna talk about how to upgrade a Slackware, we will use just the official slackware package management tool (
+&lt;strong&gt;slackpkg&lt;/strong&gt;
+), lets upgrade a slackware 14.2 to a -current for example (this also works with other versions too, but try upgrade to the next always or deal with consequences).&lt;/p&gt;
+
+&lt;p&gt;What is 
+&lt;strong&gt;slackpkg&lt;/strong&gt;
+?&lt;/p&gt;
+
+&lt;p&gt;Slackpkg is a system package management tool developed by PiterPunk and oficially supported by Slackware, some of the most common subcommands are:slackpkg update          -&amp;gt; synchronize with your mirror 
+slackpkg search package  -&amp;gt; looks for ‘package’ into mirror
+slackpkg install package -&amp;gt; install ‘package’ from mirror
+slackpkg upgrade package -&amp;gt; upgrade ‘package’ from mirror
+slackpkg upgrade-all     -&amp;gt; upgrade all packages installed
+slackpkg install-new     -&amp;gt; install new software available in repository&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;First&lt;/strong&gt;
+, install and 
+&lt;strong&gt;upgrade&lt;/strong&gt;
+ your 
+&lt;strong&gt;slackpkg&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;slackpkg-update--choose-a-mirror-in-etcslackpkgmirrors&quot;&gt;slackpkg update  #(choose a mirror in /etc/slackpkg/mirrors)&lt;/h1&gt;
+&lt;h1 id=&quot;slackpkg-upgrade-slackpkg&quot;&gt;slackpkg upgrade slackpkg&lt;/h1&gt;
+&lt;p&gt;I like the TDS Mirror but you can choice any -current mirror you like there. Then add the kernel packages into blacklist (
+&lt;strong&gt;/etc/slackpkg/blacklist&lt;/strong&gt;
+) make sure that looks like this:&lt;/p&gt;
+
+&lt;p&gt;#kernel-firmware
+#kernel-generic
+#kernel-generic-smp
+#kernel-headers
+#kernel-huge
+#kernel-huge-smp
+#kernel-modules
+#kernel-modules-smp
+#kernel-source
+(this is not totally necessary but I like to upgrade kernels after upgrade all other softwares)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Second&lt;/strong&gt;
+, then upgrade your glibc-solibs, this is EXTREMELY NECESSARY to not crash your system after some upgrades of software.&lt;/p&gt;
+
+&lt;h1 id=&quot;slackpkg-upgrade-glibc-solibs&quot;&gt;slackpkg upgrade glibc-solibs&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Third&lt;/strong&gt;
+, install and upgrade all your new software&lt;/p&gt;
+
+&lt;h1 id=&quot;slackpkg-install-new&quot;&gt;slackpkg install-new&lt;/h1&gt;
+&lt;h1 id=&quot;slackpkg-upgrade-all&quot;&gt;slackpkg upgrade-all&lt;/h1&gt;
+
+&lt;p&gt;Kernel
+Now, if you dont build your kernel youself, uncomment lines of blacklist (
+&lt;strong&gt;/etc/slackpkg/blacklist&lt;/strong&gt;
+) to build the new kernel of Slackware repository. Check your lilo.conf or grub and apply the new kernel if you like (take care here, confirm that a new kernel was installed and check the images)&lt;/p&gt;
+
+&lt;h1 id=&quot;cp-bootvmlinuz-bootvmlinuz-backup&quot;&gt;cp /boot/vmlinuz /boot/vmlinuz-backup&lt;/h1&gt;
+&lt;p&gt;# sed -i ‘/#kernel/s/^#//g’ /etc/slackpkg/blacklist&lt;/p&gt;
+&lt;h1 id=&quot;slackpkg-upgrade-all-1&quot;&gt;slackpkg upgrade-all &lt;/h1&gt;
+&lt;h1 id=&quot;vim-etcliloconf&quot;&gt;vim /etc/lilo.conf&lt;/h1&gt;
+&lt;p&gt;The 
+&lt;strong&gt;huge.s&lt;/strong&gt;
+ Slackware default kernel (built-in) have a lot of issues when we need use some softwares that require some modules/built-in by default, an example is the Docker. (huge.s default slackware kernel doesn’t support Docker very good). So you can choose use the 
+&lt;strong&gt;generic kernel&lt;/strong&gt;
+ that has almost any module to load after boot the kernel, solving some of these issues. If you choose to do that, type the commands below, if you dont know what are you doing skip this part and use default 
+&lt;strong&gt;/boot/vmlinuz&lt;/strong&gt;
+.&lt;/p&gt;
+
+&lt;h1 id=&quot;usrsharemkinitrdmkinitrd_command_generatorsh&quot;&gt;/usr/share/mkinitrd/mkinitrd_command_generator.sh&lt;/h1&gt;
+&lt;p&gt;mkinitrd -c -k 4.4.16 -f ext4 -r /dev/sda1 -m xhci-pci:ohci-pci:ehci-pci:xhci-hcd:uhci-hcd:ehci-hcd:hid:usbhid:i2c-hid:hid_generic:hid-cherry:hid-logitech:hid-logitech-dj:hid-logitech-hidpp:hid-lenovo:hid-microsoft:hid_multitouch:jbd2:mbcache:ext4 -u -o /boot/initrd.gz
+(this will generate this command to build a initrd.gz image, run this)
+(it also, of course, creates ‘/boot/initrd.gz’ with your def modules)&lt;/p&gt;
+&lt;h1 id=&quot;vim-etcliloconf--or-your-grub-i-dont-use-this&quot;&gt;vim /etc/lilo.conf # or your grub. i dont use this&lt;/h1&gt;
+&lt;dl&gt;
+  &lt;dt&gt;(put your initrd image here and choice a vmlinuz-generic as default image)&lt;/dt&gt;
+  &lt;dt&gt;Your lilo.conf should now look like this (&lt;/dt&gt;
+  &lt;dt&gt;&lt;strong&gt;tip&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd&gt;create another entry with old kernel, so if this fail to boot you can boot with the older)&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;image = /boot/vmlinuz-generic  # re-check if you use vmlinuz
+ root = /dev/sda1              # change if not your root disk
+ initrd = /boot/initrd.gz
+ label = Slack64-Generic
+ read-only
+image = /boot/vmlinuz-backup
+ root = /dev/sda1
+ label = Slack64-Okay
+ read-only
+Then save your MBR and reboot your system!&lt;/p&gt;
+
+&lt;h1 id=&quot;lilo--v--check-this-with-attention&quot;&gt;lilo -v  (check this with attention)&lt;/h1&gt;
+&lt;h1 id=&quot;reboot&quot;&gt;reboot&lt;/h1&gt;
+&lt;p&gt;And welcome to the 
+&lt;strong&gt;-current&lt;/strong&gt;
+ version of Slackware, keep it upgraded :)&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="slackware" /><summary type="html">Hello friends!</summary></entry><entry><title type="html">Installing Libvirt / QEMU for KVM Virtualization on #Slackware</title><link href="alex.mulatinho.net/2016/08/25/installing-libvirt-qemu-for-kvm-virtualization-on-slackware.html" rel="alternate" type="text/html" title="Installing Libvirt / QEMU for KVM Virtualization on #Slackware" /><published>2016-08-25T00:00:00-03:00</published><updated>2016-08-25T00:00:00-03:00</updated><id>alex.mulatinho.net/2016/08/25/installing-libvirt-qemu-for-kvm-virtualization-on-slackware</id><content type="html" xml:base="alex.mulatinho.net/2016/08/25/installing-libvirt-qemu-for-kvm-virtualization-on-slackware.html">&lt;p&gt;Hello friends!&lt;/p&gt;
+
+&lt;p&gt;Today is 2016/08/25, 
+&lt;strong&gt;25 years of Linux&lt;/strong&gt;
+! Happy Birthday!! :D :D&lt;/p&gt;
+
+&lt;p&gt;Today we gonna talk about how to install 
+&lt;strong&gt;Libvirt and QEMU&lt;/strong&gt;
+ to use 
+&lt;strong&gt;KVM&lt;/strong&gt;
+ Virtualization systems. To do that you can use many strategies here we will use just the official slackware package management tool (
+&lt;strong&gt;slackpkg&lt;/strong&gt;
+) and some of “unofficial” scripts from Slackbuilds (if you dont know how to use and install Slackbuilds please see the post 
+&lt;strong&gt;&lt;a href=&quot;http://alex.mulatinho.net/2014/11/13/how-i-build-almost-every-package-in-my-slackware-linux/&quot;&gt;How I build and install almost every package in my slackware linux&lt;/a&gt;&lt;/strong&gt;
+) to install Libvirt.###First, dont forget to enable your Virtualization in BIOS&lt;/p&gt;
+
+&lt;p&gt;Some BIOS come to the user with the Virtualization disabled by default, to check in your Linux if you has the support for virtualization just type this:&lt;/p&gt;
+
+&lt;p&gt;$ egrep –color ‘(vmx|smx)’ /proc/cpuinfo
+If you doesn’t see any ouput then 
+&lt;strong&gt;you need to enable Virtualization in BIOS&lt;/strong&gt;
+! If you can’t find any “Virtualization” there then perhaps you don’t have Virtualization support in your CPU :(&lt;/p&gt;
+
+&lt;h2&gt;#&lt;/h2&gt;
+
+&lt;p&gt;###Installing Libvirt to use KVM virtualization&lt;/p&gt;
+
+&lt;p&gt;Download the lastest slackbuids scripts and then go to libvirt and build&lt;/p&gt;
+
+&lt;h1 id=&quot;git-clone-gitslackbuildsorgslackbuildsgit&quot;&gt;git clone git://slackbuilds.org/slackbuilds.git&lt;/h1&gt;
+&lt;h1 id=&quot;cd-slackbuildslibrarieslibvirt&quot;&gt;cd slackbuilds/libraries/libvirt&lt;/h1&gt;
+&lt;h1 id=&quot;source-info-wget--c-download-sh-slackbuild&quot;&gt;source *info; wget -c $DOWNLOAD; sh *SlackBuild&lt;/h1&gt;
+&lt;p&gt;The basic packages for you mount your virtualization server are 
+&lt;strong&gt;libvirt&lt;/strong&gt;
+ and 
+&lt;strong&gt;qemu&lt;/strong&gt;
+ but for a graphical manager you could also install the 
+&lt;strong&gt;virt-manager&lt;/strong&gt;
+ software, this script helps you build all that you need to get these packages in 
+&lt;strong&gt;.t?z&lt;/strong&gt;
+ format and install with 
+&lt;strong&gt;installpkg&lt;/strong&gt;
+.&lt;/p&gt;
+
+&lt;p&gt;Now, I don’t know how you choice your packages, so if you see something like this during the build of Libvirt, this is what you need to do:&lt;/p&gt;
+
+&lt;p&gt;*error #1 (first try this)&lt;/p&gt;
+
+&lt;p&gt;configure: error: You must install the pciaccess module to build with udev
+Don’t panic! Just browse the official packages with slackpkg like that&lt;/p&gt;
+
+&lt;h1 id=&quot;slackpkg-search-pciaccess&quot;&gt;slackpkg search pciaccess&lt;/h1&gt;
+&lt;p&gt;[uninstalled] - libpciaccess-0.13.4-x86_61-1&lt;/p&gt;
+&lt;h1 id=&quot;slackpkg-install-libpciaccess&quot;&gt;slackpkg install libpciaccess&lt;/h1&gt;
+
+&lt;p&gt;*error #2 (second, try the slackbuild)&lt;/p&gt;
+
+&lt;p&gt;configure: error: You must install the libyajl library &amp;amp; headers to compile libvirt
+No panic again! Just install the dependencies and repeat the process until there is no other package&lt;/p&gt;
+
+&lt;h1 id=&quot;find-slackbuilds--iname-yajl&quot;&gt;find ~/slackbuilds -iname ‘&lt;em&gt;yajl&lt;/em&gt;’&lt;/h1&gt;
+&lt;p&gt;/root/slackbuilds/libraries/yajl&lt;/p&gt;
+&lt;h1 id=&quot;cd-slackbuildslibrariesyajl&quot;&gt;cd ~/slackbuilds/libraries/yajl&lt;/h1&gt;
+&lt;h1 id=&quot;source-info-wget--c-download-sh-slackbuild-1&quot;&gt;source *info; wget -c $DOWNLOAD; sh *SlackBuild&lt;/h1&gt;
+&lt;h1 id=&quot;installpkg-tmpyajl&quot;&gt;installpkg /tmp/yajl*&lt;/h1&gt;
+&lt;p&gt;And done! If you install all the dependencies you should now have a 
+&lt;strong&gt;libvirt&lt;em&gt;.txz**
+ and 
+**qemu&lt;/em&gt;t?z&lt;/strong&gt;
+ packages into your
+&lt;strong&gt;/tmp&lt;/strong&gt;
+ directory and you just need to install they using 
+&lt;strong&gt;installpkg&lt;/strong&gt;
+.&lt;/p&gt;
+
+&lt;p&gt;###Starting your Libvirt daemon to run your VM guests&lt;/p&gt;
+
+&lt;p&gt;Slackware still uses runlevels scripts into 
+&lt;strong&gt;/etc/rc.d&lt;/strong&gt;
+ directory so to start libvirt you need to do&lt;/p&gt;
+
+&lt;h1 id=&quot;sh-etcrcdrclibvirt-start&quot;&gt;sh /etc/rc.d/rc.libvirt start&lt;/h1&gt;
+&lt;p&gt;Starting virtlockd: /usr/sbin/virtlockd -d
+Starting virtlogd: /usr/sbin/virtlogd -d
+Starting libvirtd: /usr/sbin/libvirtd -d
+To enable this in boot&lt;/p&gt;
+
+&lt;h1 id=&quot;chmod-ux-etcrcdrclibvirt&quot;&gt;chmod u+x /etc/rc.d/rc.libvirt&lt;/h1&gt;
+&lt;h1 id=&quot;echo-etcrcdrclibvirt-start-etcrcdrclocal&quot;&gt;echo ‘/etc/rc.d/rc.libvirt start’ » /etc/rc.d/rc.local&lt;/h1&gt;
+&lt;p&gt;See my slackware VM guest in action&lt;/p&gt;
+
+&lt;h1 id=&quot;virsh-list&quot;&gt;virsh list&lt;/h1&gt;
+&lt;p&gt;Id Name State
+—————————————————-
+ 1 slack64-srv01 running
+And that’s it for now! Wait for my new article soon: 
+&lt;strong&gt;KVM Virtualization with command line. &lt;/strong&gt;
+Hope you enjoy it! :)&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="slackware" /><category term="virtualization" /><summary type="html">Hello friends!</summary></entry><entry><title type="html">KVM Virtualization with command line</title><link href="alex.mulatinho.net/2016/08/19/kvm-virtualization-with-command-line.html" rel="alternate" type="text/html" title="KVM Virtualization with command line" /><published>2016-08-19T00:00:00-03:00</published><updated>2016-08-19T00:00:00-03:00</updated><id>alex.mulatinho.net/2016/08/19/kvm-virtualization-with-command-line</id><content type="html" xml:base="alex.mulatinho.net/2016/08/19/kvm-virtualization-with-command-line.html">&lt;p&gt;usr/sbin/libvirtd
+usr/sbin/virsh
+usr/sbin/virt-admin
+usr/sbin/virt-host-validate
+usr/sbin/virt-login-shell
+usr/sbin/virt-pki-validate
+usr/sbin/virt-xml-validate
+usr/sbin/virtlockd
+usr/sbin/virtlogd&lt;/p&gt;</content><author><name></name></author><summary type="html">usr/sbin/libvirtd usr/sbin/virsh usr/sbin/virt-admin usr/sbin/virt-host-validate usr/sbin/virt-login-shell usr/sbin/virt-pki-validate usr/sbin/virt-xml-validate usr/sbin/virtlockd usr/sbin/virtlogd</summary></entry><entry><title type="html">Using GPG to encrypt your data</title><link href="alex.mulatinho.net/2016/08/18/using-gpg-to-encrypt-your-data.html" rel="alternate" type="text/html" title="Using GPG to encrypt your data" /><published>2016-08-18T00:00:00-03:00</published><updated>2016-08-18T00:00:00-03:00</updated><id>alex.mulatinho.net/2016/08/18/using-gpg-to-encrypt-your-data</id><content type="html" xml:base="alex.mulatinho.net/2016/08/18/using-gpg-to-encrypt-your-data.html"></content><author><name></name></author><summary type="html"></summary></entry></feed>
