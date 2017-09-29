@@ -1,0 +1,310 @@
+<hr />
+<p>layout: post
+title: Avaliação e Gerenciamento de Riscos
+tags:</p>
+<ul>
+  <li>security
+—##Parte I: Avaliação de Riscos</li>
+</ul>
+
+<p>Olá, este post faz parte de uma sequência de artigos sobre 
+<strong>segurança da informação</strong>
+, resolvi fazê-los tanto para ajudar os interessados no tema como para fixar alguns pontos na minha cabeça, além é claro, de poder deixar como consulta em algum lugar no blog. Antes de mais nada, eu não sou o dono da verdade, então muita coisa escrita aqui pode ser feita de formas diferentes para se atingir objetivos diferentes, aqui eu mostro coisas que eu aplico no meu dia ou que já apliquei em empresas anteriores;</p>
+
+<blockquote>
+  <p>Conheces teu inimigo e conhece-te a ti mesmo; se tiveres cem combates a travar, cem vezes serás vitorioso. Se ignoras teu inimigo e conheces a ti mesmo, tuas chances de perder e de ganhar serão idênticas. Se ignoras ao mesmo tempo teu inimigo e a ti mesmo, só contarás teus combates por tuas derrotas. - Sun Tzu.</p>
+</blockquote>
+
+<p>O nosso primeiro tema será 
+<strong>avaliação e gerenciamento de riscos</strong>
+, um tema base para a disciplina de segurança da informação; Você pode estar lendo sobre isso pela primeira vez mas saiba que as grandes empresas do Brasil e do mundo utilizam esta prática já há bastante tempo; com base nesse contexto veremos como classificar o risco, para isso a primeira coisa que devemos definir é o significado do risco.</p>
+
+<p>Um dos padrões e documentos mais referenciados e utilizados em segurança da informação e principalmente nesta disciplina de avaliação de riscos é o NIST 800-30 [1] que é considerado um MUST READ.</p>
+
+<p>###Então, o que é risco?</p>
+
+<p>Risco, em segurança da informação, se trata de toda a ameaça em que uma organização esteja ou possa estar envolvida, todo o evento que se concretizado cause problemas ao negócio, imagem ou funcionamento da empresa; Como analista de segurança da informação um dos principais trabalhos que você tem que desenvolver é identificar que ameaças podem atingir uma organização e quais medidas você deve tomar em caso de acontecimento de um evento.</p>
+
+<p>O risco pode ser divido entre muitas formas:</p>
+
+<p>*Físicos: Servidores expostos fisicamente para funcionários,</p>
+
+<p>*Lógicos: Uma porta aberta em um servidor, uma rede mal segmentada,</p>
+
+<p>*Naturais: Enchente, furacão, raios,</p>
+
+<p>*Imprevisíveis: No-break quebrado, queda de energia municipal;
+Enfim, quase 
+<strong>qualquer coisa que afete o funcionamento do seu negócio</strong>
+; acho que este é o ponto principal, para que sua empresa dê lucro ou desempenhe sua atividade de forma eficiente ela deve se livrar dos riscos.</p>
+
+<hr />
+
+<p>###Implementação</p>
+
+<p>Segundo Vaughan [2], os passos que devem ser seguidos para que possa existir um bom plano para avaliação e gerenciamento de riscos são:</p>
+
+<p>*Determinar quais os principais objetivos a se atingir;</p>
+
+<p>*Identificar os riscos aos quais a organização está exposta;</p>
+
+<p>*Avaliar estes riscos de forma criteriosa;</p>
+
+<p>*Considerar as alternativas e selecionar dispositivos para o tratamento dos riscos;</p>
+
+<p>*Implementar as decisões tomadas;</p>
+
+<p>*Avaliar e revisar o processo continuamente;
+Identificar quais os riscos que a sua organização está exposta não é uma tarefa fácil, exige disciplina e discernimento mas também muitas horas de conversas com 
+<strong>os principais envolvidos</strong>
+ no funcionamento da empresa, isso quase sempre (note o quase) é feito conversando com os gerentes das áreas da empresa;</p>
+
+<p>Dica do Mulato #01</p>
+<ul>
+  <li>Marque reuniões com todos os gerentes da empresa;</li>
+  <li>Peça para que na opinião deles informem o que deve ser protegido;</li>
+  <li>Aceite informações de outras áreas mas peça que se concentrem nas suas;
+E principalmente, você deve estar atento aos riscos que envolvem 
+<strong>o modelo de negócio da empresa</strong>
+ e os riscos envolvidos com sua 
+<strong>infra-estrutura de negócio.</strong></li>
+</ul>
+
+<p>Dica do Mulato #02</p>
+<ul>
+  <li>Estude o segmento da empresa;</li>
+  <li>Conheça seus concorrentes e procure entender os riscos do negócio;</li>
+  <li>Procure conhecer o máximo possível a infra estrutura da empresa;</li>
+</ul>
+
+<hr />
+
+<p>###Classificação do Risco</p>
+
+<p>Uma das formas mais eficientes e recomendadas para se avaliar os riscos depois de listá-los é fornecer os pesos corretos para cada risco em forma de severidade (impacto que o evento causará na empresa caso aconteça) e a probabilidade de o evento  acontecer, neste caso faremos isso desta forma:</p>
+
+<p><strong>Severidade (para o negócio)</strong></p>
+
+<p><strong>Chance/Probabilidade de acontecer</strong></p>
+
+<dl>
+  <dt><strong>*1-2</strong></dt>
+  <dd>Pouquíssima severidade;</dd>
+  <dt><strong>*3-4</strong></dt>
+  <dd>Impacto baixo para empresa;</dd>
+  <dt><strong>*5-6</strong></dt>
+  <dd>Impacto moderado;</dd>
+  <dt><strong>*7-8</strong></dt>
+  <dd>Sérios problemas caso ocorra;</dd>
+</dl>
+
+<p><strong>*9-10</strong>
+: Desastroso para empresa;</p>
+
+<p><strong>*2:</strong>
+ Risco
+<strong> baixo</strong>
+;</p>
+
+<p><strong>*5:</strong>
+ Risco 
+<strong>médio</strong>
+;</p>
+
+<p><strong>*10:</strong>
+ Risco 
+<strong>alto</strong>
+;
+Para calcular o risco geral simplesmente multiplicamos os dois valores:</p>
+
+<p>-&gt; Risco Geral = Severidade X Probabilidade/Chance
+E é gerado um valor quantitativo até 100 informando o risco geral do evento. Esta é a tabela que utilizo mas você pode modificar para qualquer outro tipo de qualificação: 
+quantitativa ou qualitativa, desde que no final os riscos sejam expostos e as decisões possam ser tomadas de forma mais eficiente e com foco na sua 
+<strong>importância</strong>
+ e 
+<strong>ocorrência</strong>
+;</p>
+
+<hr />
+
+<p>A partir deste momento já é possível preparar a nossa primeira tabela de apoio a decisões! Para 
+<strong>servir de exemplo</strong>
+, suponha que a empresa que estamos analisando é uma startup de desenvolvimento web com escritório físico onde trabalham 5 funcionários e existem 2 servidores DELL onde um é ativo e o outro fica de contingência com poucos serviços, a empresa fica localizada dentro de uma casa em um bairro bem seguro mas onde já houve antes registros de enchentes em sua área, e toda sua infra-estrutura esta localizada fisicamente na casa, no entanto eles possuem uma cópia de backups diários e assets importantes da empresa em um servidor dedicado na internet;</p>
+
+<p>Digamos que após conversar com o dono da empresa e o responsável técnico da equipe de funcionários eles levantaram pra gente que os principais riscos que eles consideram são:</p>
+
+<p>*“Não temos muita orientação em segurança no processo de desenvolvimento”,</p>
+
+<p>*“As vezes recebemos clientes que acessam a rede privada da empresa”,</p>
+
+<p>*“Não temos uma política muito bem definida de backup, mandamos pra nuvem”,</p>
+
+<p>*“As vezes temos queda de energia municipal e duramos pouco tempo sem energia”,</p>
+
+<p>*“Não temos fornecedores de confiança, não temos segurança física”
+Após uma análise inicial decidimos identificar os 10 principais riscos:</p>
+
+<p><strong>Risco / Descrição</strong></p>
+
+<p><strong>Chance</strong></p>
+
+<p><strong>Impacto</strong></p>
+
+<p><strong>Risco Geral</strong></p>
+
+<p>Enchente que pode danificar equipamentos</p>
+
+<p>Baixa</p>
+
+<p>7</p>
+
+<p>14</p>
+
+<p>Invasão ao local físico, furto</p>
+
+<p>Baixa</p>
+
+<p>8</p>
+
+<p>16</p>
+
+<p>Ausência de Suporte/Fornecedor de Equipamentos de Hardware (Servidor, Máquinas, Equip. de Rede) *</p>
+
+<p>Média</p>
+
+<p>5</p>
+
+<p>25</p>
+
+<p>Acesso indevido a rede privada empresa *</p>
+
+<p>Média</p>
+
+<p>6</p>
+
+<p>30</p>
+
+<p>Invasão Local (Física) ao Servidor da Empresa (Cliente / Funcionário mal intencionado / Estranho) *</p>
+
+<p>Média</p>
+
+<p>7</p>
+
+<p>35</p>
+
+<p>Problemas/Perda de Backups da Empresa</p>
+
+<p>Média</p>
+
+<p>8</p>
+
+<p>40</p>
+
+<p>Queda de energia municipal/ausência de no-break</p>
+
+<p>Média</p>
+
+<p>8</p>
+
+<p>40</p>
+
+<p>Ausência de treinamento e medidas de segurança voltadas ao desenvolvimento WEB</p>
+
+<p>Média</p>
+
+<p>9</p>
+
+<p>45</p>
+
+<p>Ataques a páginas hospedadas no servidor (CSRF, SQL/Param Injection, Session Hijacking, etc)</p>
+
+<p>Alta</p>
+
+<p>7</p>
+
+<p>70</p>
+
+<p>Invasão ao servidor principal com acesso administrativo</p>
+
+<p>Alta</p>
+
+<p>9</p>
+
+<p>90
+Veremos que essa tabela irá crescer no próximo artigo quando falarmos em como gerenciar estes riscos e como aplicar os controles adequados, ira notar-se também que alguns itens irão receber resposta imediata afim de reduzir a sua chance ou o seu impacto (*);</p>
+
+<hr />
+
+<p>###Cálculo do Risco</p>
+
+<p>Um dos conceitos mais importantes que um analista de segurança da informação deve compreender e difundir entre os principais interessados é o 
+<strong>cálculo do risco</strong>
+, para isso foram definidos três variáveis que te ajudam a chegar ao custo do risco para uma empresa, são elas:</p>
+
+<p><strong>*ARO</strong>
+ (Annualized Rate of Ocurrence/Possibilidade de Ocorrência no Ano), percentagem da possibilidade ocorrência do evento em um ano;</p>
+
+<p><strong>*ALE</strong>
+ (Annual Loss Expectancy/Expectativa de Perda Anual), expectativa de perda anual em valores monetários de um evento/risco específico;</p>
+
+<p><strong>*SLE</strong>
+ (Single Loss Expectancy/Expecativa de Perda Única), valores em moeda que representam o custo total caso um evento aconteça; Este valor pode ser subdivido entre dois itens:</p>
+
+<p><strong>*AV</strong>
+ (Asset Value/Valor do Ativo)</p>
+
+<p><strong>*EF</strong>
+ (Exposure Factor/Fator de Exposição)
+O que nos leva as seguintes fórmulas:</p>
+
+<p>-&gt;  AV x EF  = SLE
+  -&gt; SLE x ARO = ALE</p>
+
+<p><strong>Exemplo #01:</strong></p>
+
+<p>Suponha que a página que mais dá dinheiro a essa empresa rende foi avaliada em 
+<strong>R$ 26.000,00</strong>
+ e após a reunião em conjunto com os envolvidos foi descoberto que o site já passou por um processo de auditoria de segurança e que está bem padronizado há alguns anos, então foi definido um fato de exposição (
+<strong>EF</strong>
+) de 
+<strong>25%</strong>
+, então nosso 
+<strong>SLE</strong>
+ aqui é R$ 26.000,00 x 0.25 = 
+<strong>R$ 6.500,00</strong></p>
+
+<p><strong>Exemplo #02:</strong></p>
+
+<p>Digamos que o servidor físico que hospeda as páginas web rende por hora 
+<strong>R$ 200,00</strong>
+ em horários de pico a empresa, a probabilidade de acontecer  uma falha no hardware neste ano é de 
+<strong>20%</strong>
+ ou 
+<strong>1 em 5</strong>
+, caso ocorra a falha será necessário a compra de mais um equipamento de contingência no valor de 
+<strong>R$ 6.000</strong>
+, mais o tempo de manutenção necessário para voltar ao ar sem problemas, que da ultima vez foi estimado em 
+<strong>4 horas</strong>
+;</p>
+
+<p>Neste exemplo o 
+<strong>ARO</strong>
+ é 0.20 e o 
+<strong>SLE</strong>
+ é R$ 6.800,00 (R$ 200 x 4 horas + R$6.000 servidor), então usando a fórmula acima qual é o ALE (Expectativa de Perda Anual)?  O 
+<strong>ALE</strong>
+ é R$ 1.360,00.</p>
+
+<hr />
+
+<p>Então, é isso! Nós vimos aqui a primeira parte do post 
+Avaliação e Gerenciamento de Riscos, com o conhecimento daqui: 
+<strong>classificação</strong>
+ e 
+<strong>cálculo do risco</strong>
+, conseguiremos a informação necessária para gerenciar os riscos afim de mitigá-los ou extinguí-los quando possível, de forma organizada e orientada a um processo;</p>
+
+<p>###<strong>Referências</strong></p>
+
+<p>[1] 
+<a href="http://csrc.nist.gov/publications/nistpubs/800-30/sp800-30.pdf">NIST 800-30 - Risk Management Guide for Information Technology Systems</a>[2] Fundamentals of Risk and Insurance, Vaughan and Vaughan</p>

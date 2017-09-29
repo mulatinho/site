@@ -1,0 +1,135 @@
+<hr />
+<p>layout: post
+title: ‘Desafio Shell Script #001’
+tags:</p>
+<ul>
+  <li>bash</li>
+  <li>challenges</li>
+  <li>programming</li>
+  <li>script
+—Dona Fernanda resolveu casar-se com Carlos, o padre porém disse que os noivos não poderiam escolher a data de casamento devido a grande quantidade de solicitações na igreja. Vários noivos também estavam ansiosos para saber quando poderiam se casar naquela linda igreja, para dizer a cada casal o dia exato em que eles poderiam se casar o padre solicitou que eles fornecessem de 1 até 5 dias no mês de sua preferência e desenvolveu um algoritmo que ajudaria a resolver este impasse de forma aleatória e justa agora e no futuro, ele definiu:</li>
+</ul>
+
+<p><strong>*T</strong></p>
+<ul>
+  <li>quantidade de casamentos na fila</li>
+</ul>
+
+<p><strong>*M</strong></p>
+<ul>
+  <li>mês do casamento</li>
+</ul>
+
+<p><strong>*N</strong></p>
+<ul>
+  <li>quantidade de dias do mês disponível</li>
+</ul>
+
+<p><strong>*Vx</strong></p>
+<ul>
+  <li>Valor do dia na posição X (V1, V2, V3…)</li>
+</ul>
+
+<p>###<strong>ENTRADA VÁLIDA</strong></p>
+
+<p>TN V1 V2 V3 … VxM</p>
+
+<p>Cada linha corresponde a uma entrada do casal, então se 
+<strong>T</strong>
+ for igual 
+<strong>10</strong>
+, existiriam 10 casais para casar na igreja em determinado mês, e por consequência, haveriam 10 linhas de entrada informando os dias preferidos do casal.</p>
+
+<p>###<strong>POR EXEMPLO</strong></p>
+
+<p>55 2 7 5 8 145 2 4 14 8 151 403 2 7 92</p>
+
+<p>###<strong>RESTRIÇÕES</strong></p>
+
+<p><strong>T &gt; 0 &amp;&amp; T &lt;= 20M &gt; 0 &amp;&amp; M &lt;= 12N &gt; 0 &amp;&amp; N &lt;= 5V &gt; 0 &amp;&amp; V &lt; 32 </strong></p>
+
+<p>*O dia a ser escolhido deve ser o 
+<strong>menor do grupo</strong></p>
+
+<p>*Caso um casal tenha selecionado um dia já escolhido por outro ele ficará com o próximo dia possível, se houver (por exemplo, 
+<strong>A</strong>
+ = 4 = { 1, 3, 4, 6 } se os dias 
+<strong>1, 3 e 4</strong>
+ já tiverem sido escolhidos, o casal poderá tentar o próximo item, o quarto número, o dia 
+<strong>6</strong>
+), 
+<strong>mas precisa ser sempre o menor número do grupo</strong>
+.</p>
+
+<p>*Em caso de não haver outro dia disponível para o casal deverá ser escrito:</p>
+
+<p>*“O casal número 
+<strong>N</strong>
+ só pode casar no próximo mês pois já tem um casal nos dias selecionados”</p>
+
+<p>*Em caso de violação de restrição deverá ser escrito</p>
+
+<p>*“Padre, foi encontrado uma inconsistência nos dados.”</p>
+
+<p>###<strong>RESPOSTA VÁLIDA / SAÍDA VÁLIDA</strong></p>
+
+<p>Padre, são 5 Casamentos em FevereiroO casal número 1 ficou de casar no dia 2 de FevereiroO casal número 2 ficou de casar no dia 4 de FevereiroO casal número 3 só pode casar no próximo mês pois já tem um casal nos dias selecionadosPadre, foi encontrado uma inconsistência nos dados.O casal número 5 ficou de casar no dia 7 de Fevereiro</p>
+
+<p>###<strong>EXPLICAÇÃO DA SAÍDA</strong></p>
+
+<p><strong>“Padre, são 5 casamentos em Fevereiro”</strong>
+ é o número 
+<strong>T</strong>
+ de casamentos de entrada e o mês 
+<strong>M</strong>
+ da entrada</p>
+
+<p><strong>“O casal número 1 ficou de casar no dia 2 de Fevereiro”</strong>
+é o primeiro casal que tem os dias N = {2, 7, 5, 8, 14} disponíveis e o menor possível é o dia 2 de Fevereiro</p>
+
+<p><strong>“O casal número 2 ficou de casar no dia 4 de Fevereiro”</strong>
+ é o segundo casal que tem os dias N = {2, 4, 14, 8, 15} disponíveise o menor possível é o dia 4 de Fevereiro</p>
+
+<p><strong>“O casal número 3 só pode casar no próximo mês pois já tem um casal nos dias selecionados”</strong>
+é o terceiro casal que tem os dias N = {4} disponíveis mas como já existia um casal com o dia 4, não é possível realizar o casamento</p>
+
+<p><strong>“Padre, foi encontrado uma inconsistência nos dados do casal 4.  :(“</strong>
+é a mensagem de erro em caso de violação de restrição</p>
+
+<p><strong>“O casal número 5 ficou de casar no dia 7 de Fevereiro”</strong>
+é o quinto casal que tem os dias N = {2 7 9} disponíveis e o menor possível é o dia 7 de Fevereiro</p>
+
+<p>###MAIS TESTES PARA VALIDAÇÃO</p>
+
+<p><strong>Gerador de testes aleatórios válidos</strong></p>
+
+<p>bash$ ( T=$(( (RANDOM % 20) + 1 )); echo $T; \
+for i in <code class="highlighter-rouge">seq 1 $T</code>; \
+do N=$(( (RANDOM % 5) + 1 )) ; echo -n “$N “; \
+for x in <code class="highlighter-rouge">seq 1 $N</code>; do V=$(( (RANDOM % 31) + 1)); echo -n “$V “; done; \
+echo; done; echo $(( (RANDOM % 12) +1 )) )</p>
+
+<p><strong>Teste #01</strong></p>
+
+<p>55 21 26 4 1 155 19 11 7 16 171 284 29 6 21 251 115</p>
+
+<p><strong>Teste #02</strong></p>
+
+<p>33 28 26 72 29 163 8 14 154</p>
+
+<p><strong>Teste #03</strong></p>
+
+<p>53 17 31 161 151 74 31 30 12 12 20 273</p>
+
+<p><strong>Teste #04</strong></p>
+
+<p>181 213 23 24 55 15 11 19 28 85 11 9 16 16 51 41 44 4 8 7 264 23 12 11 281 72 28 273 27 13 313 30 29 115 2 5 10 20 145 4 16 5 17 252 3 202 17 25 19 21 2 24 255 16 8 18 23 285</p>
+
+<p><strong>Teste #05</strong></p>
+
+<p>115 7 19 30 2 223 8 23 305 25 4 16 17 313 18 31 143 6 3 192 20 12 27 222 16 194 9 28 18 212 10 202 29 97
+Quer ver a minha versão com entradas e saídas funcionando??</p>
+
+<p><a href="http://pastebin.com/VvbxBZWD">http://pastebin.com/VvbxBZWD</a></p>
+
+<p>Conseguiu resolver? Poste suas respostas nos comentários! Quer saber a solução? Entre em contato comigo ou procure na lista de Shell-Script a thread “Desafio Shell-Script #001 do Mulato” ;-)</p>

@@ -108,7 +108,7 @@
   <div class="post-content" itemprop="articleBody">
     <p><a href="http://docs.ansible.com">Ansible</a> is one of the best tools in DevOps that I like, he just need a simply configuration and can help you with a lot of tasks in your day by day on your infrastructure, today I will show to you how to configure him to work with a lot of servers and how to automate some simple tasks.</p>
 
-<p><strong>Advantages of Ansible</strong></p>
+<h3 id="advantages-of-ansible">Advantages of Ansible</h3>
 
 <ul>
   <li>Easy to use and fast response</li>
@@ -118,7 +118,7 @@
   <li>Playbooks to make complex tasks</li>
 </ul>
 
-<p><strong>So how we begin use this tool?</strong></p>
+<h3 id="so-how-we-begin-use-this-tool">So how we begin use this tool?</h3>
 
 <p>The very first thing you need to do is obviously install Ansible on your system. You can do this by typing on linux</p>
 
@@ -133,7 +133,7 @@ https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ brew install ansible
 </code></pre></div></div>
 
-<p><strong>The inventory file</strong></p>
+<h3 id="the-inventory-file">The inventory file</h3>
 
 <p>Ansible needs a file to specify all servers you want to control, you can use a tag name to make an group  to all servers you want by category, below we set two groups: <strong>appservers</strong> and <strong>databases</strong>, note that you don’t need to specify one by one in a line, you can use regex to simplify (this is awesome!)</p>
 
@@ -153,88 +153,78 @@ db[1:5].dev.yourcompany.com
 
 <p>And you will get a <strong>~/.ssh/id_rsa.pub</strong> public key file in your <strong>$HOME</strong> directory; So now you need to distribute your public-key to all servers you need control, this can be easy if you have only ten servers to administer or a pain if you have to do this in more than 100+ servers, so here’s a tip:</p>
 
-<p>*Create a file with all your servers like this:</p>
+<ul>
+  <li>
+    <p>Create a file with all your servers like this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@server1.dev.company.com
-root@server2.dev.company.com
-(I will not show to you how to make this with inventory file as input, but you can!)
-</code></pre></div></div>
+    <p>root@server1.dev.company.com
+  root@server2.dev.company.com
+  (I will not show to you how to make this with inventory file as input, but you can!)</p>
+  </li>
+  <li>
+    <p>Use this command-line to copy your keys to each server and insert root-password</p>
 
-<p>*Use this command-line to copy your keys to each server and insert root-password</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ while read LINE; do ssh-copy-id $LINE; done &lt; /tmp/servers
-</code></pre></div></div>
-
-<p><strong>Using Ansible in command-line</strong></p>
+    <p>$ while read LINE; do ssh-copy-id $LINE; done &lt; /tmp/servers</p>
+  </li>
+  <li>
+    <p>Using Ansible in command-line</p>
+  </li>
+</ul>
 
 <p>All set? So lets try do something really cool here. This is the most basic syntax of ansible:</p>
 
 <p><strong>$ ansible :target: -i inventory-file :actions:</strong></p>
 
-<p>Where
-<strong>:target:</strong>
- is the group of servers in your inventory file or just an string
-<strong>all</strong>
- to contemplate all servers in your inventory, the
-<strong>:actions:</strong>
- can be a simply command like below or a more complex command-line using
-ansible modules.</p>
+<p>Where <strong>:target:</strong> is the group of servers in your inventory file or just an string <strong>all</strong> to contemplate all servers in your inventory, the <strong>:actions:</strong> can be a simply command like below or a more complex command-line using ansible modules.</p>
 
-<p>*Get all kernel versions of our servers</p>
+<h4 id="get-all-kernel-versions-of-our-servers">Get all kernel versions of our servers</h4>
 
 <p><strong>$ ansible all -i yourcompany.conf -u root -a “uname -a”</strong></p>
 
-<p>staging1.dev.yourcompany.com | SUCCESS | rc=0 »
-Linux staging1.dev 3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>staging1.dev.yourcompany.com | SUCCESS | rc=0 &gt;&gt;
+Linux staging1.dev 3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 
-<p>staging3.dev.yourcompany.com | SUCCESS | rc=0 »
-Linux staging3.dev 3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux</p>
+staging3.dev.yourcompany.com | SUCCESS | rc=0 &gt;&gt;
+Linux staging3.dev 3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 
-<p>db2.dev.yourcompany.com | SUCCESS | rc=0 »
-Linux db2.dev 3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux</p>
+db2.dev.yourcompany.com | SUCCESS | rc=0 &gt;&gt;
+Linux db2.dev 3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 
-<p>staging2.dev.yourcompany.com | SUCCESS | rc=0 »
+staging2.dev.yourcompany.com | SUCCESS | rc=0 &gt;&gt;
 Linux staging2.dev.yourcompany.com 3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
-(Note that all servers responded with your kernel)</p>
+(Note that all servers responded with your kernel)
+</code></pre></div></div>
 
-<p>*Use a default module
-<strong>ping</strong>
- to check if
-databases are alive</p>
+<h4 id="use-a-default-module-ping-to-check-if-databasesare-alive">Use a default module <strong>ping</strong> to check if databases are alive</h4>
 
 <p><strong>$ ansible databases -i yourcompany.conf -m ping</strong></p>
 
-<p>db1.dev.yourcompany.com | SUCCESS =&gt; {
-    “changed”: false,
-    “ping”: “pong”
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>db1.dev.yourcompany.com | SUCCESS =&gt; {
+    "changed": false,
+    "ping": "pong"
 }
 db2.dev.yourcompany.com | SUCCESS =&gt; {
-    “changed”: false,
-    “ping”: “pong”
+    "changed": false,
+    "ping": "pong"
 }
-….</p>
+....
+</code></pre></div></div>
 
-<p>*Use a default module
-<strong>apt</strong>
- to install a mysql database</p>
+<h4 id="use-a-default-module-apt-to-install-a-mysql-database">Use a default module <strong>apt</strong> to install a mysql database</h4>
 
 <p><strong>$ ansible databases -i yourcompany.conf \
 -m apt -a “name=mysql-server state=latest”</strong></p>
 
-<p><strong>So how can I know what modules are available?</strong></p>
+<h3 id="so-how-can-i-know-what-modules-are-available">So how can I know what modules are available?</h3>
 
 <p>They are listed here -&gt;
 <a href="http://docs.ansible.com/ansible/list_of_all_modules.html">http://docs.ansible.com/ansible/list_of_all_modules.html</a></p>
 
-<p><strong>Playbooks: The real thing</strong></p>
+<h3 id="playbooks-the-real-thing">Playbooks: The real thing</h3>
 
 <p>Okay, now you know that you can send commands and use modules to process in all your servers with just one command line, thats cool! But what really amazing in Ansible are the playbooks! A playbook is just a file with a template engine called
 <a href="http://yaml.org">YAML</a> and
-<a href="http://jinja.pocoo.org/docs/2.9/templates/#builtin-filters">Jinja</a> to apply some filters, variables and others, with that you can do a lot of automate complex tasks in your servers. Lets take a look into a sample file called ‘
-<strong>install_apache.yml</strong>
-‘:</p>
-
-<hr />
+<a href="http://jinja.pocoo.org/docs/2.9/templates/#builtin-filters">Jinja</a> to apply some filters, variables and others, with that you can do a lot of automate complex tasks in your servers. Lets take a look into a sample file called ‘<strong>install_apache.yml</strong>’:</p>
 
 <p>-
 hosts:

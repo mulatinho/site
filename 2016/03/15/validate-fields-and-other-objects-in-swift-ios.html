@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Blog</title>
-  <meta name="description" content="Thoughts about linux, open source, development and life ;)">
+  <title>Validate fields and other objects in #Swift #iOS</title>
+  <meta name="description" content="Unfortunately we all know that we can’t put everything what we are working in, on a simple blog, I have to understand this since years ago when I worked at s...">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="alex.mulatinho.net/blog/">
+  <link rel="canonical" href="alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios.html">
   <link rel="alternate" type="application/rss+xml" title="Alexandre Mulatinho" href="/feed.xml">
 
   
@@ -93,74 +93,102 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title">Blog</h1>
+    <h1 class="post-title" itemprop="name headline">Validate fields and other objects in #Swift #iOS</h1>
+    <p class="post-meta">
+      <time datetime="2016-03-15T00:00:00-03:00" itemprop="datePublished">
+        
+        Mar 15, 2016
+      </time>
+      </p>
   </header>
 
-  <div class="post-content">
-    <p>This is a personal blog, the opinions expressed here are my own, and do not necessarily reflect those of my employer. Este é um blog pessoal e por isso o que é escrito aqui, pode não refletir as idéias das empresas em que eu trabalho e nem dos parceiros com quem eu faço negócios. Bem vindo e espero que aproveite algo. Be welcome and I hoje you enjoy 🙂</p>
+  <div class="post-content" itemprop="articleBody">
+    <p>Unfortunately we all know that we can’t put everything what we are working in, on a simple blog, I have to understand this since years ago when I worked at some government department. But I can show what I am doing now just for fun and for registry to me in the future.</p>
 
-<p><br /></p>
+<p>we were had some problems here, especially when we’d need to try validate a lot of forms that involved things like UITextField, UISegmentedControl, etc. To solve this issue I had to create one class with methods like:.insert(object, checkType, labelError, errorMessage) // magic goes here.
+.showErrors() // print on screen all erros like below
+.count() // return the quantity of erros below
+.result() // return if all tests are passed or no.
+and the code is easily readable:</p>
 
-<h1 class="page-heading">Last Five Posts</h1>
+<p>@IBAction func onActAll(sender: AnyObject)
+{
+    if ruleThis.result() == false {
+        ruleThis.showErrors()
+    } else {
+        print(“Do your segueway or something after success.”)
+    }
+}
+(You set a trigger for validation, here a button to Next Screen)</p>
 
-<ul class="post-list">
-  
-	<li>
-	  
-	  <span class="post-meta">Jul 27, 2017</span>
+<p>Then you assign function pointers to the stack os Validations.</p>
 
-	  <h3>
-		<a class="post-link" href="/2017/07/27/two-years-of-remote-working-what-i-learned.html">Two years of remote working: What I learned</a>
-	  </h3>
-	</li>
-  
-	<li>
-	  
-	  <span class="post-meta">Jan 27, 2017</span>
+<p>override func viewDidLoad() {
+    super.viewDidLoad()</p>
 
-	  <h3>
-		<a class="post-link" href="/2017/01/27/devops-ansible-basics.html">DevOps: Ansible Basics</a>
-	  </h3>
-	</li>
-  
-	<li>
-	  
-	  <span class="post-meta">Oct 26, 2016</span>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruleThis.insert(object: textFieldCPF,
+    function: checkIfCPFisValid, errorLabel: labelMessageCPF,
+    errorMessage: "CPF inválido, sua mensagem personalizada aqui.")
 
-	  <h3>
-		<a class="post-link" href="/2016/10/26/how-to-upload-to-amazon-s3-using-rest.html">How to upload to Amazon S3 using REST</a>
-	  </h3>
-	</li>
-  
-	<li>
-	  
-	  <span class="post-meta">Oct 13, 2016</span>
+ruleThis.insert(object: textFieldPassword, 
+    function: checkIfPasswordIsValid, errorLabel: labelMessagePassword,
+    errorMessage: "Sua senha não preenche os resquisitos mínimos de segurança, tente novamente")
 
-	  <h3>
-		<a class="post-link" href="/2016/10/13/the-tao-of-programming.html">Back! - The Tao of Programming</a>
-	  </h3>
-	</li>
-  
-	<li>
-	  
-	  <span class="post-meta">Aug 25, 2016</span>
+ruleThis.insert(object: textFieldInputCEP, 
+    function: checkIfCEPisValid, errorLabel: labelMessageCEP, 
+    errorMessage: "Este CEP não é válido")
 
-	  <h3>
-		<a class="post-link" href="/2016/08/25/upgrade-your-slackware-linux-to-i486x86_64-current-version.html">Upgrade your #Slackware #Linux to (i486|x86_64) -current version</a>
-	  </h3>
-	</li>
-  
-</ul>
+ruleThis.insert(object: segmentedOption,
+    function: checkIfIsSelected, errorLabel: labelMessageSegmented,
+    errorMessage: "Por favor selecione uma das opções.") } Then you make a function validation to the object assigned. This coule be simple as
+</code></pre></div></div>
 
-<div id="disqus_thread"></div>
+<p>func checkIfTextIsBlank(obj: AnyObject?) -&gt; Bool
+{
+    var result = false</p>
 
-<p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if let object = obj as? UITextField {
+    if !object.text!.isEmpty { // if is not nil.
+        result = true
+    }
+}
+
+return result } or a little more complex  [like this](https://gist.github.com/mulatinho/14546ff8f24eb5b10e01) (a validation check for social number in Brazil), and the results are below:
+</code></pre></div></div>
+
+<p>[caption id=”attachment_611” align=”alignnone” width=”545”]
+<a href="https://mulatinho.files.wordpress.com/2016/03/rulethis.gif"><img src="https://mulatinho.files.wordpress.com/2016/03/rulethis.gif?w=545" alt="validating screen in iOS with Swift" /></a> validating screen in iOS with Swift[/caption]</p>
+
+<p>For me the results are cool and work! I really enjoy work with Swift. :)</p>
 
   </div>
 
+  
+    
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios.html';
+      this.page.identifier = 'alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://mulatinho.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+  
 </article>
 
       </div>
