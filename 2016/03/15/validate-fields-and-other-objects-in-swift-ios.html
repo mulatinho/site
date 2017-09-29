@@ -10,7 +10,7 @@
   <meta name="description" content="Unfortunately we all know that we can’t put everything what we are working in, on a simple blog, I have to understand this since years ago when I worked at s...">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios.html">
+  <link rel="canonical" href="http://alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios.html">
   <link rel="alternate" type="application/rss+xml" title="Alexandre Mulatinho" href="/feed.xml">
 
   
@@ -114,17 +114,16 @@
 .result() // return if all tests are passed or no.
 and the code is easily readable:</p>
 
-<p>@IBAction func onActAll(sender: AnyObject)
-{
-    if ruleThis.result() == false {
-        ruleThis.showErrors()
-    } else {
-        print(“Do your segueway or something after success.”)
-    }
-}
-(You set a trigger for validation, here a button to Next Screen)</p>
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onActAll</span><span class="p">(</span><span class="nv">sender</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="n">ruleThis</span><span class="o">.</span><span class="nf">result</span><span class="p">()</span> <span class="o">==</span> <span class="kc">false</span> <span class="p">{</span>
+        <span class="n">ruleThis</span><span class="o">.</span><span class="nf">showErrors</span><span class="p">()</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Do your segueway or something after success."</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
 
-<p>Then you assign function pointers to the stack os Validations.</p>
+<p>You set a trigger for validation, here a button to Next Screen. Then you assign function pointers to the stack os Validations.</p>
 
 <p>override func viewDidLoad() {
     super.viewDidLoad()</p>
@@ -133,12 +132,12 @@ and the code is easily readable:</p>
     function: checkIfCPFisValid, errorLabel: labelMessageCPF,
     errorMessage: "CPF inválido, sua mensagem personalizada aqui.")
 
-ruleThis.insert(object: textFieldPassword, 
+ruleThis.insert(object: textFieldPassword,
     function: checkIfPasswordIsValid, errorLabel: labelMessagePassword,
     errorMessage: "Sua senha não preenche os resquisitos mínimos de segurança, tente novamente")
 
-ruleThis.insert(object: textFieldInputCEP, 
-    function: checkIfCEPisValid, errorLabel: labelMessageCEP, 
+ruleThis.insert(object: textFieldInputCEP,
+    function: checkIfCEPisValid, errorLabel: labelMessageCEP,
     errorMessage: "Este CEP não é válido")
 
 ruleThis.insert(object: segmentedOption,
@@ -156,7 +155,7 @@ ruleThis.insert(object: segmentedOption,
     }
 }
 
-return result } or a little more complex  [like this](https://gist.github.com/mulatinho/14546ff8f24eb5b10e01) (a validation check for social number in Brazil), and the results are below:
+return result } or a little more complex [like this](https://gist.github.com/mulatinho/14546ff8f24eb5b10e01) (a validation check for social number in Brazil), and the results are below:
 </code></pre></div></div>
 
 <p>[caption id=”attachment_611” align=”alignnone” width=”545”]
@@ -168,12 +167,11 @@ return result } or a little more complex  [like this](https://gist.github.com/mu
 
   
     
-
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = 'alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios.html';
-      this.page.identifier = 'alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios.html';
+      this.page.url = 'http://alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios.html';
+      this.page.identifier = 'http://alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios.html';
     };
 
     (function() {
@@ -198,24 +196,8 @@ return result } or a little more complex  [like this](https://gist.github.com/mu
 
   <div class="wrapper">
 
-    <div class="footer-col">
-      <!-- <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            
-              Wanna talk about something? E-mail me!
-            
-            </li>
-            
-            <li><a href="mailto:alex@mulatinho.net">alex@mulatinho.net</a></li>
-            
-        </ul>
-      </div> -->
+      <p>Thoughts about linux, open source, development and life ;)</p>
 
-
-        <p>Thoughts about linux, open source, development and life ;)</p>
-
-      </div>
       <br/>
       <br/>
 
@@ -230,6 +212,7 @@ return result } or a little more complex  [like this](https://gist.github.com/mu
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
+      
     </div>
 
   </div>

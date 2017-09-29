@@ -10,7 +10,7 @@
   <meta name="description" content="Ansible is one of the best tools in DevOps that I like, he just need a simply configuration and can help you with a lot of tasks in your day by day on your i...">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="alex.mulatinho.net/2017/01/27/devops-ansible-basics.html">
+  <link rel="canonical" href="http://alex.mulatinho.net/2017/01/27/devops-ansible-basics.html">
   <link rel="alternate" type="application/rss+xml" title="Alexandre Mulatinho" href="/feed.xml">
 
   
@@ -157,14 +157,17 @@ db[1:5].dev.yourcompany.com
   <li>
     <p>Create a file with all your servers like this:</p>
 
-    <p>root@server1.dev.company.com
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  root@server1.dev.company.com
   root@server2.dev.company.com
-  (I will not show to you how to make this with inventory file as input, but you can!)</p>
+</code></pre></div>    </div>
+
+    <p>(I will not show to you how to make this with inventory file as input, but you can!)</p>
   </li>
   <li>
     <p>Use this command-line to copy your keys to each server and insert root-password</p>
 
-    <p>$ while read LINE; do ssh-copy-id $LINE; done &lt; /tmp/servers</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ while read LINE; do ssh-copy-id $LINE; done &lt; /tmp/servers
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Using Ansible in command-line</p>
@@ -222,108 +225,50 @@ db2.dev.yourcompany.com | SUCCESS =&gt; {
 
 <h3 id="playbooks-the-real-thing">Playbooks: The real thing</h3>
 
-<p>Okay, now you know that you can send commands and use modules to process in all your servers with just one command line, thats cool! But what really amazing in Ansible are the playbooks! A playbook is just a file with a template engine called
-<a href="http://yaml.org">YAML</a> and
+<p>Okay, now you know that you can send commands and use modules to process in all your servers with just one command line, thats cool! But what really amazing in Ansible are the playbooks! A playbook is just a file with a template engine called <a href="http://yaml.org">YAML</a> and
 <a href="http://jinja.pocoo.org/docs/2.9/templates/#builtin-filters">Jinja</a> to apply some filters, variables and others, with that you can do a lot of automate complex tasks in your servers. Lets take a look into a sample file called ‘<strong>install_apache.yml</strong>’:</p>
 
-<p>-
-hosts:
-appservers</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+- hosts: appservers
+  vars:
+    http_port: 80
+    max_clients: 200
+  remote_user: root
+  tasks:
+  - name: install or upgrade apache to latest version
+    yum: name=httpd state=latest
+  - name: write the apache config file
+    template: src=./httpd.j2 dest=/etc/httpd.conf
+    notify:
+    - restart apache
+  - name: ensure apache is running (and enable it at boot)
+    service: name=httpd state=started enabled=yes
+  handlers:
+    - name: restart apache
+      service: name=httpd state=restarted
+</code></pre></div></div>
 
-<p>vars:</p>
+<ul>
+  <li><strong>hosts</strong> -&gt; means that all these tasks will only be executed in the group defined after the word, here
+<strong>appservers,</strong> defined by our inventory file in the begin of this post.</li>
+  <li><strong>vars</strong> -&gt; are variables you define to process tasks with it, note that variables are defined line by line.</li>
+  <li><strong>remote_user</strong> -&gt; another way to use <strong>-u root</strong> without need to put in cmd.</li>
+  <li><strong>name</strong> -&gt; is just a name you define to implement a task</li>
+  <li><strong>template</strong> -&gt; in this case is just a way to say, copy my source file defined as ./httpd.j2 to destination server on /etc/httpd.conf</li>
+  <li><strong>notify</strong> -&gt; is a tag that call a job (<strong>restart apache</strong>) in handlers block at the end of execution of the current block</li>
+</ul>
 
-<p>http_port:
-80</p>
+<p>Or, to resume this playbook will:</p>
 
-<p>max_clients:
-200</p>
+<ul>
+  <li>Install the latest version of httpd apache on all your <strong>appservers</strong>
+*Copy your local <strong>httpd.j2</strong> file to remote server on <strong>/etc/httpd.conf</strong></li>
+  <li>Put your variables where you set in <strong>httpd.j2</strong> file</li>
+  <li>Restart apache after that</li>
+  <li>Set apache to run automatically after a boot/reboot</li>
+</ul>
 
-<p>remote_user:
-root</p>
-
-<p>tasks:</p>
-
-<p>-
-name: install or upgrade
-apache to latest version</p>
-
-<p>yum:
-name=httpd state=latest</p>
-
-<p>-
-name:
-write the apache config file</p>
-
-<p>template:
-src=./httpd.j2 dest=/etc/httpd.conf</p>
-
-<p>notify:</p>
-
-<p>-
-restart apache</p>
-
-<p>-
-name:
-ensure apache is running (and enable it at boot)</p>
-
-<p>service:
-name=httpd state=started enabled=yes</p>
-
-<p>handlers:</p>
-
-<p>-
-name:
-restart apache</p>
-
-<p>service:
-name=httpd state=restarted
-There’s a lot of information and process automation here.</p>
-
-<p><strong>*hosts</strong>
- -&gt; means that all these tasks will only be executed in the group defined after the word, here
-<strong>appservers,</strong>
-defined by our
-inventory file in the begin of this post.</p>
-
-<p><strong>*vars</strong>
- -&gt; are variables you define to process tasks with it, note that variables are defined line by line.</p>
-
-<p><strong>*remote_user </strong>
--&gt; another way to use
-<strong>-u root</strong>
- without need to put in cmd.</p>
-
-<p><strong>*name</strong>
- -&gt; is just a name you define to implement a task</p>
-
-<p><strong>*template</strong>
- -&gt; in this case is just a way to say, copy my source file defined as .
-/httpd.j2 to destination server on
-/etc/httpd.conf</p>
-
-<p><strong>*notify</strong>
- -&gt; is a tag that call a job (
-<strong>restart apache</strong>
-) in handlers block at the end of execution of the current block
-Or, to resume this playbook will:</p>
-
-<p>*Install the latest version of httpd apache on all your
-<strong>appservers</strong></p>
-
-<p>*Copy your local
-<strong>httpd.j2</strong>
- file to remote server on
-<strong>/etc/httpd.conf</strong></p>
-
-<p>*Put your variables where you set in
-<strong>httpd.j2</strong>
- file</p>
-
-<p>*Restart apache after that</p>
-
-<p>*Set apache to
-run automatically after a boot/reboot
-As you see you can do a lot with this, without this you would need to enter in each server and make these tasks one by one without any human mistake, with ansible you just need to type this:</p>
+<p>As you see you can do a lot with this, without this you would need to enter in each server and make these tasks one by one without any human mistake, with ansible you just need to type this:</p>
 
 <p><strong>$ ansible-playbook -i yourcompany.conf install_apache.yml</strong></p>
 
@@ -335,12 +280,11 @@ As you see you can do a lot with this, without this you would need to enter in e
 
   
     
-
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = 'alex.mulatinho.net/2017/01/27/devops-ansible-basics.html';
-      this.page.identifier = 'alex.mulatinho.net/2017/01/27/devops-ansible-basics.html';
+      this.page.url = 'http://alex.mulatinho.net/2017/01/27/devops-ansible-basics.html';
+      this.page.identifier = 'http://alex.mulatinho.net/2017/01/27/devops-ansible-basics.html';
     };
 
     (function() {
@@ -365,24 +309,8 @@ As you see you can do a lot with this, without this you would need to enter in e
 
   <div class="wrapper">
 
-    <div class="footer-col">
-      <!-- <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            
-              Wanna talk about something? E-mail me!
-            
-            </li>
-            
-            <li><a href="mailto:alex@mulatinho.net">alex@mulatinho.net</a></li>
-            
-        </ul>
-      </div> -->
+      <p>Thoughts about linux, open source, development and life ;)</p>
 
-
-        <p>Thoughts about linux, open source, development and life ;)</p>
-
-      </div>
       <br/>
       <br/>
 
@@ -397,6 +325,7 @@ As you see you can do a lot with this, without this you would need to enter in e
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
+      
     </div>
 
   </div>
