@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="alex.mulatinho.net/feed.xml" rel="self" type="application/atom+xml" /><link href="alex.mulatinho.net/" rel="alternate" type="text/html" /><updated>2017-09-29T11:33:47-03:00</updated><id>alex.mulatinho.net/</id><title type="html">Mulatinho’s Blog</title><subtitle>Thoughts about linux, open source, development and life ;)</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="alex.mulatinho.net/jekyll/update/2017/09/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-09-28T23:55:38-03:00</published><updated>2017-09-28T23:55:38-03:00</updated><id>alex.mulatinho.net/jekyll/update/2017/09/28/welcome-to-jekyll</id><content type="html" xml:base="alex.mulatinho.net/jekyll/update/2017/09/28/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="alex.mulatinho.net/feed.xml" rel="self" type="application/atom+xml" /><link href="alex.mulatinho.net/" rel="alternate" type="text/html" /><updated>2017-09-29T12:26:22-03:00</updated><id>alex.mulatinho.net/</id><title type="html">Mulatinho’s Blog</title><subtitle>Thoughts about linux, open source, development and life ;)</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="alex.mulatinho.net/jekyll/update/2017/09/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-09-28T23:55:38-03:00</published><updated>2017-09-28T23:55:38-03:00</updated><id>alex.mulatinho.net/jekyll/update/2017/09/28/welcome-to-jekyll</id><content type="html" xml:base="alex.mulatinho.net/jekyll/update/2017/09/28/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
@@ -13,7 +13,7 @@
 &lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Two years of remote working: What I learned</title><link href="alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html" rel="alternate" type="text/html" title="Two years of remote working: What I learned" /><published>2017-07-27T00:00:00-03:00</published><updated>2017-07-27T00:00:00-03:00</updated><id>alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned</id><content type="html" xml:base="alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html">&lt;p&gt;&lt;img src=&quot;https://mulatinho.files.wordpress.com/2017/07/img_20170322_140523390.jpg&quot; alt=&quot;IMG_20170322_140523390&quot; /&gt;In this month I completed exactly two years of remote working, what adventure! To remind me about this in future and also to share with you all I resolve to write about that here.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;FEAR&lt;/strong&gt;
-, that was the first emotion that I felt when I decide to abandon my last physical work where I was in job for at least 5 (five) years. I was not happy at all but only who pass for something like that knows what I am talking about, 
+, that was the first emotion that I felt when I decide to abandon my last physical work where I was in job for at least 5 (five) years. I was not happy at all but only who pass for something like that knows what I am talking about,
 it is not easy to change.&lt;/p&gt;
 
 &lt;p&gt;Do I have all the skills to make a change?
@@ -31,40 +31,26 @@ And if I don’t achieve do the new job that I will be contracted?&lt;/p&gt;
 
 &lt;p&gt;The first thing that almost everyone asks me when I say that I work in my home is: “How is to work at home? Seems pretty awesome!” and I always answer at this with “Indeed, it is, but it is not too easy as you think.”*You have to be organized.&lt;/p&gt;
 
-&lt;p&gt;*You have to motivate yourself everyday.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;You have to motivate yourself everyday.&lt;/li&gt;
+  &lt;li&gt;You have to adapt to changes in your company.&lt;/li&gt;
+  &lt;li&gt;You need to be sociable with the people you work.&lt;/li&gt;
+  &lt;li&gt;You NEED to document all you do and log your hours and your work.&lt;/li&gt;
+  &lt;li&gt;And principally, you need to organize your life: do some exercises, organize your food and separate your free time from your job time. Don’t be mad.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;*You have to adapt to changes in your company.&lt;/p&gt;
+&lt;p&gt;Be warned, If you work remote and other people don’t, some changes will happen and sometimes they will forget to consult you, you need to adapt. Some people, like any other job, will had envy or just will try to turn things dificult for you, you have to adapt.&lt;/p&gt;
 
-&lt;p&gt;*You need to be sociable with the people you work.&lt;/p&gt;
-
-&lt;p&gt;*You NEED to document all you do and log your hours and your work.&lt;/p&gt;
-
-&lt;p&gt;*And principally, you need to organize your life: do some exercises, organize your food and separate your free time from your job time. Don’t be mad.
-Be warned, If you work remote and other people don’t, some changes will happen and sometimes they will forget to consult you, you need to adapt. Some people, like any other job, will had envy or just will try to turn things dificult for you, you have to adapt.&lt;/p&gt;
-
-&lt;p&gt;Be 
-&lt;strong&gt;trustable&lt;/strong&gt;
-, be 
-&lt;strong&gt;productive&lt;/strong&gt;
-.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Don’t bother&lt;/strong&gt;
- yourself with 
-&lt;strong&gt;little things&lt;/strong&gt;
-.
-Instead, be clever. Work on 
-&lt;strong&gt;solutions&lt;/strong&gt;
- and 
-&lt;strong&gt;be the solutions&lt;/strong&gt;
-.&lt;/p&gt;
+&lt;p&gt;Be &lt;strong&gt;trustable&lt;/strong&gt;, be &lt;strong&gt;productive&lt;/strong&gt;.
+&lt;strong&gt;Don’t bother&lt;/strong&gt; yourself with &lt;strong&gt;little things&lt;/strong&gt;. Instead, be clever. Work on &lt;strong&gt;solutions&lt;/strong&gt; and &lt;strong&gt;be the solutions&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;If you do a little half of that perhaps you enjoy working remotely too. Otherwise probably you will get disappointed and be the same you was when you decide change, a person with a lot of fears hidden.&lt;/p&gt;
 
 &lt;p&gt;Do you need a change too? Do your soul claims for that?&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Start now&lt;/strong&gt;
-, put the things 
-you need to do in a paper and 
+, put the things
+you need to do in a paper and
 after some time, be the change!&lt;/p&gt;</content><author><name></name></author><category term="life" /><summary type="html">In this month I completed exactly two years of remote working, what adventure! To remind me about this in future and also to share with you all I resolve to write about that here.</summary></entry><entry><title type="html">Devops Docker Basics</title><link href="alex.mulatinho.net/2017/01/29/devops-docker-basics.html" rel="alternate" type="text/html" title="Devops Docker Basics" /><published>2017-01-29T00:00:00-03:00</published><updated>2017-01-29T00:00:00-03:00</updated><id>alex.mulatinho.net/2017/01/29/devops-docker-basics</id><content type="html" xml:base="alex.mulatinho.net/2017/01/29/devops-docker-basics.html">&lt;hr /&gt;
 &lt;p&gt;layout: post
 title: ‘DevOps: Docker Basics’
