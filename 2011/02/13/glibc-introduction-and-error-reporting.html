@@ -119,136 +119,108 @@
 
 <p><strong>Intro</strong></p>
 
-<p>Chapter 1 as one would expect only serves as an introduction to manual and the ANSI C, but with some important information for new developers in C language and especially in the use of GCC. For example, the book considers all the examples will be presented here and in the book are compiled with the argument 
-‘-ansi’ which tells GCC to use the standard ANSI C.</p>
+<p>Chapter 1 as one would expect only serves as an introduction to manual and the ANSI C, but with some important information for new developers in C language and especially in the use of GCC. For example, the book considers all the examples will be presented here and in the book are compiled with the argument ‘-ansi’ which tells GCC to use the standard ANSI C.</p>
 
-<p>Moreover it gives a special attention in the header files (so called ‘
-<strong>#include</strong>
-‘ statements that contains functions, structures, constants, …) citing that such policies should be included in the first lines of source code before any other statement (
-as he says this is not a mandatory rule but must be seen as such), he also talks about the basic difference to include a header in double quotation marks and signs of less than and greater than:</p>
+<p>Moreover it gives a special attention in the header files (so called ‘<strong>#include</strong>’ statements that contains functions, structures, constants, …) citing that such policies should be included in the first lines of source code before any other statement (as he says this is not a mandatory rule but must be seen as such), he also talks about the basic difference to include a header in double quotation marks and signs of less than and greater than:</p>
 
-<p><strong>#include “file.h”</strong>
- It’s typically a header file that you had designed and put in your working directory.</p>
+<p><strong>#include “file.h”</strong> It’s typically a header file that you had designed and put in your working directory.</p>
 
-<p>**#include <stdio.h>**
- Pay attention to the less than sign and greater than when a header is declared in this way means that it is associated with the system and is part of any library.</stdio.h></p>
+<p>**#include <stdio.h>** Pay attention to the less than sign and greater than when a header is declared in this way means that it is associated with the system and is part of any library.</stdio.h></p>
 
 <p>note: an interesting thing that the manual says in this section is that if their functions, structures, etc (header data) is not declared at the beginning of this program may cause a loss in performance of their software.</p>
 
-<p>Another relevant fact of this first section is what the manual says not expected to use reserved words, for example, never declare a variable as exit (because the exit function that exists in libC), this 
-can cause errors in your program or get someone who is reading your code to be confused with that statement. There are several other examples which he cites as variables with ‘E’ followed by capital letters (mean error codes and should not be used, …).</p>
+<p>Another relevant fact of this first section is what the manual says not expected to use reserved words, for example, never declare a variable as exit (because the exit function that exists in libC), this can cause errors in your program or get someone who is reading your code to be confused with that statement. There are several other examples which he cites as variables with ‘E’ followed by capital letters (mean error codes and should not be used, …).</p>
 
 <p>Well of course this is all very basic and that is why I am writing everything very quickly and briefly tell only facts that I found interesting in this introductory chapter.</p>
 
 <p><strong>Error Reporting</strong></p>
 
-<p>This second part is where things get interesting for those who like a little theory and many examples, from here I’ll do some tests I found interesting features in each chapter, this one in particular talks about how to handle and report to the user error code. The header responsible for the functions of interpretation error is 
-<strong>errno.h</strong>
-.</p>
+<p>This second part is where things get interesting for those who like a little theory and many examples, from here I’ll do some tests I found interesting features in each chapter, this one in particular talks about how to handle and report to the user error code. The header responsible for the functions of interpretation error is <strong>errno.h</strong>.</p>
 
-<p>volatile int errno</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>volatile int errno
+</code></pre></div></div>
 
-<p>This variable is quite interesting because it keeps returning the error of each issue of your program, the initial value of this variable is zero, this variable can be changed asynchronously by being kind of volatile, it can be modified via signals but there is a specific signal that stores this value and restore when necessary, this value is modified every time a function returns an error. 
+<p>This variable is quite interesting because it keeps returning the error of each issue of your program, the initial value of this variable is zero, this variable can be changed asynchronously by being kind of volatile, it can be modified via signals but there is a specific signal that stores this value and restore when necessary, this value is modified every time a function returns an error.
 Remember that this variable should not be checked to find out where in your program error occurred.</p>
 
 <p>All values returned by this variable are integers and have a statement in your header with prefix ‘E’ as EAGAIN and EFAULT, below I list three of the hundreds constants error that I found interesting quote as an example:</p>
 
-<p><strong>EACCES:</strong>
- Permission denied.</p>
+<p><strong>EACCES:</strong> Permission denied.</p>
 
-<p><strong>ENOENT:</strong>
- No such file or directory.</p>
+<p><strong>ENOENT:</strong> No such file or directory.</p>
 
-<p><strong>EIO:</strong>
- Input / Output Error.</p>
+<p><strong>EIO:</strong> Input / Output Error.</p>
 
-<p>We will now see a simple example of error trying to 
-open a file that does not exist, in this example we listed below we will not use any error detection function but we can see that the value of the variable 
-<strong>errno</strong>
- is set by the compiler after he found a error in function call.#include 
-#include</p>
+<p>We will now see a simple example of error trying to open a file that does not exist, in this example we listed below we will not use any error detection function but we can see that the value of the variable <strong>errno</strong> is set by the compiler after he found a error in function call.</p>
 
-<p>int main (void)
-(
-    fopen (“/tmp/naoexist.txt”, “r”);
-    printf (“Return errno:%dn”, errno);</p>
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cp">#include &lt;stdio.h&gt;
+#include &lt;errno.h&gt;
+#include &lt;string.h&gt;
+</span>
+<span class="kt">int</span> <span class="nf">main</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">fopen</span> <span class="p">(</span><span class="s">"/tmp/naoexist.txt"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">);</span>
+    <span class="n">printf</span> <span class="p">(</span><span class="s">"Return errno:%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">errno</span><span class="p">);</span>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>return 0; )
-</code></pre></div></div>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
 
-<p>20:14:59 tosh$ ./errno01
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>20:14:59 tosh$ ./errno01
 Return errno: 2
-We could simply read the manual of function 
-‘fopen’ and see what gives when it returns success or error, and in an ‘if’ conditional print something like: “This file does not exist” when he returned NULL (
-null is the return fopen error reported in your manual).</p>
-
-<p>Now let’s see an example of using 
-two error functions of ‘
-<strong>errno.h</strong>
-‘ header that tells us exactly what happened when there was a problem in function call, the statement ‘
-<strong>strerror</strong>
-‘ returns a pointer to a string that holds the content the error message from previous function (
-obviously if it has returned problem, remembering that the goal of these error functions are not detect where a problem occurred, but what problem happened). And the statement ‘
-<strong>perror</strong>
-‘ returns to the standard output the message with something that you put into the function:</p>
-
-<p>#include <stdio.h>
-#include <stdlib.h></stdlib.h></stdio.h></p>
-
-<p>int main (void)
-(
-    FILE *fp;
-    char *p;</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (!(fp = fopen("/tmp/noexist.txt", "r")))
-(
-    / * First function 'strerror' * /
-    p = (char *) strerror (errno);
-    printf ("%sn", p);
-
-    / * Second function 'perror' * /
-    perror ("fopen");    )
 </code></pre></div></div>
 
-<p>return 0;
-)</p>
+<p>We could simply read the manual of function ‘fopen’ and see what gives when it returns success or error, and in an ‘if’ conditional print something like: “This file does not exist” when he returned NULL (null is the return fopen error reported in your manual).</p>
 
-<p>20:48:38 tosh $ ./errno02
+<p>Now let’s see an example of using two error functions of ‘<strong>errno.h</strong>’ header that tells us exactly what happened when there was a problem in function call, the statement ‘<strong>strerror</strong>’ returns a pointer to a string that holds the content the error message from previous function (obviously if it has returned problem, remembering that the goal of these error functions are not detect where a problem occurred, but what problem happened). And the statement ‘<strong>perror</strong>’ returns to the standard output the message with something that you put into the function:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cp">#include &lt;stdio.h&gt;
+#include &lt;errno.h&gt;
+#include &lt;string.h&gt;
+</span>
+<span class="kt">int</span> <span class="n">main</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">(</span>
+    <span class="kt">FILE</span> <span class="o">*</span><span class="n">fp</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">fp</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="s">"/tmp/noexist.txt"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">)))</span>
+    <span class="p">(</span>
+        <span class="cm">/* First function 'strerror' */</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">)</span> <span class="n">strerror</span> <span class="p">(</span><span class="n">errno</span><span class="p">);</span>
+        <span class="n">printf</span> <span class="p">(</span><span class="s">"%sn"</span><span class="p">,</span> <span class="n">p</span><span class="p">);</span>
+
+        <span class="cm">/* Second function 'perror' */</span>
+        <span class="n">perror</span> <span class="p">(</span><span class="s">"fopen"</span><span class="p">);</span>
+   <span class="p">)</span>
+
+   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">)</span></code></pre></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>20:48:38 tosh $ ./errno02
 No such file or directory
 fopen: No such file or directory
-As you see we have two differents outputs but with the same error, the first output was produced by the ‘
-<strong>strerror</strong>
-‘ statement and printed by the ‘
-<strong>printf</strong>
-‘ function, and the second by the ‘
-<strong>perror</strong>
-‘ function. But and if you want to show an error differently that was showed of by standard? The function ‘
-<strong>error</strong>
-‘ can do it for you as listed below:</p>
-
-<p>#include 
-#include</p>
-
-<p>int main (void)
-(
-    fopen (“/tmp/noexist.txt”, “r”);
-    error (0, EACCES, “fopen”);</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>return 0; )
 </code></pre></div></div>
 
-<p>20:48:17 tosh $ ./errno03
+<p>As you see we have two differents outputs but with the same error, the first output was produced by the ‘<strong>strerror</strong>’ statement and printed by the ‘<strong>printf</strong>’ function, and the second by the ‘<strong>perror</strong>’ function. But and if you want to show an error differently that was showed of by standard? The function ‘<strong>error</strong>’ can do it for you as listed below:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cp">#include &lt;stdio.h&gt;
+#include &lt;errno.h&gt;
+#include &lt;string.h&gt;
+</span>
+<span class="kt">int</span> <span class="n">main</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">(</span>
+    <span class="n">fopen</span> <span class="p">(</span><span class="s">"/tmp/noexist.txt"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">);</span>
+    <span class="n">error</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">EACCES</span><span class="p">,</span> <span class="s">"fopen"</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">)</span></code></pre></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>20:48:17 tosh $ ./errno03
 ./errno03: fopen: Permission denied
-Tosh 20:48:19 $ echo $?
+20:48:19 tosh $ echo $?
 0
-We can see two cool things here, the 
-<strong>return code</strong>
- of the program was zero and the message was ‘
-permission denied’. This happens because the function ‘
-<strong>error</strong>
-‘ returns the error code that you pass in the 
-first argument and the code of message that you put in the 
-second argument.</p>
+</code></pre></div></div>
+
+<p>We can see two cool things here, the <strong>return code</strong> of the program was zero and the message was ‘permission denied’. This happens because the function ‘<strong>error</strong>’ returns the error code that you pass in the first argument and the code of message that you put in the second argument.</p>
 
 <p>Well friends, its enough for today! In the next article will talk about dynamic memory allocation described in the chapter three of GNU C library. See you later!</p>
 

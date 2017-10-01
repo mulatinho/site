@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://alex.mulatinho.net/feed.xml" rel="self" type="application/atom+xml" /><link href="http://alex.mulatinho.net/" rel="alternate" type="text/html" /><updated>2017-10-01T18:33:55-03:00</updated><id>http://alex.mulatinho.net/</id><title type="html">Alexandre Mulatinho</title><subtitle>A blog about linux, open source, development and the life of an software engineer ;)</subtitle><entry><title type="html">Two years of remote working: What I learned</title><link href="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html" rel="alternate" type="text/html" title="Two years of remote working: What I learned" /><published>2017-07-27T00:00:00-03:00</published><updated>2017-07-27T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned</id><content type="html" xml:base="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html">&lt;p&gt;&lt;img src=&quot;https://mulatinho.files.wordpress.com/2017/07/img_20170322_140523390.jpg&quot; alt=&quot;IMG_20170322_140523390&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://alex.mulatinho.net/feed.xml" rel="self" type="application/atom+xml" /><link href="http://alex.mulatinho.net/" rel="alternate" type="text/html" /><updated>2017-10-01T19:23:47-03:00</updated><id>http://alex.mulatinho.net/</id><title type="html">Alexandre Mulatinho</title><subtitle>A blog about linux, open source, development and the life of an software engineer ;)</subtitle><entry><title type="html">Two years of remote working: What I learned</title><link href="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html" rel="alternate" type="text/html" title="Two years of remote working: What I learned" /><published>2017-07-27T00:00:00-03:00</published><updated>2017-07-27T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned</id><content type="html" xml:base="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html">&lt;p&gt;&lt;img src=&quot;https://mulatinho.files.wordpress.com/2017/07/img_20170322_140523390.jpg&quot; alt=&quot;IMG_20170322_140523390&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In this month I completed exactly two years of remote working, what adventure! To remind me about this in future and also to share with you all I resolve to write about that here.&lt;/p&gt;
 
@@ -448,141 +448,181 @@ Starting libvirtd: /usr/sbin/libvirtd -d
  1 slack64-srv01 running
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;And that’s it for now! Wait for my new article soon: &lt;strong&gt;KVM Virtualization with command line.&lt;/strong&gt; Hope you enjoy it! :)&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="slackware" /><category term="virtualization" /><summary type="html">Hello friends!</summary></entry><entry><title type="html">Desafio Shell Script 001</title><link href="http://alex.mulatinho.net/2016/08/17/desafio-shell-script-001.html" rel="alternate" type="text/html" title="Desafio Shell Script 001" /><published>2016-08-17T00:00:00-03:00</published><updated>2016-08-17T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/08/17/desafio-shell-script-001</id><content type="html" xml:base="http://alex.mulatinho.net/2016/08/17/desafio-shell-script-001.html">&lt;hr /&gt;
-&lt;p&gt;layout: post
-title: ‘Desafio Shell Script #001’
-tags:&lt;/p&gt;
+&lt;p&gt;And that’s it for now! Wait for my new article soon: &lt;strong&gt;KVM Virtualization with command line.&lt;/strong&gt; Hope you enjoy it! :)&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="slackware" /><category term="virtualization" /><summary type="html">Hello friends!</summary></entry><entry><title type="html">Desafio Shell Script #001</title><link href="http://alex.mulatinho.net/2016/08/17/desafio-shell-script-001.html" rel="alternate" type="text/html" title="Desafio Shell Script #001" /><published>2016-08-17T00:00:00-03:00</published><updated>2016-08-17T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/08/17/desafio-shell-script-001</id><content type="html" xml:base="http://alex.mulatinho.net/2016/08/17/desafio-shell-script-001.html">&lt;p&gt;Dona Fernanda resolveu casar-se com Carlos, o padre porém disse que os noivos não poderiam escolher a data de casamento devido a grande quantidade de solicitações na igreja. Vários noivos também estavam ansiosos para saber quando poderiam se casar naquela linda igreja, para dizer a cada casal o dia exato em que eles poderiam se casar o padre solicitou que eles fornecessem de 1 até 5 dias no mês de sua preferência e desenvolveu um algoritmo que ajudaria a resolver este impasse de forma aleatória e justa agora e no futuro, ele definiu:&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;bash&lt;/li&gt;
-  &lt;li&gt;challenges&lt;/li&gt;
-  &lt;li&gt;programming&lt;/li&gt;
-  &lt;li&gt;script
-—Dona Fernanda resolveu casar-se com Carlos, o padre porém disse que os noivos não poderiam escolher a data de casamento devido a grande quantidade de solicitações na igreja. Vários noivos também estavam ansiosos para saber quando poderiam se casar naquela linda igreja, para dizer a cada casal o dia exato em que eles poderiam se casar o padre solicitou que eles fornecessem de 1 até 5 dias no mês de sua preferência e desenvolveu um algoritmo que ajudaria a resolver este impasse de forma aleatória e justa agora e no futuro, ele definiu:&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;T&lt;/strong&gt; - quantidade de casamentos na fila&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;M&lt;/strong&gt; - mês do casamento&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;N&lt;/strong&gt; - quantidade de dias do mês disponível&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Vx&lt;/strong&gt; - Valor do dia na posição X (V1, V2, V3…)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;*T&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&quot;entrada-válida&quot;&gt;ENTRADA VÁLIDA&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;TN
+V1 V2 V3 … Vx
+M
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Cada linha corresponde a uma entrada do casal, então se &lt;strong&gt;T&lt;/strong&gt; for igual &lt;strong&gt;10&lt;/strong&gt;, existiriam 10 casais para casar na igreja em determinado mês, e por consequência, haveriam 10 linhas de entrada informando os dias preferidos do casal.&lt;/p&gt;
+
+&lt;h4 id=&quot;por-exemplo&quot;&gt;POR EXEMPLO&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;5
+5 2 7 5 8 14
+5 2 4 14 8 15
+1 4
+0
+3 2 7 9
+2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;restrições&quot;&gt;RESTRIÇÕES&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;T &amp;gt; 0 &amp;amp;&amp;amp; T &amp;lt;= 20&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;M &amp;gt; 0 &amp;amp;&amp;amp; M &amp;lt;= 12&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;N &amp;gt; 0 &amp;amp;&amp;amp; N &amp;lt;= 5&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;V &amp;gt; 0 &amp;amp;&amp;amp; V &amp;lt; 32&lt;/strong&gt;&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;quantidade de casamentos na fila&lt;/li&gt;
+  &lt;li&gt;O dia a ser escolhido deve ser o &lt;strong&gt;menor do grupo&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Caso um casal tenha selecionado um dia já escolhido por outro ele ficará com o próximo dia possível, se houver (por exemplo, &lt;strong&gt;A&lt;/strong&gt; = 4 = { 1, 3, 4, 6 } se os dias &lt;strong&gt;1, 3 e 4&lt;/strong&gt; já tiverem sido escolhidos, o casal poderá tentar o próximo item, o quarto número, o dia &lt;strong&gt;6&lt;/strong&gt;), &lt;strong&gt;mas precisa ser sempre o menor número do grupo&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Em caso de não haver outro dia disponível para o casal deverá ser escrito:
+    &lt;ul&gt;
+      &lt;li&gt;“O casal número &lt;strong&gt;N&lt;/strong&gt; só pode casar no próximo mês pois já tem um casal nos dias selecionados”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Em caso de violação de restrição deverá ser escrito
+    &lt;ul&gt;
+      &lt;li&gt;“Padre, foi encontrado uma inconsistência nos dados.”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;*M&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;mês do casamento&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&quot;resposta-válida--saída-válida&quot;&gt;RESPOSTA VÁLIDA / SAÍDA VÁLIDA&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;*N&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;quantidade de dias do mês disponível&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Padre, são 5 Casamentos em Fevereiro
+O casal número 1 ficou de casar no dia 2 de Fevereiro
+O casal número 2 ficou de casar no dia 4 de Fevereiro
+O casal número 3 só pode casar no próximo mês pois já tem um casal nos dias selecionados
+Padre, foi encontrado uma inconsistência nos dados.
+O casal número 5 ficou de casar no dia 7 de Fevereiro
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;*Vx&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Valor do dia na posição X (V1, V2, V3…)&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&quot;explicação-da-saída&quot;&gt;EXPLICAÇÃO DA SAÍDA&lt;/h3&gt;
 
-&lt;p&gt;###&lt;strong&gt;ENTRADA VÁLIDA&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“Padre, são 5 casamentos em Fevereiro”&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;TN V1 V2 V3 … VxM&lt;/p&gt;
+&lt;p&gt;é o número &lt;strong&gt;T&lt;/strong&gt; de casamentos de entrada e o mês &lt;strong&gt;M&lt;/strong&gt; da entrada&lt;/p&gt;
 
-&lt;p&gt;Cada linha corresponde a uma entrada do casal, então se 
-&lt;strong&gt;T&lt;/strong&gt;
- for igual 
-&lt;strong&gt;10&lt;/strong&gt;
-, existiriam 10 casais para casar na igreja em determinado mês, e por consequência, haveriam 10 linhas de entrada informando os dias preferidos do casal.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“O casal número 1 ficou de casar no dia 2 de Fevereiro”&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;###&lt;strong&gt;POR EXEMPLO&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;é o primeiro casal que tem os dias N = {2, 7, 5, 8, 14} disponíveis e o menor possível é o dia 2 de Fevereiro&lt;/p&gt;
 
-&lt;p&gt;55 2 7 5 8 145 2 4 14 8 151 403 2 7 92&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“O casal número 2 ficou de casar no dia 4 de Fevereiro”&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;###&lt;strong&gt;RESTRIÇÕES&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;é o segundo casal que tem os dias N = {2, 4, 14, 8, 15} disponíveise o menor possível é o dia 4 de Fevereiro&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;T &amp;gt; 0 &amp;amp;&amp;amp; T &amp;lt;= 20M &amp;gt; 0 &amp;amp;&amp;amp; M &amp;lt;= 12N &amp;gt; 0 &amp;amp;&amp;amp; N &amp;lt;= 5V &amp;gt; 0 &amp;amp;&amp;amp; V &amp;lt; 32 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“O casal número 3 só pode casar no próximo mês pois já tem um casal nos dias selecionados”&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;*O dia a ser escolhido deve ser o 
-&lt;strong&gt;menor do grupo&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;é o terceiro casal que tem os dias N = {4} disponíveis mas como já existia um casal com o dia 4, não é possível realizar o casamento&lt;/p&gt;
 
-&lt;p&gt;*Caso um casal tenha selecionado um dia já escolhido por outro ele ficará com o próximo dia possível, se houver (por exemplo, 
-&lt;strong&gt;A&lt;/strong&gt;
- = 4 = { 1, 3, 4, 6 } se os dias 
-&lt;strong&gt;1, 3 e 4&lt;/strong&gt;
- já tiverem sido escolhidos, o casal poderá tentar o próximo item, o quarto número, o dia 
-&lt;strong&gt;6&lt;/strong&gt;
-), 
-&lt;strong&gt;mas precisa ser sempre o menor número do grupo&lt;/strong&gt;
-.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“Padre, foi encontrado uma inconsistência nos dados do casal 4.  :(“&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;*Em caso de não haver outro dia disponível para o casal deverá ser escrito:&lt;/p&gt;
+&lt;p&gt;é a mensagem de erro em caso de violação de restrição&lt;/p&gt;
 
-&lt;p&gt;*“O casal número 
-&lt;strong&gt;N&lt;/strong&gt;
- só pode casar no próximo mês pois já tem um casal nos dias selecionados”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“O casal número 5 ficou de casar no dia 7 de Fevereiro”&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;*Em caso de violação de restrição deverá ser escrito&lt;/p&gt;
+&lt;p&gt;é o quinto casal que tem os dias N = {2 7 9} disponíveis e o menor possível é o dia 7 de Fevereiro&lt;/p&gt;
 
-&lt;p&gt;*“Padre, foi encontrado uma inconsistência nos dados.”&lt;/p&gt;
-
-&lt;p&gt;###&lt;strong&gt;RESPOSTA VÁLIDA / SAÍDA VÁLIDA&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Padre, são 5 Casamentos em FevereiroO casal número 1 ficou de casar no dia 2 de FevereiroO casal número 2 ficou de casar no dia 4 de FevereiroO casal número 3 só pode casar no próximo mês pois já tem um casal nos dias selecionadosPadre, foi encontrado uma inconsistência nos dados.O casal número 5 ficou de casar no dia 7 de Fevereiro&lt;/p&gt;
-
-&lt;p&gt;###&lt;strong&gt;EXPLICAÇÃO DA SAÍDA&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;“Padre, são 5 casamentos em Fevereiro”&lt;/strong&gt;
- é o número 
-&lt;strong&gt;T&lt;/strong&gt;
- de casamentos de entrada e o mês 
-&lt;strong&gt;M&lt;/strong&gt;
- da entrada&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;“O casal número 1 ficou de casar no dia 2 de Fevereiro”&lt;/strong&gt;
-é o primeiro casal que tem os dias N = {2, 7, 5, 8, 14} disponíveis e o menor possível é o dia 2 de Fevereiro&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;“O casal número 2 ficou de casar no dia 4 de Fevereiro”&lt;/strong&gt;
- é o segundo casal que tem os dias N = {2, 4, 14, 8, 15} disponíveise o menor possível é o dia 4 de Fevereiro&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;“O casal número 3 só pode casar no próximo mês pois já tem um casal nos dias selecionados”&lt;/strong&gt;
-é o terceiro casal que tem os dias N = {4} disponíveis mas como já existia um casal com o dia 4, não é possível realizar o casamento&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;“Padre, foi encontrado uma inconsistência nos dados do casal 4.  :(“&lt;/strong&gt;
-é a mensagem de erro em caso de violação de restrição&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;“O casal número 5 ficou de casar no dia 7 de Fevereiro”&lt;/strong&gt;
-é o quinto casal que tem os dias N = {2 7 9} disponíveis e o menor possível é o dia 7 de Fevereiro&lt;/p&gt;
-
-&lt;p&gt;###MAIS TESTES PARA VALIDAÇÃO&lt;/p&gt;
+&lt;h4 id=&quot;mais-testes-para-validação&quot;&gt;MAIS TESTES PARA VALIDAÇÃO&lt;/h4&gt;
 
 &lt;p&gt;&lt;strong&gt;Gerador de testes aleatórios válidos&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;bash$ ( T=$(( (RANDOM % 20) + 1 )); echo $T; \
-for i in &lt;code class=&quot;highlighter-rouge&quot;&gt;seq 1 $T&lt;/code&gt;; \
-do N=$(( (RANDOM % 5) + 1 )) ; echo -n “$N “; \
-for x in &lt;code class=&quot;highlighter-rouge&quot;&gt;seq 1 $N&lt;/code&gt;; do V=$(( (RANDOM % 31) + 1)); echo -n “$V “; done; \
-echo; done; echo $(( (RANDOM % 12) +1 )) )&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bash$ ( T=$(( (RANDOM % 20) + 1 )); echo $T; \
+for i in `seq 1 $T`; \
+do N=$(( (RANDOM % 5) + 1 )) ; echo -n &quot;$N &quot;; \
+for x in `seq 1 $N`; do V=$(( (RANDOM % 31) + 1)); echo -n &quot;$V &quot;; done; \
+echo; done; echo $(( (RANDOM % 12) +1 )) )
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Teste #01&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;55 21 26 4 1 155 19 11 7 16 171 284 29 6 21 251 115&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;5
+5 21 26 4 1 15
+5 19 11 7 16 17
+1 28
+4 29 6 21 25
+1 115
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Teste #02&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;33 28 26 72 29 163 8 14 154&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;3
+3 28 26 7
+2 29 16
+3 8 14 15
+4
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Teste #03&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;53 17 31 161 151 74 31 30 12 12 20 273&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;5
+3 17 31 16
+1 15
+1 7
+4 31 30 12 1
+2 20 27
+3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Teste #04&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;181 213 23 24 55 15 11 19 28 85 11 9 16 16 51 41 44 4 8 7 264 23 12 11 281 72 28 273 27 13 313 30 29 115 2 5 10 20 145 4 16 5 17 252 3 202 17 25 19 21 2 24 255 16 8 18 23 285&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;18
+1 21
+3 23 24 5
+5 15 11 19 28 8
+5 11 9 16 16 5
+1 4
+1 4
+4 4 8 7 26
+4 23 12 11 28
+1 7
+2 28 27
+3 27 13 31
+3 30 29 11
+5 2 5 10 20 14
+5 4 16 5 17 25
+2 3 20
+2 17 2
+5 19 21 2 24 25
+5 16 8 18 23 28
+5
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Teste #05&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;115 7 19 30 2 223 8 23 305 25 4 16 17 313 18 31 143 6 3 192 20 12 27 222 16 194 9 28 18 212 10 202 29 97
-Quer ver a minha versão com entradas e saídas funcionando??&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;11
+5 7 19 30 2 22
+3 8 23 30
+5 25 4 16 17 31
+3 18 31 14
+3 6 3 19
+2 20 1
+2 27 22
+2 16 19
+4 9 28 18 21
+2 10 20
+2 29 9
+7
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://pastebin.com/VvbxBZWD&quot;&gt;http://pastebin.com/VvbxBZWD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Quer ver a minha versão com entradas e saídas funcionando?? &lt;a href=&quot;http://pastebin.com/VvbxBZWD&quot;&gt;http://pastebin.com/VvbxBZWD&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Conseguiu resolver? Poste suas respostas nos comentários! Quer saber a solução? Entre em contato comigo ou procure na lista de Shell-Script a thread “Desafio Shell-Script #001 do Mulato” ;-)&lt;/p&gt;</content><author><name></name></author><summary type="html">layout: post title: ‘Desafio Shell Script #001’ tags: bash challenges programming script —Dona Fernanda resolveu casar-se com Carlos, o padre porém disse que os noivos não poderiam escolher a data de casamento devido a grande quantidade de solicitações na igreja. Vários noivos também estavam ansiosos para saber quando poderiam se casar naquela linda igreja, para dizer a cada casal o dia exato em que eles poderiam se casar o padre solicitou que eles fornecessem de 1 até 5 dias no mês de sua preferência e desenvolveu um algoritmo que ajudaria a resolver este impasse de forma aleatória e justa agora e no futuro, ele definiu:</summary></entry><entry><title type="html">Bash Financeiro na Bolsa</title><link href="http://alex.mulatinho.net/2016/08/11/bash-financeiro-na-bolsa.html" rel="alternate" type="text/html" title="Bash Financeiro na Bolsa" /><published>2016-08-11T00:00:00-03:00</published><updated>2016-08-11T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/08/11/bash-financeiro-na-bolsa</id><content type="html" xml:base="http://alex.mulatinho.net/2016/08/11/bash-financeiro-na-bolsa.html">&lt;p&gt;bom, eu diariamente utilizo os cálculos listados neste artigo para poder realizar os meus próprios investimentos, por isso achei que poderia ser útil para alguém, pretendo atualizar com mais no futuro; existe bilhões de pessoas neste mundo e cada um tem um jeito de realizar suas tarefas, meus cálculos geralmente são feitos utilizando a shell BASH em vez de uma calculadora comum. (p.s. valores abaixo sem citar impostos de day-trade, corretagem e emolumentos)&lt;/p&gt;
+&lt;p&gt;Conseguiu resolver? Poste suas respostas nos comentários! Quer saber a solução? Entre em contato comigo ou procure na lista de Shell-Script a thread “Desafio Shell-Script #001 do Mulato” ;-)&lt;/p&gt;</content><author><name></name></author><category term="bash" /><category term="challenges" /><category term="programming" /><category term="script" /><summary type="html">Dona Fernanda resolveu casar-se com Carlos, o padre porém disse que os noivos não poderiam escolher a data de casamento devido a grande quantidade de solicitações na igreja. Vários noivos também estavam ansiosos para saber quando poderiam se casar naquela linda igreja, para dizer a cada casal o dia exato em que eles poderiam se casar o padre solicitou que eles fornecessem de 1 até 5 dias no mês de sua preferência e desenvolveu um algoritmo que ajudaria a resolver este impasse de forma aleatória e justa agora e no futuro, ele definiu:</summary></entry><entry><title type="html">Bash Financeiro na Bolsa</title><link href="http://alex.mulatinho.net/2016/08/11/bash-financeiro-na-bolsa.html" rel="alternate" type="text/html" title="Bash Financeiro na Bolsa" /><published>2016-08-11T00:00:00-03:00</published><updated>2016-08-11T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/08/11/bash-financeiro-na-bolsa</id><content type="html" xml:base="http://alex.mulatinho.net/2016/08/11/bash-financeiro-na-bolsa.html">&lt;p&gt;bom, eu diariamente utilizo os cálculos listados neste artigo para poder realizar os meus próprios investimentos, por isso achei que poderia ser útil para alguém, pretendo atualizar com mais no futuro; existe bilhões de pessoas neste mundo e cada um tem um jeito de realizar suas tarefas, meus cálculos geralmente são feitos utilizando a shell BASH em vez de uma calculadora comum. (p.s. valores abaixo sem citar impostos de day-trade, corretagem e emolumentos)&lt;/p&gt;
 
 &lt;hr /&gt;
 

@@ -113,7 +113,7 @@
 
 <p>Então vamos fazer um caso de uso básico, suponha que você tenha 50 imagens e precise editar cada uma delas, você vai fazer via console com dois ou três comandos ou editar um a um os cinquenta arquivos!? Eu tenho mais o que fazer, então vamos lá!</p>
 
-<p><a href="http://alex.mulatinho.net/wp-content/uploads/2014/02/gtkfingerprint-01.png">Imagem original pode ser vista clicando aqui.</a>mulatinho@forrest:~$ ls
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mulatinho@forrest:~$ ls
 gtkfingerprint-01.png gtkfingerprint-10.png gtkfingerprint-19.png gtkfingerprint-28.png gtkfingerprint-37.png gtkfingerprint-46.png
 gtkfingerprint-02.png gtkfingerprint-11.png gtkfingerprint-20.png gtkfingerprint-29.png gtkfingerprint-38.png gtkfingerprint-47.png
 gtkfingerprint-03.png gtkfingerprint-12.png gtkfingerprint-21.png gtkfingerprint-30.png gtkfingerprint-39.png gtkfingerprint-48.png
@@ -121,162 +121,74 @@ gtkfingerprint-04.png gtkfingerprint-13.png gtkfingerprint-22.png gtkfingerprint
 gtkfingerprint-05.png gtkfingerprint-14.png gtkfingerprint-23.png gtkfingerprint-32.png gtkfingerprint-41.png gtkfingerprint-50.png
 gtkfingerprint-07.png gtkfingerprint-16.png gtkfingerprint-25.png gtkfingerprint-34.png gtkfingerprint-43.png
 gtkfingerprint-08.png gtkfingerprint-17.png gtkfingerprint-26.png gtkfingerprint-35.png gtkfingerprint-44.png
-gtkfingerprint-09.png gtkfingerprint-18.png gtkfingerprint-27.png gtkfingerprint-36.png gtkfingerprint-45.png</p>
+gtkfingerprint-09.png gtkfingerprint-18.png gtkfingerprint-27.png gtkfingerprint-36.png gtkfingerprint-45.png
+</code></pre></div></div>
 
-<p><strong>Lição 1: Recortando imagens.</strong></p>
+<h4 id="lição-1-recortando-imagens">Lição 1: Recortando imagens</h4>
 
-<p>mulatinho@forrest:~$ convert gtkfingerprint-01.png -crop 800x600+150x300 gtkfingerprint-01_cut.png
-(recorte básico da imagem pegando apenas o quadro que desejamos.)</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mulatinho@forrest:~$ convert gtkfingerprint-01.png -crop 800x600+150x300 gtkfingerprint-01_cut.png
+(recorte básico da imagem pegando apenas o quadro que desejamos.)
 
-<p>mulatinho@forrest:~$ for i in <code class="highlighter-rouge">ls gtkfingerprint-*png</code>; do 
-convert $i -crop 800x600+150x300 <code class="highlighter-rouge">echo $i | sed -e 's/.png/_cut.png/'</code>; done
+mulatinho@forrest:~$ for i in `ls gtkfingerprint-*png`; do
+convert $i -crop 800x600+150x300 `echo $i | sed -e 's/.png/_cut.png/'`; done
 (recortando todas as imagens na mesma posição e do mesmo tamanho com um pouquinho de shellscript)
-Abaixo podemos ver o resultado da saída de todas as imagens recortadas.</p>
+</code></pre></div></div>
 
-<p>mulatinho@forrest:~$ ls <em>cut</em>png
+<p>Abaixo podemos ver o resultado da saída de todas as imagens recortadas.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mulatinho@forrest:~$ ls *cut*png
 gtkfingerprint-01_cut.png gtkfingerprint-11_cut.png gtkfingerprint-21_cut.png gtkfingerprint-31_cut.png gtkfingerprint-41_cut.png
 gtkfingerprint-02_cut.png gtkfingerprint-12_cut.png gtkfingerprint-22_cut.png gtkfingerprint-32_cut.png gtkfingerprint-42_cut.png
-…. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. ….
-gtkfingerprint-10_cut.png gtkfingerprint-20_cut.png gtkfingerprint-30_cut.png gtkfingerprint-40_cut.png gtkfingerprint-50_cut.png</p>
+.... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... ....
+gtkfingerprint-10_cut.png gtkfingerprint-20_cut.png gtkfingerprint-30_cut.png gtkfingerprint-40_cut.png gtkfingerprint-50_cut.png
+</code></pre></div></div>
 
-<p><a href="http://alex.mulatinho.net/wp-content/uploads/2014/02/gtkfingerprint-01_cut.png">Imagem recortada, depois de manipulada pode ser vista aqui.</a></p>
-
-<p><strong>Lição 2: Redimensionando imagens.</strong></p>
+<h4 id="lição-2-redimensionando-imagens">Lição 2: Redimensionando imagens</h4>
 
 <p>Muitas vezes também precisamos redimensionar imagens, neste caso eu precisei de imagens com 75% do tamanho (que eu criei com sufixo ‘_med.png’) para colocar dentro de umas tabelas num documento LaTeX afim de descrever o funcionamento da ferramenta e também precisei de thumbnail’s com cerca de 50% do tamanho original (que eu criei com o sufixo ‘_min.png’) das imagens para mostrar em um website. Ficou assim:</p>
 
-<p>mulatinho@forrest:~$ convert gtkfingerprint-01_cut.png -resize 75% gtkfingerprint-01_med.png
-(redimensionando apenas uma imagem em torno de 75%)</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mulatinho@forrest:~$ convert gtkfingerprint-01_cut.png -resize 75% gtkfingerprint-01_med.png
+(redimensionando apenas uma imagem em torno de 75%)
 
-<p>mulatinho@forrest:~$ for i in <code class="highlighter-rouge">ls *cut.png</code>; do 
-convert $i -resize 75% <code class="highlighter-rouge">echo $i | sed -e 's/_cut.png/_med.png/'</code>; done
-(novamente fazendo o mesmo com todas as imagens, redimensionando-as com apenas um comando)</p>
+mulatinho@forrest:~$ for i in `ls *cut.png`; do
+convert $i -resize 75% `echo $i | sed -e 's/_cut.png/_med.png/'`; done
+(novamente fazendo o mesmo com todas as imagens, redimensionando-as com apenas um comando)
 
-<p>mulatinho@forrest:~$ for i in <code class="highlighter-rouge">ls *cut.png</code>; do 
-convert $i -resize 50% <code class="highlighter-rouge">echo $i | sed -e 's/_cut.png/_min.png/'</code>; done
-(e redimensionando todas as imagens com 50% do tamanho adicionando o sufixo ‘min’)</p>
-
-<p>mulatinho@forrest:~$ for i in *pdf; do 
-convert -thumbnail x200 $i[0] -flatten $i.jpg; done
-(converte primeira pagina de pdfs em uma imagem)
-Então galera, vez ou outra seja por alguma documentação ou outra coisa eu preciso manipular uma série de imagens, é complicado você abrir o GIMP uma por uma e fazer o que você quer, para evitar esse trabalho todo eu costumo usar um comando do pacote ImageMagick chamado ‘convert’. O convert é um canivete suíço na manipulação de imagens via linha de comando, aqui eu vou mostrar apenas algumas operações como: redimensionar, recortar e converter imagens.</p>
-
-<p>Então vamos fazer um caso de uso básico, suponha que você tenha 50 imagens e precise editar cada uma delas, você vai fazer via console com dois ou três comandos ou editar um a um os cinquenta arquivos!? Eu tenho mais o que fazer, então vamos lá!</p>
-
-<p><a href="http://alex.mulatinho.net/wp-content/uploads/2014/02/gtkfingerprint-01.png">Imagem original pode ser vista clicando aqui.</a></p>
-
-<p>mulatinho@forrest:~$ ls
-gtkfingerprint-01.png gtkfingerprint-10.png gtkfingerprint-19.png gtkfingerprint-28.png gtkfingerprint-37.png gtkfingerprint-46.png
-gtkfingerprint-02.png gtkfingerprint-11.png gtkfingerprint-20.png gtkfingerprint-29.png gtkfingerprint-38.png gtkfingerprint-47.png
-gtkfingerprint-03.png gtkfingerprint-12.png gtkfingerprint-21.png gtkfingerprint-30.png gtkfingerprint-39.png gtkfingerprint-48.png
-gtkfingerprint-04.png gtkfingerprint-13.png gtkfingerprint-22.png gtkfingerprint-31.png gtkfingerprint-40.png gtkfingerprint-49.png
-gtkfingerprint-05.png gtkfingerprint-14.png gtkfingerprint-23.png gtkfingerprint-32.png gtkfingerprint-41.png gtkfingerprint-50.png
-gtkfingerprint-07.png gtkfingerprint-16.png gtkfingerprint-25.png gtkfingerprint-34.png gtkfingerprint-43.png
-gtkfingerprint-08.png gtkfingerprint-17.png gtkfingerprint-26.png gtkfingerprint-35.png gtkfingerprint-44.png
-gtkfingerprint-09.png gtkfingerprint-18.png gtkfingerprint-27.png gtkfingerprint-36.png gtkfingerprint-45.png</p>
-
-<p><strong>Lição 1: Recortando imagens.</strong></p>
-
-<p>mulatinho@forrest:~$ convert gtkfingerprint-01.png -crop 800x600+150x300 gtkfingerprint-01_cut.png
-(recorte básico da imagem pegando apenas o quadro que desejamos.)</p>
-
-<p>mulatinho@forrest:~$ for i in <code class="highlighter-rouge">ls gtkfingerprint-*png</code>; do 
-convert $i -crop 800x600+150x300 <code class="highlighter-rouge">echo $i | sed -e 's/.png/_cut.png/'</code>; done
-(recortando todas as imagens na mesma posição e do mesmo tamanho com um pouquinho de shellscript)
-Abaixo podemos ver o resultado da saída de todas as imagens recortadas.</p>
-
-<p>mulatinho@forrest:~$ ls <em>cut</em>png
-gtkfingerprint-01_cut.png gtkfingerprint-11_cut.png gtkfingerprint-21_cut.png gtkfingerprint-31_cut.png gtkfingerprint-41_cut.png
-gtkfingerprint-02_cut.png gtkfingerprint-12_cut.png gtkfingerprint-22_cut.png gtkfingerprint-32_cut.png gtkfingerprint-42_cut.png
-…. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. …. ….
-gtkfingerprint-10_cut.png gtkfingerprint-20_cut.png gtkfingerprint-30_cut.png gtkfingerprint-40_cut.png gtkfingerprint-50_cut.png</p>
-
-<p><a href="http://alex.mulatinho.net/wp-content/uploads/2014/02/gtkfingerprint-01_cut.png">Imagem recortada, depois de manipulada pode ser vista aqui.</a></p>
-
-<p><strong>Lição 2: Redimensionando imagens.</strong></p>
-
-<p>Muitas vezes também precisamos redimensionar imagens, neste caso eu precisei de imagens com 75% do tamanho (que eu criei com sufixo ‘_med.png’) para colocar dentro de umas tabelas num documento LaTeX afim de descrever o funcionamento da ferramenta e também precisei de thumbnail’s com cerca de 50% do tamanho original (que eu criei com o sufixo ‘_min.png’) das imagens para mostrar em um website. Ficou assim:</p>
-
-<p>mulatinho@forrest:~$ convert gtkfingerprint-01_cut.png -resize 75% gtkfingerprint-01_med.png
-(redimensionando apenas uma imagem em torno de 75%)</p>
-
-<p>mulatinho@forrest:~$ for i in <code class="highlighter-rouge">ls *cut.png</code>; do 
-convert $i -resize 75% <code class="highlighter-rouge">echo $i | sed -e 's/_cut.png/_med.png/'</code>; done
-(novamente fazendo o mesmo com todas as imagens, redimensionando-as com apenas um comando)</p>
-
-<p>mulatinho@forrest:~$ for i in <code class="highlighter-rouge">ls *cut.png</code>; do 
-convert $i -resize 50% <code class="highlighter-rouge">echo $i | sed -e 's/_cut.png/_min.png/'</code>; done
-(e redimensionando todas as imagens com 50% do tamanho adicionando o sufixo ‘min’)</p>
-
-<p>https://mulatinho.files.wordpress.com/2015/04/softlivrev2-140610222148-phpapp02.pdf</p>
-
-<p><a href="http://alex.mulatinho.net/wp-content/uploads/2014/02/gtkfingerprint-01_med.png">Você pode ver o resultado da imagem com 75% do seu tamanho original clicando aqui.</a></p>
-
-<p><a href="http://alex.mulatinho.net/wp-content/uploads/2014/02/gtkfingerprint-01_min.png">Você pode ver o resultado da imagem com 50% do seu tamanho original clicando aqui.</a></p>
+mulatinho@forrest:~$ for i in `ls *cut.png`; do
+convert $i -resize 50% `echo $i | sed -e 's/_cut.png/_min.png/'`; done
+(e redimensionando todas as imagens com 50% do tamanho adicionando o sufixo 'min')
+</code></pre></div></div>
 
 <p>As vezes temos situações em que uma imagem está numa qualidade muito grande, isso acontece com as fotos dos celulares mais modernos hoje em dia, e aí fica difícil da gente enviar pros nosso amigos e familiares um álbum cheio de imagens imensas por e-mail ou numa rede social, para facilitar isso a gente geralmente reduz a qualidade da imagem ou até mesmo a redimensiona como vimos acima.</p>
 
-<p><strong>Lição 3: Convertendo imagens.</strong></p>
+<h4 id="lição-3-convertendo-imagens">Lição 3: Convertendo imagens</h4>
 
 <p>Existem vezes em que simplesmente desejamos converter um formato de imagem, isso também é muito fácil de fazer com o convert que suporta vários formatos como: JPEG, GIF, PNG, BMP, etc. Vejamos alguns exemplos de conversão de imagens:</p>
 
-<p>mulatinho@forrest:~$ convert gtkfingerprint-01_cut.png gtkfingerprint-01_cut.bmp
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mulatinho@forrest:~$ convert gtkfingerprint-01_cut.png gtkfingerprint-01_cut.bmp
 (converte a imagem para o formato BMP, pior compressão, windows suqz)
 mulatinho@forrest:~$ convert gtkfingerprint-01_cut.png gtkfingerprint-01_cut.gif
 (converte a imagem para o formato GIF, ótima compressão)
 mulatinho@forrest:~$ convert gtkfingerprint-01_cut.png gtkfingerprint-01_cut.jpg
 (converte a imagem para o formato JPG, compressão legal)
 mulatinho@forrest:~$ ls -l gtkfingerprint-01_cut.*
--rw-r–r– 1 mulatinho mulatinho 673338 Feb  7 21:49 gtkfingerprint-01_cut.bmp
--rw-r–r– 1 mulatinho mulatinho  25005 Feb  7 21:46 gtkfingerprint-01_cut.gif
--rw-r–r– 1 mulatinho mulatinho  42447 Feb  7 21:50 gtkfingerprint-01_cut.jpg
--rw-r–r– 1 mulatinho mulatinho  30433 Feb  7 21:19 gtkfingerprint-01_cut.png
+-rw-r--r-- 1 mulatinho mulatinho 673338 Feb  7 21:49 gtkfingerprint-01_cut.bmp
+-rw-r--r-- 1 mulatinho mulatinho  25005 Feb  7 21:46 gtkfingerprint-01_cut.gif
+-rw-r--r-- 1 mulatinho mulatinho  42447 Feb  7 21:50 gtkfingerprint-01_cut.jpg
+-rw-r--r-- 1 mulatinho mulatinho  30433 Feb  7 21:19 gtkfingerprint-01_cut.png
 mulatinho@forrest:~$ file -bi gtkfingerprint-01_cut.*
 application/octet-stream; charset=binary
 image/gif; charset=binary
 image/jpeg; charset=binary
-image/png; charset=binary</p>
+image/png; charset=binary
+</code></pre></div></div>
 
-<p><strong>Links com alguns extras.</strong></p>
+<h4 id="links-com-alguns-extras">Links com alguns extras.</h4>
 
-<p><a href="http://www.imagemagick.org/Usage/photos/">http://www.imagemagick.org/Usage/photos/</a></p>
-
-<p><a href="http://www.imagemagick.org/script/convert.php#usage">http://www.imagemagick.org/script/convert.php#usage</a></p>
-
-<p>Bom, essa é a dica do mulato da semana rapaziada! Espero que aproveitem! ;)</p>
-
-<p><a href="http://alex.mulatinho.net/wp-content/uploads/2014/02/gtkfingerprint-01_med.png">Você pode ver o resultado da imagem com 75% do seu tamanho original clicando aqui.</a></p>
-
-<p><a href="http://alex.mulatinho.net/wp-content/uploads/2014/02/gtkfingerprint-01_min.png">Você pode ver o resultado da imagem com 50% do seu tamanho original clicando aqui.</a></p>
-
-<p>As vezes temos situações em que uma imagem está numa qualidade muito grande, isso acontece com as fotos dos celulares mais modernos hoje em dia, e aí fica difícil da gente enviar pros nosso amigos e familiares um álbum cheio de imagens imensas por e-mail ou numa rede social, para facilitar isso a gente geralmente reduz a qualidade da imagem ou até mesmo a redimensiona como vimos acima.</p>
-
-<p><strong>Lição 3: Convertendo imagens.</strong></p>
-
-<p>Existem vezes em que simplesmente desejamos converter um formato de imagem, isso também é muito fácil de fazer com o convert que suporta vários formatos como: JPEG, GIF, PNG, BMP, etc. Vejamos alguns exemplos de conversão de imagens:</p>
-
-<p>mulatinho@forrest:~$ convert gtkfingerprint-01_cut.png gtkfingerprint-01_cut.bmp
-(converte a imagem para o formato BMP, pior compressão, windows suqz)
-mulatinho@forrest:~$ convert gtkfingerprint-01_cut.png gtkfingerprint-01_cut.gif
-(converte a imagem para o formato GIF, ótima compressão)
-mulatinho@forrest:~$ convert gtkfingerprint-01_cut.png gtkfingerprint-01_cut.jpg
-(converte a imagem para o formato JPG, compressão legal)
-mulatinho@forrest:~$ ls -l gtkfingerprint-01_cut.*
--rw-r–r– 1 mulatinho mulatinho 673338 Feb  7 21:49 gtkfingerprint-01_cut.bmp
--rw-r–r– 1 mulatinho mulatinho  25005 Feb  7 21:46 gtkfingerprint-01_cut.gif
--rw-r–r– 1 mulatinho mulatinho  42447 Feb  7 21:50 gtkfingerprint-01_cut.jpg
--rw-r–r– 1 mulatinho mulatinho  30433 Feb  7 21:19 gtkfingerprint-01_cut.png
-mulatinho@forrest:~$ file -bi gtkfingerprint-01_cut.*
-application/octet-stream; charset=binary
-image/gif; charset=binary
-image/jpeg; charset=binary
-image/png; charset=binary</p>
-
-<p><strong>Links com alguns extras.</strong></p>
-
-<p><a href="http://www.imagemagick.org/Usage/photos/">http://www.imagemagick.org/Usage/photos/</a></p>
-
-<p><a href="http://www.imagemagick.org/script/convert.php#usage">http://www.imagemagick.org/script/convert.php#usage</a></p>
+<ul>
+  <li><a href="http://www.imagemagick.org/Usage/photos/">http://www.imagemagick.org/Usage/photos/</a></li>
+  <li><a href="http://www.imagemagick.org/script/convert.php#usage">http://www.imagemagick.org/script/convert.php#usage</a></li>
+</ul>
 
 <p>Bom, essa é a dica do mulato da semana rapaziada! Espero que aproveitem! ;)</p>
 

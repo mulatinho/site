@@ -1,135 +1,347 @@
-<hr />
-<p>layout: post
-title: ‘Desafio Shell Script #001’
-tags:</p>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="refresh" content="300">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dona Fernanda resolveu casar-se com Carlos, o padre porém disse que os noivos não poderiam escolher a data de casamento devido a grande quantidade de solicit...">
+  <meta name="keywords" content="open source, linux, codigo aberto, desenvolvimento, programacao, software livre, free software">
+  <meta name="author" content="Alexandre Mulatinho">
+
+  <title>Desafio Shell Script #001</title>
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://alex.mulatinho.net/2016/08/17/desafio-shell-script-001.html">
+  <link rel="alternate" type="application/rss+xml" title="Alexandre Mulatinho" href="/feed.xml">
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-107281743-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  
+
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <br/>
+  <br/>
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">Alexandre Mulatinho</a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/blog/">Blog</a>
+            
+          
+            
+            
+            <a class="page-link" href="/docs/">Docs</a>
+            
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/softwares/">Softwares</a>
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Desafio Shell Script #001</h1>
+    <p class="post-meta">
+      <time datetime="2016-08-17T00:00:00-03:00" itemprop="datePublished">
+        
+        Aug 17, 2016
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Dona Fernanda resolveu casar-se com Carlos, o padre porém disse que os noivos não poderiam escolher a data de casamento devido a grande quantidade de solicitações na igreja. Vários noivos também estavam ansiosos para saber quando poderiam se casar naquela linda igreja, para dizer a cada casal o dia exato em que eles poderiam se casar o padre solicitou que eles fornecessem de 1 até 5 dias no mês de sua preferência e desenvolveu um algoritmo que ajudaria a resolver este impasse de forma aleatória e justa agora e no futuro, ele definiu:</p>
+
 <ul>
-  <li>bash</li>
-  <li>challenges</li>
-  <li>programming</li>
-  <li>script
-—Dona Fernanda resolveu casar-se com Carlos, o padre porém disse que os noivos não poderiam escolher a data de casamento devido a grande quantidade de solicitações na igreja. Vários noivos também estavam ansiosos para saber quando poderiam se casar naquela linda igreja, para dizer a cada casal o dia exato em que eles poderiam se casar o padre solicitou que eles fornecessem de 1 até 5 dias no mês de sua preferência e desenvolveu um algoritmo que ajudaria a resolver este impasse de forma aleatória e justa agora e no futuro, ele definiu:</li>
+  <li><strong>T</strong> - quantidade de casamentos na fila</li>
+  <li><strong>M</strong> - mês do casamento</li>
+  <li><strong>N</strong> - quantidade de dias do mês disponível</li>
+  <li><strong>Vx</strong> - Valor do dia na posição X (V1, V2, V3…)</li>
 </ul>
 
-<p><strong>*T</strong></p>
+<h4 id="entrada-válida">ENTRADA VÁLIDA</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TN
+V1 V2 V3 … Vx
+M
+</code></pre></div></div>
+
+<p>Cada linha corresponde a uma entrada do casal, então se <strong>T</strong> for igual <strong>10</strong>, existiriam 10 casais para casar na igreja em determinado mês, e por consequência, haveriam 10 linhas de entrada informando os dias preferidos do casal.</p>
+
+<h4 id="por-exemplo">POR EXEMPLO</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5
+5 2 7 5 8 14
+5 2 4 14 8 15
+1 4
+0
+3 2 7 9
+2
+</code></pre></div></div>
+
+<h3 id="restrições">RESTRIÇÕES</h3>
+
+<p><strong>T &gt; 0 &amp;&amp; T &lt;= 20</strong></p>
+
+<p><strong>M &gt; 0 &amp;&amp; M &lt;= 12</strong></p>
+
+<p><strong>N &gt; 0 &amp;&amp; N &lt;= 5</strong></p>
+
+<p><strong>V &gt; 0 &amp;&amp; V &lt; 32</strong></p>
+
 <ul>
-  <li>quantidade de casamentos na fila</li>
+  <li>O dia a ser escolhido deve ser o <strong>menor do grupo</strong></li>
+  <li>Caso um casal tenha selecionado um dia já escolhido por outro ele ficará com o próximo dia possível, se houver (por exemplo, <strong>A</strong> = 4 = { 1, 3, 4, 6 } se os dias <strong>1, 3 e 4</strong> já tiverem sido escolhidos, o casal poderá tentar o próximo item, o quarto número, o dia <strong>6</strong>), <strong>mas precisa ser sempre o menor número do grupo</strong>.</li>
+  <li>Em caso de não haver outro dia disponível para o casal deverá ser escrito:
+    <ul>
+      <li>“O casal número <strong>N</strong> só pode casar no próximo mês pois já tem um casal nos dias selecionados”</li>
+    </ul>
+  </li>
+  <li>Em caso de violação de restrição deverá ser escrito
+    <ul>
+      <li>“Padre, foi encontrado uma inconsistência nos dados.”</li>
+    </ul>
+  </li>
 </ul>
 
-<p><strong>*M</strong></p>
-<ul>
-  <li>mês do casamento</li>
-</ul>
+<h3 id="resposta-válida--saída-válida">RESPOSTA VÁLIDA / SAÍDA VÁLIDA</h3>
 
-<p><strong>*N</strong></p>
-<ul>
-  <li>quantidade de dias do mês disponível</li>
-</ul>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Padre, são 5 Casamentos em Fevereiro
+O casal número 1 ficou de casar no dia 2 de Fevereiro
+O casal número 2 ficou de casar no dia 4 de Fevereiro
+O casal número 3 só pode casar no próximo mês pois já tem um casal nos dias selecionados
+Padre, foi encontrado uma inconsistência nos dados.
+O casal número 5 ficou de casar no dia 7 de Fevereiro
+</code></pre></div></div>
 
-<p><strong>*Vx</strong></p>
-<ul>
-  <li>Valor do dia na posição X (V1, V2, V3…)</li>
-</ul>
+<h3 id="explicação-da-saída">EXPLICAÇÃO DA SAÍDA</h3>
 
-<p>###<strong>ENTRADA VÁLIDA</strong></p>
+<p><strong>“Padre, são 5 casamentos em Fevereiro”</strong></p>
 
-<p>TN V1 V2 V3 … VxM</p>
+<p>é o número <strong>T</strong> de casamentos de entrada e o mês <strong>M</strong> da entrada</p>
 
-<p>Cada linha corresponde a uma entrada do casal, então se 
-<strong>T</strong>
- for igual 
-<strong>10</strong>
-, existiriam 10 casais para casar na igreja em determinado mês, e por consequência, haveriam 10 linhas de entrada informando os dias preferidos do casal.</p>
+<p><strong>“O casal número 1 ficou de casar no dia 2 de Fevereiro”</strong></p>
 
-<p>###<strong>POR EXEMPLO</strong></p>
+<p>é o primeiro casal que tem os dias N = {2, 7, 5, 8, 14} disponíveis e o menor possível é o dia 2 de Fevereiro</p>
 
-<p>55 2 7 5 8 145 2 4 14 8 151 403 2 7 92</p>
+<p><strong>“O casal número 2 ficou de casar no dia 4 de Fevereiro”</strong></p>
 
-<p>###<strong>RESTRIÇÕES</strong></p>
+<p>é o segundo casal que tem os dias N = {2, 4, 14, 8, 15} disponíveise o menor possível é o dia 4 de Fevereiro</p>
 
-<p><strong>T &gt; 0 &amp;&amp; T &lt;= 20M &gt; 0 &amp;&amp; M &lt;= 12N &gt; 0 &amp;&amp; N &lt;= 5V &gt; 0 &amp;&amp; V &lt; 32 </strong></p>
+<p><strong>“O casal número 3 só pode casar no próximo mês pois já tem um casal nos dias selecionados”</strong></p>
 
-<p>*O dia a ser escolhido deve ser o 
-<strong>menor do grupo</strong></p>
+<p>é o terceiro casal que tem os dias N = {4} disponíveis mas como já existia um casal com o dia 4, não é possível realizar o casamento</p>
 
-<p>*Caso um casal tenha selecionado um dia já escolhido por outro ele ficará com o próximo dia possível, se houver (por exemplo, 
-<strong>A</strong>
- = 4 = { 1, 3, 4, 6 } se os dias 
-<strong>1, 3 e 4</strong>
- já tiverem sido escolhidos, o casal poderá tentar o próximo item, o quarto número, o dia 
-<strong>6</strong>
-), 
-<strong>mas precisa ser sempre o menor número do grupo</strong>
-.</p>
+<p><strong>“Padre, foi encontrado uma inconsistência nos dados do casal 4.  :(“</strong></p>
 
-<p>*Em caso de não haver outro dia disponível para o casal deverá ser escrito:</p>
+<p>é a mensagem de erro em caso de violação de restrição</p>
 
-<p>*“O casal número 
-<strong>N</strong>
- só pode casar no próximo mês pois já tem um casal nos dias selecionados”</p>
+<p><strong>“O casal número 5 ficou de casar no dia 7 de Fevereiro”</strong></p>
 
-<p>*Em caso de violação de restrição deverá ser escrito</p>
+<p>é o quinto casal que tem os dias N = {2 7 9} disponíveis e o menor possível é o dia 7 de Fevereiro</p>
 
-<p>*“Padre, foi encontrado uma inconsistência nos dados.”</p>
-
-<p>###<strong>RESPOSTA VÁLIDA / SAÍDA VÁLIDA</strong></p>
-
-<p>Padre, são 5 Casamentos em FevereiroO casal número 1 ficou de casar no dia 2 de FevereiroO casal número 2 ficou de casar no dia 4 de FevereiroO casal número 3 só pode casar no próximo mês pois já tem um casal nos dias selecionadosPadre, foi encontrado uma inconsistência nos dados.O casal número 5 ficou de casar no dia 7 de Fevereiro</p>
-
-<p>###<strong>EXPLICAÇÃO DA SAÍDA</strong></p>
-
-<p><strong>“Padre, são 5 casamentos em Fevereiro”</strong>
- é o número 
-<strong>T</strong>
- de casamentos de entrada e o mês 
-<strong>M</strong>
- da entrada</p>
-
-<p><strong>“O casal número 1 ficou de casar no dia 2 de Fevereiro”</strong>
-é o primeiro casal que tem os dias N = {2, 7, 5, 8, 14} disponíveis e o menor possível é o dia 2 de Fevereiro</p>
-
-<p><strong>“O casal número 2 ficou de casar no dia 4 de Fevereiro”</strong>
- é o segundo casal que tem os dias N = {2, 4, 14, 8, 15} disponíveise o menor possível é o dia 4 de Fevereiro</p>
-
-<p><strong>“O casal número 3 só pode casar no próximo mês pois já tem um casal nos dias selecionados”</strong>
-é o terceiro casal que tem os dias N = {4} disponíveis mas como já existia um casal com o dia 4, não é possível realizar o casamento</p>
-
-<p><strong>“Padre, foi encontrado uma inconsistência nos dados do casal 4.  :(“</strong>
-é a mensagem de erro em caso de violação de restrição</p>
-
-<p><strong>“O casal número 5 ficou de casar no dia 7 de Fevereiro”</strong>
-é o quinto casal que tem os dias N = {2 7 9} disponíveis e o menor possível é o dia 7 de Fevereiro</p>
-
-<p>###MAIS TESTES PARA VALIDAÇÃO</p>
+<h4 id="mais-testes-para-validação">MAIS TESTES PARA VALIDAÇÃO</h4>
 
 <p><strong>Gerador de testes aleatórios válidos</strong></p>
 
-<p>bash$ ( T=$(( (RANDOM % 20) + 1 )); echo $T; \
-for i in <code class="highlighter-rouge">seq 1 $T</code>; \
-do N=$(( (RANDOM % 5) + 1 )) ; echo -n “$N “; \
-for x in <code class="highlighter-rouge">seq 1 $N</code>; do V=$(( (RANDOM % 31) + 1)); echo -n “$V “; done; \
-echo; done; echo $(( (RANDOM % 12) +1 )) )</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash$ ( T=$(( (RANDOM % 20) + 1 )); echo $T; \
+for i in `seq 1 $T`; \
+do N=$(( (RANDOM % 5) + 1 )) ; echo -n "$N "; \
+for x in `seq 1 $N`; do V=$(( (RANDOM % 31) + 1)); echo -n "$V "; done; \
+echo; done; echo $(( (RANDOM % 12) +1 )) )
+</code></pre></div></div>
 
 <p><strong>Teste #01</strong></p>
 
-<p>55 21 26 4 1 155 19 11 7 16 171 284 29 6 21 251 115</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5
+5 21 26 4 1 15
+5 19 11 7 16 17
+1 28
+4 29 6 21 25
+1 115
+</code></pre></div></div>
 
 <p><strong>Teste #02</strong></p>
 
-<p>33 28 26 72 29 163 8 14 154</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3
+3 28 26 7
+2 29 16
+3 8 14 15
+4
+</code></pre></div></div>
 
 <p><strong>Teste #03</strong></p>
 
-<p>53 17 31 161 151 74 31 30 12 12 20 273</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5
+3 17 31 16
+1 15
+1 7
+4 31 30 12 1
+2 20 27
+3
+</code></pre></div></div>
 
 <p><strong>Teste #04</strong></p>
 
-<p>181 213 23 24 55 15 11 19 28 85 11 9 16 16 51 41 44 4 8 7 264 23 12 11 281 72 28 273 27 13 313 30 29 115 2 5 10 20 145 4 16 5 17 252 3 202 17 25 19 21 2 24 255 16 8 18 23 285</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>18
+1 21
+3 23 24 5
+5 15 11 19 28 8
+5 11 9 16 16 5
+1 4
+1 4
+4 4 8 7 26
+4 23 12 11 28
+1 7
+2 28 27
+3 27 13 31
+3 30 29 11
+5 2 5 10 20 14
+5 4 16 5 17 25
+2 3 20
+2 17 2
+5 19 21 2 24 25
+5 16 8 18 23 28
+5
+</code></pre></div></div>
 
 <p><strong>Teste #05</strong></p>
 
-<p>115 7 19 30 2 223 8 23 305 25 4 16 17 313 18 31 143 6 3 192 20 12 27 222 16 194 9 28 18 212 10 202 29 97
-Quer ver a minha versão com entradas e saídas funcionando??</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>11
+5 7 19 30 2 22
+3 8 23 30
+5 25 4 16 17 31
+3 18 31 14
+3 6 3 19
+2 20 1
+2 27 22
+2 16 19
+4 9 28 18 21
+2 10 20
+2 29 9
+7
+</code></pre></div></div>
 
-<p><a href="http://pastebin.com/VvbxBZWD">http://pastebin.com/VvbxBZWD</a></p>
+<p>Quer ver a minha versão com entradas e saídas funcionando?? <a href="http://pastebin.com/VvbxBZWD">http://pastebin.com/VvbxBZWD</a></p>
 
 <p>Conseguiu resolver? Poste suas respostas nos comentários! Quer saber a solução? Entre em contato comigo ou procure na lista de Shell-Script a thread “Desafio Shell-Script #001 do Mulato” ;-)</p>
+
+  </div>
+
+  
+    
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'http://alex.mulatinho.net/2016/08/17/desafio-shell-script-001.html';
+      this.page.identifier = 'http://alex.mulatinho.net/2016/08/17/desafio-shell-script-001.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://mulatinho.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+      <p>A blog about linux, open source, development and the life of an software engineer ;)</p>
+
+      <br/>
+      <br/>
+
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- mulato-blog -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5138819533079914"
+     data-ad-slot="8675679252"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+      
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

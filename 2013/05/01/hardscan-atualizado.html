@@ -111,26 +111,31 @@
   <div class="post-content" itemprop="articleBody">
     <p>(texto antigo, 2009 por ae)</p>
 
-<p>Decidi mexer um pouco nos códigos antigos e meu 
-<a href="https://github.com/mulatinho/pub/blob/master/hardscan.c">escaneador de portas (código fonte aqui)</a> foi o escolhido, tinha subido ele pro repositório bem sujo e resolvi atualizá-lo, agora o portscan por IP consegue fazer milhares de requisições em paralelo em apenas poucos segundos e te fornece todas as portas abertas. Quem quiser dar uma olhada melhor basta baixar o fonte e compilar conforme o final do post. Veja alguns exemplos do ‘hardscan’ em uso:$ ./hardscan 
-uso: ./hardscan IP [1-65535]
-Onde, IP é o endereço do protocolo de internet e o segundo argumento um range de portas.</p>
+<p>Decidi mexer um pouco nos códigos antigos e meu  <a href="https://github.com/mulatinho/pub/blob/master/hardscan.c">escaneador de portas (código fonte aqui)</a> foi o escolhido, tinha subido ele pro repositório bem sujo e resolvi atualizá-lo, agora o portscan por IP consegue fazer milhares de requisições em paralelo em apenas poucos segundos e te fornece todas as portas abertas. Quem quiser dar uma olhada melhor basta baixar o fonte e compilar conforme o final do post. Veja alguns exemplos do ‘hardscan’ em uso:</p>
 
-<p>$ ./hardscan 77.75.12.178 1-555
-scanning ports on host ‘77.75.12.178’..
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./hardscan
+uso: ./hardscan IP [1-65535]
+</code></pre></div></div>
+
+<p>Onde, IP é o endereço do protocolo de internet e o segundo argumento um range de portas.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./hardscan 77.75.12.178 1-555
+scanning ports on host '77.75.12.178'..
    22, esta aberta mestre! :]
    80, esta aberta mestre! :]
-  554, esta aberta mestre! :]</p>
+  554, esta aberta mestre! :]
 
-<p>$ ./hardscan 200.200.45.98 20-22
-scanning ports on host ‘200.200.45.98’..
+$ ./hardscan 200.200.45.98 20-22
+scanning ports on host '200.200.45.98'..
    21, esta aberta mestre! :]
-   22, esta aberta mestre! :]</p>
+   22, esta aberta mestre! :]
+</code></pre></div></div>
 
 <p><a href="https://raw.github.com/mulatinho/pub/master/hardscan.c">Baixe o fonte</a> e compile usando o ‘gcc’:</p>
 
-<p>$ gcc -O2 -lpthread -o hardscan hardscan.c
-$ ./hardscan IP portaIncio-portaFim</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gcc -O2 -lpthread -o hardscan hardscan.c
+$ ./hardscan IP portaIncio-portaFim
+</code></pre></div></div>
 
   </div>
 

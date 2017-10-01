@@ -113,51 +113,55 @@
 
 <p>So basically I was needing check every command or sub-script that was running  in the main code, as far we know every time that one command or script are executed the value of ‘$?’ is changed, so if I run an command that return different of zero (fail) and then some thing that return zero (success) and check the return code in the last line I will never know that in the final of script something went wrong.</p>
 
-<p>So I decided to make something to store the value of all commands that are executed with one particularity, when there one error in script I store the error in a place and then I explicity show the error in the final of log. The result of this script follow bellow:#– source of retStore.sh –
-#!/bin/bash
-[ -z $AMBIENTE ] &amp;&amp; export AMBIENTE=depwiz
-fret=/tmp/depwiz.${AMBIENTE}.ret
-so_initcode() {
-echo 0 &gt; $fret
-}
-so_retcode() {
-[ -f $fret ] &amp;&amp; retcode=$(cat $fret)
-[ -z $retcode ] &amp;&amp; retcode=0;
-return $retcode;
-}
-so_setcode() {
-retnew=$?
-[ -f $fret ] &amp;&amp; retcode=$(cat $fret)
-[ -z $retcode ] &amp;&amp; retcode=0 &amp;&amp; echo $retnew &gt; $fret
-[ $retcode -eq 0 -a $retnew -ne 0 ] &amp;&amp; echo $retnew &gt; $fret
-echo “{*} retCode: $retnew, statusCode: $(cat $fret)”
-}
-#– source of retStore.sh –
-Now when I try to execute a large script and need to catch all errors I use something like that (only an simple example of an script):</p>
+<p>So I decided to make something to store the value of all commands that are executed with one particularity, when there one error in script I store the error in a place and then I explicity show the error in the final of log. The result of this script follow bellow:#– source of retStore.sh –</p>
 
-<p>#– source of simpleScript.sh –
-source retStore.sh
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="o">[</span> <span class="nt">-z</span> <span class="nv">$AMBIENTE</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">export </span><span class="nv">AMBIENTE</span><span class="o">=</span>depwiz
+<span class="nv">fret</span><span class="o">=</span>/tmp/depwiz.<span class="k">${</span><span class="nv">AMBIENTE</span><span class="k">}</span>.ret
+so_initcode<span class="o">()</span> <span class="o">{</span>
+	<span class="nb">echo </span>0 <span class="o">&gt;</span> <span class="nv">$fret</span>
+<span class="o">}</span>
+so_retcode<span class="o">()</span> <span class="o">{</span>
+	<span class="o">[</span> <span class="nt">-f</span> <span class="nv">$fret</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nv">retcode</span><span class="o">=</span><span class="k">$(</span><span class="nb">cat</span> <span class="nv">$fret</span><span class="k">)</span>
+	<span class="o">[</span> <span class="nt">-z</span> <span class="nv">$retcode</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nv">retcode</span><span class="o">=</span>0<span class="p">;</span>
+	<span class="k">return</span> <span class="nv">$retcode</span><span class="p">;</span>
+<span class="o">}</span>
+so_setcode<span class="o">()</span> <span class="o">{</span>
+	<span class="nv">retnew</span><span class="o">=</span><span class="nv">$?</span>
+	<span class="o">[</span> <span class="nt">-f</span> <span class="nv">$fret</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nv">retcode</span><span class="o">=</span><span class="k">$(</span><span class="nb">cat</span> <span class="nv">$fret</span><span class="k">)</span>
+	<span class="o">[</span> <span class="nt">-z</span> <span class="nv">$retcode</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nv">retcode</span><span class="o">=</span>0 <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="nv">$retnew</span> <span class="o">&gt;</span> <span class="nv">$fret</span>
+	<span class="o">[</span> <span class="nv">$retcode</span> <span class="nt">-eq</span> 0 <span class="nt">-a</span> <span class="nv">$retnew</span> <span class="nt">-ne</span> 0 <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="nv">$retnew</span> <span class="o">&gt;</span> <span class="nv">$fret</span>
+	<span class="nb">echo</span> <span class="s2">"{*} retCode: </span><span class="nv">$retnew</span><span class="s2">, statusCode: </span><span class="k">$(</span><span class="nb">cat</span> <span class="nv">$fret</span><span class="k">)</span><span class="s2">"</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Now when I try to execute a large script and need to catch all errors I use something like that (only an simple example of an script):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="nb">source </span>retStore.sh
 so_initcode
-ls 2&gt;/dev/null 1&gt;/dev/null          # success here.
+<span class="nb">ls </span>2&gt;/dev/null 1&gt;/dev/null          <span class="c"># success here.</span>
 so_setcode
-ls /root/* 2&gt;/dev/null 1&gt;/dev/null  # error here.
+<span class="nb">ls</span> /root/<span class="k">*</span> 2&gt;/dev/null 1&gt;/dev/null  <span class="c"># error here.</span>
 so_setcode
-uxhfuihuf                           # error here.
+uxhfuihuf                           <span class="c"># error here.</span>
 so_setcode
-ls 2&gt;/dev/null 1&gt;/dev/null          # success here.
+<span class="nb">ls </span>2&gt;/dev/null 1&gt;/dev/null          <span class="c"># success here.</span>
 so_setcode
 so_retcode
-echo ret is: $?
-#– source of simpleScript.sh –
-This gave me an output like that:</p>
+<span class="nb">echo </span>ret is: <span class="nv">$?</span>
+</code></pre></div></div>
 
-<p>[mulatinho@work:~] ./simpleScript.sh
-{<em>} retCode: 0, statusCode: 0
-{</em>} retCode: 2, statusCode: 2
+<p>This gave me an output like that:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[mulatinho@work:~] ./simpleScript.sh
+{*} retCode: 0, statusCode: 0
+{*} retCode: 2, statusCode: 2
 ./simpleScript.sh: line 30: uxhfuihuf: command not found
-{<em>} retCode: 127, statusCode: 2
-{</em>} retCode: 0, statusCode: 2
-ret is: 2</p>
+{*} retCode: 127, statusCode: 2
+{*} retCode: 0, statusCode: 2
+ret is: 2
+</code></pre></div></div>
 
 <p>Now everything is cool and the errors are caught  ! :D</p>
 
