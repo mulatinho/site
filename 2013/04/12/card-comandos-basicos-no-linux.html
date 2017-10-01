@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="refresh" content="300">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Nossa, isso é velhão, deve ser bem de 2005.. pode servir pra alguém &amp;gt;:]COMANDOS BÁSICOS EDITANDO ARQUIVOS COM O VIM">
+  <meta name="description" content="Nossa, isso é velhão, deve ser bem de 2005.. pode servir pra alguém &amp;gt;:]">
   <meta name="keywords" content="open source, linux, codigo aberto, desenvolvimento, programacao, software livre, free software">
   <meta name="author" content="Alexandre Mulatinho">
 
@@ -96,133 +96,119 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>Nossa, isso é velhão, deve ser bem de 2005.. pode servir pra alguém &gt;:]COMANDOS BÁSICOS                                 EDITANDO ARQUIVOS COM O VIM</p>
+    <p>Nossa, isso é velhão, deve ser bem de 2005.. pode servir pra alguém &gt;:]</p>
 
-<ol>
-  <li>Entrar em um sub-diretório ‘paul’ dentro      1. Abrir um arquivo com o VIM para edição
-do diretório ‘home’ do ‘/’.                      $ vim /tmp/teste.txt
-$ cd /home/paul                             <br />
-                                              2. Comandos a serem digitados  dentro do VIM</li>
-  <li>Listar o conteúdo do subdiretório ‘paul’         para ações de edição nos arquivos.
-$ ls /home/paul                             <br />
-                                              ‘ESC’    Volta ao modo de comandos do VIM.</li>
-  <li>Copiar ‘x1’ para o diretório ‘/home/paul’     ‘INSERT’ Edita o texto apartir do cursor.
-$ cp x1 /home/paul/                           ‘dd’     Deleta a linha em que está o cursor
-                                              ‘yy’     Copiar a linha apartir do cursor.</li>
-  <li>Copiar todos arquivos que comecem por ‘x’ no<br />
-diretório ‘/billy’ para subdiretório ‘src’  <br />
-que se encontra no diretório ‘usr’            - MODO DE COMANDO DO VIM
-$ cp /billy/x* /usr/src                       ‘:split ‘ abre outra  janela dentro
-                                              do VIM para editar um novo “”</li>
-  <li>Mover subdiretório ‘/billy/joe’ para ‘/rock’  ‘:r ‘ lê o conteúdo  do “”
-$ mv /billy/joe /rock                         jogando-o dentro do arquivo editado atual.
-                                              ‘:s/texto/subtexto/g’ modifica  toda palavra</li>
-  <li>Remover todos os arquivos do diretório /tmp   “texto” por “subtexto” no arquivo atual.
-que iniciem por ‘x’ e terminem por ‘.zip’     ‘:q!’ sai do VIM sem salvar as alterações.
-$ rm x*.zip                                   ‘:w’ salva todas as alterações do arquivo.
-                                              ‘:x’ salva alterações e sai do arquivo.</li>
-</ol>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>COMANDOS BÁSICOS                                 EDITANDO ARQUIVOS COM O VIM
 
-<p>COMANDOS BÁSICOS DE ADMINISTRAÇÃO                ARQUIVOS IMPORTANTES E/OU DE CONFIGURAÇÃO</p>
+1. Entrar em um sub-diretório 'paul' dentro      1. Abrir um arquivo com o VIM para edição
+   do diretório 'home' do '/'.                      $ vim /tmp/teste.txt
+   $ cd /home/paul                               
+                                                 2. Comandos a serem digitados  dentro do VIM
+2. Listar o conteúdo do subdiretório 'paul'         para ações de edição nos arquivos.
+   $ ls /home/paul                               
+                                                 'ESC'    Volta ao modo de comandos do VIM.
+3. Copiar 'x1' para o diretório '/home/paul'     'INSERT' Edita o texto apartir do cursor.
+   $ cp x1 /home/paul/                           'dd'     Deleta a linha em que está o cursor
+                                                 'yy'     Copiar a linha apartir do cursor.
+4. Copiar todos arquivos que comecem por 'x' no  
+   diretório '/billy' para subdiretório 'src'    
+   que se encontra no diretório 'usr'            - MODO DE COMANDO DO VIM
+   $ cp /billy/x* /usr/src                       ':split ' abre outra  janela dentro
+                                                 do VIM para editar um novo ""
+5. Mover subdiretório '/billy/joe' para '/rock'  ':r ' lê o conteúdo  do ""
+   $ mv /billy/joe /rock                         jogando-o dentro do arquivo editado atual.
+                                                 ':s/texto/subtexto/g' modifica  toda palavra
+6. Remover todos os arquivos do diretório /tmp   "texto" por "subtexto" no arquivo atual.
+   que iniciem por 'x' e terminem por '.zip'     ':q!' sai do VIM sem salvar as alterações.
+   $ rm x*.zip                                   ':w' salva todas as alterações do arquivo.
+                                                 ':x' salva alterações e sai do arquivo.
+</code></pre></div></div>
 
-<ol>
-  <li>Listar processos do sistema linux             /etc/fstab, pontos de  montagem automático e
-$ ps aux                                      seus sistemas de  arquivos que serão usados.
-                                              /etc/passwd, arquivo  de  usuários e senhas.</li>
-  <li>Pesquisar na lista de processos, um processo  /etc/hosts, declaração de  hosts  que  serão
-específico chamado de ‘thunderbird’           reconhecidos localmente pela máquina.
-$ ps aux | grep thunderbird                   /etc/inittab,  niveis  de  inicialização  do
-                                              sistema e definição de alguns comandos.</li>
-  <li>Mata processo pelo seu PID (Process ID)       /etc/profile, definição de dados e variáveis
-$ kill -9 1245                                além de comandos para todos os usuários.
-                                              /var/log/messages,  arquivo de log  contendo</li>
-  <li>Mata processo pelo nome do mesmo              informações vitais ao sistema e de segurança
-$ killall -9 thunderbird
-                                              DIRETÓRIOS IMPORTANTES</li>
-  <li>Adicionar um Usuário ‘mulatinho’ no Linux
-    <h1 id="adduser-mulatinho---------------------------etc-diretório-onde--se-encontram-a-maioria">adduser mulatinho                           /etc, diretório onde  se encontram a maioria</h1>
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                                          dos arquivos de configuração do Linux.
-</code></pre></div>    </div>
-  </li>
-  <li>Removendo Usuário ‘mulatinho’ do Linux        /usr, diretório onde  está grande parte  dos
-    <h1 id="userdel-mulatinho--rm--rf-homemulatinho-software-utilizados-pelo-linux-além-de-suas">userdel mulatinho &amp;&amp; rm -rf /home/mulatinho software utilizados pelo linux, além de suas</h1>
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                                          bibliotecas, ícones e binários d aplicativos
-</code></pre></div>    </div>
-  </li>
-  <li>Mudando senha do usuário ‘mulatinho’ no linux /dev, local onde estão todos os dispositivos
-    <h1 id="passwd-mulatinho----------------------------e-periféricos-referenciados-por-nomes">passwd mulatinho                            e periféricos referenciados por nomes.</h1>
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                                          /home, diretório de usuários do linux.
-</code></pre></div>    </div>
-  </li>
-  <li>Mudando dono e grupo de um arquivo            /proc, coleta de informações do sistema.
-    <h1 id="chown----------------lib-bibliotecas-do-sistema-linux">chown :               /lib, bibliotecas do sistema linux.</h1>
-  </li>
-</ol>
+<p>.</p>
 
-<p>COMANDOS DE REDE                                 COMANDOS DE GERENCIAMENTO DE PACOTES RED-HAT</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>COMANDOS BÁSICOS DE ADMINISTRAÇÃO                ARQUIVOS IMPORTANTES E/OU DE CONFIGURAÇÃO
 
-<ol>
-  <li>Setando IP na interface de rede ‘eth0’        1. Visualizando  TODOS os pacotes instalados
-    <h1 id="ifconfig-eth0-192168010----------------------rpm--qa">ifconfig eth0 192.168.0.10                     $ rpm -qa</h1>
-  </li>
-  <li>Setando a máscara da placa de rede ‘eth0’     2. Listando conteúdo de um pacote
-    <h1 id="ifconfig-eth0-netmask-255000-----------------rpm--ql">ifconfig eth0 netmask 255.0.0.0                $ rpm -ql</h1>
-  </li>
-  <li>Adicionando/Removendo faixa de rede na rota   3. Mostrando informações resumidas do pacote
-    <h1 id="route-adddel--net-19216800-dev-eth0--------rpm--qi">route add/del -net 192.168.0.0 dev eth0       $ rpm -qi</h1>
-    <p>netmask 255.0.0.0 broadcast 192.168.0.255
-                                              4. Instalando um pacote .RPM no sistema</p>
-  </li>
-  <li>Adicionando Rota de rede padrão, aonde no        # rpm -hiv 
-no exemplo nosso gateway é o ‘192.168.0.1’
-    <h1 id="route-add-default-gw-19216801------------5-desinstalando-um-pacote-rpm-do-sistema">route add default gw 192.168.0.1            5. Desinstalando um pacote .RPM do sistema</h1>
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                                             # rpm -e 
-</code></pre></div>    </div>
-  </li>
-  <li>Testando se o gateway/ip está OK e na rede.
-    <h1 id="ping-19216801----------------------------6-descobrindo-um-nome-de-um-pacote--apartir">ping 192.168.0.1                            6. Descobrindo um nome de um pacote  apartir</h1>
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                                             de um arquivo existente no sistema
-</code></pre></div>    </div>
-  </li>
-  <li>Scaneando a rede atrás de um IP para ver o       $ rpm -qf /bin/df
-tráfego na intranet/internet de dados.
-    <h1 id="tcpdump--i-eth0--grep-1921680232">tcpdump -i eth0 | grep “192.168.0.232”</h1>
-  </li>
-  <li>Mostrar portas abertas na máquina
-$ netstat -natup</li>
-</ol>
+1. Listar processos do sistema linux             /etc/fstab, pontos de  montagem automático e
+   $ ps aux                                      seus sistemas de  arquivos que serão usados.
+                                                 /etc/passwd, arquivo  de  usuários e senhas.
+2. Pesquisar na lista de processos, um processo  /etc/hosts, declaração de  hosts  que  serão
+   específico chamado de 'thunderbird'           reconhecidos localmente pela máquina.
+   $ ps aux | grep thunderbird                   /etc/inittab,  niveis  de  inicialização  do
+                                                 sistema e definição de alguns comandos.
+3. Mata processo pelo seu PID (Process ID)       /etc/profile, definição de dados e variáveis
+   $ kill -9 1245                                além de comandos para todos os usuários.
+                                                 /var/log/messages,  arquivo de log  contendo
+4. Mata processo pelo nome do mesmo              informações vitais ao sistema e de segurança
+   $ killall -9 thunderbird
+                                                 DIRETÓRIOS IMPORTANTES
+5. Adicionar um Usuário 'mulatinho' no Linux
+   # adduser mulatinho                           /etc, diretório onde  se encontram a maioria
+                                                 dos arquivos de configuração do Linux.
+6. Removendo Usuário 'mulatinho' do Linux        /usr, diretório onde  está grande parte  dos
+   # userdel mulatinho &amp;&amp; rm -rf /home/mulatinho software utilizados pelo linux, além de suas
+                                                 bibliotecas, ícones e binários d aplicativos
+7. Mudando senha do usuário 'mulatinho' no linux /dev, local onde estão todos os dispositivos
+   # passwd mulatinho                            e periféricos referenciados por nomes.
+                                                 /home, diretório de usuários do linux.
+8. Mudando dono e grupo de um arquivo            /proc, coleta de informações do sistema.
+   # chown :               /lib, bibliotecas do sistema linux.
+</code></pre></div></div>
 
-<p>COMANDOS A NÍVEL DO SISTEMA DE ARQUIVOS          EXPRESSÕES REGULARES</p>
+<p>.</p>
 
-<ol>
-  <li>Vendo o espaço ocupado/disponível em disco    1. Modificando todas as palavras ‘INSERTF’ e
-nas partições montadas no sistema                ‘BLOB’ por ‘INSERT’ e ‘BYTEA’ respectiva-
-$ df -Th                                         mente no arquivo ‘teste.txt’
-                                                 $ sed -e ‘s/INSERTF/INSERT/g;</li>
-  <li>Vendo tamanho de um diretório ou arquivo         s/BLOB/BYTEA/g’ teste.txt
-$ du -hs /home/mulatinho
-                                              2. Deletar todas  as linhas que  tenham  uma</li>
-  <li>Montando um volume de CD-ROM, no exemplo,        palavra ‘ALTER TABLE’ no arquivo ‘ts.sql’
-/dev/hda, no diretório ‘/mnt’                    $ sed -e ‘/ALTER TABLE/d’ ts.sql
-    <h1 id="mount--t-iso9660-devhda-mnt">mount -t iso9660 /dev/hda /mnt</h1>
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                                          3. Em uma variavel com uma série de palavras
-</code></pre></div>    </div>
-  </li>
-  <li>Desmontando um volume do sistema                 buscar um valor e retornar NULO caso  nao
-    <h1 id="umount-mnt-onde-mnt-eh-o-local-montado-----a-encontre-ou-a-palavra-caso-encontre">umount /mnt (onde /mnt eh o local montado)     a encontre, ou a palavra caso encontre.</h1>
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                                             $ echo "Mensagem de amor" | sed -e 
-</code></pre></div>    </div>
-  </li>
-  <li>Saber que em que tipo de formato está um         “/amor/!d; s/.<em>amor.</em>/amor/”
-arquivo do nosso sistema
-$ file /billy/joe/jack.zip                    4. Imprimir na tela o segundo campo da linha
-                                                 $ awk ‘{ print $2; }’ /tmp/arquivo.txt</li>
-  <li>Criar um diretório no Linux
-$ mkdir /mnt/pendrive                         5. Matar todos os processos que tenham  nome
-                                                 de ‘vim’ usando uma linha!</li>
-  <li>Remover uma pasta e seus sub-diretórios          $ PIDS=`ps aux | awk ‘{ print $1; }’ 
-$ rm -rf /mnt/pendrive                           for PID in $PIDS; do kill -9 $PID; done</li>
-</ol>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>COMANDOS DE REDE                                 COMANDOS DE GERENCIAMENTO DE PACOTES RED-HAT
+
+1. Setando IP na interface de rede 'eth0'        1. Visualizando  TODOS os pacotes instalados
+   # ifconfig eth0 192.168.0.10                     $ rpm -qa
+
+2. Setando a máscara da placa de rede 'eth0'     2. Listando conteúdo de um pacote
+   # ifconfig eth0 netmask 255.0.0.0                $ rpm -ql
+
+3. Adicionando/Removendo faixa de rede na rota   3. Mostrando informações resumidas do pacote
+   # route add/del -net 192.168.0.0 dev eth0       $ rpm -qi
+   netmask 255.0.0.0 broadcast 192.168.0.255
+                                                 4. Instalando um pacote .RPM no sistema
+4. Adicionando Rota de rede padrão, aonde no        # rpm -hiv
+   no exemplo nosso gateway é o '192.168.0.1'    
+   # route add default gw 192.168.0.1            5. Desinstalando um pacote .RPM do sistema
+                                                    # rpm -e
+5. Testando se o gateway/ip está OK e na rede.                                                
+   # ping 192.168.0.1                            6. Descobrindo um nome de um pacote  apartir
+                                                    de um arquivo existente no sistema
+6. Scaneando a rede atrás de um IP para ver o       $ rpm -qf /bin/df
+   tráfego na intranet/internet de dados.
+   # tcpdump -i eth0 | grep "192.168.0.232"
+
+7. Mostrar portas abertas na máquina
+   $ netstat -natup
+
+
+COMANDOS A NÍVEL DO SISTEMA DE ARQUIVOS          EXPRESSÕES REGULARES
+
+1. Vendo o espaço ocupado/disponível em disco    1. Modificando todas as palavras 'INSERTF' e
+   nas partições montadas no sistema                'BLOB' por 'INSERT' e 'BYTEA' respectiva-
+   $ df -Th                                         mente no arquivo 'teste.txt'
+                                                    $ sed -e 's/INSERTF/INSERT/g;
+2. Vendo tamanho de um diretório ou arquivo         s/BLOB/BYTEA/g' teste.txt
+   $ du -hs /home/mulatinho
+                                                 2. Deletar todas  as linhas que  tenham  uma
+3. Montando um volume de CD-ROM, no exemplo,        palavra 'ALTER TABLE' no arquivo 'ts.sql'
+   /dev/hda, no diretório '/mnt'                    $ sed -e '/ALTER TABLE/d' ts.sql
+   # mount -t iso9660 /dev/hda /mnt
+                                                 3. Em uma variavel com uma série de palavras
+4. Desmontando um volume do sistema                 buscar um valor e retornar NULO caso  nao
+   # umount /mnt (onde /mnt eh o local montado)     a encontre, ou a palavra caso encontre.
+                                                    $ echo "Mensagem de amor" | sed -e
+5. Saber que em que tipo de formato está um         "/amor/!d; s/.*amor.*/amor/"
+   arquivo do nosso sistema
+   $ file /billy/joe/jack.zip                    4. Imprimir na tela o segundo campo da linha
+                                                    $ awk '{ print $2; }' /tmp/arquivo.txt
+6. Criar um diretório no Linux
+   $ mkdir /mnt/pendrive                         5. Matar todos os processos que tenham  nome
+                                                    de 'vim' usando uma linha!
+7. Remover uma pasta e seus sub-diretórios          $ PIDS=`ps aux | awk '{ print $1; }'
+   $ rm -rf /mnt/pendrive                           for PID in $PIDS; do kill -9 $PID; done
+</code></pre></div></div>
 
   </div>
 
