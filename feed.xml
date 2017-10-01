@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://alex.mulatinho.net/feed.xml" rel="self" type="application/atom+xml" /><link href="http://alex.mulatinho.net/" rel="alternate" type="text/html" /><updated>2017-09-30T23:11:28-03:00</updated><id>http://alex.mulatinho.net/</id><title type="html">Alexandre Mulatinho</title><subtitle>A blog about linux, open source, development and the life of an software engineer ;)</subtitle><entry><title type="html">Two years of remote working: What I learned</title><link href="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html" rel="alternate" type="text/html" title="Two years of remote working: What I learned" /><published>2017-07-27T00:00:00-03:00</published><updated>2017-07-27T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned</id><content type="html" xml:base="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html">&lt;p&gt;&lt;img src=&quot;https://mulatinho.files.wordpress.com/2017/07/img_20170322_140523390.jpg&quot; alt=&quot;IMG_20170322_140523390&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://alex.mulatinho.net/feed.xml" rel="self" type="application/atom+xml" /><link href="http://alex.mulatinho.net/" rel="alternate" type="text/html" /><updated>2017-10-01T18:33:55-03:00</updated><id>http://alex.mulatinho.net/</id><title type="html">Alexandre Mulatinho</title><subtitle>A blog about linux, open source, development and the life of an software engineer ;)</subtitle><entry><title type="html">Two years of remote working: What I learned</title><link href="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html" rel="alternate" type="text/html" title="Two years of remote working: What I learned" /><published>2017-07-27T00:00:00-03:00</published><updated>2017-07-27T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned</id><content type="html" xml:base="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html">&lt;p&gt;&lt;img src=&quot;https://mulatinho.files.wordpress.com/2017/07/img_20170322_140523390.jpg&quot; alt=&quot;IMG_20170322_140523390&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In this month I completed exactly two years of remote working, what adventure! To remind me about this in future and also to share with you all I resolve to write about that here.&lt;/p&gt;
 
@@ -366,102 +366,89 @@ image = /boot/vmlinuz-backup
 
 &lt;p&gt;And welcome to the &lt;strong&gt;-current&lt;/strong&gt; version of Slackware, keep it upgraded :)&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="slackware" /><summary type="html">Hello friends!</summary></entry><entry><title type="html">Installing Libvirt / QEMU for KVM Virtualization on #Slackware</title><link href="http://alex.mulatinho.net/2016/08/25/installing-libvirt-qemu-for-kvm-virtualization-on-slackware.html" rel="alternate" type="text/html" title="Installing Libvirt / QEMU for KVM Virtualization on #Slackware" /><published>2016-08-25T00:00:00-03:00</published><updated>2016-08-25T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/08/25/installing-libvirt-qemu-for-kvm-virtualization-on-slackware</id><content type="html" xml:base="http://alex.mulatinho.net/2016/08/25/installing-libvirt-qemu-for-kvm-virtualization-on-slackware.html">&lt;p&gt;Hello friends!&lt;/p&gt;
 
-&lt;p&gt;Today is 2016/08/25, 
-&lt;strong&gt;25 years of Linux&lt;/strong&gt;
-! Happy Birthday!! :D :D&lt;/p&gt;
+&lt;p&gt;Today is 2016/08/25, &lt;strong&gt;25 years of Linux&lt;/strong&gt;! Happy Birthday!! :D :D&lt;/p&gt;
 
-&lt;p&gt;Today we gonna talk about how to install 
-&lt;strong&gt;Libvirt and QEMU&lt;/strong&gt;
- to use 
-&lt;strong&gt;KVM&lt;/strong&gt;
- Virtualization systems. To do that you can use many strategies here we will use just the official slackware package management tool (
-&lt;strong&gt;slackpkg&lt;/strong&gt;
-) and some of “unofficial” scripts from Slackbuilds (if you dont know how to use and install Slackbuilds please see the post 
-&lt;strong&gt;&lt;a href=&quot;http://alex.mulatinho.net/2014/11/13/how-i-build-almost-every-package-in-my-slackware-linux/&quot;&gt;How I build and install almost every package in my slackware linux&lt;/a&gt;&lt;/strong&gt;
-) to install Libvirt.###First, dont forget to enable your Virtualization in BIOS&lt;/p&gt;
+&lt;p&gt;Today we gonna talk about how to install &lt;strong&gt;Libvirt and QEMU&lt;/strong&gt; to use &lt;strong&gt;KVM&lt;/strong&gt; Virtualization systems. To do that you can use many strategies here we will use just the official slackware package management tool (&lt;strong&gt;slackpkg&lt;/strong&gt;) and some of “unofficial” scripts from Slackbuilds (if you dont know how to use and install Slackbuilds please see the post &lt;strong&gt;&lt;a href=&quot;http://alex.mulatinho.net/2014/11/13/how-i-build-almost-every-package-in-my-slackware-linux/&quot;&gt;How I build and install almost every package in my slackware linux&lt;/a&gt;&lt;/strong&gt;) to install Libvirt.&lt;/p&gt;
+
+&lt;h3 id=&quot;first-dont-forget-to-enable-your-virtualization-in-bios&quot;&gt;First, dont forget to enable your Virtualization in BIOS&lt;/h3&gt;
 
 &lt;p&gt;Some BIOS come to the user with the Virtualization disabled by default, to check in your Linux if you has the support for virtualization just type this:&lt;/p&gt;
 
-&lt;p&gt;$ egrep –color ‘(vmx|smx)’ /proc/cpuinfo
-If you doesn’t see any ouput then 
-&lt;strong&gt;you need to enable Virtualization in BIOS&lt;/strong&gt;
-! If you can’t find any “Virtualization” there then perhaps you don’t have Virtualization support in your CPU :(&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ egrep --color '(vmx|smx)' /proc/cpuinfo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;#&lt;/h2&gt;
+&lt;p&gt;If you doesn’t see any ouput then &lt;strong&gt;you need to enable Virtualization in BIOS&lt;/strong&gt;! If you can’t find any “Virtualization” there then perhaps you don’t have Virtualization support in your CPU :(&lt;/p&gt;
 
-&lt;p&gt;###Installing Libvirt to use KVM virtualization&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;installing-libvirt-to-use-kvm-virtualization&quot;&gt;Installing Libvirt to use KVM virtualization&lt;/h3&gt;
 
 &lt;p&gt;Download the lastest slackbuids scripts and then go to libvirt and build&lt;/p&gt;
 
-&lt;h1 id=&quot;git-clone-gitslackbuildsorgslackbuildsgit&quot;&gt;git clone git://slackbuilds.org/slackbuilds.git&lt;/h1&gt;
-&lt;h1 id=&quot;cd-slackbuildslibrarieslibvirt&quot;&gt;cd slackbuilds/libraries/libvirt&lt;/h1&gt;
-&lt;h1 id=&quot;source-info-wget--c-download-sh-slackbuild&quot;&gt;source *info; wget -c $DOWNLOAD; sh *SlackBuild&lt;/h1&gt;
-&lt;p&gt;The basic packages for you mount your virtualization server are 
-&lt;strong&gt;libvirt&lt;/strong&gt;
- and 
-&lt;strong&gt;qemu&lt;/strong&gt;
- but for a graphical manager you could also install the 
-&lt;strong&gt;virt-manager&lt;/strong&gt;
- software, this script helps you build all that you need to get these packages in 
-&lt;strong&gt;.t?z&lt;/strong&gt;
- format and install with 
-&lt;strong&gt;installpkg&lt;/strong&gt;
-.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# git clone git://slackbuilds.org/slackbuilds.git
+# cd slackbuilds/libraries/libvirt
+# source *info; wget -c $DOWNLOAD; sh *SlackBuild
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The basic packages for you mount your virtualization server are &lt;strong&gt;libvirt&lt;/strong&gt; and &lt;strong&gt;qemu&lt;/strong&gt; but for a graphical manager you could also install the &lt;strong&gt;virt-manager&lt;/strong&gt; software, this script helps you build all that you need to get these packages in &lt;strong&gt;.t?z&lt;/strong&gt; format and install with &lt;strong&gt;installpkg&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Now, I don’t know how you choice your packages, so if you see something like this during the build of Libvirt, this is what you need to do:&lt;/p&gt;
 
-&lt;p&gt;*error #1 (first try this)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;error #1 (first try this)&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;configure: error: You must install the pciaccess module to build with udev
 Don’t panic! Just browse the official packages with slackpkg like that&lt;/p&gt;
 
-&lt;h1 id=&quot;slackpkg-search-pciaccess&quot;&gt;slackpkg search pciaccess&lt;/h1&gt;
-&lt;p&gt;[uninstalled] - libpciaccess-0.13.4-x86_61-1&lt;/p&gt;
-&lt;h1 id=&quot;slackpkg-install-libpciaccess&quot;&gt;slackpkg install libpciaccess&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# slackpkg search pciaccess
+[uninstalled] - libpciaccess-0.13.4-x86_61-1
+# slackpkg install libpciaccess
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;*error #2 (second, try the slackbuild)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;error #2 (second, try the slackbuild)&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;configure: error: You must install the libyajl library &amp;amp; headers to compile libvirt
 No panic again! Just install the dependencies and repeat the process until there is no other package&lt;/p&gt;
 
-&lt;h1 id=&quot;find-slackbuilds--iname-yajl&quot;&gt;find ~/slackbuilds -iname ‘&lt;em&gt;yajl&lt;/em&gt;’&lt;/h1&gt;
-&lt;p&gt;/root/slackbuilds/libraries/yajl&lt;/p&gt;
-&lt;h1 id=&quot;cd-slackbuildslibrariesyajl&quot;&gt;cd ~/slackbuilds/libraries/yajl&lt;/h1&gt;
-&lt;h1 id=&quot;source-info-wget--c-download-sh-slackbuild-1&quot;&gt;source *info; wget -c $DOWNLOAD; sh *SlackBuild&lt;/h1&gt;
-&lt;h1 id=&quot;installpkg-tmpyajl&quot;&gt;installpkg /tmp/yajl*&lt;/h1&gt;
-&lt;p&gt;And done! If you install all the dependencies you should now have a 
-&lt;strong&gt;libvirt&lt;em&gt;.txz**
- and 
-**qemu&lt;/em&gt;t?z&lt;/strong&gt;
- packages into your
-&lt;strong&gt;/tmp&lt;/strong&gt;
- directory and you just need to install they using 
-&lt;strong&gt;installpkg&lt;/strong&gt;
-.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# find ~/slackbuilds -iname '*yajl*'
+/root/slackbuilds/libraries/yajl
+# cd ~/slackbuilds/libraries/yajl
+# source *info; wget -c $DOWNLOAD; sh *SlackBuild
+# installpkg /tmp/yajl*
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;###Starting your Libvirt daemon to run your VM guests&lt;/p&gt;
+&lt;p&gt;And done! If you install all the dependencies you should now have a &lt;strong&gt;libvirt&lt;em&gt;.txz** and **qemu&lt;/em&gt;t?z&lt;/strong&gt; packages into your &lt;strong&gt;/tmp&lt;/strong&gt; directory and you just need to install they using &lt;strong&gt;installpkg&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Slackware still uses runlevels scripts into 
-&lt;strong&gt;/etc/rc.d&lt;/strong&gt;
- directory so to start libvirt you need to do&lt;/p&gt;
+&lt;h3 id=&quot;starting-your-libvirt-daemon-to-run-your-vm-guests&quot;&gt;Starting your Libvirt daemon to run your VM guests&lt;/h3&gt;
 
-&lt;h1 id=&quot;sh-etcrcdrclibvirt-start&quot;&gt;sh /etc/rc.d/rc.libvirt start&lt;/h1&gt;
-&lt;p&gt;Starting virtlockd: /usr/sbin/virtlockd -d
+&lt;p&gt;Slackware still uses runlevels scripts into &lt;strong&gt;/etc/rc.d&lt;/strong&gt; directory so to start libvirt you need to do&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# sh /etc/rc.d/rc.libvirt start
+Starting virtlockd: /usr/sbin/virtlockd -d
 Starting virtlogd: /usr/sbin/virtlogd -d
 Starting libvirtd: /usr/sbin/libvirtd -d
-To enable this in boot&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h1 id=&quot;chmod-ux-etcrcdrclibvirt&quot;&gt;chmod u+x /etc/rc.d/rc.libvirt&lt;/h1&gt;
-&lt;h1 id=&quot;echo-etcrcdrclibvirt-start-etcrcdrclocal&quot;&gt;echo ‘/etc/rc.d/rc.libvirt start’ » /etc/rc.d/rc.local&lt;/h1&gt;
+&lt;p&gt;To enable this in boot&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# chmod u+x /etc/rc.d/rc.libvirt
+# echo '/etc/rc.d/rc.libvirt start' &amp;gt;&amp;gt; /etc/rc.d/rc.local
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;p&gt;See my slackware VM guest in action&lt;/p&gt;
 
-&lt;h1 id=&quot;virsh-list&quot;&gt;virsh list&lt;/h1&gt;
-&lt;p&gt;Id Name State
-—————————————————-
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# virsh list
+ Id Name State
+----------------------------------------------------
  1 slack64-srv01 running
-And that’s it for now! Wait for my new article soon: 
-&lt;strong&gt;KVM Virtualization with command line. &lt;/strong&gt;
-Hope you enjoy it! :)&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="slackware" /><category term="virtualization" /><summary type="html">Hello friends!</summary></entry><entry><title type="html">Desafio Shell Script 001</title><link href="http://alex.mulatinho.net/2016/08/17/desafio-shell-script-001.html" rel="alternate" type="text/html" title="Desafio Shell Script 001" /><published>2016-08-17T00:00:00-03:00</published><updated>2016-08-17T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/08/17/desafio-shell-script-001</id><content type="html" xml:base="http://alex.mulatinho.net/2016/08/17/desafio-shell-script-001.html">&lt;hr /&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And that’s it for now! Wait for my new article soon: &lt;strong&gt;KVM Virtualization with command line.&lt;/strong&gt; Hope you enjoy it! :)&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="slackware" /><category term="virtualization" /><summary type="html">Hello friends!</summary></entry><entry><title type="html">Desafio Shell Script 001</title><link href="http://alex.mulatinho.net/2016/08/17/desafio-shell-script-001.html" rel="alternate" type="text/html" title="Desafio Shell Script 001" /><published>2016-08-17T00:00:00-03:00</published><updated>2016-08-17T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/08/17/desafio-shell-script-001</id><content type="html" xml:base="http://alex.mulatinho.net/2016/08/17/desafio-shell-script-001.html">&lt;hr /&gt;
 &lt;p&gt;layout: post
 title: ‘Desafio Shell Script #001’
 tags:&lt;/p&gt;
@@ -595,174 +582,111 @@ Quer ver a minha versão com entradas e saídas funcionando??&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://pastebin.com/VvbxBZWD&quot;&gt;http://pastebin.com/VvbxBZWD&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Conseguiu resolver? Poste suas respostas nos comentários! Quer saber a solução? Entre em contato comigo ou procure na lista de Shell-Script a thread “Desafio Shell-Script #001 do Mulato” ;-)&lt;/p&gt;</content><author><name></name></author><summary type="html">layout: post title: ‘Desafio Shell Script #001’ tags: bash challenges programming script —Dona Fernanda resolveu casar-se com Carlos, o padre porém disse que os noivos não poderiam escolher a data de casamento devido a grande quantidade de solicitações na igreja. Vários noivos também estavam ansiosos para saber quando poderiam se casar naquela linda igreja, para dizer a cada casal o dia exato em que eles poderiam se casar o padre solicitou que eles fornecessem de 1 até 5 dias no mês de sua preferência e desenvolveu um algoritmo que ajudaria a resolver este impasse de forma aleatória e justa agora e no futuro, ele definiu:</summary></entry><entry><title type="html">Bash Financeiro na Bolsa</title><link href="http://alex.mulatinho.net/2016/08/11/bash-financeiro-na-bolsa.html" rel="alternate" type="text/html" title="Bash Financeiro na Bolsa" /><published>2016-08-11T00:00:00-03:00</published><updated>2016-08-11T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/08/11/bash-financeiro-na-bolsa</id><content type="html" xml:base="http://alex.mulatinho.net/2016/08/11/bash-financeiro-na-bolsa.html">&lt;p&gt;bom, eu diariamente utilizo os cálculos listados neste artigo para poder realizar os meus próprios investimentos, por isso achei que poderia ser útil para alguém, pretendo atualizar com mais no futuro; existe bilhões de pessoas neste mundo e cada um tem um jeito de realizar suas tarefas, meus cálculos geralmente são feitos utilizando a shell BASH em vez de uma calculadora comum. (p.s. valores abaixo sem citar impostos de day-trade, corretagem e emolumentos)&lt;em&gt;**&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Conseguiu resolver? Poste suas respostas nos comentários! Quer saber a solução? Entre em contato comigo ou procure na lista de Shell-Script a thread “Desafio Shell-Script #001 do Mulato” ;-)&lt;/p&gt;</content><author><name></name></author><summary type="html">layout: post title: ‘Desafio Shell Script #001’ tags: bash challenges programming script —Dona Fernanda resolveu casar-se com Carlos, o padre porém disse que os noivos não poderiam escolher a data de casamento devido a grande quantidade de solicitações na igreja. Vários noivos também estavam ansiosos para saber quando poderiam se casar naquela linda igreja, para dizer a cada casal o dia exato em que eles poderiam se casar o padre solicitou que eles fornecessem de 1 até 5 dias no mês de sua preferência e desenvolveu um algoritmo que ajudaria a resolver este impasse de forma aleatória e justa agora e no futuro, ele definiu:</summary></entry><entry><title type="html">Bash Financeiro na Bolsa</title><link href="http://alex.mulatinho.net/2016/08/11/bash-financeiro-na-bolsa.html" rel="alternate" type="text/html" title="Bash Financeiro na Bolsa" /><published>2016-08-11T00:00:00-03:00</published><updated>2016-08-11T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/08/11/bash-financeiro-na-bolsa</id><content type="html" xml:base="http://alex.mulatinho.net/2016/08/11/bash-financeiro-na-bolsa.html">&lt;p&gt;bom, eu diariamente utilizo os cálculos listados neste artigo para poder realizar os meus próprios investimentos, por isso achei que poderia ser útil para alguém, pretendo atualizar com mais no futuro; existe bilhões de pessoas neste mundo e cada um tem um jeito de realizar suas tarefas, meus cálculos geralmente são feitos utilizando a shell BASH em vez de uma calculadora comum. (p.s. valores abaixo sem citar impostos de day-trade, corretagem e emolumentos)&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;*ALGUMAS OPERAÇÕES SIMPLES USANDO O BC&lt;/strong&gt;
-O comando 
-&lt;strong&gt;&lt;a href=&quot;https://www.gnu.org/software/bc/manual/html_mono/bc.html&quot;&gt;bc&lt;/a&gt;&lt;/strong&gt;
- é uma calculadora poderosa que pode rodar na linha de comando simplesmente fornecendo de entrada uma conta matemática&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;$ echo 4.26-2&lt;/td&gt;
-      &lt;td&gt;bc2.26&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ALGUMAS OPERAÇÕES SIMPLES USANDO O BC&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;O comando &lt;strong&gt;&lt;a href=&quot;https://www.gnu.org/software/bc/manual/html_mono/bc.html&quot;&gt;bc&lt;/a&gt;&lt;/strong&gt; é uma calculadora poderosa que pode rodar na linha de comando simplesmente fornecendo de entrada uma conta matemática&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo 4.26-2|bc2.26
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Vejamos algumas operações simples de matemática no bc&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;$ echo ‘scale=2;(5.15+4)/2’&lt;/td&gt;
-      &lt;td&gt;bc  # scale=2 mostra apenas 2 decimais4.57$ echo ‘2^16’&lt;/td&gt;
-      &lt;td&gt;bc                # 2 elevado a 16&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;65536$ echo ‘(8+2)-(17-7)’&lt;/td&gt;
-      &lt;td&gt;bc &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;0&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo 'scale=2;(5.15+4)/2'|bc  # scale=2 mostra apenas 2 decimais 4.57
+$ echo '2^16'|bc                # 2 elevado a 16
+65536
+$ echo '(8+2)-(17-7)'|bc 
+0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Vejamos algumas operações úteis de percentagem que podem até ser usadas pra calcular rendimento ou simplesmente para a sua análise diária&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;$ echo 4.26*0.1&lt;/td&gt;
-      &lt;td&gt;bc  # 10% de 4.26.42$ echo 4.26*0.25&lt;/td&gt;
-      &lt;td&gt;bc # 25% de 4.261.06$ echo 4.26*1.05&lt;/td&gt;
-      &lt;td&gt;bc # 5% a mais de 4.264.47$ echo 4.26*1.25&lt;/td&gt;
-      &lt;td&gt;bc # 25% a mais de 4.265.32$ echo 3.25*0.84&lt;/td&gt;
-      &lt;td&gt;bc # 3.25 desvalorizou 16% (1.00 - 0.16 = 0.84)2.73&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo 4.26*0.1|bc  # 10% de 4.26.42
+$ echo 4.26*0.25|bc # 25% de 4.261.06
+$ echo 4.26*1.05|bc # 5% a mais de 4.264.47
+$ echo 4.26*1.25|bc # 25% a mais de 4.265.32
+$ echo 3.25*0.84|bc # 3.25 desvalorizou 16% (1.00 - 0.16 = 0.84)2.73
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;strong&gt;*CÁLCULOS QUE UTILIZO A OPERAR NO MERCADO DE AÇÕES &lt;/strong&gt;
-calcular o custo de compra de um ativo (ação) no mercado de ações, neste exemplo 
-&lt;strong&gt;800&lt;/strong&gt;
- papéis da 
-&lt;strong&gt;USIM3&lt;/strong&gt;
- (
-&lt;strong&gt;R$ 8,40&lt;/strong&gt;
- na data do artigo)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;CÁLCULOS QUE UTILIZO A OPERAR NO MERCADO DE AÇÕES &lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;$ echo ‘800*8.4’&lt;/td&gt;
-      &lt;td&gt;bc&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;calcular o custo de compra de um ativo (ação) no mercado de ações, neste exemplo &lt;strong&gt;800&lt;/strong&gt; papéis da &lt;strong&gt;USIM3&lt;/strong&gt; (&lt;strong&gt;R$ 8,40&lt;/strong&gt; na data do artigo)&lt;/p&gt;
 
-&lt;p&gt;6720.0
-e se depois de alguns dias decidir vender os papéis; calcular o lucro na venda de um ativo, suponha que o 
-&lt;strong&gt;USIM3&lt;/strong&gt;
- em alguns dias vá para 
-&lt;strong&gt;R$ 8,75&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo '800*8.4'|bc
+6720.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;$ echo ‘(800&lt;em&gt;8.75)-(800&lt;/em&gt;8.4)’&lt;/td&gt;
-      &lt;td&gt;bc&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;e se depois de alguns dias decidir vender os papéis; calcular o lucro na venda de um ativo, suponha que o &lt;strong&gt;USIM3&lt;/strong&gt; em alguns dias vá para &lt;strong&gt;R$ 8,75&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;280.00
-note que o rendimento é relacionado a quantidade de ações e do valor do papel, vamos ver mais alguns exemplos: agora suponha que antes da ação subir ela caiu para 
-&lt;strong&gt;R$ 8,28&lt;/strong&gt;
- e após análise decidimos comprar mais 
-&lt;strong&gt;400&lt;/strong&gt;
- papéis da 
-&lt;strong&gt;USIM3&lt;/strong&gt;
- acreditando que este ativo vai subir em breve. agora seguindo as regras da BMFBOVESPA é necessário calcular o preço médio do papel após os dois investimentos:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo '(800*8.75)-(800*8.4)'|bc
+280.00
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;*USIM3 (R$ 8,40) X 800 papéis = R$ 6.720,00&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;note que o rendimento é relacionado a quantidade de ações e do valor do papel, vamos ver mais alguns exemplos: agora suponha que antes da ação subir ela caiu para &lt;strong&gt;R$ 8,28&lt;/strong&gt; e após análise decidimos comprar mais &lt;strong&gt;400&lt;/strong&gt; papéis da &lt;strong&gt;USIM3&lt;/strong&gt; acreditando que este ativo vai subir em breve. agora seguindo as regras da BMFBOVESPA é necessário calcular o preço médio do papel após os dois investimentos:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;*USIM3 (R$ 8,28) X 400 papéis = R$ 3.312,00&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;USIM3 (R$ 8,40) X 800 papéis = R$ 6.720,00&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;USIM3 (R$ 8,28) X 400 papéis = R$ 3.312,00&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Total de papéis é igual a 1200 (800 + 400)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;*Total de papéis é igual a 1200 (800 + 400)&lt;/strong&gt;
-fazendo o cálculo final para obter a média de compra&lt;/p&gt;
+&lt;p&gt;fazendo o cálculo final para obter a média de compra&lt;/p&gt;
 
-&lt;p&gt;$ echo ‘scale=2;((400&lt;em&gt;8.28)+(800&lt;/em&gt;8.4))/1200’|bc
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo 'scale=2;((400*8.28)+(800*8.4))/1200'|bc
 8.36
-e o lucro na venda, supondo que o valor dos papéis volte a atingir 
-&lt;strong&gt;R$ 8,75&lt;/strong&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;$ echo ‘(1200&lt;em&gt;8.75)-(1200&lt;/em&gt;8.36)’|bc
+&lt;p&gt;e o lucro na venda, supondo que o valor dos papéis volte a atingir &lt;strong&gt;R$ 8,75&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo '(1200*8.75)-(1200*8.36)'|bc
 468.00
-yeah! um rendimento líquido de 
-&lt;strong&gt;R$ 468,00&lt;/strong&gt;
- menos as taxas de corretagem.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;yeah! um rendimento líquido de &lt;strong&gt;R$ 468,00&lt;/strong&gt; menos as taxas de corretagem.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt; &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;CÁLCULOS QUE UTILIZO A OPERAR NO MERCADO DE TESOURO DIRETO &lt;/strong&gt;calcular o rendimento médio por mês baseado na SELIC (&lt;strong&gt;14,25%&lt;/strong&gt; na data do artigo);&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;*CÁLCULOS QUE UTILIZO A OPERAR NO MERCADO DE TESOURO DIRETO &lt;/strong&gt;
-calcular o rendimento médio por mês baseado na SELIC (
-&lt;strong&gt;14,25%&lt;/strong&gt;
- na data do artigo);&lt;/p&gt;
+    &lt;p&gt;$ echo ‘scale=2; 14.25/12’|bc
+  1.18&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;$ echo ‘scale=2; 14.25/12’&lt;/td&gt;
-      &lt;td&gt;bc&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;1.18
-ou seja, o rendimento mensal médio é de 
-&lt;strong&gt;1.18%&lt;/strong&gt;
-, o dobro do rendimento da poupança que na data deste artigo está por volta de 
-&lt;strong&gt;6%&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;ou seja, o rendimento mensal médio é de &lt;strong&gt;1.18%&lt;/strong&gt;, o dobro do rendimento da poupança que na data deste artigo está por volta de &lt;strong&gt;6%&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;agora um cálculo simples de juros compostos, onde as variáveis:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;*initial&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;representa o valor inicial investido;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;initial&lt;/strong&gt; - representa o valor inicial investido;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;interest&lt;/strong&gt; - a taxa de rendimento médio mensal;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;months&lt;/strong&gt; - o número de meses em que o investimento será realizado;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;*interest&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;a taxa de rendimento médio mensal;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;bastando trocar os valores abaixo você consegue resultados como:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;*months&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;o número de meses em que o investimento será realizado;
-bastando trocar os valores abaixo você consegue resultados como:&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ initial=50000; interest=1.018; months=48; \
+for i in `seq 1 $months`; do \
+initial=`echo &quot;scale=2; $initial * $interest&quot;|bc`; \
+printf &quot;month %2d, r$ %12.2f\n&quot; $i $initial; done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;$ initial=50000; interest=1.018; months=48; \
-for i in &lt;code class=&quot;highlighter-rouge&quot;&gt;seq 1 $months&lt;/code&gt;; do \
-initial=&lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;scale=2; $initial * $interest&quot;|bc&lt;/code&gt;; \
-printf “month %2d, r$ %12.2f\n” $i $initial; done
-https://gist.github.com/mulatinho/a4c8ee4b5a0d6162e32834b371085394&lt;/p&gt;
+&lt;p&gt;https://gist.github.com/mulatinho/a4c8ee4b5a0d6162e32834b371085394&lt;/p&gt;
 
-&lt;p&gt;Uma ótima ferramenta que utilizo para ver gráficos, mais uma vez acho que não é tão adequado pra day-trade porque tem delay de minutos, é o 
-&lt;a href=&quot;http://www.tradingview.com&quot;&gt;Trading View&lt;/a&gt; que é free e perfeito na minha opinião, várias ferramentas e indicadores úteis para você tomar as melhores decisões; Aqui vai uns screenshots:&lt;/p&gt;
+&lt;p&gt;Uma ótima ferramenta que utilizo para ver gráficos, mais uma vez acho que não é tão adequado pra day-trade porque tem delay de minutos, é o &lt;a href=&quot;http://www.tradingview.com&quot;&gt;Trading View&lt;/a&gt; que é free e perfeito na minha opinião, várias ferramentas e indicadores úteis para você tomar as melhores decisões; Aqui vai uns screenshots:&lt;/p&gt;
 
-&lt;p&gt;[gallery ids=”1276,1279” type=”slideshow”]&lt;/p&gt;</content><author><name></name></author><summary type="html">bom, eu diariamente utilizo os cálculos listados neste artigo para poder realizar os meus próprios investimentos, por isso achei que poderia ser útil para alguém, pretendo atualizar com mais no futuro; existe bilhões de pessoas neste mundo e cada um tem um jeito de realizar suas tarefas, meus cálculos geralmente são feitos utilizando a shell BASH em vez de uma calculadora comum. (p.s. valores abaixo sem citar impostos de day-trade, corretagem e emolumentos)**</summary></entry><entry><title type="html">Avaliação e Gerenciamento de Riscos</title><link href="http://alex.mulatinho.net/2016/08/09/avaliacao-e-gerenciamento-de-riscos.html" rel="alternate" type="text/html" title="Avaliação e Gerenciamento de Riscos" /><published>2016-08-09T00:00:00-03:00</published><updated>2016-08-09T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/08/09/avaliacao-e-gerenciamento-de-riscos</id><content type="html" xml:base="http://alex.mulatinho.net/2016/08/09/avaliacao-e-gerenciamento-de-riscos.html">&lt;h2 id=&quot;parte-i-avaliação-de-riscos&quot;&gt;Parte I: Avaliação de Riscos&lt;/h2&gt;
+&lt;p&gt;[gallery ids=”1276,1279” type=”slideshow”]&lt;/p&gt;</content><author><name></name></author><summary type="html">bom, eu diariamente utilizo os cálculos listados neste artigo para poder realizar os meus próprios investimentos, por isso achei que poderia ser útil para alguém, pretendo atualizar com mais no futuro; existe bilhões de pessoas neste mundo e cada um tem um jeito de realizar suas tarefas, meus cálculos geralmente são feitos utilizando a shell BASH em vez de uma calculadora comum. (p.s. valores abaixo sem citar impostos de day-trade, corretagem e emolumentos)</summary></entry><entry><title type="html">Avaliação e Gerenciamento de Riscos</title><link href="http://alex.mulatinho.net/2016/08/09/avaliacao-e-gerenciamento-de-riscos.html" rel="alternate" type="text/html" title="Avaliação e Gerenciamento de Riscos" /><published>2016-08-09T00:00:00-03:00</published><updated>2016-08-09T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/08/09/avaliacao-e-gerenciamento-de-riscos</id><content type="html" xml:base="http://alex.mulatinho.net/2016/08/09/avaliacao-e-gerenciamento-de-riscos.html">&lt;h2 id=&quot;parte-i-avaliação-de-riscos&quot;&gt;Parte I: Avaliação de Riscos&lt;/h2&gt;
 
 &lt;p&gt;Olá, este post faz parte de uma sequência de artigos sobre &lt;strong&gt;segurança da informação&lt;/strong&gt;, resolvi fazê-los tanto para ajudar os interessados no tema como para fixar alguns pontos na minha cabeça, além é claro, de poder deixar como consulta em algum lugar no blog. Antes de mais nada, eu não sou o dono da verdade, então muita coisa escrita aqui pode ser feita de formas diferentes para se atingir objetivos diferentes, aqui eu mostro coisas que eu aplico no meu dia ou que já apliquei em empresas anteriores;&lt;/p&gt;
 

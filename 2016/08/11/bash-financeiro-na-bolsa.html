@@ -109,172 +109,109 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>bom, eu diariamente utilizo os cálculos listados neste artigo para poder realizar os meus próprios investimentos, por isso achei que poderia ser útil para alguém, pretendo atualizar com mais no futuro; existe bilhões de pessoas neste mundo e cada um tem um jeito de realizar suas tarefas, meus cálculos geralmente são feitos utilizando a shell BASH em vez de uma calculadora comum. (p.s. valores abaixo sem citar impostos de day-trade, corretagem e emolumentos)<em>**</em></p>
+    <p>bom, eu diariamente utilizo os cálculos listados neste artigo para poder realizar os meus próprios investimentos, por isso achei que poderia ser útil para alguém, pretendo atualizar com mais no futuro; existe bilhões de pessoas neste mundo e cada um tem um jeito de realizar suas tarefas, meus cálculos geralmente são feitos utilizando a shell BASH em vez de uma calculadora comum. (p.s. valores abaixo sem citar impostos de day-trade, corretagem e emolumentos)</p>
 
-<p><strong>*ALGUMAS OPERAÇÕES SIMPLES USANDO O BC</strong>
-O comando 
-<strong><a href="https://www.gnu.org/software/bc/manual/html_mono/bc.html">bc</a></strong>
- é uma calculadora poderosa que pode rodar na linha de comando simplesmente fornecendo de entrada uma conta matemática</p>
+<hr />
 
-<table>
-  <tbody>
-    <tr>
-      <td>$ echo 4.26-2</td>
-      <td>bc2.26</td>
-    </tr>
-  </tbody>
-</table>
+<ul>
+  <li><strong>ALGUMAS OPERAÇÕES SIMPLES USANDO O BC</strong></li>
+</ul>
+
+<p>O comando <strong><a href="https://www.gnu.org/software/bc/manual/html_mono/bc.html">bc</a></strong> é uma calculadora poderosa que pode rodar na linha de comando simplesmente fornecendo de entrada uma conta matemática</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo 4.26-2|bc2.26
+</code></pre></div></div>
 
 <p>Vejamos algumas operações simples de matemática no bc</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>$ echo ‘scale=2;(5.15+4)/2’</td>
-      <td>bc  # scale=2 mostra apenas 2 decimais4.57$ echo ‘2^16’</td>
-      <td>bc                # 2 elevado a 16</td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
-    <tr>
-      <td>65536$ echo ‘(8+2)-(17-7)’</td>
-      <td>bc </td>
-    </tr>
-  </tbody>
-</table>
-
-<p>0</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo 'scale=2;(5.15+4)/2'|bc  # scale=2 mostra apenas 2 decimais 4.57
+$ echo '2^16'|bc                # 2 elevado a 16
+65536
+$ echo '(8+2)-(17-7)'|bc 
+0
+</code></pre></div></div>
 
 <p>Vejamos algumas operações úteis de percentagem que podem até ser usadas pra calcular rendimento ou simplesmente para a sua análise diária</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>$ echo 4.26*0.1</td>
-      <td>bc  # 10% de 4.26.42$ echo 4.26*0.25</td>
-      <td>bc # 25% de 4.261.06$ echo 4.26*1.05</td>
-      <td>bc # 5% a mais de 4.264.47$ echo 4.26*1.25</td>
-      <td>bc # 25% a mais de 4.265.32$ echo 3.25*0.84</td>
-      <td>bc # 3.25 desvalorizou 16% (1.00 - 0.16 = 0.84)2.73</td>
-    </tr>
-  </tbody>
-</table>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo 4.26*0.1|bc  # 10% de 4.26.42
+$ echo 4.26*0.25|bc # 25% de 4.261.06
+$ echo 4.26*1.05|bc # 5% a mais de 4.264.47
+$ echo 4.26*1.25|bc # 25% a mais de 4.265.32
+$ echo 3.25*0.84|bc # 3.25 desvalorizou 16% (1.00 - 0.16 = 0.84)2.73
+</code></pre></div></div>
 
 <hr />
 
-<p><strong>*CÁLCULOS QUE UTILIZO A OPERAR NO MERCADO DE AÇÕES </strong>
-calcular o custo de compra de um ativo (ação) no mercado de ações, neste exemplo 
-<strong>800</strong>
- papéis da 
-<strong>USIM3</strong>
- (
-<strong>R$ 8,40</strong>
- na data do artigo)</p>
+<ul>
+  <li><strong>CÁLCULOS QUE UTILIZO A OPERAR NO MERCADO DE AÇÕES </strong></li>
+</ul>
 
-<table>
-  <tbody>
-    <tr>
-      <td>$ echo ‘800*8.4’</td>
-      <td>bc</td>
-    </tr>
-  </tbody>
-</table>
+<p>calcular o custo de compra de um ativo (ação) no mercado de ações, neste exemplo <strong>800</strong> papéis da <strong>USIM3</strong> (<strong>R$ 8,40</strong> na data do artigo)</p>
 
-<p>6720.0
-e se depois de alguns dias decidir vender os papéis; calcular o lucro na venda de um ativo, suponha que o 
-<strong>USIM3</strong>
- em alguns dias vá para 
-<strong>R$ 8,75</strong></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo '800*8.4'|bc
+6720.0
+</code></pre></div></div>
 
-<table>
-  <tbody>
-    <tr>
-      <td>$ echo ‘(800<em>8.75)-(800</em>8.4)’</td>
-      <td>bc</td>
-    </tr>
-  </tbody>
-</table>
+<p>e se depois de alguns dias decidir vender os papéis; calcular o lucro na venda de um ativo, suponha que o <strong>USIM3</strong> em alguns dias vá para <strong>R$ 8,75</strong></p>
 
-<p>280.00
-note que o rendimento é relacionado a quantidade de ações e do valor do papel, vamos ver mais alguns exemplos: agora suponha que antes da ação subir ela caiu para 
-<strong>R$ 8,28</strong>
- e após análise decidimos comprar mais 
-<strong>400</strong>
- papéis da 
-<strong>USIM3</strong>
- acreditando que este ativo vai subir em breve. agora seguindo as regras da BMFBOVESPA é necessário calcular o preço médio do papel após os dois investimentos:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo '(800*8.75)-(800*8.4)'|bc
+280.00
+</code></pre></div></div>
 
-<p><strong>*USIM3 (R$ 8,40) X 800 papéis = R$ 6.720,00</strong></p>
+<p>note que o rendimento é relacionado a quantidade de ações e do valor do papel, vamos ver mais alguns exemplos: agora suponha que antes da ação subir ela caiu para <strong>R$ 8,28</strong> e após análise decidimos comprar mais <strong>400</strong> papéis da <strong>USIM3</strong> acreditando que este ativo vai subir em breve. agora seguindo as regras da BMFBOVESPA é necessário calcular o preço médio do papel após os dois investimentos:</p>
 
-<p><strong>*USIM3 (R$ 8,28) X 400 papéis = R$ 3.312,00</strong></p>
+<ul>
+  <li><strong>USIM3 (R$ 8,40) X 800 papéis = R$ 6.720,00</strong></li>
+  <li><strong>USIM3 (R$ 8,28) X 400 papéis = R$ 3.312,00</strong></li>
+  <li><strong>Total de papéis é igual a 1200 (800 + 400)</strong></li>
+</ul>
 
-<p><strong>*Total de papéis é igual a 1200 (800 + 400)</strong>
-fazendo o cálculo final para obter a média de compra</p>
+<p>fazendo o cálculo final para obter a média de compra</p>
 
-<p>$ echo ‘scale=2;((400<em>8.28)+(800</em>8.4))/1200’|bc
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo 'scale=2;((400*8.28)+(800*8.4))/1200'|bc
 8.36
-e o lucro na venda, supondo que o valor dos papéis volte a atingir 
-<strong>R$ 8,75</strong></p>
+</code></pre></div></div>
 
-<p>$ echo ‘(1200<em>8.75)-(1200</em>8.36)’|bc
+<p>e o lucro na venda, supondo que o valor dos papéis volte a atingir <strong>R$ 8,75</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo '(1200*8.75)-(1200*8.36)'|bc
 468.00
-yeah! um rendimento líquido de 
-<strong>R$ 468,00</strong>
- menos as taxas de corretagem.</p>
+</code></pre></div></div>
+
+<p>yeah! um rendimento líquido de <strong>R$ 468,00</strong> menos as taxas de corretagem.</p>
 
 <hr />
 
-<p> </p>
+<ul>
+  <li>
+    <p><strong>CÁLCULOS QUE UTILIZO A OPERAR NO MERCADO DE TESOURO DIRETO </strong>calcular o rendimento médio por mês baseado na SELIC (<strong>14,25%</strong> na data do artigo);</p>
 
-<p><strong>*CÁLCULOS QUE UTILIZO A OPERAR NO MERCADO DE TESOURO DIRETO </strong>
-calcular o rendimento médio por mês baseado na SELIC (
-<strong>14,25%</strong>
- na data do artigo);</p>
+    <p>$ echo ‘scale=2; 14.25/12’|bc
+  1.18</p>
+  </li>
+</ul>
 
-<table>
-  <tbody>
-    <tr>
-      <td>$ echo ‘scale=2; 14.25/12’</td>
-      <td>bc</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>1.18
-ou seja, o rendimento mensal médio é de 
-<strong>1.18%</strong>
-, o dobro do rendimento da poupança que na data deste artigo está por volta de 
-<strong>6%</strong></p>
+<p>ou seja, o rendimento mensal médio é de <strong>1.18%</strong>, o dobro do rendimento da poupança que na data deste artigo está por volta de <strong>6%</strong></p>
 
 <p>agora um cálculo simples de juros compostos, onde as variáveis:</p>
 
-<p><strong>*initial</strong></p>
 <ul>
-  <li>representa o valor inicial investido;</li>
+  <li><strong>initial</strong> - representa o valor inicial investido;</li>
+  <li><strong>interest</strong> - a taxa de rendimento médio mensal;</li>
+  <li><strong>months</strong> - o número de meses em que o investimento será realizado;</li>
 </ul>
 
-<p><strong>*interest</strong></p>
-<ul>
-  <li>a taxa de rendimento médio mensal;</li>
-</ul>
+<p>bastando trocar os valores abaixo você consegue resultados como:</p>
 
-<p><strong>*months</strong></p>
-<ul>
-  <li>o número de meses em que o investimento será realizado;
-bastando trocar os valores abaixo você consegue resultados como:</li>
-</ul>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ initial=50000; interest=1.018; months=48; \
+for i in `seq 1 $months`; do \
+initial=`echo "scale=2; $initial * $interest"|bc`; \
+printf "month %2d, r$ %12.2f\n" $i $initial; done
+</code></pre></div></div>
 
-<p>$ initial=50000; interest=1.018; months=48; \
-for i in <code class="highlighter-rouge">seq 1 $months</code>; do \
-initial=<code class="highlighter-rouge">echo "scale=2; $initial * $interest"|bc</code>; \
-printf “month %2d, r$ %12.2f\n” $i $initial; done
-https://gist.github.com/mulatinho/a4c8ee4b5a0d6162e32834b371085394</p>
+<p>https://gist.github.com/mulatinho/a4c8ee4b5a0d6162e32834b371085394</p>
 
-<p>Uma ótima ferramenta que utilizo para ver gráficos, mais uma vez acho que não é tão adequado pra day-trade porque tem delay de minutos, é o 
-<a href="http://www.tradingview.com">Trading View</a> que é free e perfeito na minha opinião, várias ferramentas e indicadores úteis para você tomar as melhores decisões; Aqui vai uns screenshots:</p>
+<p>Uma ótima ferramenta que utilizo para ver gráficos, mais uma vez acho que não é tão adequado pra day-trade porque tem delay de minutos, é o <a href="http://www.tradingview.com">Trading View</a> que é free e perfeito na minha opinião, várias ferramentas e indicadores úteis para você tomar as melhores decisões; Aqui vai uns screenshots:</p>
 
 <p>[gallery ids=”1276,1279” type=”slideshow”]</p>
 

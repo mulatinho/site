@@ -111,62 +111,62 @@
   <div class="post-content" itemprop="articleBody">
     <p>Para quem desenvolve ou acompanha um projeto livre e precisa estar sempre atualizado com os últimos commits segue um script que ajuda bastante no processo, por enquanto só deve funcionar no git e no subversion.</p>
 
-<p>Se você tem uma pasta apenas para os repositórios como eu (
-/home/mulatinho/repo) basta adicionar o script abaixo e definir as variáveis 
-$subdir (caso tenha subdiretórios com repositórios) e a 
-$nodir (caso não queira incluir arquivos e/ou diretórios na atualização). Segue os exemplos:$ cat updaterepo.sh
-#!/bin/bash
-basedir=${HOME}/repo
-subdir=”github”
-nodir=”codigolivre.org.br|update.sh”</p>
+<p>Se você tem uma pasta apenas para os repositórios como eu (/home/mulatinho/repo) basta adicionar o script abaixo e definir as variáveis $subdir (caso tenha subdiretórios com repositórios) e a $nodir (caso não queira incluir arquivos e/ou diretórios na atualização). Segue o arquivo updaterepo.sh e o exemplo:</p>
 
-<p>function do_update()
-{
-	echo “entrando em ‘${1}’..”
-	cd ${1} 2&gt;/dev/null</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="nv">basedir</span><span class="o">=</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span>/repo
+<span class="nv">subdir</span><span class="o">=</span><span class="s2">"github"</span>
+<span class="nv">nodir</span><span class="o">=</span><span class="s2">"codigolivre.org.br|update.sh"</span>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>repositorio=`echo ${1} | awk -F'/' '{print $NF}'`
-if git status &gt;/dev/null 2&gt;&amp;1;
-then
-	echo "atualizando git repositorio '${repositorio}'"
-	git pull
-elif svn status | egrep -i 'not a working copy' &gt;/dev/null 2&gt;&amp;1;
-then
-	echo "atualizando svn repositorio '${repositorio}'"
-	svn update
-else
-	echo "'${repositorio}' nao eh um repositorio git ou svn"
-fi
+<span class="k">function </span>do_update<span class="o">()</span>
+<span class="o">{</span>
+	<span class="nb">echo</span> <span class="s2">"entrando em '</span><span class="k">${</span><span class="nv">1</span><span class="k">}</span><span class="s2">'.."</span>
+	<span class="nb">cd</span> <span class="k">${</span><span class="nv">1</span><span class="k">}</span> 2&gt;/dev/null
 
-echo
-echo }
-</code></pre></div></div>
+	<span class="nv">repositorio</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="k">${</span><span class="nv">1</span><span class="k">}</span> | awk <span class="nt">-F</span><span class="s1">'/'</span> <span class="s1">'{print $NF}'</span><span class="sb">`</span>
+	<span class="k">if </span>git status <span class="o">&gt;</span>/dev/null 2&gt;&amp;1<span class="p">;</span>
+	<span class="k">then
+		</span><span class="nb">echo</span> <span class="s2">"atualizando git repositorio '</span><span class="k">${</span><span class="nv">repositorio</span><span class="k">}</span><span class="s2">'"</span>
+		git pull
+	<span class="k">elif </span>svn status | egrep <span class="nt">-i</span> <span class="s1">'not a working copy'</span> <span class="o">&gt;</span>/dev/null 2&gt;&amp;1<span class="p">;</span>
+	<span class="k">then
+		</span><span class="nb">echo</span> <span class="s2">"atualizando svn repositorio '</span><span class="k">${</span><span class="nv">repositorio</span><span class="k">}</span><span class="s2">'"</span>
+		svn update
+	<span class="k">else
+		</span><span class="nb">echo</span> <span class="s2">"'</span><span class="k">${</span><span class="nv">repositorio</span><span class="k">}</span><span class="s2">' nao eh um repositorio git ou svn"</span>
+	<span class="k">fi
 
-<p>#principal
-for workdir in ${basedir}/<em>; 
-do
-	if echo ${workdir} | egrep “${subdir}” &gt;/dev/null 2&gt;&amp;1
-	then
-		rdir=${workdir}
-		for workdir in ${rdir}/</em>;
-		do
-			do_update “${workdir}”
-		done
-	elif echo ${workdir} | egrep “${nodir}” &gt;/dev/null 2&gt;&amp;1
-	then
+	</span><span class="nb">echo
+	echo</span>
+<span class="o">}</span>
+
+<span class="c">#principal</span>
+<span class="k">for </span>workdir <span class="k">in</span> <span class="k">${</span><span class="nv">basedir</span><span class="k">}</span>/<span class="k">*</span><span class="p">;</span>
+<span class="k">do
+	if </span><span class="nb">echo</span> <span class="k">${</span><span class="nv">workdir</span><span class="k">}</span> | egrep <span class="s2">"</span><span class="k">${</span><span class="nv">subdir</span><span class="k">}</span><span class="s2">"</span> <span class="o">&gt;</span>/dev/null 2&gt;&amp;1
+	<span class="k">then
+		</span><span class="nv">rdir</span><span class="o">=</span><span class="k">${</span><span class="nv">workdir</span><span class="k">}</span>
+		<span class="k">for </span>workdir <span class="k">in</span> <span class="k">${</span><span class="nv">rdir</span><span class="k">}</span>/<span class="k">*</span><span class="p">;</span>
+		<span class="k">do
+			</span>do_update <span class="s2">"</span><span class="k">${</span><span class="nv">workdir</span><span class="k">}</span><span class="s2">"</span>
+		<span class="k">done
+	elif </span><span class="nb">echo</span> <span class="k">${</span><span class="nv">workdir</span><span class="k">}</span> | egrep <span class="s2">"</span><span class="k">${</span><span class="nv">nodir</span><span class="k">}</span><span class="s2">"</span> <span class="o">&gt;</span>/dev/null 2&gt;&amp;1
+	<span class="k">then
 		continue
 	else
-		do_update “${workdir}”
-	fi</p>
+		</span>do_update <span class="s2">"</span><span class="k">${</span><span class="nv">workdir</span><span class="k">}</span><span class="s2">"</span>
+	<span class="k">fi
 
-<p>done</p>
+done
 
-<p>cd ${basedir}
-Rodando o script e vendo o resultado de todos os repositórios listados em (${HOME}/repo) sendo atualizados!</p>
+</span><span class="nb">cd</span> <span class="k">${</span><span class="nv">basedir</span><span class="k">}</span>
+</code></pre></div></div>
 
-<p>$ ./update.sh 
-entrando em ‘/home/mulatinho/repo/gcc’..
-atualizando git repositorio ‘gcc’
+<p>Rodando o script e vendo o resultado de todos os repositórios listados em (${HOME}/repo) sendo atualizados!</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./update.sh
+entrando em '/home/mulatinho/repo/gcc'..
+atualizando git repositorio 'gcc'
 remote: Counting objects: 91, done.
 remote: Compressing objects: 100% (41/41), done.
 remote: Total 42 (delta 34), reused 0 (delta 0)
@@ -180,9 +180,9 @@ Updating 3cef9c1..23c6c8a
 Fast-forward
  gcc/ChangeLog                           |  28 +++++++++++++
  gcc/DATESTAMP                           |   2 +-
- gcc/config/rs6000/linux64.h             |  30 +++++++——-
- gcc/config/rs6000/rs6000.md             |  34 ++++++++++——
- gcc/config/rs6000/sysv4.h               |  49 +++++++++++————
+ gcc/config/rs6000/linux64.h             |  30 +++++++-------
+ gcc/config/rs6000/rs6000.md             |  34 ++++++++++------
+ gcc/config/rs6000/sysv4.h               |  49 +++++++++++------------
  gcc/config/sh/iterators.md              |   3 ++
  gcc/config/sh/predicates.md             |  28 +++++++++++++
  gcc/config/sh/sh.c                      |  16 ++++++++
@@ -198,105 +198,107 @@ Fast-forward
  13 files changed, 417 insertions(+), 51 deletions(-)
  create mode 100644 gcc/testsuite/gcc.target/sh/pr55303-1.c
  create mode 100644 gcc/testsuite/gcc.target/sh/pr55303-2.c
- create mode 100644 gcc/testsuite/gcc.target/sh/pr55303-3.c</p>
+ create mode 100644 gcc/testsuite/gcc.target/sh/pr55303-3.c
 
-<p>entrando em ‘/home/mulatinho/repo/geany’..
-atualizando git repositorio ‘geany’
-Already up-to-date.</p>
+entrando em '/home/mulatinho/repo/geany'..
+atualizando git repositorio 'geany'
+Already up-to-date.
 
-<p>entrando em ‘/home/mulatinho/repo/github/bacuri’..
-atualizando git repositorio ‘bacuri’
-Already up-to-date.</p>
+entrando em '/home/mulatinho/repo/github/bacuri'..
+atualizando git repositorio 'bacuri'
+Already up-to-date.
 
-<p>entrando em ‘/home/mulatinho/repo/github/docs’..
-atualizando git repositorio ‘docs’
-Already up-to-date.</p>
+entrando em '/home/mulatinho/repo/github/docs'..
+atualizando git repositorio 'docs'
+Already up-to-date.
 
-<p>entrando em ‘/home/mulatinho/repo/github/pub’..
-atualizando git repositorio ‘pub’
-Already up-to-date.</p>
+entrando em '/home/mulatinho/repo/github/pub'..
+atualizando git repositorio 'pub'
+Already up-to-date.
 
-<p>entrando em ‘/home/mulatinho/repo/github/sfm’..
-atualizando git repositorio ‘sfm’
-Already up-to-date.</p>
+entrando em '/home/mulatinho/repo/github/sfm'..
+atualizando git repositorio 'sfm'
+Already up-to-date.
 
-<p>entrando em ‘/home/mulatinho/repo/gus-pe’..
-atualizando git repositorio ‘gus-pe’
-Updating ‘.’:
+entrando em '/home/mulatinho/repo/gus-pe'..
+atualizando git repositorio 'gus-pe'
+Updating '.':
 A    teste
-A    teste/teste.txt</p>
+A    teste/teste.txt
 
-<p>entrando em ‘/home/mulatinho/repo/keymouse’..
-atualizando git repositorio ‘keymouse’
-Already up-to-date.</p>
+entrando em '/home/mulatinho/repo/keymouse'..
+atualizando git repositorio 'keymouse'
+Already up-to-date.
 
-<p>entrando em ‘/home/mulatinho/repo/linux-stable’..
-atualizando git repositorio ‘linux-stable’
-Already up-to-date.</p>
+entrando em '/home/mulatinho/repo/linux-stable'..
+atualizando git repositorio 'linux-stable'
+Already up-to-date.
 
-<p>entrando em ‘/home/mulatinho/repo/slapt-get’..
-updating git repository ‘slapt-get’
+entrando em '/home/mulatinho/repo/slapt-get'..
+updating git repository 'slapt-get'
 From http://software.jaos.org/git/slapt-get
-   9617037..d1a5737  master     -&gt; origin/master</p>
-<ul>
-  <li>[new branch]      slack13.37 -&gt; origin/slack13.37
+   9617037..d1a5737  master     -&gt; origin/master
+ * [new branch]      slack13.37 -&gt; origin/slack13.37
 Updating 9617037..d1a5737
 Fast-forward
  ChangeLog                  |   6 +
  default.slapt-getrc.i386   |  10 +-
  default.slapt-getrc.x86_64 |  10 +-
- example.slapt-getrc        | 116 ++++++++——-
- example.slapt-getrc.i386   | 122 +++++++——–
- example.slapt-getrc.x86_64 | 124 ++++++++——–
- po/bg.po                   |  78 ++——–
- po/cs.po                   |  71 ++——-
- po/{cz.po =&gt; da.po}        | 350 +++++++++++++++++++————————
- po/de.po                   |  86 ++———
- po/el.po                   | 105 ++++———
- po/es.po                   |  96 +++———
- po/es_AR.po                |  95 +++———
- po/es_ES.po                | 104 +++———-
- po/fr.po                   | 303 +++++++++++++++———————-
- po/{en.po =&gt; he.po}        | 370 +++++++++++++++++++++————————-
- po/hu.po                   |  60 ++++—-
- po/id.po                   |  82 ++——–
- po/it.po                   |  78 ++——–
- po/ja.po                   |  84 ++———
- po/nl.po                   |  76 ++——–
- po/no.po                   |  78 ++——–
- po/pl.po                   |  83 ++———
+ example.slapt-getrc        | 116 ++++++++-------
+ example.slapt-getrc.i386   | 122 +++++++--------
+ example.slapt-getrc.x86_64 | 124 ++++++++--------
+ po/bg.po                   |  78 ++--------
+ po/cs.po                   |  71 ++-------
+ po/{cz.po =&gt; da.po}        | 350 +++++++++++++++++++------------------------
+ po/de.po                   |  86 ++---------
+ po/el.po                   | 105 ++++---------
+ po/es.po                   |  96 +++---------
+ po/es_AR.po                |  95 +++---------
+ po/es_ES.po                | 104 +++----------
+ po/fr.po                   | 303 +++++++++++++++----------------------
+ po/{en.po =&gt; he.po}        | 370 +++++++++++++++++++++-------------------------
+ po/hu.po                   |  60 ++++----
+ po/id.po                   |  82 ++--------
+ po/it.po                   |  78 ++--------
+ po/ja.po                   |  84 ++---------
+ po/nl.po                   |  76 ++--------
+ po/no.po                   |  78 ++--------
+ po/pl.po                   |  83 ++---------
  po/pt.po                   | 607 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- po/pt_BR.po                |  95 +++———
- po/pt_PT.po                |  85 ++———
- po/ro.po                   |  77 ++——–
- po/ru.po                   |  44 ++—-
- po/sk.po                   |  71 ++——-
- po/sl.po                   |  80 ++——–
- po/sv.po                   | 136 ++++++———–
- po/tr.po                   |  79 ++——–
- po/uk.po                   | 150 ++++++————-
- po/vi.po                   |  80 ++——–
- po/zh_CN.po                |  66 ++——-
+ po/pt_BR.po                |  95 +++---------
+ po/pt_PT.po                |  85 ++---------
+ po/ro.po                   |  77 ++--------
+ po/ru.po                   |  44 ++----
+ po/sk.po                   |  71 ++-------
+ po/sl.po                   |  80 ++--------
+ po/sv.po                   | 136 ++++++-----------
+ po/tr.po                   |  79 ++--------
+ po/uk.po                   | 150 ++++++-------------
+ po/vi.po                   |  80 ++--------
+ po/zh_CN.po                |  66 ++-------
  src/action.c               |   2 +-
  src/main.c                 |   1 +
  37 files changed, 1678 insertions(+), 2482 deletions(-)
  rename po/{cz.po =&gt; da.po} (51%)
  rename po/{en.po =&gt; he.po} (52%)
- create mode 100644 po/pt.po</li>
-</ul>
+ create mode 100644 po/pt.po
 
-<p>entrando em ‘/home/mulatinho/repo/xf86-video-intel’..
-atualizando git repositorio ‘xf86-video-intel’
-Already up-to-date.</p>
-
-<p>entrando em ‘/home/mulatinho/repo/xfce4-notes-plugin’..
-atualizando git repositorio ‘xfce4-notes-plugin’
+entrando em '/home/mulatinho/repo/xf86-video-intel'..
+atualizando git repositorio 'xf86-video-intel'
 Already up-to-date.
-Okay, mas eu tenho que ficar rodando esse lance toda hora!? Não!</p>
 
-<p>$ crontab -e
+entrando em '/home/mulatinho/repo/xfce4-notes-plugin'..
+atualizando git repositorio 'xfce4-notes-plugin'
+Already up-to-date.
+</code></pre></div></div>
+
+<p>Okay, mas eu tenho que ficar rodando esse lance toda hora!? Não!</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ crontab -e
 0 * * * * /home/mulatinho/repo/updaterepo.sh
-Pronto! Agora a toda hora que passa todos os seus repositórios serão atualizados sem bronca! É isso, continue acompanhando!</p>
+</code></pre></div></div>
+
+<p>Pronto! Agora a toda hora que passa todos os seus repositórios serão atualizados sem bronca! É isso, continue acompanhando!</p>
 
   </div>
 

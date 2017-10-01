@@ -111,102 +111,89 @@
   <div class="post-content" itemprop="articleBody">
     <p>Hello friends!</p>
 
-<p>Today is 2016/08/25, 
-<strong>25 years of Linux</strong>
-! Happy Birthday!! :D :D</p>
+<p>Today is 2016/08/25, <strong>25 years of Linux</strong>! Happy Birthday!! :D :D</p>
 
-<p>Today we gonna talk about how to install 
-<strong>Libvirt and QEMU</strong>
- to use 
-<strong>KVM</strong>
- Virtualization systems. To do that you can use many strategies here we will use just the official slackware package management tool (
-<strong>slackpkg</strong>
-) and some of “unofficial” scripts from Slackbuilds (if you dont know how to use and install Slackbuilds please see the post 
-<strong><a href="http://alex.mulatinho.net/2014/11/13/how-i-build-almost-every-package-in-my-slackware-linux/">How I build and install almost every package in my slackware linux</a></strong>
-) to install Libvirt.###First, dont forget to enable your Virtualization in BIOS</p>
+<p>Today we gonna talk about how to install <strong>Libvirt and QEMU</strong> to use <strong>KVM</strong> Virtualization systems. To do that you can use many strategies here we will use just the official slackware package management tool (<strong>slackpkg</strong>) and some of “unofficial” scripts from Slackbuilds (if you dont know how to use and install Slackbuilds please see the post <strong><a href="http://alex.mulatinho.net/2014/11/13/how-i-build-almost-every-package-in-my-slackware-linux/">How I build and install almost every package in my slackware linux</a></strong>) to install Libvirt.</p>
+
+<h3 id="first-dont-forget-to-enable-your-virtualization-in-bios">First, dont forget to enable your Virtualization in BIOS</h3>
 
 <p>Some BIOS come to the user with the Virtualization disabled by default, to check in your Linux if you has the support for virtualization just type this:</p>
 
-<p>$ egrep –color ‘(vmx|smx)’ /proc/cpuinfo
-If you doesn’t see any ouput then 
-<strong>you need to enable Virtualization in BIOS</strong>
-! If you can’t find any “Virtualization” there then perhaps you don’t have Virtualization support in your CPU :(</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ egrep --color '(vmx|smx)' /proc/cpuinfo
+</code></pre></div></div>
 
-<h2>#</h2>
+<p>If you doesn’t see any ouput then <strong>you need to enable Virtualization in BIOS</strong>! If you can’t find any “Virtualization” there then perhaps you don’t have Virtualization support in your CPU :(</p>
 
-<p>###Installing Libvirt to use KVM virtualization</p>
+<hr />
+
+<p><br /></p>
+
+<h3 id="installing-libvirt-to-use-kvm-virtualization">Installing Libvirt to use KVM virtualization</h3>
 
 <p>Download the lastest slackbuids scripts and then go to libvirt and build</p>
 
-<h1 id="git-clone-gitslackbuildsorgslackbuildsgit">git clone git://slackbuilds.org/slackbuilds.git</h1>
-<h1 id="cd-slackbuildslibrarieslibvirt">cd slackbuilds/libraries/libvirt</h1>
-<h1 id="source-info-wget--c-download-sh-slackbuild">source *info; wget -c $DOWNLOAD; sh *SlackBuild</h1>
-<p>The basic packages for you mount your virtualization server are 
-<strong>libvirt</strong>
- and 
-<strong>qemu</strong>
- but for a graphical manager you could also install the 
-<strong>virt-manager</strong>
- software, this script helps you build all that you need to get these packages in 
-<strong>.t?z</strong>
- format and install with 
-<strong>installpkg</strong>
-.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># git clone git://slackbuilds.org/slackbuilds.git
+# cd slackbuilds/libraries/libvirt
+# source *info; wget -c $DOWNLOAD; sh *SlackBuild
+</code></pre></div></div>
+
+<p>The basic packages for you mount your virtualization server are <strong>libvirt</strong> and <strong>qemu</strong> but for a graphical manager you could also install the <strong>virt-manager</strong> software, this script helps you build all that you need to get these packages in <strong>.t?z</strong> format and install with <strong>installpkg</strong>.</p>
 
 <p>Now, I don’t know how you choice your packages, so if you see something like this during the build of Libvirt, this is what you need to do:</p>
 
-<p>*error #1 (first try this)</p>
+<ul>
+  <li>error #1 (first try this)</li>
+</ul>
 
 <p>configure: error: You must install the pciaccess module to build with udev
 Don’t panic! Just browse the official packages with slackpkg like that</p>
 
-<h1 id="slackpkg-search-pciaccess">slackpkg search pciaccess</h1>
-<p>[uninstalled] - libpciaccess-0.13.4-x86_61-1</p>
-<h1 id="slackpkg-install-libpciaccess">slackpkg install libpciaccess</h1>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># slackpkg search pciaccess
+[uninstalled] - libpciaccess-0.13.4-x86_61-1
+# slackpkg install libpciaccess
+</code></pre></div></div>
 
-<p>*error #2 (second, try the slackbuild)</p>
+<ul>
+  <li>error #2 (second, try the slackbuild)</li>
+</ul>
 
 <p>configure: error: You must install the libyajl library &amp; headers to compile libvirt
 No panic again! Just install the dependencies and repeat the process until there is no other package</p>
 
-<h1 id="find-slackbuilds--iname-yajl">find ~/slackbuilds -iname ‘<em>yajl</em>’</h1>
-<p>/root/slackbuilds/libraries/yajl</p>
-<h1 id="cd-slackbuildslibrariesyajl">cd ~/slackbuilds/libraries/yajl</h1>
-<h1 id="source-info-wget--c-download-sh-slackbuild-1">source *info; wget -c $DOWNLOAD; sh *SlackBuild</h1>
-<h1 id="installpkg-tmpyajl">installpkg /tmp/yajl*</h1>
-<p>And done! If you install all the dependencies you should now have a 
-<strong>libvirt<em>.txz**
- and 
-**qemu</em>t?z</strong>
- packages into your
-<strong>/tmp</strong>
- directory and you just need to install they using 
-<strong>installpkg</strong>
-.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># find ~/slackbuilds -iname '*yajl*'
+/root/slackbuilds/libraries/yajl
+# cd ~/slackbuilds/libraries/yajl
+# source *info; wget -c $DOWNLOAD; sh *SlackBuild
+# installpkg /tmp/yajl*
+</code></pre></div></div>
 
-<p>###Starting your Libvirt daemon to run your VM guests</p>
+<p>And done! If you install all the dependencies you should now have a <strong>libvirt<em>.txz** and **qemu</em>t?z</strong> packages into your <strong>/tmp</strong> directory and you just need to install they using <strong>installpkg</strong>.</p>
 
-<p>Slackware still uses runlevels scripts into 
-<strong>/etc/rc.d</strong>
- directory so to start libvirt you need to do</p>
+<h3 id="starting-your-libvirt-daemon-to-run-your-vm-guests">Starting your Libvirt daemon to run your VM guests</h3>
 
-<h1 id="sh-etcrcdrclibvirt-start">sh /etc/rc.d/rc.libvirt start</h1>
-<p>Starting virtlockd: /usr/sbin/virtlockd -d
+<p>Slackware still uses runlevels scripts into <strong>/etc/rc.d</strong> directory so to start libvirt you need to do</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># sh /etc/rc.d/rc.libvirt start
+Starting virtlockd: /usr/sbin/virtlockd -d
 Starting virtlogd: /usr/sbin/virtlogd -d
 Starting libvirtd: /usr/sbin/libvirtd -d
-To enable this in boot</p>
+</code></pre></div></div>
 
-<h1 id="chmod-ux-etcrcdrclibvirt">chmod u+x /etc/rc.d/rc.libvirt</h1>
-<h1 id="echo-etcrcdrclibvirt-start-etcrcdrclocal">echo ‘/etc/rc.d/rc.libvirt start’ » /etc/rc.d/rc.local</h1>
+<p>To enable this in boot</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># chmod u+x /etc/rc.d/rc.libvirt
+# echo '/etc/rc.d/rc.libvirt start' &gt;&gt; /etc/rc.d/rc.local
+</code></pre></div></div>
+
 <p>See my slackware VM guest in action</p>
 
-<h1 id="virsh-list">virsh list</h1>
-<p>Id Name State
-—————————————————-
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># virsh list
+ Id Name State
+----------------------------------------------------
  1 slack64-srv01 running
-And that’s it for now! Wait for my new article soon: 
-<strong>KVM Virtualization with command line. </strong>
-Hope you enjoy it! :)</p>
+</code></pre></div></div>
+
+<p>And that’s it for now! Wait for my new article soon: <strong>KVM Virtualization with command line.</strong> Hope you enjoy it! :)</p>
 
   </div>
 
