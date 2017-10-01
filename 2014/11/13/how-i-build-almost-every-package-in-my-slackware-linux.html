@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="refresh" content="300">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About two or three years ago I met the SlackBuilds Project on a mail list and learned to love it! As all slack users know, the philosophy of our distribution...">
+  <meta name="keywords" content="open source, linux, codigo aberto, desenvolvimento, programacao, software livre, free software">
+  <meta name="author" content="Alexandre Mulatinho">
+
+  <title>How I build and install almost every package in my slackware linux</title>
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://alex.mulatinho.net/2014/11/13/how-i-build-almost-every-package-in-my-slackware-linux.html">
+  <link rel="alternate" type="application/rss+xml" title="Alexandre Mulatinho" href="/feed.xml">
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-107281743-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  
+
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <br/>
+  <br/>
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">Alexandre Mulatinho</a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/blog/">Blog</a>
+            
+          
+            
+            
+            <a class="page-link" href="/docs/">Docs</a>
+            
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/softwares/">Softwares</a>
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">How I build and install almost every package in my slackware linux</h1>
+    <p class="post-meta">
+      <time datetime="2014-11-13T00:00:00-03:00" itemprop="datePublished">
+        
+        Nov 13, 2014
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>About two or three years ago I met the <a href="http://www.slackbuilds.org/">SlackBuilds Project</a> on a mail list and learned to love it! As all slack users know, the philosophy of our distribution is the principle of KISS (Keep It Simple Stupid) and the strong support for developers.</p>
+
+<p>What I don’t understand is why some other slackwares don’t know and/or use the SlackBuilds git tree in his local system to build packages, one in twelve times that I look for some cool app I do not found there, so I decide to put here some of what I do to build at least 70% of my packages.</p>
+
+<p><strong>1. First download all the slackbuilds git tree to your local file system.</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git clone git://slackbuilds.org/slackbuilds.git
+</code></pre></div></div>
+
+<p><strong>2. Keep updated!</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd slackbuilds &amp;&amp; git fetch origin &amp;&amp; git pull
+</code></pre></div></div>
+
+<p><strong>3. Browse your options by category</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>slackbuilds# ls -l
+total 416
+-rw-r--r-- 1 root root 233080 Nov 11 20:24 ChangeLog.txt
+-rw-r--r-- 1 root root 258 Sep 15 2013 README
+drwxr-xr-x 189 root root 4096 Nov 11 20:24 academic/
+drwxr-xr-x 15 root root 4096 Apr 13 2014 accessibility/
+drwxr-xr-x 268 root root 12288 Oct 17 22:27 audio/
+drwxr-xr-x 12 root root 4096 Oct 17 22:27 business/
+drwxr-xr-x 286 root root 12288 Oct 17 22:27 desktop/
+drwxr-xr-x 401 root root 12288 Nov 11 20:24 development/
+drwxr-xr-x 374 root root 12288 Oct 17 22:27 games/
+drwxr-xr-x 46 root root 4096 Oct 17 22:27 gis/
+drwxr-xr-x 184 root root 4096 Nov 11 20:24 graphics/
+drwxr-xr-x 41 root root 4096 Oct 17 22:27 ham/
+drwxr-xr-x 87 root root 4096 Apr 13 2014 haskell/
+drwxr-xr-x 728 root root 20480 Nov 11 20:24 libraries/
+drwxr-xr-x 141 root root 4096 Nov 11 20:24 misc/
+drwxr-xr-x 162 root root 4096 Nov 11 20:24 multimedia/
+drwxr-xr-x 520 root root 20480 Nov 11 20:24 network/
+drwxr-xr-x 146 root root 4096 Oct 17 22:27 office/
+drwxr-xr-x 333 root root 20480 Nov 11 20:24 perl/
+drwxr-xr-x 270 root root 12288 Nov 11 20:24 python/
+drwxr-xr-x 14 root root 4096 Oct 17 22:27 ruby/
+drwxr-xr-x 582 root root 20480 Nov 11 20:24 system/
+</code></pre></div></div>
+
+<p><strong>4. Search and see the directory structure</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>slackbuilds# find . -iname '*vlc*'
+./multimedia/vlc
+./multimedia/vlc/vlc.info
+./multimedia/vlc/vlc.SlackBuild
+slackbuilds# cd multimedia/vlc/
+slackbuilds/multimedia/vlc# ls
+README doinst.sh.in patch-freerdp.diff patch-projectM-fontpath.diff slack-desc vlc.SlackBuild vlc.info
+</code></pre></div></div>
+
+<p><strong>5. Install with just three commands</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># source *info; wget -c $DOWNLOAD; sh *SlackBuild
+And that's it! It will generate a .t?z package of slackware on '/tmp' directory to you run 'installpkg' permitting you to run the binary/script installed. Easy and cool way to find your packages quickly and compile them with your architecture optimized.
+
+# upgradepkg --reinstall --install-new /tmp/SBo/*vlc*
+</code></pre></div></div>
+
+<p><strong>And if I can’t find my package there!?</strong></p>
+
+<p>Can you build yourself this new package? Why not? A slackbuild is just a basic shell script and in this case have almost the same code of all others, you just need to change a few things to make your Slackbuild script too, and perhaps put they on github or something like that,</p>
+
+<p>You just need four files! Like in the example below with ‘gmrun’:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ README gmrun.SlackBuild gmrun.info slack-desc
+</code></pre></div></div>
+
+<p>Lets look a sample of ‘.info’ file</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PRGNAM="gmrun"
+VERSION="0.9.2"
+HOMEPAGE="http://sourceforge.net/projects/gmrun/"
+DOWNLOAD="http://downloads.sourceforge.net/gmrun/gmrun-0.9.2.tar.gz"
+MD5SUM="6cef37a968006d9496fc56a7099c603c"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+MAINTAINER="Binh Nguyen"
+EMAIL="binhnguyen@fastmail.fm"
+APPROVED="rworkman"
+</code></pre></div></div>
+
+<p>Now take a look into ‘slack-desc’ file</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.  Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in.  You must
+# make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':'.
+
+     |-----handy-ruler----------------------------------------------------|
+gmrun: gmrun (A simple program which provides a run program window)
+gmrun:
+gmrun: gmrun is a simple GTK program which provides a "run program" window.
+gmrun: It features a bash-like TAB completion, Ctrl-R/Ctrl-S for searching
+gmrun: through the history and URL handlers for any user defined prefix.
+gmrun:
+gmrun: Homepage: http://sourceforge.net/projects/gmrun/
+gmrun:
+gmrun:
+gmrun:
+gmrun:
+</code></pre></div></div>
+
+<p>And finally into an .SlackBuild file</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/sh</span>
+
+<span class="nv">PRGNAM</span><span class="o">=</span>gmrun
+<span class="nv">VERSION</span><span class="o">=</span><span class="k">${</span><span class="nv">VERSION</span><span class="k">:-</span><span class="nv">0</span><span class="p">.9.2</span><span class="k">}</span>
+<span class="nv">BUILD</span><span class="o">=</span><span class="k">${</span><span class="nv">BUILD</span><span class="k">:-</span><span class="nv">1</span><span class="k">}</span>
+<span class="nv">TAG</span><span class="o">=</span><span class="k">${</span><span class="nv">TAG</span><span class="k">:-</span><span class="nv">_SBo</span><span class="k">}</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="nt">-z</span> <span class="s2">"</span><span class="nv">$ARCH</span><span class="s2">"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+  case</span> <span class="s2">"</span><span class="k">$(</span> uname <span class="nt">-m</span> <span class="k">)</span><span class="s2">"</span> <span class="k">in
+    </span>i?86<span class="p">)</span> <span class="nb">export </span><span class="nv">ARCH</span><span class="o">=</span>i486 <span class="p">;;</span>
+    arm<span class="k">*</span><span class="p">)</span> <span class="nb">export </span><span class="nv">ARCH</span><span class="o">=</span>arm <span class="p">;;</span>
+       <span class="k">*</span><span class="p">)</span> <span class="nb">export </span><span class="nv">ARCH</span><span class="o">=</span><span class="k">$(</span> uname <span class="nt">-m</span> <span class="k">)</span> <span class="p">;;</span>
+  <span class="k">esac</span>
+<span class="k">fi
+
+</span><span class="nv">CWD</span><span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>
+<span class="nv">TMP</span><span class="o">=</span><span class="k">${</span><span class="nv">TMP</span><span class="k">:-</span><span class="p">/tmp/SBo</span><span class="k">}</span>
+<span class="nv">PKG</span><span class="o">=</span><span class="nv">$TMP</span>/package-<span class="nv">$PRGNAM</span>
+<span class="nv">OUTPUT</span><span class="o">=</span><span class="k">${</span><span class="nv">OUTPUT</span><span class="k">:-</span><span class="p">/tmp</span><span class="k">}</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$ARCH</span><span class="s2">"</span> <span class="o">=</span> <span class="s2">"i486"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+  </span><span class="nv">SLKCFLAGS</span><span class="o">=</span><span class="s2">"-O2 -march=i486 -mtune=i686"</span>
+  <span class="nv">LIBDIRSUFFIX</span><span class="o">=</span><span class="s2">""</span>
+<span class="k">elif</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$ARCH</span><span class="s2">"</span> <span class="o">=</span> <span class="s2">"i686"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+  </span><span class="nv">SLKCFLAGS</span><span class="o">=</span><span class="s2">"-O2 -march=i686 -mtune=i686"</span>
+  <span class="nv">LIBDIRSUFFIX</span><span class="o">=</span><span class="s2">""</span>
+<span class="k">elif</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$ARCH</span><span class="s2">"</span> <span class="o">=</span> <span class="s2">"x86_64"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+  </span><span class="nv">SLKCFLAGS</span><span class="o">=</span><span class="s2">"-O2 -fPIC"</span>
+  <span class="nv">LIBDIRSUFFIX</span><span class="o">=</span><span class="s2">"64"</span>
+<span class="k">else
+  </span><span class="nv">SLKCFLAGS</span><span class="o">=</span><span class="s2">"-O2"</span>
+  <span class="nv">LIBDIRSUFFIX</span><span class="o">=</span><span class="s2">""</span>
+<span class="k">fi
+
+</span><span class="nb">set</span> <span class="nt">-eu</span>
+
+rm <span class="nt">-rf</span> <span class="nv">$PKG</span>
+mkdir <span class="nt">-p</span> <span class="nv">$TMP</span> <span class="nv">$PKG</span> <span class="nv">$OUTPUT</span>
+<span class="nb">cd</span> <span class="nv">$TMP</span>
+rm <span class="nt">-rf</span> <span class="nv">$PRGNAM</span>-<span class="nv">$VERSION</span>
+<span class="nb">tar </span>xvf <span class="nv">$CWD</span>/<span class="nv">$PRGNAM</span>-<span class="nv">$VERSION</span>.tar.gz
+<span class="nb">cd</span> <span class="nv">$PRGNAM</span>-<span class="nv">$VERSION</span>
+
+chown <span class="nt">-R</span> root:root <span class="nb">.</span>
+find <span class="nt">-L</span> <span class="nb">.</span>
+ <span class="o">(</span> <span class="nt">-perm</span> 777 <span class="nt">-o</span> <span class="nt">-perm</span> 775 <span class="nt">-o</span> <span class="nt">-perm</span> 750 <span class="nt">-o</span> <span class="nt">-perm</span> 711 <span class="nt">-o</span> <span class="nt">-perm</span> 555
+  <span class="nt">-o</span> <span class="nt">-perm</span> 511 <span class="o">)</span> <span class="nt">-exec</span> chmod 755 <span class="o">{}</span> <span class="p">;</span> <span class="nt">-o</span>
+ <span class="o">(</span> <span class="nt">-perm</span> 666 <span class="nt">-o</span> <span class="nt">-perm</span> 664 <span class="nt">-o</span> <span class="nt">-perm</span> 640 <span class="nt">-o</span> <span class="nt">-perm</span> 600 <span class="nt">-o</span> <span class="nt">-perm</span> 444
+ <span class="nt">-o</span> <span class="nt">-perm</span> 440 <span class="nt">-o</span> <span class="nt">-perm</span> 400 <span class="o">)</span> <span class="nt">-exec</span> chmod 644 <span class="o">{}</span> <span class="p">;</span>
+
+<span class="nv">CFLAGS</span><span class="o">=</span><span class="s2">"</span><span class="nv">$SLKCFLAGS</span><span class="s2">"</span>
+./configure
+  <span class="nt">--prefix</span><span class="o">=</span>/usr
+  <span class="nt">--libdir</span><span class="o">=</span>/usr/lib<span class="k">${</span><span class="nv">LIBDIRSUFFIX</span><span class="k">}</span>
+  <span class="nt">--localstatedir</span><span class="o">=</span>/var
+  <span class="nt">--sysconfdir</span><span class="o">=</span>/etc
+  <span class="nt">--build</span><span class="o">=</span><span class="nv">$ARCH</span><span class="nt">-slackware-linux</span>
+
+make
+make install <span class="nv">DESTDIR</span><span class="o">=</span><span class="nv">$PKG</span>
+
+find <span class="nv">$PKG</span> <span class="nt">-print0</span> | xargs <span class="nt">-0</span> file | <span class="nb">grep</span> <span class="nt">-e</span> <span class="s2">"executable"</span> <span class="nt">-e</span> <span class="s2">"shared object"</span> | <span class="nb">grep </span>ELF
+  | cut <span class="nt">-f</span> 1 <span class="nt">-d</span> : | xargs strip <span class="nt">--strip-unneeded</span> 2&gt; /dev/null <span class="o">||</span> <span class="nb">true
+
+</span>mkdir <span class="nt">-p</span> <span class="nv">$PKG</span>/usr/doc/<span class="nv">$PRGNAM</span>-<span class="nv">$VERSION</span>
+cp <span class="nt">-a</span> AUTHORS COPYING ChangeLog INSTALL NEWS README <span class="nv">$PKG</span>/usr/doc/<span class="nv">$PRGNAM</span>-<span class="nv">$VERSION</span>
+<span class="nb">cat</span> <span class="nv">$CWD</span>/<span class="nv">$PRGNAM</span>.SlackBuild <span class="o">&gt;</span> <span class="nv">$PKG</span>/usr/doc/<span class="nv">$PRGNAM</span>-<span class="nv">$VERSION</span>/<span class="nv">$PRGNAM</span>.SlackBuild
+
+mkdir <span class="nt">-p</span> <span class="nv">$PKG</span>/install
+<span class="nb">cat</span> <span class="nv">$CWD</span>/slack-desc <span class="o">&gt;</span> <span class="nv">$PKG</span>/install/slack-desc
+
+<span class="nb">cd</span> <span class="nv">$PKG</span>
+/sbin/makepkg <span class="nt">-l</span> y <span class="nt">-c</span> n <span class="nv">$OUTPUT</span>/<span class="nv">$PRGNAM</span>-<span class="nv">$VERSION</span>-<span class="nv">$ARCH</span>-<span class="nv">$BUILD$TAG</span>.<span class="k">${</span><span class="nv">PKGTYPE</span><span class="k">:-</span><span class="nv">tgz</span><span class="k">}</span>
+</code></pre></div></div>
+
+<p>The variables PRGNAM, VERSION and BUILD are respectively the name of program, his version and perhaps a build number, you also need to understand the basic aspects of install to build your new package, be him a tar or zip file or a have a python setup, to put your own build scheme change lines 51-60 and if you want browse the source and know how the things happen on this software just move your mind to ‘/tmp/SBo’ ;) Hope you enjoy it and share your builds with us!</p>
+
+  </div>
+
+  
+    
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'http://alex.mulatinho.net/2014/11/13/how-i-build-almost-every-package-in-my-slackware-linux.html';
+      this.page.identifier = 'http://alex.mulatinho.net/2014/11/13/how-i-build-almost-every-package-in-my-slackware-linux.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://mulatinho.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+      <p>A blog about linux, open source, development and the life of an software engineer ;)</p>
+
+      <br/>
+      <br/>
+
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- mulato-blog -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5138819533079914"
+     data-ad-slot="8675679252"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+      
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

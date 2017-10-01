@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="refresh" content="300">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Utilizando senhas no NetBSD.">
+  <meta name="keywords" content="open source, linux, codigo aberto, desenvolvimento, programacao, software livre, free software">
+  <meta name="author" content="Alexandre Mulatinho">
+
+  <title>Alguns posts antigos.</title>
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://alex.mulatinho.net/2011/02/13/alguns-posts-antigos.html">
+  <link rel="alternate" type="application/rss+xml" title="Alexandre Mulatinho" href="/feed.xml">
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-107281743-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  
+
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <br/>
+  <br/>
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">Alexandre Mulatinho</a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/blog/">Blog</a>
+            
+          
+            
+            
+            <a class="page-link" href="/docs/">Docs</a>
+            
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/softwares/">Softwares</a>
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Alguns posts antigos.</h1>
+    <p class="post-meta">
+      <time datetime="2011-02-13T00:00:00-03:00" itemprop="datePublished">
+        
+        Feb 13, 2011
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="utilizando-senhas-no-netbsd">Utilizando senhas no NetBSD.</h2>
+
+<p>É, tive um problema com as senhas no NetBSD recentemente, pô! A mudança  de um sistema operacional pra outro é meio complicado, foi mais fácil  pra mim porque sempre usei Linux (baseado no UNIX) desde 1999! Mas ainda  sim tem algumas coisinhas que são bem diferentes! Na instalação do  NetBSD (o que foi me dito) tem uma parte que diz a você qual tipo de  encriptação você quer usar para proteger suas senhas (a padrão é DES),  só que tem um detalhe bem interessante pra aqueles viciados em segurança  por obscuridade, a senha DES tem no máximo 8/9 caracteres (nao me  lembro ao certo agora), ou seja, uma senha fraca pra um bruteforce,  então você tem que fazer mudanças no seu sistema! A primeira coisa que  você deve fazer é ler os manuais dos comando ‘pwhash’ e ‘pwd_mkdb’  (respectivamente, um criador de senhas e  um atualizador das senhas no  banco de dados interno do sistema operacional), as sintaxes são bem  simples! Pra você criar uma nova senha você faz:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pwhash -m -p (te dá um prompt pra senha e gera uma senha em MD5)
+pwhash -s 32000 -p (te dá um prompt pra senha e gera uma senha SHA1)
+</code></pre></div></div>
+
+<p>Após isso você deve copiar a saída gerada e adicionar corretamente no arquivo <strong>/etc/master.passwd</strong>, depois disto deve atualizar a base de dados de senha usando o comando abaixo:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pwd_mkdb -u  -f /etc/master.passwd
+</code></pre></div></div>
+
+<h2 id="participação-no-dia-d-15-de-agosto-de-2009">Participação no dia D (15 de agosto de 2009)</h2>
+
+<p>Quem diria, eu, um slacker, participando do Dia Debian, mas também quão  bom ver que hoje não existe mais isso, pelo o menos pra mim, em pensar  em como a uns anos atrás fui xiita, isso é uma besteira! Linux é linux e  eu até já usei Debian por mais de 1 (um) ano.</p>
+
+<p>O Dia D foi  diferente de eventos que duram um dia só, o nível foi bem legal e com  palestrantes bem interessantes, as vezes fico chateado com eventos só  pra usuários iniciantes, claro que eles merecem o seu espaço mas isso já  está se tornando rotineiro e monotôno.</p>
+
+<p>Ministrei um minicurso de  Shell-Script e foi tudo muito bem, recebi bastante elogios, o que me  deixa feliz em ver que depois desse  tempo todo afastado e desiludido  com algumas coisas (foram mais de 7 meses) ainda fico contente em poder  passar o que eu conheço de linux e programação pras pessoas  gratuitamente.</p>
+
+<p><a href="http://wiki.debianbrasil.org/GUD/PE/DiaD2009">Wiki do Debian-PE (Dia D 2009)</a></p>
+
+<h2 id="pcmcia--d-link-dwl-g650-22-de-dezembro-de-2007">PCMCIA:  D-Link DWL-g650 (22 de dezembro de 2007)</h2>
+
+<p><a href="http://bp3.blogger.com/_KmHes8D-1T0/R21GC3vBrBI/AAAAAAAAABU/mOlfsD2VtoI/s1600-h/D-LINK+DWL-G650.jpg"><img src="http://bp3.blogger.com/_KmHes8D-1T0/R21GC3vBrBI/AAAAAAAAABU/mOlfsD2VtoI/s200/D-LINK+DWL-G650.jpg" alt="" /></a></p>
+
+<p>Yeah! Recentemente meu notebook teve  alguns probleminhas :/ Um deles foi a rede, de tanto eu forçar o cabo de  rede, acabou dando um pau na ethernet, pena! Como já tinha um roteador  Wireless D-Link DI-524, resolvi comprar uma coisa que meu notebook nunca  teve: um cartão pcmcia! Comprei um PCMCIA D-Link DWL-g650, tive alguns  probleminhas no início, fui tentar configurá-lo usando um software  chamado ACX e carregando alguns módulos nativos do kernel, infelizmente  não obtive sucesso! Quem sabe com mais algumas tentativas? Foi aí que eu  lembrei do NDISWRAPPER, santa ferramenta! Porém como alguns devem saber  ela precisa do firmware do hardware em questão, no caso da placa  wireless d-link. Uma coisa que eu precisei prestar atenção foi na versão  do FIRMWARE e na sua revisão, no meu caso a revisão foi a ‘C’ e a  versão do firmware é a 4.31, obti no ftp da dlink, que você pode baixar clicando<a href="ftp://ftp.dlink.de/dwl/dwl-g650/driver_software/dwl-g650_drv_revC_V4.31-Build60616_ALL_multilang.zip">aqui.</a></p>
+
+<p>Feito  isso o resto é fácil, basta dezipar o arquivo e utilizar o <a href="http://ndiswrapper.sourceforge.net/">ndiswrapper</a>, para  instalar o ndiswrapper é fácil, basta baixar uma versão do software,  descompactá-lo e dar um ‘make’ como a seguir:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># tar xfj  ndiswrapper-1.51.tar.bz2
+# cd ndiswrapper-1.51
+# make &amp;&amp;  make install
+</code></pre></div></div>
+
+<p>Então descompactamos o firmware e copiamos o arquivo  .inf, no meu caso:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># unzip  dwl-g650_drv_revC_V4.31-Build60616_ALL_multilang.zip
+# cp NetA3AB.inf  /lib/firmware
+</code></pre></div></div>
+
+<p>Finalmente rodamos o ndiswrapper pra rodar a  versão do firmware:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># ndiswrapper -i /lib/firmware/NetA3AB.inf
+#  modprobe ndiswrapper
+</code></pre></div></div>
+
+<p>Pronto! É só conferir com os comandos de  configuração de rede, o ifconfig e o iwconfig para o wireless, ela  provavelmente estará reconhecida como wlan0,  então para configurar ela basta fazermos:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># ifconfig wlan0 up
+# ifconfig wlan0 192.168.10.123 (modifique pra sua rede)
+# iwconfig  wlan0 ESSID NomeDaSuaRede
+# iwconfig wlan0 CHANNEL CanalDeSuaRede
+# iwconfig wlan0 KEY PasswordDeSuaConexao
+</code></pre></div></div>
+
+<p>Adicione o seu gateway  padrão:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># route add default gw 192.168.10.1 dev wlan0
+</code></pre></div></div>
+
+<p>Boa  sorte e bem vindo ao mundo sem fio! :-)</p>
+
+  </div>
+
+  
+    
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'http://alex.mulatinho.net/2011/02/13/alguns-posts-antigos.html';
+      this.page.identifier = 'http://alex.mulatinho.net/2011/02/13/alguns-posts-antigos.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://mulatinho.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+      <p>A blog about linux, open source, development and the life of an software engineer ;)</p>
+
+      <br/>
+      <br/>
+
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- mulato-blog -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5138819533079914"
+     data-ad-slot="8675679252"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+      
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

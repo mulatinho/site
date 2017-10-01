@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://alex.mulatinho.net/feed.xml" rel="self" type="application/atom+xml" /><link href="http://alex.mulatinho.net/" rel="alternate" type="text/html" /><updated>2017-09-29T18:10:36-03:00</updated><id>http://alex.mulatinho.net/</id><title type="html">Alexandre Mulatinho</title><subtitle>A blog about linux, open source, development and the life of an software engineer ;)</subtitle><entry><title type="html">Two years of remote working: What I learned</title><link href="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html" rel="alternate" type="text/html" title="Two years of remote working: What I learned" /><published>2017-07-27T00:00:00-03:00</published><updated>2017-07-27T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned</id><content type="html" xml:base="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html">&lt;p&gt;&lt;img src=&quot;https://mulatinho.files.wordpress.com/2017/07/img_20170322_140523390.jpg&quot; alt=&quot;IMG_20170322_140523390&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://alex.mulatinho.net/feed.xml" rel="self" type="application/atom+xml" /><link href="http://alex.mulatinho.net/" rel="alternate" type="text/html" /><updated>2017-09-30T21:58:01-03:00</updated><id>http://alex.mulatinho.net/</id><title type="html">Alexandre Mulatinho</title><subtitle>A blog about linux, open source, development and the life of an software engineer ;)</subtitle><entry><title type="html">Two years of remote working: What I learned</title><link href="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html" rel="alternate" type="text/html" title="Two years of remote working: What I learned" /><published>2017-07-27T00:00:00-03:00</published><updated>2017-07-27T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned</id><content type="html" xml:base="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html">&lt;p&gt;&lt;img src=&quot;https://mulatinho.files.wordpress.com/2017/07/img_20170322_140523390.jpg&quot; alt=&quot;IMG_20170322_140523390&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In this month I completed exactly two years of remote working, what adventure! To remind me about this in future and also to share with you all I resolve to write about that here.&lt;/p&gt;
 
@@ -278,38 +278,31 @@ x-amz-acl:public-read
 &lt;p&gt;Price Wang said, “Would that all of my programmers were as wise!”
 – Geoffrey James, “The Tao of Programming”&lt;/p&gt;</content><author><name></name></author><category term="life" /><category term="references" /><summary type="html">I’m back from holidays! And with a new job! :D Still working remote now with something that I like more, Linux and software development! Just a little change: now its for web! When I get things okay here I will continue write some articles here.</summary></entry><entry><title type="html">Upgrade your #Slackware #Linux to (i486|x86_64) -current version</title><link href="http://alex.mulatinho.net/2016/08/25/upgrade-your-slackware-linux-to-i486x86_64-current-version.html" rel="alternate" type="text/html" title="Upgrade your #Slackware #Linux to (i486|x86_64) -current version" /><published>2016-08-25T00:00:00-03:00</published><updated>2016-08-25T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/08/25/upgrade-your-slackware-linux-to-i486x86_64-current-version</id><content type="html" xml:base="http://alex.mulatinho.net/2016/08/25/upgrade-your-slackware-linux-to-i486x86_64-current-version.html">&lt;p&gt;Hello friends!&lt;/p&gt;
 
-&lt;p&gt;Today is 2016/08/25, 
-&lt;strong&gt;25 years of Linux&lt;/strong&gt;
-! Happy Birthday!! :D :D&lt;/p&gt;
+&lt;p&gt;Today is 2016/08/25, &lt;strong&gt;25 years of Linux&lt;/strong&gt;! Happy Birthday!! :D :D&lt;/p&gt;
 
-&lt;p&gt;Today we gonna talk about how to upgrade a Slackware, we will use just the official slackware package management tool (
-&lt;strong&gt;slackpkg&lt;/strong&gt;
-), lets upgrade a slackware 14.2 to a -current for example (this also works with other versions too, but try upgrade to the next always or deal with consequences).&lt;/p&gt;
+&lt;p&gt;Today we gonna talk about how to upgrade a Slackware, we will use just the official slackware package management tool (&lt;strong&gt;slackpkg&lt;/strong&gt;), lets upgrade a slackware 14.2 to a -current for example (this also works with other versions too, but try upgrade to the next always or deal with consequences).&lt;/p&gt;
 
-&lt;p&gt;What is 
-&lt;strong&gt;slackpkg&lt;/strong&gt;
-?&lt;/p&gt;
+&lt;p&gt;What is &lt;strong&gt;slackpkg&lt;/strong&gt;?&lt;/p&gt;
 
-&lt;p&gt;Slackpkg is a system package management tool developed by PiterPunk and oficially supported by Slackware, some of the most common subcommands are:slackpkg update          -&amp;gt; synchronize with your mirror 
-slackpkg search package  -&amp;gt; looks for ‘package’ into mirror
-slackpkg install package -&amp;gt; install ‘package’ from mirror
-slackpkg upgrade package -&amp;gt; upgrade ‘package’ from mirror
+&lt;p&gt;Slackpkg is a system package management tool developed by PiterPunk and oficially supported by Slackware, some of the most common subcommands are:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;slackpkg update          -&amp;gt; synchronize with your mirror 
+slackpkg search package  -&amp;gt; looks for 'package' into mirror
+slackpkg install package -&amp;gt; install 'package' from mirror
+slackpkg upgrade package -&amp;gt; upgrade 'package' from mirror
 slackpkg upgrade-all     -&amp;gt; upgrade all packages installed
-slackpkg install-new     -&amp;gt; install new software available in repository&lt;/p&gt;
+slackpkg install-new     -&amp;gt; install new software available in repository
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;First&lt;/strong&gt;
-, install and 
-&lt;strong&gt;upgrade&lt;/strong&gt;
- your 
-&lt;strong&gt;slackpkg&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;First&lt;/strong&gt;, install and &lt;strong&gt;upgrade&lt;/strong&gt; your &lt;strong&gt;slackpkg&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;slackpkg-update--choose-a-mirror-in-etcslackpkgmirrors&quot;&gt;slackpkg update  #(choose a mirror in /etc/slackpkg/mirrors)&lt;/h1&gt;
-&lt;h1 id=&quot;slackpkg-upgrade-slackpkg&quot;&gt;slackpkg upgrade slackpkg&lt;/h1&gt;
-&lt;p&gt;I like the TDS Mirror but you can choice any -current mirror you like there. Then add the kernel packages into blacklist (
-&lt;strong&gt;/etc/slackpkg/blacklist&lt;/strong&gt;
-) make sure that looks like this:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# slackpkg update  #(choose a mirror in /etc/slackpkg/mirrors)
+# slackpkg upgrade slackpkg
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;#kernel-firmware
+&lt;p&gt;I like the TDS Mirror but you can choice any -current mirror you like there. Then add the kernel packages into blacklist (&lt;strong&gt;/etc/slackpkg/blacklist&lt;/strong&gt;) make sure that looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#kernel-firmware
 #kernel-generic
 #kernel-generic-smp
 #kernel-headers
@@ -318,49 +311,43 @@ slackpkg install-new     -&amp;gt; install new software available in repository&
 #kernel-modules
 #kernel-modules-smp
 #kernel-source
-(this is not totally necessary but I like to upgrade kernels after upgrade all other softwares)&lt;/p&gt;
+(this is not totally necessary but I like to upgrade kernels after upgrade all other softwares)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Second&lt;/strong&gt;
-, then upgrade your glibc-solibs, this is EXTREMELY NECESSARY to not crash your system after some upgrades of software.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Second&lt;/strong&gt;, then upgrade your glibc-solibs, this is EXTREMELY NECESSARY to not crash your system after some upgrades of software.&lt;/p&gt;
 
-&lt;h1 id=&quot;slackpkg-upgrade-glibc-solibs&quot;&gt;slackpkg upgrade glibc-solibs&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# slackpkg upgrade glibc-solibs
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Third&lt;/strong&gt;
-, install and upgrade all your new software&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Third&lt;/strong&gt;, install and upgrade all your new software&lt;/p&gt;
 
-&lt;h1 id=&quot;slackpkg-install-new&quot;&gt;slackpkg install-new&lt;/h1&gt;
-&lt;h1 id=&quot;slackpkg-upgrade-all&quot;&gt;slackpkg upgrade-all&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# slackpkg install-new
+# slackpkg upgrade-all
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Kernel
-Now, if you dont build your kernel youself, uncomment lines of blacklist (
-&lt;strong&gt;/etc/slackpkg/blacklist&lt;/strong&gt;
-) to build the new kernel of Slackware repository. Check your lilo.conf or grub and apply the new kernel if you like (take care here, confirm that a new kernel was installed and check the images)&lt;/p&gt;
+&lt;h3 id=&quot;kernel&quot;&gt;Kernel&lt;/h3&gt;
 
-&lt;h1 id=&quot;cp-bootvmlinuz-bootvmlinuz-backup&quot;&gt;cp /boot/vmlinuz /boot/vmlinuz-backup&lt;/h1&gt;
-&lt;p&gt;# sed -i ‘/#kernel/s/^#//g’ /etc/slackpkg/blacklist&lt;/p&gt;
-&lt;h1 id=&quot;slackpkg-upgrade-all-1&quot;&gt;slackpkg upgrade-all &lt;/h1&gt;
-&lt;h1 id=&quot;vim-etcliloconf&quot;&gt;vim /etc/lilo.conf&lt;/h1&gt;
-&lt;p&gt;The 
-&lt;strong&gt;huge.s&lt;/strong&gt;
- Slackware default kernel (built-in) have a lot of issues when we need use some softwares that require some modules/built-in by default, an example is the Docker. (huge.s default slackware kernel doesn’t support Docker very good). So you can choose use the 
-&lt;strong&gt;generic kernel&lt;/strong&gt;
- that has almost any module to load after boot the kernel, solving some of these issues. If you choose to do that, type the commands below, if you dont know what are you doing skip this part and use default 
-&lt;strong&gt;/boot/vmlinuz&lt;/strong&gt;
-.&lt;/p&gt;
+&lt;p&gt;Now, if you dont build your kernel youself, uncomment lines of blacklist (&lt;strong&gt;/etc/slackpkg/blacklist&lt;/strong&gt;) to build the new kernel of Slackware repository. Check your lilo.conf or grub and apply the new kernel if you like (take care here, confirm that a new kernel was installed and check the images)&lt;/p&gt;
 
-&lt;h1 id=&quot;usrsharemkinitrdmkinitrd_command_generatorsh&quot;&gt;/usr/share/mkinitrd/mkinitrd_command_generator.sh&lt;/h1&gt;
-&lt;p&gt;mkinitrd -c -k 4.4.16 -f ext4 -r /dev/sda1 -m xhci-pci:ohci-pci:ehci-pci:xhci-hcd:uhci-hcd:ehci-hcd:hid:usbhid:i2c-hid:hid_generic:hid-cherry:hid-logitech:hid-logitech-dj:hid-logitech-hidpp:hid-lenovo:hid-microsoft:hid_multitouch:jbd2:mbcache:ext4 -u -o /boot/initrd.gz
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# cp /boot/vmlinuz /boot/vmlinuz-backup
+# sed -i '/#kernel/s/^#//g' /etc/slackpkg/blacklist
+# slackpkg upgrade-all 
+# vim /etc/lilo.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The &lt;strong&gt;huge.s&lt;/strong&gt; Slackware default kernel (built-in) have a lot of issues when we need use some softwares that require some modules/built-in by default, an example is the Docker. (huge.s default slackware kernel doesn’t support Docker very good). So you can choose use the &lt;strong&gt;generic kernel&lt;/strong&gt; that has almost any module to load after boot the kernel, solving some of these issues. If you choose to do that, type the commands below, if you dont know what are you doing skip this part and use default &lt;strong&gt;/boot/vmlinuz&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# /usr/share/mkinitrd/mkinitrd_command_generator.sh
+mkinitrd -c -k 4.4.16 -f ext4 -r /dev/sda1 -m xhci-pci:ohci-pci:ehci-pci:xhci-hcd:uhci-hcd:ehci-hcd:hid:usbhid:i2c-hid:hid_generic:hid-cherry:hid-logitech:hid-logitech-dj:hid-logitech-hidpp:hid-lenovo:hid-microsoft:hid_multitouch:jbd2:mbcache:ext4 -u -o /boot/initrd.gz
 (this will generate this command to build a initrd.gz image, run this)
-(it also, of course, creates ‘/boot/initrd.gz’ with your def modules)&lt;/p&gt;
-&lt;h1 id=&quot;vim-etcliloconf--or-your-grub-i-dont-use-this&quot;&gt;vim /etc/lilo.conf # or your grub. i dont use this&lt;/h1&gt;
-&lt;dl&gt;
-  &lt;dt&gt;(put your initrd image here and choice a vmlinuz-generic as default image)&lt;/dt&gt;
-  &lt;dt&gt;Your lilo.conf should now look like this (&lt;/dt&gt;
-  &lt;dt&gt;&lt;strong&gt;tip&lt;/strong&gt;&lt;/dt&gt;
-  &lt;dd&gt;create another entry with old kernel, so if this fail to boot you can boot with the older)&lt;/dd&gt;
-&lt;/dl&gt;
+(it also, of course, creates '/boot/initrd.gz' with your def modules)
+# vim /etc/lilo.conf # or your grub. i dont use this
+(put your initrd image here and choice a vmlinuz-generic as default image)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;image = /boot/vmlinuz-generic  # re-check if you use vmlinuz
+&lt;p&gt;Your lilo.conf should now look like this (&lt;strong&gt;tip&lt;/strong&gt;: create another entry with old kernel, so if this fail to boot you can boot with the older)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;image = /boot/vmlinuz-generic  # re-check if you use vmlinuz
  root = /dev/sda1              # change if not your root disk
  initrd = /boot/initrd.gz
  label = Slack64-Generic
@@ -369,13 +356,15 @@ image = /boot/vmlinuz-backup
  root = /dev/sda1
  label = Slack64-Okay
  read-only
-Then save your MBR and reboot your system!&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h1 id=&quot;lilo--v--check-this-with-attention&quot;&gt;lilo -v  (check this with attention)&lt;/h1&gt;
-&lt;h1 id=&quot;reboot&quot;&gt;reboot&lt;/h1&gt;
-&lt;p&gt;And welcome to the 
-&lt;strong&gt;-current&lt;/strong&gt;
- version of Slackware, keep it upgraded :)&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="slackware" /><summary type="html">Hello friends!</summary></entry><entry><title type="html">Installing Libvirt / QEMU for KVM Virtualization on #Slackware</title><link href="http://alex.mulatinho.net/2016/08/25/installing-libvirt-qemu-for-kvm-virtualization-on-slackware.html" rel="alternate" type="text/html" title="Installing Libvirt / QEMU for KVM Virtualization on #Slackware" /><published>2016-08-25T00:00:00-03:00</published><updated>2016-08-25T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/08/25/installing-libvirt-qemu-for-kvm-virtualization-on-slackware</id><content type="html" xml:base="http://alex.mulatinho.net/2016/08/25/installing-libvirt-qemu-for-kvm-virtualization-on-slackware.html">&lt;p&gt;Hello friends!&lt;/p&gt;
+&lt;p&gt;Then save your MBR and reboot your system!&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# lilo -v  (check this with attention)
+# reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And welcome to the &lt;strong&gt;-current&lt;/strong&gt; version of Slackware, keep it upgraded :)&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="slackware" /><summary type="html">Hello friends!</summary></entry><entry><title type="html">Installing Libvirt / QEMU for KVM Virtualization on #Slackware</title><link href="http://alex.mulatinho.net/2016/08/25/installing-libvirt-qemu-for-kvm-virtualization-on-slackware.html" rel="alternate" type="text/html" title="Installing Libvirt / QEMU for KVM Virtualization on #Slackware" /><published>2016-08-25T00:00:00-03:00</published><updated>2016-08-25T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/08/25/installing-libvirt-qemu-for-kvm-virtualization-on-slackware</id><content type="html" xml:base="http://alex.mulatinho.net/2016/08/25/installing-libvirt-qemu-for-kvm-virtualization-on-slackware.html">&lt;p&gt;Hello friends!&lt;/p&gt;
 
 &lt;p&gt;Today is 2016/08/25, 
 &lt;strong&gt;25 years of Linux&lt;/strong&gt;

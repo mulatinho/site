@@ -111,38 +111,31 @@
   <div class="post-content" itemprop="articleBody">
     <p>Hello friends!</p>
 
-<p>Today is 2016/08/25, 
-<strong>25 years of Linux</strong>
-! Happy Birthday!! :D :D</p>
+<p>Today is 2016/08/25, <strong>25 years of Linux</strong>! Happy Birthday!! :D :D</p>
 
-<p>Today we gonna talk about how to upgrade a Slackware, we will use just the official slackware package management tool (
-<strong>slackpkg</strong>
-), lets upgrade a slackware 14.2 to a -current for example (this also works with other versions too, but try upgrade to the next always or deal with consequences).</p>
+<p>Today we gonna talk about how to upgrade a Slackware, we will use just the official slackware package management tool (<strong>slackpkg</strong>), lets upgrade a slackware 14.2 to a -current for example (this also works with other versions too, but try upgrade to the next always or deal with consequences).</p>
 
-<p>What is 
-<strong>slackpkg</strong>
-?</p>
+<p>What is <strong>slackpkg</strong>?</p>
 
-<p>Slackpkg is a system package management tool developed by PiterPunk and oficially supported by Slackware, some of the most common subcommands are:slackpkg update          -&gt; synchronize with your mirror 
-slackpkg search package  -&gt; looks for ‘package’ into mirror
-slackpkg install package -&gt; install ‘package’ from mirror
-slackpkg upgrade package -&gt; upgrade ‘package’ from mirror
+<p>Slackpkg is a system package management tool developed by PiterPunk and oficially supported by Slackware, some of the most common subcommands are:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>slackpkg update          -&gt; synchronize with your mirror 
+slackpkg search package  -&gt; looks for 'package' into mirror
+slackpkg install package -&gt; install 'package' from mirror
+slackpkg upgrade package -&gt; upgrade 'package' from mirror
 slackpkg upgrade-all     -&gt; upgrade all packages installed
-slackpkg install-new     -&gt; install new software available in repository</p>
+slackpkg install-new     -&gt; install new software available in repository
+</code></pre></div></div>
 
-<p><strong>First</strong>
-, install and 
-<strong>upgrade</strong>
- your 
-<strong>slackpkg</strong></p>
+<p><strong>First</strong>, install and <strong>upgrade</strong> your <strong>slackpkg</strong></p>
 
-<h1 id="slackpkg-update--choose-a-mirror-in-etcslackpkgmirrors">slackpkg update  #(choose a mirror in /etc/slackpkg/mirrors)</h1>
-<h1 id="slackpkg-upgrade-slackpkg">slackpkg upgrade slackpkg</h1>
-<p>I like the TDS Mirror but you can choice any -current mirror you like there. Then add the kernel packages into blacklist (
-<strong>/etc/slackpkg/blacklist</strong>
-) make sure that looks like this:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># slackpkg update  #(choose a mirror in /etc/slackpkg/mirrors)
+# slackpkg upgrade slackpkg
+</code></pre></div></div>
 
-<p>#kernel-firmware
+<p>I like the TDS Mirror but you can choice any -current mirror you like there. Then add the kernel packages into blacklist (<strong>/etc/slackpkg/blacklist</strong>) make sure that looks like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#kernel-firmware
 #kernel-generic
 #kernel-generic-smp
 #kernel-headers
@@ -151,49 +144,43 @@ slackpkg install-new     -&gt; install new software available in repository</p>
 #kernel-modules
 #kernel-modules-smp
 #kernel-source
-(this is not totally necessary but I like to upgrade kernels after upgrade all other softwares)</p>
+(this is not totally necessary but I like to upgrade kernels after upgrade all other softwares)
+</code></pre></div></div>
 
-<p><strong>Second</strong>
-, then upgrade your glibc-solibs, this is EXTREMELY NECESSARY to not crash your system after some upgrades of software.</p>
+<p><strong>Second</strong>, then upgrade your glibc-solibs, this is EXTREMELY NECESSARY to not crash your system after some upgrades of software.</p>
 
-<h1 id="slackpkg-upgrade-glibc-solibs">slackpkg upgrade glibc-solibs</h1>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># slackpkg upgrade glibc-solibs
+</code></pre></div></div>
 
-<p><strong>Third</strong>
-, install and upgrade all your new software</p>
+<p><strong>Third</strong>, install and upgrade all your new software</p>
 
-<h1 id="slackpkg-install-new">slackpkg install-new</h1>
-<h1 id="slackpkg-upgrade-all">slackpkg upgrade-all</h1>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># slackpkg install-new
+# slackpkg upgrade-all
+</code></pre></div></div>
 
-<p>Kernel
-Now, if you dont build your kernel youself, uncomment lines of blacklist (
-<strong>/etc/slackpkg/blacklist</strong>
-) to build the new kernel of Slackware repository. Check your lilo.conf or grub and apply the new kernel if you like (take care here, confirm that a new kernel was installed and check the images)</p>
+<h3 id="kernel">Kernel</h3>
 
-<h1 id="cp-bootvmlinuz-bootvmlinuz-backup">cp /boot/vmlinuz /boot/vmlinuz-backup</h1>
-<p># sed -i ‘/#kernel/s/^#//g’ /etc/slackpkg/blacklist</p>
-<h1 id="slackpkg-upgrade-all-1">slackpkg upgrade-all </h1>
-<h1 id="vim-etcliloconf">vim /etc/lilo.conf</h1>
-<p>The 
-<strong>huge.s</strong>
- Slackware default kernel (built-in) have a lot of issues when we need use some softwares that require some modules/built-in by default, an example is the Docker. (huge.s default slackware kernel doesn’t support Docker very good). So you can choose use the 
-<strong>generic kernel</strong>
- that has almost any module to load after boot the kernel, solving some of these issues. If you choose to do that, type the commands below, if you dont know what are you doing skip this part and use default 
-<strong>/boot/vmlinuz</strong>
-.</p>
+<p>Now, if you dont build your kernel youself, uncomment lines of blacklist (<strong>/etc/slackpkg/blacklist</strong>) to build the new kernel of Slackware repository. Check your lilo.conf or grub and apply the new kernel if you like (take care here, confirm that a new kernel was installed and check the images)</p>
 
-<h1 id="usrsharemkinitrdmkinitrd_command_generatorsh">/usr/share/mkinitrd/mkinitrd_command_generator.sh</h1>
-<p>mkinitrd -c -k 4.4.16 -f ext4 -r /dev/sda1 -m xhci-pci:ohci-pci:ehci-pci:xhci-hcd:uhci-hcd:ehci-hcd:hid:usbhid:i2c-hid:hid_generic:hid-cherry:hid-logitech:hid-logitech-dj:hid-logitech-hidpp:hid-lenovo:hid-microsoft:hid_multitouch:jbd2:mbcache:ext4 -u -o /boot/initrd.gz
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># cp /boot/vmlinuz /boot/vmlinuz-backup
+# sed -i '/#kernel/s/^#//g' /etc/slackpkg/blacklist
+# slackpkg upgrade-all 
+# vim /etc/lilo.conf
+</code></pre></div></div>
+
+<p>The <strong>huge.s</strong> Slackware default kernel (built-in) have a lot of issues when we need use some softwares that require some modules/built-in by default, an example is the Docker. (huge.s default slackware kernel doesn’t support Docker very good). So you can choose use the <strong>generic kernel</strong> that has almost any module to load after boot the kernel, solving some of these issues. If you choose to do that, type the commands below, if you dont know what are you doing skip this part and use default <strong>/boot/vmlinuz</strong>.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># /usr/share/mkinitrd/mkinitrd_command_generator.sh
+mkinitrd -c -k 4.4.16 -f ext4 -r /dev/sda1 -m xhci-pci:ohci-pci:ehci-pci:xhci-hcd:uhci-hcd:ehci-hcd:hid:usbhid:i2c-hid:hid_generic:hid-cherry:hid-logitech:hid-logitech-dj:hid-logitech-hidpp:hid-lenovo:hid-microsoft:hid_multitouch:jbd2:mbcache:ext4 -u -o /boot/initrd.gz
 (this will generate this command to build a initrd.gz image, run this)
-(it also, of course, creates ‘/boot/initrd.gz’ with your def modules)</p>
-<h1 id="vim-etcliloconf--or-your-grub-i-dont-use-this">vim /etc/lilo.conf # or your grub. i dont use this</h1>
-<dl>
-  <dt>(put your initrd image here and choice a vmlinuz-generic as default image)</dt>
-  <dt>Your lilo.conf should now look like this (</dt>
-  <dt><strong>tip</strong></dt>
-  <dd>create another entry with old kernel, so if this fail to boot you can boot with the older)</dd>
-</dl>
+(it also, of course, creates '/boot/initrd.gz' with your def modules)
+# vim /etc/lilo.conf # or your grub. i dont use this
+(put your initrd image here and choice a vmlinuz-generic as default image)
+</code></pre></div></div>
 
-<p>image = /boot/vmlinuz-generic  # re-check if you use vmlinuz
+<p>Your lilo.conf should now look like this (<strong>tip</strong>: create another entry with old kernel, so if this fail to boot you can boot with the older)</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>image = /boot/vmlinuz-generic  # re-check if you use vmlinuz
  root = /dev/sda1              # change if not your root disk
  initrd = /boot/initrd.gz
  label = Slack64-Generic
@@ -202,13 +189,15 @@ image = /boot/vmlinuz-backup
  root = /dev/sda1
  label = Slack64-Okay
  read-only
-Then save your MBR and reboot your system!</p>
+</code></pre></div></div>
 
-<h1 id="lilo--v--check-this-with-attention">lilo -v  (check this with attention)</h1>
-<h1 id="reboot">reboot</h1>
-<p>And welcome to the 
-<strong>-current</strong>
- version of Slackware, keep it upgraded :)</p>
+<p>Then save your MBR and reboot your system!</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># lilo -v  (check this with attention)
+# reboot
+</code></pre></div></div>
+
+<p>And welcome to the <strong>-current</strong> version of Slackware, keep it upgraded :)</p>
 
   </div>
 
