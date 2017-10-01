@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://alex.mulatinho.net/feed.xml" rel="self" type="application/atom+xml" /><link href="http://alex.mulatinho.net/" rel="alternate" type="text/html" /><updated>2017-09-30T22:33:26-03:00</updated><id>http://alex.mulatinho.net/</id><title type="html">Alexandre Mulatinho</title><subtitle>A blog about linux, open source, development and the life of an software engineer ;)</subtitle><entry><title type="html">Two years of remote working: What I learned</title><link href="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html" rel="alternate" type="text/html" title="Two years of remote working: What I learned" /><published>2017-07-27T00:00:00-03:00</published><updated>2017-07-27T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned</id><content type="html" xml:base="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html">&lt;p&gt;&lt;img src=&quot;https://mulatinho.files.wordpress.com/2017/07/img_20170322_140523390.jpg&quot; alt=&quot;IMG_20170322_140523390&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://alex.mulatinho.net/feed.xml" rel="self" type="application/atom+xml" /><link href="http://alex.mulatinho.net/" rel="alternate" type="text/html" /><updated>2017-09-30T23:11:28-03:00</updated><id>http://alex.mulatinho.net/</id><title type="html">Alexandre Mulatinho</title><subtitle>A blog about linux, open source, development and the life of an software engineer ;)</subtitle><entry><title type="html">Two years of remote working: What I learned</title><link href="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html" rel="alternate" type="text/html" title="Two years of remote working: What I learned" /><published>2017-07-27T00:00:00-03:00</published><updated>2017-07-27T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned</id><content type="html" xml:base="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html">&lt;p&gt;&lt;img src=&quot;https://mulatinho.files.wordpress.com/2017/07/img_20170322_140523390.jpg&quot; alt=&quot;IMG_20170322_140523390&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In this month I completed exactly two years of remote working, what adventure! To remind me about this in future and also to share with you all I resolve to write about that here.&lt;/p&gt;
 
@@ -762,76 +762,56 @@ https://gist.github.com/mulatinho/a4c8ee4b5a0d6162e32834b371085394&lt;/p&gt;
 &lt;p&gt;Uma ótima ferramenta que utilizo para ver gráficos, mais uma vez acho que não é tão adequado pra day-trade porque tem delay de minutos, é o 
 &lt;a href=&quot;http://www.tradingview.com&quot;&gt;Trading View&lt;/a&gt; que é free e perfeito na minha opinião, várias ferramentas e indicadores úteis para você tomar as melhores decisões; Aqui vai uns screenshots:&lt;/p&gt;
 
-&lt;p&gt;[gallery ids=”1276,1279” type=”slideshow”]&lt;/p&gt;</content><author><name></name></author><summary type="html">bom, eu diariamente utilizo os cálculos listados neste artigo para poder realizar os meus próprios investimentos, por isso achei que poderia ser útil para alguém, pretendo atualizar com mais no futuro; existe bilhões de pessoas neste mundo e cada um tem um jeito de realizar suas tarefas, meus cálculos geralmente são feitos utilizando a shell BASH em vez de uma calculadora comum. (p.s. valores abaixo sem citar impostos de day-trade, corretagem e emolumentos)**</summary></entry><entry><title type="html">Avaliacao E Gerenciamento De Riscos</title><link href="http://alex.mulatinho.net/2016/08/09/avaliacao-e-gerenciamento-de-riscos.html" rel="alternate" type="text/html" title="Avaliacao E Gerenciamento De Riscos" /><published>2016-08-09T00:00:00-03:00</published><updated>2016-08-09T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/08/09/avaliacao-e-gerenciamento-de-riscos</id><content type="html" xml:base="http://alex.mulatinho.net/2016/08/09/avaliacao-e-gerenciamento-de-riscos.html">&lt;hr /&gt;
-&lt;p&gt;layout: post
-title: Avaliação e Gerenciamento de Riscos
-tags:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;security
-—##Parte I: Avaliação de Riscos&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;[gallery ids=”1276,1279” type=”slideshow”]&lt;/p&gt;</content><author><name></name></author><summary type="html">bom, eu diariamente utilizo os cálculos listados neste artigo para poder realizar os meus próprios investimentos, por isso achei que poderia ser útil para alguém, pretendo atualizar com mais no futuro; existe bilhões de pessoas neste mundo e cada um tem um jeito de realizar suas tarefas, meus cálculos geralmente são feitos utilizando a shell BASH em vez de uma calculadora comum. (p.s. valores abaixo sem citar impostos de day-trade, corretagem e emolumentos)**</summary></entry><entry><title type="html">Avaliação e Gerenciamento de Riscos</title><link href="http://alex.mulatinho.net/2016/08/09/avaliacao-e-gerenciamento-de-riscos.html" rel="alternate" type="text/html" title="Avaliação e Gerenciamento de Riscos" /><published>2016-08-09T00:00:00-03:00</published><updated>2016-08-09T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/08/09/avaliacao-e-gerenciamento-de-riscos</id><content type="html" xml:base="http://alex.mulatinho.net/2016/08/09/avaliacao-e-gerenciamento-de-riscos.html">&lt;h2 id=&quot;parte-i-avaliação-de-riscos&quot;&gt;Parte I: Avaliação de Riscos&lt;/h2&gt;
 
-&lt;p&gt;Olá, este post faz parte de uma sequência de artigos sobre 
-&lt;strong&gt;segurança da informação&lt;/strong&gt;
-, resolvi fazê-los tanto para ajudar os interessados no tema como para fixar alguns pontos na minha cabeça, além é claro, de poder deixar como consulta em algum lugar no blog. Antes de mais nada, eu não sou o dono da verdade, então muita coisa escrita aqui pode ser feita de formas diferentes para se atingir objetivos diferentes, aqui eu mostro coisas que eu aplico no meu dia ou que já apliquei em empresas anteriores;&lt;/p&gt;
+&lt;p&gt;Olá, este post faz parte de uma sequência de artigos sobre &lt;strong&gt;segurança da informação&lt;/strong&gt;, resolvi fazê-los tanto para ajudar os interessados no tema como para fixar alguns pontos na minha cabeça, além é claro, de poder deixar como consulta em algum lugar no blog. Antes de mais nada, eu não sou o dono da verdade, então muita coisa escrita aqui pode ser feita de formas diferentes para se atingir objetivos diferentes, aqui eu mostro coisas que eu aplico no meu dia ou que já apliquei em empresas anteriores;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Conheces teu inimigo e conhece-te a ti mesmo; se tiveres cem combates a travar, cem vezes serás vitorioso. Se ignoras teu inimigo e conheces a ti mesmo, tuas chances de perder e de ganhar serão idênticas. Se ignoras ao mesmo tempo teu inimigo e a ti mesmo, só contarás teus combates por tuas derrotas. - Sun Tzu.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;O nosso primeiro tema será 
-&lt;strong&gt;avaliação e gerenciamento de riscos&lt;/strong&gt;
-, um tema base para a disciplina de segurança da informação; Você pode estar lendo sobre isso pela primeira vez mas saiba que as grandes empresas do Brasil e do mundo utilizam esta prática já há bastante tempo; com base nesse contexto veremos como classificar o risco, para isso a primeira coisa que devemos definir é o significado do risco.&lt;/p&gt;
+&lt;p&gt;O nosso primeiro tema será &lt;strong&gt;avaliação e gerenciamento de riscos&lt;/strong&gt;, um tema base para a disciplina de segurança da informação; Você pode estar lendo sobre isso pela primeira vez mas saiba que as grandes empresas do Brasil e do mundo utilizam esta prática já há bastante tempo; com base nesse contexto veremos como classificar o risco, para isso a primeira coisa que devemos definir é o significado do risco.&lt;/p&gt;
 
 &lt;p&gt;Um dos padrões e documentos mais referenciados e utilizados em segurança da informação e principalmente nesta disciplina de avaliação de riscos é o NIST 800-30 [1] que é considerado um MUST READ.&lt;/p&gt;
 
-&lt;p&gt;###Então, o que é risco?&lt;/p&gt;
+&lt;h2 id=&quot;então-o-que-é-risco&quot;&gt;#Então, o que é risco?&lt;/h2&gt;
 
 &lt;p&gt;Risco, em segurança da informação, se trata de toda a ameaça em que uma organização esteja ou possa estar envolvida, todo o evento que se concretizado cause problemas ao negócio, imagem ou funcionamento da empresa; Como analista de segurança da informação um dos principais trabalhos que você tem que desenvolver é identificar que ameaças podem atingir uma organização e quais medidas você deve tomar em caso de acontecimento de um evento.&lt;/p&gt;
 
 &lt;p&gt;O risco pode ser divido entre muitas formas:&lt;/p&gt;
 
-&lt;p&gt;*Físicos: Servidores expostos fisicamente para funcionários,&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Físicos: Servidores expostos fisicamente para funcionários,&lt;/li&gt;
+  &lt;li&gt;Lógicos: Uma porta aberta em um servidor, uma rede mal segmentada,&lt;/li&gt;
+  &lt;li&gt;Naturais: Enchente, furacão, raios,&lt;/li&gt;
+  &lt;li&gt;Imprevisíveis: No-break quebrado, queda de energia municipal;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;*Lógicos: Uma porta aberta em um servidor, uma rede mal segmentada,&lt;/p&gt;
-
-&lt;p&gt;*Naturais: Enchente, furacão, raios,&lt;/p&gt;
-
-&lt;p&gt;*Imprevisíveis: No-break quebrado, queda de energia municipal;
-Enfim, quase 
-&lt;strong&gt;qualquer coisa que afete o funcionamento do seu negócio&lt;/strong&gt;
-; acho que este é o ponto principal, para que sua empresa dê lucro ou desempenhe sua atividade de forma eficiente ela deve se livrar dos riscos.&lt;/p&gt;
+&lt;p&gt;Enfim, quase &lt;strong&gt;qualquer coisa que afete o funcionamento do seu negócio&lt;/strong&gt;; acho que este é o ponto principal, para que sua empresa dê lucro ou desempenhe sua atividade de forma eficiente ela deve se livrar dos riscos.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;###Implementação&lt;/p&gt;
+&lt;h3 id=&quot;implementação&quot;&gt;Implementação&lt;/h3&gt;
 
 &lt;p&gt;Segundo Vaughan [2], os passos que devem ser seguidos para que possa existir um bom plano para avaliação e gerenciamento de riscos são:&lt;/p&gt;
 
-&lt;p&gt;*Determinar quais os principais objetivos a se atingir;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Determinar quais os principais objetivos a se atingir;&lt;/li&gt;
+  &lt;li&gt;Identificar os riscos aos quais a organização está exposta;&lt;/li&gt;
+  &lt;li&gt;Avaliar estes riscos de forma criteriosa;&lt;/li&gt;
+  &lt;li&gt;Considerar as alternativas e selecionar dispositivos para o tratamento dos riscos;&lt;/li&gt;
+  &lt;li&gt;Implementar as decisões tomadas;&lt;/li&gt;
+  &lt;li&gt;Avaliar e revisar o processo continuamente;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;*Identificar os riscos aos quais a organização está exposta;&lt;/p&gt;
-
-&lt;p&gt;*Avaliar estes riscos de forma criteriosa;&lt;/p&gt;
-
-&lt;p&gt;*Considerar as alternativas e selecionar dispositivos para o tratamento dos riscos;&lt;/p&gt;
-
-&lt;p&gt;*Implementar as decisões tomadas;&lt;/p&gt;
-
-&lt;p&gt;*Avaliar e revisar o processo continuamente;
-Identificar quais os riscos que a sua organização está exposta não é uma tarefa fácil, exige disciplina e discernimento mas também muitas horas de conversas com 
-&lt;strong&gt;os principais envolvidos&lt;/strong&gt;
- no funcionamento da empresa, isso quase sempre (note o quase) é feito conversando com os gerentes das áreas da empresa;&lt;/p&gt;
+&lt;p&gt;Identificar quais os riscos que a sua organização está exposta não é uma tarefa fácil, exige disciplina e discernimento mas também muitas horas de conversas com &lt;strong&gt;os principais envolvidos&lt;/strong&gt; no funcionamento da empresa, isso quase sempre (note o quase) é feito conversando com os gerentes das áreas da empresa;&lt;/p&gt;
 
 &lt;p&gt;Dica do Mulato #01&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Marque reuniões com todos os gerentes da empresa;&lt;/li&gt;
   &lt;li&gt;Peça para que na opinião deles informem o que deve ser protegido;&lt;/li&gt;
   &lt;li&gt;Aceite informações de outras áreas mas peça que se concentrem nas suas;
-E principalmente, você deve estar atento aos riscos que envolvem 
-&lt;strong&gt;o modelo de negócio da empresa&lt;/strong&gt;
- e os riscos envolvidos com sua 
-&lt;strong&gt;infra-estrutura de negócio.&lt;/strong&gt;&lt;/li&gt;
+E principalmente, você deve estar atento aos riscos que envolvem &lt;strong&gt;o modelo de negócio da empresa&lt;/strong&gt; e os riscos envolvidos com sua &lt;strong&gt;infra-estrutura de negócio.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Dica do Mulato #02&lt;/p&gt;
@@ -843,7 +823,7 @@ E principalmente, você deve estar atento aos riscos que envolvem
 
 &lt;hr /&gt;
 
-&lt;p&gt;###Classificação do Risco&lt;/p&gt;
+&lt;h3 id=&quot;classificaçãodo-risco&quot;&gt;Classificação do Risco&lt;/h3&gt;
 
 &lt;p&gt;Uma das formas mais eficientes e recomendadas para se avaliar os riscos depois de listá-los é fornecer os pesos corretos para cada risco em forma de severidade (impacto que o evento causará na empresa caso aconteça) e a probabilidade de o evento  acontecer, neste caso faremos isso desta forma:&lt;/p&gt;
 
@@ -851,62 +831,51 @@ E principalmente, você deve estar atento aos riscos que envolvem
 
 &lt;p&gt;&lt;strong&gt;Chance/Probabilidade de acontecer&lt;/strong&gt;&lt;/p&gt;
 
-&lt;dl&gt;
-  &lt;dt&gt;&lt;strong&gt;*1-2&lt;/strong&gt;&lt;/dt&gt;
-  &lt;dd&gt;Pouquíssima severidade;&lt;/dd&gt;
-  &lt;dt&gt;&lt;strong&gt;*3-4&lt;/strong&gt;&lt;/dt&gt;
-  &lt;dd&gt;Impacto baixo para empresa;&lt;/dd&gt;
-  &lt;dt&gt;&lt;strong&gt;*5-6&lt;/strong&gt;&lt;/dt&gt;
-  &lt;dd&gt;Impacto moderado;&lt;/dd&gt;
-  &lt;dt&gt;&lt;strong&gt;*7-8&lt;/strong&gt;&lt;/dt&gt;
-  &lt;dd&gt;Sérios problemas caso ocorra;&lt;/dd&gt;
-&lt;/dl&gt;
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;1-2&lt;/strong&gt;: Pouquíssima severidade;&lt;/td&gt;
+      &lt;td&gt;* &lt;strong&gt;2:&lt;/strong&gt; Risco&lt;strong&gt; baixo&lt;/strong&gt;;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;p&gt;&lt;strong&gt;*9-10&lt;/strong&gt;
-: Desastroso para empresa;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;*2:&lt;/strong&gt;
- Risco
-&lt;strong&gt; baixo&lt;/strong&gt;
-;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;3-4&lt;/strong&gt;: Impacto baixo para empresa;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;5-6&lt;/strong&gt;: Impacto moderado;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;7-8&lt;/strong&gt;: Sérios problemas caso ocorra;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;9-10&lt;/strong&gt;: Desastroso para empresa;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;*5:&lt;/strong&gt;
- Risco 
+ Risco
 &lt;strong&gt;médio&lt;/strong&gt;
 ;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;*10:&lt;/strong&gt;
- Risco 
+ Risco
 &lt;strong&gt;alto&lt;/strong&gt;
 ;
 Para calcular o risco geral simplesmente multiplicamos os dois valores:&lt;/p&gt;
 
-&lt;p&gt;-&amp;gt; Risco Geral = Severidade X Probabilidade/Chance
-E é gerado um valor quantitativo até 100 informando o risco geral do evento. Esta é a tabela que utilizo mas você pode modificar para qualquer outro tipo de qualificação: 
-quantitativa ou qualitativa, desde que no final os riscos sejam expostos e as decisões possam ser tomadas de forma mais eficiente e com foco na sua 
-&lt;strong&gt;importância&lt;/strong&gt;
- e 
-&lt;strong&gt;ocorrência&lt;/strong&gt;
-;&lt;/p&gt;
+&lt;p&gt;-&amp;gt; Risco Geral = Severidade X Probabilidade/Chance&lt;/p&gt;
+
+&lt;p&gt;E é gerado um valor quantitativo até 100 informando o risco geral do evento. Esta é a tabela que utilizo mas você pode modificar para qualquer outro tipo de qualificação: quantitativa ou qualitativa, desde que no final os riscos sejam expostos e as decisões possam ser tomadas de forma mais eficiente e com foco na sua &lt;strong&gt;importância&lt;/strong&gt; e &lt;strong&gt;ocorrência&lt;/strong&gt;;&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;A partir deste momento já é possível preparar a nossa primeira tabela de apoio a decisões! Para 
-&lt;strong&gt;servir de exemplo&lt;/strong&gt;
-, suponha que a empresa que estamos analisando é uma startup de desenvolvimento web com escritório físico onde trabalham 5 funcionários e existem 2 servidores DELL onde um é ativo e o outro fica de contingência com poucos serviços, a empresa fica localizada dentro de uma casa em um bairro bem seguro mas onde já houve antes registros de enchentes em sua área, e toda sua infra-estrutura esta localizada fisicamente na casa, no entanto eles possuem uma cópia de backups diários e assets importantes da empresa em um servidor dedicado na internet;&lt;/p&gt;
+&lt;p&gt;A partir deste momento já é possível preparar a nossa primeira tabela de apoio a decisões! Para &lt;strong&gt;servir de exemplo&lt;/strong&gt;, suponha que a empresa que estamos analisando é uma startup de desenvolvimento web com escritório físico onde trabalham 5 funcionários e existem 2 servidores DELL onde um é ativo e o outro fica de contingência com poucos serviços, a empresa fica localizada dentro de uma casa em um bairro bem seguro mas onde já houve antes registros de enchentes em sua área, e toda sua infra-estrutura esta localizada fisicamente na casa, no entanto eles possuem uma cópia de backups diários e assets importantes da empresa em um servidor dedicado na internet;&lt;/p&gt;
 
 &lt;p&gt;Digamos que após conversar com o dono da empresa e o responsável técnico da equipe de funcionários eles levantaram pra gente que os principais riscos que eles consideram são:&lt;/p&gt;
 
-&lt;p&gt;*“Não temos muita orientação em segurança no processo de desenvolvimento”,&lt;/p&gt;
-
-&lt;p&gt;*“As vezes recebemos clientes que acessam a rede privada da empresa”,&lt;/p&gt;
-
-&lt;p&gt;*“Não temos uma política muito bem definida de backup, mandamos pra nuvem”,&lt;/p&gt;
-
-&lt;p&gt;*“As vezes temos queda de energia municipal e duramos pouco tempo sem energia”,&lt;/p&gt;
-
-&lt;p&gt;*“Não temos fornecedores de confiança, não temos segurança física”
-Após uma análise inicial decidimos identificar os 10 principais riscos:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;“Não temos muita orientação em segurança no processo de desenvolvimento”,&lt;/li&gt;
+  &lt;li&gt;“As vezes recebemos clientes que acessam a rede privada da empresa”,&lt;/li&gt;
+  &lt;li&gt;“Não temos uma política muito bem definida de backup, mandamos pra nuvem”,&lt;/li&gt;
+  &lt;li&gt;“As vezes temos queda de energia municipal e duramos pouco tempo sem energia”,&lt;/li&gt;
+  &lt;li&gt;“Não temos fornecedores de confiança, não temos segurança física”
+Após uma análise inicial decidimos identificar os 10 principais riscos:&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Risco / Descrição&lt;/strong&gt;&lt;/p&gt;
 
@@ -999,79 +968,41 @@ Veremos que essa tabela irá crescer no próximo artigo quando falarmos em como 
 
 &lt;hr /&gt;
 
-&lt;p&gt;###Cálculo do Risco&lt;/p&gt;
+&lt;h3 id=&quot;cálculo-do-risco&quot;&gt;Cálculo do Risco&lt;/h3&gt;
 
-&lt;p&gt;Um dos conceitos mais importantes que um analista de segurança da informação deve compreender e difundir entre os principais interessados é o 
-&lt;strong&gt;cálculo do risco&lt;/strong&gt;
-, para isso foram definidos três variáveis que te ajudam a chegar ao custo do risco para uma empresa, são elas:&lt;/p&gt;
+&lt;p&gt;Um dos conceitos mais importantes que um analista de segurança da informação deve compreender e difundir entre os principais interessados é o &lt;strong&gt;cálculo do risco&lt;/strong&gt;, para isso foram definidos três variáveis que te ajudam a chegar ao custo do risco para uma empresa, são elas:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;*ARO&lt;/strong&gt;
- (Annualized Rate of Ocurrence/Possibilidade de Ocorrência no Ano), percentagem da possibilidade ocorrência do evento em um ano;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ARO&lt;/strong&gt; (Annualized Rate of Ocurrence/Possibilidade de Ocorrência no Ano), percentagem da possibilidade ocorrência do evento em um ano;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;ALE&lt;/strong&gt; (Annual Loss Expectancy/Expectativa de Perda Anual), expectativa de perda anual em valores monetários de um evento/risco específico;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;SLE&lt;/strong&gt; (Single Loss Expectancy/Expecativa de Perda Única), valores em moeda que representam o custo total caso um evento aconteça; Este valor pode ser subdivido entre dois itens:&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;AV&lt;/strong&gt; (Asset Value/Valor do Ativo)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;EF&lt;/strong&gt; (Exposure Factor/Fator de Exposição)&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;*ALE&lt;/strong&gt;
- (Annual Loss Expectancy/Expectativa de Perda Anual), expectativa de perda anual em valores monetários de um evento/risco específico;&lt;/p&gt;
+&lt;p&gt;O que nos leva as seguintes fórmulas:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;*SLE&lt;/strong&gt;
- (Single Loss Expectancy/Expecativa de Perda Única), valores em moeda que representam o custo total caso um evento aconteça; Este valor pode ser subdivido entre dois itens:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;*AV&lt;/strong&gt;
- (Asset Value/Valor do Ativo)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;*EF&lt;/strong&gt;
- (Exposure Factor/Fator de Exposição)
-O que nos leva as seguintes fórmulas:&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt;  AV x EF  = SLE
-  -&amp;gt; SLE x ARO = ALE&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-&amp;gt;  AV x EF  = SLE
+-&amp;gt; SLE x ARO = ALE
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Exemplo #01:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Suponha que a página que mais dá dinheiro a essa empresa rende foi avaliada em 
-&lt;strong&gt;R$ 26.000,00&lt;/strong&gt;
- e após a reunião em conjunto com os envolvidos foi descoberto que o site já passou por um processo de auditoria de segurança e que está bem padronizado há alguns anos, então foi definido um fato de exposição (
-&lt;strong&gt;EF&lt;/strong&gt;
-) de 
-&lt;strong&gt;25%&lt;/strong&gt;
-, então nosso 
-&lt;strong&gt;SLE&lt;/strong&gt;
- aqui é R$ 26.000,00 x 0.25 = 
-&lt;strong&gt;R$ 6.500,00&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Suponha que a página que mais dá dinheiro a essa empresa rende foi avaliada em &lt;strong&gt;R$ 26.000,00&lt;/strong&gt; e após a reunião em conjunto com os envolvidos foi descoberto que o site já passou por um processo de auditoria de segurança e que está bem padronizado há alguns anos, então foi definido um fato de exposição (&lt;strong&gt;EF&lt;/strong&gt;) de &lt;strong&gt;25%&lt;/strong&gt;, então nosso &lt;strong&gt;SLE&lt;/strong&gt; aqui é R$ 26.000,00 x 0.25 = &lt;strong&gt;R$ 6.500,00&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Exemplo #02:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Digamos que o servidor físico que hospeda as páginas web rende por hora 
-&lt;strong&gt;R$ 200,00&lt;/strong&gt;
- em horários de pico a empresa, a probabilidade de acontecer  uma falha no hardware neste ano é de 
-&lt;strong&gt;20%&lt;/strong&gt;
- ou 
-&lt;strong&gt;1 em 5&lt;/strong&gt;
-, caso ocorra a falha será necessário a compra de mais um equipamento de contingência no valor de 
-&lt;strong&gt;R$ 6.000&lt;/strong&gt;
-, mais o tempo de manutenção necessário para voltar ao ar sem problemas, que da ultima vez foi estimado em 
-&lt;strong&gt;4 horas&lt;/strong&gt;
-;&lt;/p&gt;
+&lt;p&gt;Digamos que o servidor físico que hospeda as páginas web rende por hora &lt;strong&gt;R$ 200,00&lt;/strong&gt; em horários de pico a empresa, a probabilidade de acontecer  uma falha no hardware neste ano é de &lt;strong&gt;20%&lt;/strong&gt; ou &lt;strong&gt;1 em 5&lt;/strong&gt;, caso ocorra a falha será necessário a compra de mais um equipamento de contingência no valor de &lt;strong&gt;R$ 6.000&lt;/strong&gt;, mais o tempo de manutenção necessário para voltar ao ar sem problemas, que da ultima vez foi estimado em &lt;strong&gt;4 horas&lt;/strong&gt;;&lt;/p&gt;
 
-&lt;p&gt;Neste exemplo o 
-&lt;strong&gt;ARO&lt;/strong&gt;
- é 0.20 e o 
-&lt;strong&gt;SLE&lt;/strong&gt;
- é R$ 6.800,00 (R$ 200 x 4 horas + R$6.000 servidor), então usando a fórmula acima qual é o ALE (Expectativa de Perda Anual)?  O 
-&lt;strong&gt;ALE&lt;/strong&gt;
- é R$ 1.360,00.&lt;/p&gt;
+&lt;p&gt;Neste exemplo o &lt;strong&gt;ARO&lt;/strong&gt; é 0.20 e o &lt;strong&gt;SLE&lt;/strong&gt; é R$ 6.800,00 (R$ 200 x 4 horas + R$6.000 servidor), então usando a fórmula acima qual é o ALE (Expectativa de Perda Anual)? O &lt;strong&gt;ALE&lt;/strong&gt; é R$ 1.360,00.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;Então, é isso! Nós vimos aqui a primeira parte do post 
-Avaliação e Gerenciamento de Riscos, com o conhecimento daqui: 
-&lt;strong&gt;classificação&lt;/strong&gt;
- e 
-&lt;strong&gt;cálculo do risco&lt;/strong&gt;
-, conseguiremos a informação necessária para gerenciar os riscos afim de mitigá-los ou extinguí-los quando possível, de forma organizada e orientada a um processo;&lt;/p&gt;
+&lt;p&gt;Então, é isso! Nós vimos aqui a primeira parte do post Avaliação e Gerenciamento de Riscos, com o conhecimento daqui: &lt;strong&gt;classificação&lt;/strong&gt; e &lt;strong&gt;cálculo do risco&lt;/strong&gt;, conseguiremos a informação necessária para gerenciar os riscos afim de mitigá-los ou extinguí-los quando possível, de forma organizada e orientada a um processo;&lt;/p&gt;
 
-&lt;p&gt;###&lt;strong&gt;Referências&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;referências&quot;&gt;Referências&lt;/h3&gt;
 
-&lt;p&gt;[1] 
-&lt;a href=&quot;http://csrc.nist.gov/publications/nistpubs/800-30/sp800-30.pdf&quot;&gt;NIST 800-30 - Risk Management Guide for Information Technology Systems&lt;/a&gt;[2] Fundamentals of Risk and Insurance, Vaughan and Vaughan&lt;/p&gt;</content><author><name></name></author><summary type="html">layout: post title: Avaliação e Gerenciamento de Riscos tags: security —##Parte I: Avaliação de Riscos</summary></entry><entry><title type="html">Validate fields and other objects in #Swift #iOS</title><link href="http://alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios.html" rel="alternate" type="text/html" title="Validate fields and other objects in #Swift #iOS" /><published>2016-03-15T00:00:00-03:00</published><updated>2016-03-15T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios</id><content type="html" xml:base="http://alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios.html">&lt;p&gt;Unfortunately we all know that we can’t put everything what we are working in, on a simple blog, I have to understand this since years ago when I worked at some government department. But I can show what I am doing now just for fun and for registry to me in the future.&lt;/p&gt;
+&lt;p&gt;[1] &lt;a href=&quot;http://csrc.nist.gov/publications/nistpubs/800-30/sp800-30.pdf&quot;&gt;NIST 800-30 - Risk Management Guide for Information Technology Systems&lt;/a&gt;[2] Fundamentals of Risk and Insurance, Vaughan and Vaughan&lt;/p&gt;</content><author><name></name></author><category term="security" /><summary type="html">Parte I: Avaliação de Riscos</summary></entry><entry><title type="html">Validate fields and other objects in #Swift #iOS</title><link href="http://alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios.html" rel="alternate" type="text/html" title="Validate fields and other objects in #Swift #iOS" /><published>2016-03-15T00:00:00-03:00</published><updated>2016-03-15T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios</id><content type="html" xml:base="http://alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios.html">&lt;p&gt;Unfortunately we all know that we can’t put everything what we are working in, on a simple blog, I have to understand this since years ago when I worked at some government department. But I can show what I am doing now just for fun and for registry to me in the future.&lt;/p&gt;
 
 &lt;p&gt;we were had some problems here, especially when we’d need to try validate a lot of forms that involved things like UITextField, UISegmentedControl, etc. To solve this issue I had to create one class with methods like:&lt;/p&gt;
 
