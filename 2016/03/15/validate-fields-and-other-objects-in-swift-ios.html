@@ -111,11 +111,15 @@
   <div class="post-content" itemprop="articleBody">
     <p>Unfortunately we all know that we can’t put everything what we are working in, on a simple blog, I have to understand this since years ago when I worked at some government department. But I can show what I am doing now just for fun and for registry to me in the future.</p>
 
-<p>we were had some problems here, especially when we’d need to try validate a lot of forms that involved things like UITextField, UISegmentedControl, etc. To solve this issue I had to create one class with methods like:.insert(object, checkType, labelError, errorMessage) // magic goes here.
+<p>we were had some problems here, especially when we’d need to try validate a lot of forms that involved things like UITextField, UISegmentedControl, etc. To solve this issue I had to create one class with methods like:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.insert(object, checkType, labelError, errorMessage) // magic goes here.
 .showErrors() // print on screen all erros like below
 .count() // return the quantity of erros below
 .result() // return if all tests are passed or no.
-and the code is easily readable:</p>
+</code></pre></div></div>
+
+<p>and the code is easily readable:</p>
 
 <figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onActAll</span><span class="p">(</span><span class="nv">sender</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">)</span>
 <span class="p">{</span>
@@ -128,41 +132,105 @@ and the code is easily readable:</p>
 
 <p>You set a trigger for validation, here a button to Next Screen. Then you assign function pointers to the stack os Validations.</p>
 
-<p>override func viewDidLoad() {
-    super.viewDidLoad()</p>
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">super</span><span class="o">.</span><span class="nf">viewDidLoad</span><span class="p">()</span>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruleThis.insert(object: textFieldCPF,
-    function: checkIfCPFisValid, errorLabel: labelMessageCPF,
-    errorMessage: "CPF inválido, sua mensagem personalizada aqui.")
+    <span class="n">ruleThis</span><span class="o">.</span><span class="nf">insert</span><span class="p">(</span><span class="nv">object</span><span class="p">:</span> <span class="n">textFieldCPF</span><span class="p">,</span>
+        <span class="nv">function</span><span class="p">:</span> <span class="n">checkIfCPFisValid</span><span class="p">,</span> <span class="nv">errorLabel</span><span class="p">:</span> <span class="n">labelMessageCPF</span><span class="p">,</span>
+        <span class="nv">errorMessage</span><span class="p">:</span> <span class="s">"CPF inválido, sua mensagem personalizada aqui."</span><span class="p">)</span>
 
-ruleThis.insert(object: textFieldPassword,
-    function: checkIfPasswordIsValid, errorLabel: labelMessagePassword,
-    errorMessage: "Sua senha não preenche os resquisitos mínimos de segurança, tente novamente")
+    <span class="n">ruleThis</span><span class="o">.</span><span class="nf">insert</span><span class="p">(</span><span class="nv">object</span><span class="p">:</span> <span class="n">textFieldPassword</span><span class="p">,</span>
+        <span class="nv">function</span><span class="p">:</span> <span class="n">checkIfPasswordIsValid</span><span class="p">,</span> <span class="nv">errorLabel</span><span class="p">:</span> <span class="n">labelMessagePassword</span><span class="p">,</span>
+        <span class="nv">errorMessage</span><span class="p">:</span> <span class="s">"Sua senha não preenche os resquisitos mínimos de segurança, tente novamente"</span><span class="p">)</span>
 
-ruleThis.insert(object: textFieldInputCEP,
-    function: checkIfCEPisValid, errorLabel: labelMessageCEP,
-    errorMessage: "Este CEP não é válido")
+    <span class="n">ruleThis</span><span class="o">.</span><span class="nf">insert</span><span class="p">(</span><span class="nv">object</span><span class="p">:</span> <span class="n">textFieldInputCEP</span><span class="p">,</span>
+        <span class="nv">function</span><span class="p">:</span> <span class="n">checkIfCEPisValid</span><span class="p">,</span> <span class="nv">errorLabel</span><span class="p">:</span> <span class="n">labelMessageCEP</span><span class="p">,</span>
+        <span class="nv">errorMessage</span><span class="p">:</span> <span class="s">"Este CEP não é válido"</span><span class="p">)</span>
 
-ruleThis.insert(object: segmentedOption,
-    function: checkIfIsSelected, errorLabel: labelMessageSegmented,
-    errorMessage: "Por favor selecione uma das opções.") } Then you make a function validation to the object assigned. This coule be simple as
-</code></pre></div></div>
+    <span class="n">ruleThis</span><span class="o">.</span><span class="nf">insert</span><span class="p">(</span><span class="nv">object</span><span class="p">:</span> <span class="n">segmentedOption</span><span class="p">,</span>
+        <span class="nv">function</span><span class="p">:</span> <span class="n">checkIfIsSelected</span><span class="p">,</span> <span class="nv">errorLabel</span><span class="p">:</span> <span class="n">labelMessageSegmented</span><span class="p">,</span>
+        <span class="nv">errorMessage</span><span class="p">:</span> <span class="s">"Por favor selecione uma das opções."</span><span class="p">)</span>
+<span class="p">}</span></code></pre></figure>
 
-<p>func checkIfTextIsBlank(obj: AnyObject?) -&gt; Bool
-{
-    var result = false</p>
+<p>Then you make a function validation to the object assigned. This coule be simple as</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if let object = obj as? UITextField {
-    if !object.text!.isEmpty { // if is not nil.
-        result = true
-    }
-}
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">func</span> <span class="nf">checkIfTextIsBlank</span><span class="p">(</span><span class="nv">obj</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span>
+<span class="p">{</span>
+    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="kc">false</span>
 
-return result } or a little more complex [like this](https://gist.github.com/mulatinho/14546ff8f24eb5b10e01) (a validation check for social number in Brazil), and the results are below:
-</code></pre></div></div>
+    <span class="k">if</span> <span class="k">let</span> <span class="nv">object</span> <span class="o">=</span> <span class="n">obj</span> <span class="k">as?</span> <span class="kt">UITextField</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="o">!</span><span class="n">object</span><span class="o">.</span><span class="n">text</span><span class="o">!.</span><span class="n">isEmpty</span> <span class="p">{</span> <span class="c1">// if is not nil.
+</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="kc">true</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
 
-<p>[caption id=”attachment_611” align=”alignnone” width=”545”]
-<a href="https://mulatinho.files.wordpress.com/2016/03/rulethis.gif"><img src="https://mulatinho.files.wordpress.com/2016/03/rulethis.gif?w=545" alt="validating screen in iOS with Swift" /></a> validating screen in iOS with Swift[/caption]</p>
+    <span class="k">return</span> <span class="n">result</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>or a little more complex <a href="https://gist.github.com/mulatinho/14546ff8f24eb5b10e01">like this</a> (a validation check for social number in Brazil), validating screen in iOS with and the results are below:</p>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="c1">// algoritmo: res1 = sum(digits[0-9] * 10...2) % 11; res2 = sum(digits[0-10] * 11...2) % 11
+</span>
+<span class="c1">// if (digit10 == res1 &amp;&amp; digit11 &amp;&amp; res2) { cpf valido }
+</span>
+<span class="kd">func</span> <span class="nf">checkIfCPFisValid</span><span class="p">(</span><span class="nv">obj</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span>
+<span class="p">{</span>
+    <span class="k">var</span> <span class="nv">input</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span>
+
+    <span class="k">if</span> <span class="k">let</span> <span class="nv">object</span> <span class="o">=</span> <span class="n">obj</span> <span class="k">as?</span> <span class="kt">UITextField</span> <span class="p">{</span>
+        <span class="n">input</span> <span class="o">=</span> <span class="n">object</span><span class="o">.</span><span class="n">text</span><span class="o">!</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">input</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kc">false</span>
+    <span class="p">}</span>
+
+    <span class="k">let</span> <span class="nv">cpf</span> <span class="o">=</span> <span class="n">input</span><span class="o">.</span><span class="n">characters</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span><span class="s">"0123456789"</span><span class="o">.</span><span class="n">characters</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="nv">$0</span><span class="p">)}</span>
+    <span class="k">if</span> <span class="n">cpf</span><span class="o">.</span><span class="n">count</span> <span class="o">==</span> <span class="mi">11</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">digitTen</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Int</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">cpf</span><span class="p">[</span><span class="mi">9</span><span class="p">]))</span> <span class="p">??</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">let</span> <span class="nv">digitEleven</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Int</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">cpf</span><span class="p">[</span><span class="mi">10</span><span class="p">]))</span> <span class="p">??</span> <span class="mi">0</span><span class="p">)</span>
+
+        <span class="k">var</span> <span class="nv">resultModuleOne</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">resultModuleTwo</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">realValue</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">var</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">j</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">11</span>
+        <span class="k">for</span> <span class="n">index</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">cpf</span><span class="o">.</span><span class="n">count</span><span class="o">-</span><span class="mi">1</span> <span class="p">{</span>
+            <span class="n">realValue</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Int</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">cpf</span><span class="p">[</span><span class="n">index</span><span class="p">]))</span> <span class="p">??</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">resultModuleTwo</span> <span class="o">+=</span> <span class="p">(</span><span class="n">realValue</span> <span class="o">*</span> <span class="n">j</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">realValue</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Int</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">cpf</span><span class="p">[</span><span class="n">index</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span> <span class="p">??</span> <span class="mi">0</span><span class="p">)</span>
+                <span class="n">resultModuleOne</span> <span class="o">+=</span> <span class="p">(</span><span class="n">realValue</span> <span class="o">*</span> <span class="n">j</span><span class="p">)</span>
+            <span class="p">}</span>
+
+            <span class="n">i</span><span class="o">++</span><span class="p">;</span> <span class="n">j</span><span class="o">--</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="n">resultModuleOne</span> <span class="o">%=</span> <span class="mi">11</span>
+        <span class="n">resultModuleOne</span> <span class="o">=</span> <span class="n">resultModuleOne</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">0</span> <span class="p">:</span> <span class="n">resultModuleOne</span><span class="o">-</span><span class="mi">11</span>
+
+        <span class="n">resultModuleTwo</span> <span class="o">%=</span> <span class="mi">11</span>
+        <span class="n">resultModuleTwo</span> <span class="o">=</span> <span class="n">resultModuleTwo</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">0</span> <span class="p">:</span> <span class="n">resultModuleTwo</span><span class="o">-</span><span class="mi">11</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">resultModuleOne</span> <span class="o">==</span> <span class="n">digitTen</span> <span class="o">&amp;&amp;</span> <span class="n">resultModuleTwo</span> <span class="o">==</span> <span class="n">digitEleven</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="kc">true</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="kc">false</span>
+<span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">cpf</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"fdasfdfsdf352353"</span>
+<span class="k">let</span> <span class="nv">ret</span><span class="p">:</span> <span class="kt">Bool</span>
+
+<span class="n">ret</span> <span class="o">=</span> <span class="nf">checkIfCPFisValid</span><span class="p">(</span><span class="n">cpf</span><span class="p">)</span>
+<span class="nf">print</span> <span class="p">(</span><span class="s">"</span><span class="se">\n\n</span><span class="s">ret is '</span><span class="se">\(</span><span class="n">ret</span><span class="se">)</span><span class="s">' and cpf if '</span><span class="se">\(</span><span class="n">cpf</span><span class="se">)</span><span class="s">'"</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">ret</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">print</span> <span class="p">(</span><span class="s">"CPF é inválido"</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nf">print</span> <span class="p">(</span><span class="s">"CPF é válido!! :-)"</span><span class="p">)</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><img src="https://mulatinho.files.wordpress.com/2016/03/rulethis.gif?w=545" alt="" />](https://mulatinho.files.wordpress.com/2016/03/rulethis.gif)</p>
 
 <p>For me the results are cool and work! I really enjoy work with Swift. :)</p>
 
