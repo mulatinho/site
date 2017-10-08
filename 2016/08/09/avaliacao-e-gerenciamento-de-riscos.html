@@ -121,7 +121,7 @@
 
 <p>Um dos padrões e documentos mais referenciados e utilizados em segurança da informação e principalmente nesta disciplina de avaliação de riscos é o NIST 800-30 [1] que é considerado um MUST READ.</p>
 
-<h2 id="então-o-que-é-risco">#Então, o que é risco?</h2>
+<h3 id="então-o-que-é-risco">Então, o que é risco?</h3>
 
 <p>Risco, em segurança da informação, se trata de toda a ameaça em que uma organização esteja ou possa estar envolvida, todo o evento que se concretizado cause problemas ao negócio, imagem ou funcionamento da empresa; Como analista de segurança da informação um dos principais trabalhos que você tem que desenvolver é identificar que ameaças podem atingir uma organização e quais medidas você deve tomar em caso de acontecimento de um evento.</p>
 
@@ -176,36 +176,26 @@ E principalmente, você deve estar atento aos riscos que envolvem <strong>o mode
 
 <p><strong>Severidade (para o negócio)</strong></p>
 
-<p><strong>Chance/Probabilidade de acontecer</strong></p>
-
-<table>
-  <tbody>
-    <tr>
-      <td><strong>1-2</strong>: Pouquíssima severidade;</td>
-      <td>* <strong>2:</strong> Risco<strong> baixo</strong>;</td>
-    </tr>
-  </tbody>
-</table>
-
 <ul>
+  <li><strong>1-2</strong>: Pouquíssima severidade;</li>
   <li><strong>3-4</strong>: Impacto baixo para empresa;</li>
   <li><strong>5-6</strong>: Impacto moderado;</li>
   <li><strong>7-8</strong>: Sérios problemas caso ocorra;</li>
   <li><strong>9-10</strong>: Desastroso para empresa;</li>
 </ul>
 
-<p><strong>*5:</strong>
- Risco
-<strong>médio</strong>
-;</p>
+<p><strong>Chance/Probabilidade de acontecer</strong></p>
 
-<p><strong>*10:</strong>
- Risco
-<strong>alto</strong>
-;
-Para calcular o risco geral simplesmente multiplicamos os dois valores:</p>
+<ul>
+  <li><strong>2:</strong> Risco<strong> baixo</strong>;</li>
+  <li><strong>5:</strong> Risco <strong>médio</strong>;</li>
+  <li><strong>10:</strong> Risco <strong>alto</strong>;</li>
+</ul>
 
-<p>-&gt; Risco Geral = Severidade X Probabilidade/Chance</p>
+<p>Para calcular o risco geral simplesmente multiplicamos os dois valores:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-&gt; Risco Geral (Total) = Severidade X Probabilidade/Chance
+</code></pre></div></div>
 
 <p>E é gerado um valor quantitativo até 100 informando o risco geral do evento. Esta é a tabela que utilizo mas você pode modificar para qualquer outro tipo de qualificação: quantitativa ou qualitativa, desde que no final os riscos sejam expostos e as decisões possam ser tomadas de forma mais eficiente e com foco na sua <strong>importância</strong> e <strong>ocorrência</strong>;</p>
 
@@ -220,98 +210,87 @@ Para calcular o risco geral simplesmente multiplicamos os dois valores:</p>
   <li>“As vezes recebemos clientes que acessam a rede privada da empresa”,</li>
   <li>“Não temos uma política muito bem definida de backup, mandamos pra nuvem”,</li>
   <li>“As vezes temos queda de energia municipal e duramos pouco tempo sem energia”,</li>
-  <li>“Não temos fornecedores de confiança, não temos segurança física”
-Após uma análise inicial decidimos identificar os 10 principais riscos:</li>
+  <li>“Não temos fornecedores de confiança, não temos segurança física”</li>
 </ul>
 
-<p><strong>Risco / Descrição</strong></p>
+<p>Após uma análise inicial decidimos identificar os 10 principais riscos:</p>
 
-<p><strong>Chance</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>Risco / Descrição</strong></th>
+      <th style="text-align: center"><strong>Chance</strong></th>
+      <th style="text-align: center"><strong>Impacto</strong></th>
+      <th style="text-align: center"><strong>Total</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Enchente que pode danificar equipamentos</td>
+      <td style="text-align: center">Baixa</td>
+      <td style="text-align: center">7</td>
+      <td style="text-align: center">14</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Invasão ao local físico, furto</td>
+      <td style="text-align: center">Baixa</td>
+      <td style="text-align: center">8</td>
+      <td style="text-align: center">16</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Ausência de Suporte/Fornecedor de Equipamentos de Hardware (Servidor, Máquinas, Equip. de Rede) *</td>
+      <td style="text-align: center">Média</td>
+      <td style="text-align: center">5</td>
+      <td style="text-align: center">25</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Acesso indevido a rede privada empresa *</td>
+      <td style="text-align: center">Média</td>
+      <td style="text-align: center">6</td>
+      <td style="text-align: center">30</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Invasão Local (Física) ao Servidor da Empresa (Cliente / Funcionário mal intencionado / Estranho) *</td>
+      <td style="text-align: center">Média</td>
+      <td style="text-align: center">7</td>
+      <td style="text-align: center">35</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Problemas/Perda de Backups da Empresa</td>
+      <td style="text-align: center">Média</td>
+      <td style="text-align: center">8</td>
+      <td style="text-align: center">40</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Queda de energia municipal/ausência de no-break</td>
+      <td style="text-align: center">Média</td>
+      <td style="text-align: center">8</td>
+      <td style="text-align: center">40</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Ausência de treinamento e medidas de segurança voltadas ao desenvolvimento WEB</td>
+      <td style="text-align: center">Média</td>
+      <td style="text-align: center">9</td>
+      <td style="text-align: center">45</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Ataques a páginas hospedadas no servidor (CSRF, SQL/Param Injection, Session Hijacking, etc)</td>
+      <td style="text-align: center">Alta</td>
+      <td style="text-align: center">7</td>
+      <td style="text-align: center">70</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Invasão ao servidor principal com acesso administrativo</td>
+      <td style="text-align: center">Alta</td>
+      <td style="text-align: center">9</td>
+      <td style="text-align: center">90</td>
+    </tr>
+  </tbody>
+</table>
 
-<p><strong>Impacto</strong></p>
+<p><br /></p>
 
-<p><strong>Risco Geral</strong></p>
-
-<p>Enchente que pode danificar equipamentos</p>
-
-<p>Baixa</p>
-
-<p>7</p>
-
-<p>14</p>
-
-<p>Invasão ao local físico, furto</p>
-
-<p>Baixa</p>
-
-<p>8</p>
-
-<p>16</p>
-
-<p>Ausência de Suporte/Fornecedor de Equipamentos de Hardware (Servidor, Máquinas, Equip. de Rede) *</p>
-
-<p>Média</p>
-
-<p>5</p>
-
-<p>25</p>
-
-<p>Acesso indevido a rede privada empresa *</p>
-
-<p>Média</p>
-
-<p>6</p>
-
-<p>30</p>
-
-<p>Invasão Local (Física) ao Servidor da Empresa (Cliente / Funcionário mal intencionado / Estranho) *</p>
-
-<p>Média</p>
-
-<p>7</p>
-
-<p>35</p>
-
-<p>Problemas/Perda de Backups da Empresa</p>
-
-<p>Média</p>
-
-<p>8</p>
-
-<p>40</p>
-
-<p>Queda de energia municipal/ausência de no-break</p>
-
-<p>Média</p>
-
-<p>8</p>
-
-<p>40</p>
-
-<p>Ausência de treinamento e medidas de segurança voltadas ao desenvolvimento WEB</p>
-
-<p>Média</p>
-
-<p>9</p>
-
-<p>45</p>
-
-<p>Ataques a páginas hospedadas no servidor (CSRF, SQL/Param Injection, Session Hijacking, etc)</p>
-
-<p>Alta</p>
-
-<p>7</p>
-
-<p>70</p>
-
-<p>Invasão ao servidor principal com acesso administrativo</p>
-
-<p>Alta</p>
-
-<p>9</p>
-
-<p>90
-Veremos que essa tabela irá crescer no próximo artigo quando falarmos em como gerenciar estes riscos e como aplicar os controles adequados, ira notar-se também que alguns itens irão receber resposta imediata afim de reduzir a sua chance ou o seu impacto (*);</p>
+<p>Veremos que essa tabela irá crescer no próximo artigo quando falarmos em como gerenciar estes riscos e como aplicar os controles adequados, ira notar-se também que alguns itens irão receber resposta imediata afim de reduzir a sua chance ou o seu impacto (*);</p>
 
 <hr />
 
@@ -349,7 +328,10 @@ Veremos que essa tabela irá crescer no próximo artigo quando falarmos em como 
 
 <h3 id="referências">Referências</h3>
 
-<p>[1] <a href="http://csrc.nist.gov/publications/nistpubs/800-30/sp800-30.pdf">NIST 800-30 - Risk Management Guide for Information Technology Systems</a>[2] Fundamentals of Risk and Insurance, Vaughan and Vaughan</p>
+<ul>
+  <li>[1] <a href="http://csrc.nist.gov/publications/nistpubs/800-30/sp800-30.pdf">NIST 800-30 - Risk Management Guide for Information Technology Systems</a></li>
+  <li>[2] Fundamentals of Risk and Insurance, Vaughan and Vaughan</li>
+</ul>
 
   </div>
 

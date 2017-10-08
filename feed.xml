@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://alex.mulatinho.net/feed.xml" rel="self" type="application/atom+xml" /><link href="http://alex.mulatinho.net/" rel="alternate" type="text/html" /><updated>2017-10-07T21:43:10-03:00</updated><id>http://alex.mulatinho.net/</id><title type="html">Alexandre Mulatinho</title><subtitle>A blog about linux, open source, development and the life of an software engineer ;)</subtitle><entry><title type="html">Two years of remote working: What I learned</title><link href="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html" rel="alternate" type="text/html" title="Two years of remote working: What I learned" /><published>2017-07-27T00:00:00-03:00</published><updated>2017-07-27T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned</id><content type="html" xml:base="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html">&lt;p&gt;&lt;img src=&quot;https://mulatinho.files.wordpress.com/2017/07/img_20170322_140523390.jpg&quot; alt=&quot;IMG_20170322_140523390&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://alex.mulatinho.net/feed.xml" rel="self" type="application/atom+xml" /><link href="http://alex.mulatinho.net/" rel="alternate" type="text/html" /><updated>2017-10-07T22:00:56-03:00</updated><id>http://alex.mulatinho.net/</id><title type="html">Alexandre Mulatinho</title><subtitle>A blog about linux, open source, development and the life of an software engineer ;)</subtitle><entry><title type="html">Two years of remote working: What I learned</title><link href="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html" rel="alternate" type="text/html" title="Two years of remote working: What I learned" /><published>2017-07-27T00:00:00-03:00</published><updated>2017-07-27T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned</id><content type="html" xml:base="http://alex.mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned.html">&lt;p&gt;&lt;img src=&quot;https://mulatinho.files.wordpress.com/2017/07/img_20170322_140523390.jpg&quot; alt=&quot;IMG_20170322_140523390&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In this month I completed exactly two years of remote working, what adventure! To remind me about this in future and also to share with you all I resolve to write about that here.&lt;/p&gt;
 
@@ -738,7 +738,7 @@ printf &quot;month %2d, r$ %12.2f\n&quot; $i $initial; done
 
 &lt;p&gt;Um dos padrões e documentos mais referenciados e utilizados em segurança da informação e principalmente nesta disciplina de avaliação de riscos é o NIST 800-30 [1] que é considerado um MUST READ.&lt;/p&gt;
 
-&lt;h2 id=&quot;então-o-que-é-risco&quot;&gt;#Então, o que é risco?&lt;/h2&gt;
+&lt;h3 id=&quot;então-o-que-é-risco&quot;&gt;Então, o que é risco?&lt;/h3&gt;
 
 &lt;p&gt;Risco, em segurança da informação, se trata de toda a ameaça em que uma organização esteja ou possa estar envolvida, todo o evento que se concretizado cause problemas ao negócio, imagem ou funcionamento da empresa; Como analista de segurança da informação um dos principais trabalhos que você tem que desenvolver é identificar que ameaças podem atingir uma organização e quais medidas você deve tomar em caso de acontecimento de um evento.&lt;/p&gt;
 
@@ -793,36 +793,26 @@ E principalmente, você deve estar atento aos riscos que envolvem &lt;strong&gt;
 
 &lt;p&gt;&lt;strong&gt;Severidade (para o negócio)&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Chance/Probabilidade de acontecer&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;1-2&lt;/strong&gt;: Pouquíssima severidade;&lt;/td&gt;
-      &lt;td&gt;* &lt;strong&gt;2:&lt;/strong&gt; Risco&lt;strong&gt; baixo&lt;/strong&gt;;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
 &lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;1-2&lt;/strong&gt;: Pouquíssima severidade;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;3-4&lt;/strong&gt;: Impacto baixo para empresa;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;5-6&lt;/strong&gt;: Impacto moderado;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;7-8&lt;/strong&gt;: Sérios problemas caso ocorra;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;9-10&lt;/strong&gt;: Desastroso para empresa;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;*5:&lt;/strong&gt;
- Risco
-&lt;strong&gt;médio&lt;/strong&gt;
-;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Chance/Probabilidade de acontecer&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;*10:&lt;/strong&gt;
- Risco
-&lt;strong&gt;alto&lt;/strong&gt;
-;
-Para calcular o risco geral simplesmente multiplicamos os dois valores:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;2:&lt;/strong&gt; Risco&lt;strong&gt; baixo&lt;/strong&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;5:&lt;/strong&gt; Risco &lt;strong&gt;médio&lt;/strong&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;10:&lt;/strong&gt; Risco &lt;strong&gt;alto&lt;/strong&gt;;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;-&amp;gt; Risco Geral = Severidade X Probabilidade/Chance&lt;/p&gt;
+&lt;p&gt;Para calcular o risco geral simplesmente multiplicamos os dois valores:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-&amp;gt; Risco Geral (Total) = Severidade X Probabilidade/Chance
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;E é gerado um valor quantitativo até 100 informando o risco geral do evento. Esta é a tabela que utilizo mas você pode modificar para qualquer outro tipo de qualificação: quantitativa ou qualitativa, desde que no final os riscos sejam expostos e as decisões possam ser tomadas de forma mais eficiente e com foco na sua &lt;strong&gt;importância&lt;/strong&gt; e &lt;strong&gt;ocorrência&lt;/strong&gt;;&lt;/p&gt;
 
@@ -837,98 +827,87 @@ Para calcular o risco geral simplesmente multiplicamos os dois valores:&lt;/p&gt
   &lt;li&gt;“As vezes recebemos clientes que acessam a rede privada da empresa”,&lt;/li&gt;
   &lt;li&gt;“Não temos uma política muito bem definida de backup, mandamos pra nuvem”,&lt;/li&gt;
   &lt;li&gt;“As vezes temos queda de energia municipal e duramos pouco tempo sem energia”,&lt;/li&gt;
-  &lt;li&gt;“Não temos fornecedores de confiança, não temos segurança física”
-Após uma análise inicial decidimos identificar os 10 principais riscos:&lt;/li&gt;
+  &lt;li&gt;“Não temos fornecedores de confiança, não temos segurança física”&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Risco / Descrição&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Após uma análise inicial decidimos identificar os 10 principais riscos:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Chance&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;strong&gt;Risco / Descrição&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;Chance&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;Impacto&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Enchente que pode danificar equipamentos&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Baixa&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;7&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;14&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Invasão ao local físico, furto&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Baixa&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;8&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;16&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Ausência de Suporte/Fornecedor de Equipamentos de Hardware (Servidor, Máquinas, Equip. de Rede) *&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Média&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Acesso indevido a rede privada empresa *&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Média&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;6&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Invasão Local (Física) ao Servidor da Empresa (Cliente / Funcionário mal intencionado / Estranho) *&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Média&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;7&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;35&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Problemas/Perda de Backups da Empresa&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Média&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;8&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;40&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Queda de energia municipal/ausência de no-break&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Média&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;8&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;40&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Ausência de treinamento e medidas de segurança voltadas ao desenvolvimento WEB&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Média&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;9&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;45&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Ataques a páginas hospedadas no servidor (CSRF, SQL/Param Injection, Session Hijacking, etc)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Alta&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;7&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;70&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Invasão ao servidor principal com acesso administrativo&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Alta&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;9&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;90&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;p&gt;&lt;strong&gt;Impacto&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Risco Geral&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Enchente que pode danificar equipamentos&lt;/p&gt;
-
-&lt;p&gt;Baixa&lt;/p&gt;
-
-&lt;p&gt;7&lt;/p&gt;
-
-&lt;p&gt;14&lt;/p&gt;
-
-&lt;p&gt;Invasão ao local físico, furto&lt;/p&gt;
-
-&lt;p&gt;Baixa&lt;/p&gt;
-
-&lt;p&gt;8&lt;/p&gt;
-
-&lt;p&gt;16&lt;/p&gt;
-
-&lt;p&gt;Ausência de Suporte/Fornecedor de Equipamentos de Hardware (Servidor, Máquinas, Equip. de Rede) *&lt;/p&gt;
-
-&lt;p&gt;Média&lt;/p&gt;
-
-&lt;p&gt;5&lt;/p&gt;
-
-&lt;p&gt;25&lt;/p&gt;
-
-&lt;p&gt;Acesso indevido a rede privada empresa *&lt;/p&gt;
-
-&lt;p&gt;Média&lt;/p&gt;
-
-&lt;p&gt;6&lt;/p&gt;
-
-&lt;p&gt;30&lt;/p&gt;
-
-&lt;p&gt;Invasão Local (Física) ao Servidor da Empresa (Cliente / Funcionário mal intencionado / Estranho) *&lt;/p&gt;
-
-&lt;p&gt;Média&lt;/p&gt;
-
-&lt;p&gt;7&lt;/p&gt;
-
-&lt;p&gt;35&lt;/p&gt;
-
-&lt;p&gt;Problemas/Perda de Backups da Empresa&lt;/p&gt;
-
-&lt;p&gt;Média&lt;/p&gt;
-
-&lt;p&gt;8&lt;/p&gt;
-
-&lt;p&gt;40&lt;/p&gt;
-
-&lt;p&gt;Queda de energia municipal/ausência de no-break&lt;/p&gt;
-
-&lt;p&gt;Média&lt;/p&gt;
-
-&lt;p&gt;8&lt;/p&gt;
-
-&lt;p&gt;40&lt;/p&gt;
-
-&lt;p&gt;Ausência de treinamento e medidas de segurança voltadas ao desenvolvimento WEB&lt;/p&gt;
-
-&lt;p&gt;Média&lt;/p&gt;
-
-&lt;p&gt;9&lt;/p&gt;
-
-&lt;p&gt;45&lt;/p&gt;
-
-&lt;p&gt;Ataques a páginas hospedadas no servidor (CSRF, SQL/Param Injection, Session Hijacking, etc)&lt;/p&gt;
-
-&lt;p&gt;Alta&lt;/p&gt;
-
-&lt;p&gt;7&lt;/p&gt;
-
-&lt;p&gt;70&lt;/p&gt;
-
-&lt;p&gt;Invasão ao servidor principal com acesso administrativo&lt;/p&gt;
-
-&lt;p&gt;Alta&lt;/p&gt;
-
-&lt;p&gt;9&lt;/p&gt;
-
-&lt;p&gt;90
-Veremos que essa tabela irá crescer no próximo artigo quando falarmos em como gerenciar estes riscos e como aplicar os controles adequados, ira notar-se também que alguns itens irão receber resposta imediata afim de reduzir a sua chance ou o seu impacto (*);&lt;/p&gt;
+&lt;p&gt;Veremos que essa tabela irá crescer no próximo artigo quando falarmos em como gerenciar estes riscos e como aplicar os controles adequados, ira notar-se também que alguns itens irão receber resposta imediata afim de reduzir a sua chance ou o seu impacto (*);&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -966,7 +945,10 @@ Veremos que essa tabela irá crescer no próximo artigo quando falarmos em como 
 
 &lt;h3 id=&quot;referências&quot;&gt;Referências&lt;/h3&gt;
 
-&lt;p&gt;[1] &lt;a href=&quot;http://csrc.nist.gov/publications/nistpubs/800-30/sp800-30.pdf&quot;&gt;NIST 800-30 - Risk Management Guide for Information Technology Systems&lt;/a&gt;[2] Fundamentals of Risk and Insurance, Vaughan and Vaughan&lt;/p&gt;</content><author><name></name></author><category term="security" /><summary type="html">Parte I: Avaliação de Riscos</summary></entry><entry><title type="html">Validate fields and other objects in #Swift #iOS</title><link href="http://alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios.html" rel="alternate" type="text/html" title="Validate fields and other objects in #Swift #iOS" /><published>2016-03-15T00:00:00-03:00</published><updated>2016-03-15T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios</id><content type="html" xml:base="http://alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios.html">&lt;p&gt;Unfortunately we all know that we can’t put everything what we are working in, on a simple blog, I have to understand this since years ago when I worked at some government department. But I can show what I am doing now just for fun and for registry to me in the future.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;[1] &lt;a href=&quot;http://csrc.nist.gov/publications/nistpubs/800-30/sp800-30.pdf&quot;&gt;NIST 800-30 - Risk Management Guide for Information Technology Systems&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[2] Fundamentals of Risk and Insurance, Vaughan and Vaughan&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="security" /><summary type="html">Parte I: Avaliação de Riscos</summary></entry><entry><title type="html">Validate fields and other objects in #Swift #iOS</title><link href="http://alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios.html" rel="alternate" type="text/html" title="Validate fields and other objects in #Swift #iOS" /><published>2016-03-15T00:00:00-03:00</published><updated>2016-03-15T00:00:00-03:00</updated><id>http://alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios</id><content type="html" xml:base="http://alex.mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios.html">&lt;p&gt;Unfortunately we all know that we can’t put everything what we are working in, on a simple blog, I have to understand this since years ago when I worked at some government department. But I can show what I am doing now just for fun and for registry to me in the future.&lt;/p&gt;
 
 &lt;p&gt;we were had some problems here, especially when we’d need to try validate a lot of forms that involved things like UITextField, UISegmentedControl, etc. To solve this issue I had to create one class with methods like:&lt;/p&gt;
 
