@@ -201,8 +201,8 @@ table {
   margin: 5px 5px 5px 5px;
   padding: 5px 5px 5px 5px; }
 
-th, tr, td {
-  border-radius: 5px;
+tr, td {
+  font-size: 10px;
   margin: 5px 5px 5px 5px;
   padding: 5px 5px 5px 5px;
   vertical-align: top; }
@@ -212,10 +212,10 @@ th {
   font-weight: bold; }
 
 tr:nth-child(even) {
-  background: #CCC; }
+  background: #eeeeee; }
 
 tr:nth-child(odd) {
-  background: #FFF; }
+  background: #808080; }
 
 /**
  * Site header
