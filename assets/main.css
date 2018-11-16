@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 400 16px/1.5 "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -60,7 +60,7 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: bold; }
 
 /**
  * Links
@@ -215,7 +215,20 @@ tr:nth-child(even) {
   background: #eeeeee; }
 
 tr:nth-child(odd) {
-  background: #808080; }
+  background: #dcdcdc; }
+
+.blockDivCenter {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
 
 /**
  * Site header
@@ -364,7 +377,7 @@ tr:nth-child(odd) {
 
 .post-link {
   display: block;
-  font-size: 24px; }
+  font-size: 19.2px; }
 
 /**
  * Posts
@@ -404,7 +417,7 @@ tr:nth-child(odd) {
 .highlight {
   background: #fff; }
   .highlighter-rouge .highlight {
-    background: #eef; }
+    background: #dcdcdc; }
   .highlight .c {
     color: #998;
     font-style: italic; }
