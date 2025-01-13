@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alexandre Mulatinho Blog</title>
+    <link>https://mulatinho.net/</link>
+    <description>Recent content on Alexandre Mulatinho Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Oct 2017 01:22:49 +0000</lastBuildDate>
+    <atom:link href="https://mulatinho.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog migration!</title>
+      <link>https://mulatinho.net/2017/10/01/blog-migration/</link>
+      <pubDate>Mon, 02 Oct 2017 01:22:49 +0000</pubDate>
+      <guid>https://mulatinho.net/2017/10/01/blog-migration/</guid>
+      <description>&lt;p&gt;This blog migrated to another hosting service.&lt;/p&gt;&#xA;&lt;p&gt;Please go to &lt;a href=&#34;http://mulatinho.net&#34; target=&#34;_blank&#34;&gt;http://mulatinho.net&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Two years of remote working: What I learned</title>
+      <link>https://mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned/</link>
+      <pubDate>Thu, 27 Jul 2017 12:33:07 +0000</pubDate>
+      <guid>https://mulatinho.net/2017/07/27/two-years-of-remote-working-what-i-learned/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://mulatinho.net/img/twoyears.jpg&#34; alt=&#34;twoyears.jpg&#34;&gt;In this month I completed exactly two years of remote working, what adventure! To remind me about this in future and also to share with you all I resolve to write about that here.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;FEAR&lt;/strong&gt;, that was the first emotion that I felt when I decide to abandon my last physical work where I was in job for at least 5 (five) years. I was not happy at all but only who pass for something like that knows what I am talking about, &lt;em&gt;it is not easy to change&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Software</title>
+      <link>https://mulatinho.net/software/</link>
+      <pubDate>Fri, 23 Jun 2017 23:49:58 +0000</pubDate>
+      <guid>https://mulatinho.net/software/</guid>
+      <description>&lt;p&gt;Below, you&amp;rsquo;ll find a collection of projects I&amp;rsquo;ve developed, each tailored to solve specific problems or explore particular areas of programming. All of these projects are hosted on GitHub. The purpose of listing them here is to introduce you to these tools and invite you to explore, use, or even contribute to their development.&lt;/p&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re interested in learning more or getting involved, simply click on the links provided. Your feedback, contributions, and ideas are always welcome.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DevOps: Ansible Basics</title>
+      <link>https://mulatinho.net/2017/01/27/devops-ansible-basics/</link>
+      <pubDate>Fri, 27 Jan 2017 19:21:01 +0000</pubDate>
+      <guid>https://mulatinho.net/2017/01/27/devops-ansible-basics/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://docs.ansible.com&#34; target=&#34;_blank&#34;&gt;Ansible&lt;/a&gt; is one of the best tools in DevOps that I like, he just need a simply configuration and can help you with a lot of tasks in your day by day on your infrastructure, today I will show to you how to configure him to work with a lot of servers and how to automate some simple tasks.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Advantages of Ansible&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Easy to use and fast response&lt;/li&gt;&#xA;&lt;li&gt;Highly configurable to almost every task you need to do&lt;/li&gt;&#xA;&lt;li&gt;SSH based, just use &lt;strong&gt;ssh-keygen, ssh-copy-id&lt;/strong&gt; and &lt;strong&gt;ssh-add&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Free software sponsored by Red Hat&lt;/li&gt;&#xA;&lt;li&gt;Playbooks to make complex tasks&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;So how we begin use this tool?&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to upload to Amazon S3 using REST</title>
+      <link>https://mulatinho.net/2016/10/26/how-to-upload-to-amazon-s3-using-rest/</link>
+      <pubDate>Wed, 26 Oct 2016 12:37:35 +0000</pubDate>
+      <guid>https://mulatinho.net/2016/10/26/how-to-upload-to-amazon-s3-using-rest/</guid>
+      <description>&lt;p&gt;Hello friends!&lt;/p&gt;&#xA;&lt;p&gt;Look on the internet a alternative way to upload files on Amazon S3 without &lt;strong&gt;AWS-SDK&lt;/strong&gt; and then you will know that is a dificult thing for many; Wait a second, why someone will need to use S3 without the Amazon SDK? That&amp;rsquo;s the problem! We all know that sometimes you can&amp;rsquo;t do simple a import/require in some lib written by another guy/girl to turn things to into a easy way. That&amp;rsquo;s the beauty of an challenge.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Back! - The Tao of Programming</title>
+      <link>https://mulatinho.net/2016/10/13/the-tao-of-programming/</link>
+      <pubDate>Thu, 13 Oct 2016 14:46:45 +0000</pubDate>
+      <guid>https://mulatinho.net/2016/10/13/the-tao-of-programming/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://mulatinho.net/wp-content/uploads/2016/10/taoofprogramming.jpg&#34; alt=&#34;taoofprogramming&#34;&gt;I&amp;rsquo;m back from holidays! And with a new job! :D Still working remote now with something that I like more, Linux and software development! Just a little change: now its for web! When I get things okay here I will continue write some articles here.&lt;/p&gt;&#xA;&lt;p&gt;For now just a good quote from a book that I recommend: &lt;a href=&#34;https://www.amazon.com/Tao-Programming-Geoffrey-James/dp/0931137071&#34; target=&#34;_blank&#34;&gt;The Tao of Programming&lt;/a&gt;. I hope you get a copy and have a good read!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Upgrade your #Slackware #Linux to (i486|x86_64) -current version</title>
+      <link>https://mulatinho.net/2016/08/25/upgrade-your-slackware-linux-to-i486x86_64-current-version/</link>
+      <pubDate>Thu, 25 Aug 2016 16:57:58 +0000</pubDate>
+      <guid>https://mulatinho.net/2016/08/25/upgrade-your-slackware-linux-to-i486x86_64-current-version/</guid>
+      <description>&lt;p&gt;Hello friends!&lt;/p&gt;&#xA;&lt;p&gt;Today is 2016/08/25, &lt;strong&gt;25 years of Linux&lt;/strong&gt;! Happy Birthday!! :D :D&lt;/p&gt;&#xA;&lt;p&gt;Today we gonna talk about how to upgrade a Slackware, we will use just the official slackware package management tool ( &lt;strong&gt;slackpkg&lt;/strong&gt;), lets upgrade a slackware 14.2 to a -current for example (this also works with other versions too, but try upgrade to the next always or deal with consequences).&lt;/p&gt;&#xA;&lt;p&gt;What is &lt;strong&gt;slackpkg&lt;/strong&gt;?&lt;/p&gt;&#xA;&lt;p&gt;Slackpkg is a system package management tool developed by PiterPunk and oficially supported by Slackware, some of the most common subcommands are:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Desafio Shell Script #001</title>
+      <link>https://mulatinho.net/2016/08/17/desafio-shell-script-001/</link>
+      <pubDate>Wed, 17 Aug 2016 19:59:08 +0000</pubDate>
+      <guid>https://mulatinho.net/2016/08/17/desafio-shell-script-001/</guid>
+      <description>&lt;p&gt;Dona Fernanda resolveu casar-se com Carlos, o padre porém disse que os noivos não poderiam escolher a data de casamento devido a grande quantidade de solicitações na igreja. Vários noivos também estavam ansiosos para saber quando poderiam se casar naquela linda igreja, para dizer a cada casal o dia exato em que eles poderiam se casar o padre solicitou que eles fornecessem de 1 até 5 dias no mês de sua preferência e desenvolveu um algoritmo que ajudaria a resolver este impasse de forma aleatória e justa agora e no futuro, ele definiu:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bash Financeiro na Bolsa</title>
+      <link>https://mulatinho.net/2016/08/11/bash-financeiro-na-bolsa/</link>
+      <pubDate>Thu, 11 Aug 2016 15:34:08 +0000</pubDate>
+      <guid>https://mulatinho.net/2016/08/11/bash-financeiro-na-bolsa/</guid>
+      <description>&lt;p&gt;bom, eu diariamente utilizo os cálculos listados neste artigo para poder realizar os meus próprios investimentos, por isso achei que poderia ser útil para alguém, pretendo atualizar com mais no futuro; existe bilhões de pessoas neste mundo e cada um tem um jeito de realizar suas tarefas, meus cálculos geralmente são feitos utilizando a shell BASH em vez de uma calculadora comum. (p.s. valores abaixo sem citar impostos de day-trade, corretagem e emolumentos)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Avaliação e Gerenciamento de Riscos</title>
+      <link>https://mulatinho.net/2016/08/09/avaliacao-e-gerenciamento-de-riscos/</link>
+      <pubDate>Tue, 09 Aug 2016 15:34:57 +0000</pubDate>
+      <guid>https://mulatinho.net/2016/08/09/avaliacao-e-gerenciamento-de-riscos/</guid>
+      <description>&lt;h2 id=&#34;parte-i-avaliação-de-riscos&#34;&gt;Parte I: Avaliação de Riscos&lt;/h2&gt;&#xA;&lt;p&gt;Olá, este post faz parte de uma sequência de artigos sobre &lt;strong&gt;segurança da informação&lt;/strong&gt;, resolvi fazê-los tanto para ajudar os interessados no tema como para fixar alguns pontos na minha cabeça, além é claro, de poder deixar como consulta em algum lugar no blog. Antes de mais nada, eu não sou o dono da verdade, então muita coisa escrita aqui pode ser feita de formas diferentes para se atingir objetivos diferentes, aqui eu mostro coisas que eu aplico no meu dia ou que já apliquei em empresas anteriores;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>int main(int argc, char **argv)</title>
+      <link>https://mulatinho.net/2016/07/06/main/</link>
+      <pubDate>Wed, 06 Jul 2016 23:25:54 +0000</pubDate>
+      <guid>https://mulatinho.net/2016/07/06/main/</guid>
+      <description>&lt;p&gt;This is a personal blog, the opinions expressed here are my own, and do not necessarily reflect those of my employer. Este é um blog pessoal e por isso o que é escrito aqui, pode não refletir as idéias das empresas em que eu trabalho e nem dos parceiros com quem eu faço negócios. Bem vindo e espero que aproveite algo. Be welcome and I hoje you enjoy :)&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Last #10&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Validate fields and other objects in #Swift #iOS</title>
+      <link>https://mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios/</link>
+      <pubDate>Tue, 15 Mar 2016 17:10:05 +0000</pubDate>
+      <guid>https://mulatinho.net/2016/03/15/validate-fields-and-other-objects-in-swift-ios/</guid>
+      <description>&lt;p&gt;Unfortunately we all know that we can&amp;rsquo;t put everything what we are working in, on a simple blog, I have to understand this since years ago when I worked at some government department. But I can show what I am doing now just for fun and for registry to me in the future.&lt;/p&gt;&#xA;&lt;p&gt;we were had some problems here, especially when we&amp;rsquo;d need to try validate a lot of forms that involved things like UITextField, UISegmentedControl, etc. To solve this issue I had to create one class with methods like:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Trabalhando em casa, parte 1</title>
+      <link>https://mulatinho.net/2016/03/05/trabalhando-em-casa-parte-1/</link>
+      <pubDate>Sat, 05 Mar 2016 21:08:02 +0000</pubDate>
+      <guid>https://mulatinho.net/2016/03/05/trabalhando-em-casa-parte-1/</guid>
+      <description>&lt;p&gt;Sempre quis algo assim e perdi algumas oportunidades antes. Quase tive uma chance em duas gigantes mas sempre tem que ter aquela sorte a mais né. Em Agosto de 2015 recebi a proposta de trabalhar em casa numa startup em ótimo ritmo de crescimento, larguei um trabalho fixo de cinco anos para buscar novos desafios novamente no mundo dos portáteis, hoje mobiles, além é claro de uma oportunidade de trabalhar remoto. Trabalhar em casa as vezes passa a impressão para algumas pessoas de que tudo vai ser mais fácil, você não irá ter nenhum problema de adaptação e você não vai precisar se esforçar muito, se você acha isso está muito enganado. Na minha primeira experiência posso relatar alguns pontos positivos e outros nem tanto assim.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Referências em Segurança da Informação</title>
+      <link>https://mulatinho.net/2015/11/12/referencias-em-seguranca-da-informacao/</link>
+      <pubDate>Thu, 12 Nov 2015 15:33:27 +0000</pubDate>
+      <guid>https://mulatinho.net/2015/11/12/referencias-em-seguranca-da-informacao/</guid>
+      <description>&lt;p&gt;O intuito deste post não é mostrar os melhores documentos nesta disciplina mas sim algumas referências úteis para compreender mais a fundo este tema e quem sabe até para ajudar na publicação de futuros artigos. Durante minhas pesquisas em segurança da informação, voltadas principalmente para Linux mas com base em outros sistemas também, tive certa dificuldade em achar materiais de qualidade e tive de fazer uma pesquisa extensa, aqui neste post recomendo alguns dos livros e artigos que li e achei bem legais nesta disciplina, além de ler estes documentos você pode utilizá-los em seus artigos relacionados a segurança sem medo. São eles:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In love with Swift!</title>
+      <link>https://mulatinho.net/2015/08/12/in-love-with-swift/</link>
+      <pubDate>Wed, 12 Aug 2015 21:45:07 +0000</pubDate>
+      <guid>https://mulatinho.net/2015/08/12/in-love-with-swift/</guid>
+      <description>&lt;p&gt;Some days ago I began to work with Swift, the new programming language of Apple, and iOS! Some people even said that I betrayed the movement! LOL! Really, I feel a little sad to let the open source projects in background for a time but for other side I am really motivated to work with new things and learn new technologies.&lt;/p&gt;&#xA;&lt;p&gt;Swift is a mix of the best of programming languages, she have tuples, dictionaries, nested functions and little new concepts like optionals! I am really enjoying learning a lot with my new tech friends and really liking the new spirit of innovation that surrounds here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using cgroups in Slackware with KVM/Libvirt</title>
+      <link>https://mulatinho.net/2015/05/11/using-cgroups-in-slackware-with-kvmlibvirt/</link>
+      <pubDate>Mon, 11 May 2015 14:09:21 +0000</pubDate>
+      <guid>https://mulatinho.net/2015/05/11/using-cgroups-in-slackware-with-kvmlibvirt/</guid>
+      <description>&lt;p&gt;Hello friends, I&amp;rsquo;ve been using KVM a lot of months until now and every new host server that I create I need to change the way of how Slackware seems to create cgroups, libvirt doesn&amp;rsquo;t function very good if you don&amp;rsquo;t create specific directories in &amp;lsquo;/sys/fs/cgroup&amp;rsquo; tree. So, to do that for me I made this script below&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;# cat /etc/rc.d/rc.cgroup&lt;/strong&gt; `#!/bin/sh&lt;/p&gt;&#xA;&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;etcrcdrccgroup-cgroups-init-script&#34;&gt;/etc/rc.d/rc.cgroup: cgroups init script&lt;/h1&gt;&#xA;&lt;h1 id=&#34;alexandre-mulatinho-mulatinhonet&#34;&gt;Alexandre Mulatinho &amp;lt;mulatinho.net&amp;gt;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;unmount-sysfscgroup&#34;&gt;Unmount /sys/fs/cgroup&lt;/h1&gt;&#xA;&lt;p&gt;umount /sys/fs/cgroup&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Melhores softwares abertos de 2014 (LinuxQuestions.org)</title>
+      <link>https://mulatinho.net/2015/02/05/melhores-softwares-abertos-de-2014-linuxquestions-org/</link>
+      <pubDate>Thu, 05 Feb 2015 16:11:59 +0000</pubDate>
+      <guid>https://mulatinho.net/2015/02/05/melhores-softwares-abertos-de-2014-linuxquestions-org/</guid>
+      <description>&lt;p&gt;Sempre acompanho a premiação dos melhores softwares do fórum LinuxQuestions.org e gosto de anunciar aqui no site pois permite que usuários que estejam indecisos com alguns softwares possam ter uma base para escolhê-los, gostei bastante dessa lista!&lt;/p&gt;&#xA;&lt;p&gt;Desktop Distribution of the Year - Linux Mint/Slackware/Ubuntu (22.20%)&#xA;Server Distribution of the Year - CentOS (30.74%)&#xA;Mobile Distribution of the Year - Android (56.72%)&#xA;Database of the Year - MariaDB (34.21%)&#xA;NoSQL Database of the Year - MongoDB (44.74%)&#xA;Office Suite of the Year - LibreOffice (86.05%)&#xA;Browser of the Year - Firefox (57.79%)&#xA;Desktop Environment of the Year - KDE (33.57%)&#xA;Window Manager of the Year - KWin (20.30%)&#xA;Messaging Application of the Year - Pidgin (40.09%)&#xA;VoIP Application of the Year - Skype (46.06%)&#xA;Virtualization/Container Product of the Year - VirtualBox (49.26%)&#xA;Audio Media Player Application of the Year - VLC (30.85%)&#xA;Video Media Player Application of the Year - VLC (65.64%)&#xA;Graphics Application of the Year - GIMP (65.75%)&#xA;Network Security Application of the Year - Wireshark (22.54%)&#xA;Host Security Application of the Year - Rootkit Hunter (23.97%)&#xA;Network Monitoring Application of the Year - Nagios Core (35.45%)&#xA;IDE/Web Development Editor of the Year - Eclipse (17.46%)&#xA;Text Editor of the Year - vim (30.30%)&#xA;File Manager of the Year - Dolphin (27.70%)&#xA;Open Source Game of the Year - SuperTuxKart (12.39%)&#xA;Programming Language of the Year - Python (27.74%)&#xA;Revision Control System of the Year - git (72.63%)&#xA;Backup Application of the Year - rsync (42.75%)&#xA;Configuration Management Tool of the Year - Puppet (31.94%)&#xA;Open Source Web Framework of the Year - Django (30.00%)&#xA;X Terminal Emulator of the Year - Konsole (21.96%)&#xA;Privacy Solution of the Year - Adblock Plus (23.99%)&#xA;Open Source Cloud Solution of the Year - ownCloud (56.20%)&#xA;FTP Client of the Year - FileZilla (58.82%)&#xA;Game Distribution Service of the Year - Steam (73.86%)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How I build and install almost every package in my slackware linux</title>
+      <link>https://mulatinho.net/2014/11/13/how-i-build-almost-every-package-in-my-slackware-linux/</link>
+      <pubDate>Thu, 13 Nov 2014 03:04:34 +0000</pubDate>
+      <guid>https://mulatinho.net/2014/11/13/how-i-build-almost-every-package-in-my-slackware-linux/</guid>
+      <description>&lt;p&gt;About two or three years ago I met the &lt;a href=&#34;http://www.slackbuilds.org/&#34; title=&#34;Slackbuilds Project&#34; target=&#34;_blank&#34;&gt;SlackBuilds Project&lt;/a&gt; on a mail list and learned to love it! As all slack users know, the philosophy of our distribution is the principle of KISS (Keep It Simple Stupid) and the strong support for developers.&lt;/p&gt;&#xA;&lt;p&gt;What I don&amp;rsquo;t understand is why some other slackwares don&amp;rsquo;t know and/or use the SlackBuilds git tree in his local system to build packages, one in twelve times that I look for some cool app I do not found there, so I decide to put here some of what I do to build at least 70% of my packages.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How I hide my sensible data</title>
+      <link>https://mulatinho.net/2014/11/01/how-i-hide-my-sensible-data/</link>
+      <pubDate>Sat, 01 Nov 2014 13:37:25 +0000</pubDate>
+      <guid>https://mulatinho.net/2014/11/01/how-i-hide-my-sensible-data/</guid>
+      <description>&lt;p&gt;Nowadays is really important for some people hide and/or protect some personal data of other people, I&amp;rsquo;ve already explained how to encrypt a LVM volume in other articles and in my first video using xvidcap&lt;/p&gt;&#xA;&lt;p&gt;Links:&#xA;&lt;a href=&#34;https://www.youtube.com/watch?v=nt-yPKJbw3c&#34; title=&#34;how to encrypt disk using cryptsetup&#34; target=&#34;_blank&#34;&gt;How to encrypt disk using cryptsetup&lt;/a&gt; &lt;a href=&#34;http://mulatinho.net/2011/02/13/criptografando-seu-disco-no-linux/&#34; title=&#34;criptografando seu disco no linux&#34; target=&#34;_blank&#34;&gt;Criptografando seu disco no Linux&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;But sometimes is really pain using all of these commands to open and close my sensible data, so I made a shell script called &amp;lsquo;mltcrypt&amp;rsquo; years ago to solve this:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Intro Programação Linux</title>
+      <link>https://mulatinho.net/2014/06/11/intro-programacao-linux/</link>
+      <pubDate>Wed, 11 Jun 2014 03:14:23 +0000</pubDate>
+      <guid>https://mulatinho.net/2014/06/11/intro-programacao-linux/</guid>
+      <description>&lt;p&gt;Bom, isso deveria ter sido uma apresentação em um evento, creio que agora pode ser alguma coisa mais interessante no futuro :) Estes slides cobrem o conhecimento básico que deve se ter para desenvolver em C na plataforma Linux, o nível é bem basicão mas também tem alguns conceitos mais intermediários pra galera um pouco mais antiga. Vale a pena dar uma folheada :)&lt;/p&gt;&#xA;&lt;p&gt;Download da apresentação em .PDF&#xA;&lt;a href=&#34;http://mulatinho.net/wp-content/uploads/2014/11/cbasics-140414194155-phpapp01.pdf&#34; target=&#34;_blank&#34;&gt;Conceitos básicos para desenvolvimento de sistemas em ambiente Linux&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Editando imagens na linha de comando</title>
+      <link>https://mulatinho.net/2014/02/07/editando-imagens-na-linha-de-comando/</link>
+      <pubDate>Sat, 08 Feb 2014 01:05:40 +0000</pubDate>
+      <guid>https://mulatinho.net/2014/02/07/editando-imagens-na-linha-de-comando/</guid>
+      <description>&lt;p&gt;Então galera, vez ou outra seja por alguma documentação ou outra coisa eu preciso manipular uma série de imagens, é complicado você abrir o GIMP uma por uma e fazer o que você quer, para evitar esse trabalho todo eu costumo usar um comando do pacote ImageMagick chamado &amp;lsquo;convert&amp;rsquo;. O convert é um canivete suíço na manipulação de imagens via linha de comando, aqui eu vou mostrar apenas algumas operações como: redimensionar, recortar e converter imagens.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>minha lib ssl #1</title>
+      <link>https://mulatinho.net/2014/02/06/minha-lib-ssl-1/</link>
+      <pubDate>Fri, 07 Feb 2014 01:23:22 +0000</pubDate>
+      <guid>https://mulatinho.net/2014/02/06/minha-lib-ssl-1/</guid>
+      <description>&lt;p&gt;Então depois de alguma leitura e uns testes com o protocolo OAuth2, decidi partir para minha biblioteca utilizando a Google Drive API. Pretendo colocá-la em alguns projetos pessoais com o &lt;a href=&#34;https://github.com/mulatinho/sfm&#34; target=&#34;_blank&#34;&gt;Simple File Manager&lt;/a&gt; mas antes precisava fazer o básico que era a conexão SSL com o servidor, tive como base a documentação do OpenSSL que não é lá essas coisas e ficou assim:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-default&#34; data-lang=&#34;default&#34;&gt;#include &amp;lt;sys/socket.h&amp;gt;&#xA;#include &amp;lt;sys/types.h&amp;gt;&#xA;#include &amp;lt;netinet/in.h&amp;gt;&#xA;#include &amp;lt;netdb.h&amp;gt;&#xA;#include &amp;lt;stdio.h&amp;gt;&#xA;#include &amp;lt;string.h&amp;gt;&#xA;#include &amp;lt;stdlib.h&amp;gt;&#xA;#include &amp;lt;unistd.h&amp;gt;&#xA;#include &amp;lt;errno.h&amp;gt;&#xA;#include &amp;lt;openssl/rand.h&amp;gt;&#xA;#include &amp;lt;openssl/ssl.h&amp;gt;&#xA;#include &amp;lt;openssl/err.h&amp;gt;&#xA;&#xA;#define BUF_MAX 4096&#xA;&#xA;typedef struct {&#xA;    int socket;&#xA;    char *hostname;&#xA;    SSL *ssl;&#xA;    SSL_CTX *ssl_ctx;&#xA;} conn;&#xA;&#xA;int mlt_handle(char *servname)&#xA;{&#xA;    int ret, soq;&#xA;    struct hostent *host;&#xA;    struct sockaddr_in server;&#xA;&#xA;    host = gethostbyname (servname);&#xA;    if ((soq = socket (AF_INET, SOCK_STREAM, 0)) == -1) {&#xA;        perror (&amp;#34;Socket&amp;#34;);&#xA;        return -1;&#xA;    }&#xA;&#xA;    server.sin_family = AF_INET;&#xA;    server.sin_port = htons (443);&#xA;    server.sin_addr = *((struct in_addr *) host-&amp;gt;h_addr);&#xA;&#xA;    if ( ( ret = connect(soq, (struct sockaddr *)&amp;amp;server,&#xA;                    sizeof(struct sockaddr)) ) == -1 ) {&#xA;       perror (&amp;#34;Connect&amp;#34;);&#xA;       return -1;&#xA;    }&#xA;&#xA;    return soq;&#xA;}&#xA;&#xA;conn *mlt_ssl_connect(char *servname)&#xA;{&#xA;    conn *p;&#xA;&#xA;    p = (conn *)malloc(sizeof(conn));&#xA;    p-&amp;gt;ssl = NULL;&#xA;    p-&amp;gt;ssl_ctx = NULL;&#xA;    p-&amp;gt;hostname = servname;&#xA;&#xA;    SSL_load_error_strings ();&#xA;    SSL_library_init ();&#xA;&#xA;    if ( (p-&amp;gt;socket = mlt_handle(p-&amp;gt;hostname)) == -1)&#xA;        return NULL;&#xA;&#xA;    if ( (p-&amp;gt;ssl_ctx = SSL_CTX_new(SSLv23_client_method ())) == NULL)&#xA;        ERR_print_errors_fp (stderr);&#xA;&#xA;    if ( (p-&amp;gt;ssl = SSL_new(p-&amp;gt;ssl_ctx)) == NULL)&#xA;        ERR_print_errors_fp (stderr);&#xA;&#xA;    if (!SSL_set_fd(p-&amp;gt;ssl, p-&amp;gt;socket))&#xA;        ERR_print_errors_fp (stderr);&#xA;&#xA;    if (SSL_connect(p-&amp;gt;ssl) != 1)&#xA;        ERR_print_errors_fp (stderr);&#xA;&#xA;    return p;&#xA;}&#xA;&#xA;void mlt_disconnect(conn *p)&#xA;{&#xA;    SSL_shutdown(p-&amp;gt;ssl);&#xA;    close(p-&amp;gt;socket);&#xA;&#xA;    SSL_free(p-&amp;gt;ssl);&#xA;    SSL_CTX_free(p-&amp;gt;ssl_ctx);&#xA;&#xA;    free(p);&#xA;}&#xA;&#xA;int mlt_ssl_read(conn *p, char *buffer)&#xA;{&#xA;    int bytes;&#xA;&#xA;    memset(buffer, &amp;#39;&amp;#39;, BUF_MAX);&#xA;    bytes = SSL_read (p-&amp;gt;ssl, buffer, BUF_MAX-1);&#xA;&#xA;    return bytes;&#xA;}&#xA;&#xA;int mlt_ssl_write(conn *p, char *cmd)&#xA;{&#xA;    int ret;&#xA;&#xA;    ret = SSL_write(p-&amp;gt;ssl, cmd, strlen(cmd));&#xA;&#xA;    return ret;&#xA;}&#xA;&#xA;int main (int argc, char **argv)&#xA;{&#xA;    conn *server;&#xA;    char buffer[BUF_MAX];&#xA;    int bytes;&#xA;&#xA;    server = mlt_ssl_connect(&amp;#34;www.google.com&amp;#34;);&#xA;&#xA;    mlt_ssl_write(server, &amp;#34;GET /rnrn&amp;#34;);&#xA;&#xA;    while (1)&#xA;    {&#xA;        bytes = mlt_ssl_read(server, buffer);&#xA;        if (!bytes) {&#xA;            fprintf(stderr, &amp;#34;.-. server disconnected.n&amp;#34;);&#xA;            mlt_disconnect(server);&#xA;            break;&#xA;        }&#xA;&#xA;        fprintf(stdout, &amp;#34;%s&amp;#34;, buffer);&#xA;   }&#xA;&#xA;    return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Tô feliz com o resultado até agora e estou começando a melhorar minha api pra o google drive que breve devo metê-la no &lt;a href=&#34;https://github.com/mulatinho&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt; ;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Múltiplos terminais virtuais com o GNU Screen</title>
+      <link>https://mulatinho.net/2014/01/14/multiplos-terminais-virtuais-com-o-gnu-screen/</link>
+      <pubDate>Tue, 14 Jan 2014 15:51:10 +0000</pubDate>
+      <guid>https://mulatinho.net/2014/01/14/multiplos-terminais-virtuais-com-o-gnu-screen/</guid>
+      <description>&lt;p&gt;Se você gosta de utilizar o terminal de comandos do linux sabe que é necessário gastar alguns minutos o personalizando, também é muito útil usar o recurso de abas &lt;a href=&#34;https://mulatinho.net/wp-content/uploads/2015/12/screen00.png&#34;&gt;&lt;img src=&#34;https://mulatinho.net/wp-content/uploads/2015/12/screen00.png&#34; alt=&#34;screen00&#34;&gt;&lt;/a&gt; para poder fazer várias atividades ao mesmo tempo, o que muitas pessoas não sabem é que existe o recurso do comando &amp;lsquo;screen&amp;rsquo; criado pelo projeto GNU que fornece o recurso de múltiplas janelas sem a necessidade da intervenção de um terminal com suporte a abas.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Congresso de Software Livre - 9.11.2013</title>
+      <link>https://mulatinho.net/2013/11/01/congresso-de-software-livre-9-11-2013/</link>
+      <pubDate>Fri, 01 Nov 2013 23:22:11 +0000</pubDate>
+      <guid>https://mulatinho.net/2013/11/01/congresso-de-software-livre-9-11-2013/</guid>
+      <description>&lt;p&gt;Eh galera! Fazia tempo que nao rolava um eventozinho entao ja vou convidando o pessoal! O tema da minha palestra vai ser: `Software Livre: Porque estamos no caminho certo` fica a dica para quem puder ir, deve ser bem interessante !! :-) Website: &lt;a href=&#34;www.softwarelivrene.org&#34; title=&#34;software livre ne - nov 9&#34;&gt;www.softwarelivrene.org&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://mulatinho.net/wp-content/uploads/2013/11/1394266_545427218864747_328100653_n.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://mulatinho.net/wp-content/uploads/2013/11/1394266_545427218864747_328100653_n.jpg&#34; alt=&#34;1394266_545427218864747_328100653_n&#34;&gt;&lt;/a&gt; Quem quiser uma cópia da palestra entra aí nas apresentações :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Charlie Brown Jr.</title>
+      <link>https://mulatinho.net/2013/09/09/charlie-brown-jr/</link>
+      <pubDate>Mon, 09 Sep 2013 23:39:56 +0000</pubDate>
+      <guid>https://mulatinho.net/2013/09/09/charlie-brown-jr/</guid>
+      <description>&lt;p&gt;E eu que peguei o primeiro CD do Charlie Brown Jr., com 15 anos já escutava os caras e depois de alguns anos ia pros shows, puro rock n roll. Para mim uma das melhores bandas do Brasil.&lt;/p&gt;&#xA;&lt;p&gt;Charlie Brown Jr.&lt;/p&gt;&#xA;&lt;p&gt;Falar falar, Transpiração Contínua e Prolongada&#xA;Gimme o Anel, Transpiração Contínua e Prolongada&#xA;Corra Vagabundo, Transpiração Contínua e Prolongada&#xA;Lombra, Transpiração Contínua e Prolongada&#xA;O Coro vai Comê!, Transpiração Contínua e Prolongada&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Algorithms, Part I</title>
+      <link>https://mulatinho.net/2013/08/28/algorithms-part-i/</link>
+      <pubDate>Wed, 28 Aug 2013 23:37:30 +0000</pubDate>
+      <guid>https://mulatinho.net/2013/08/28/algorithms-part-i/</guid>
+      <description>&lt;p&gt;Bom, finalmente terminei a minha faculdade de rede de computadores e decidi voltar ao que fazia antigamente: programar, para me esforçar a finalmente aprender java decidi me inscrever num ensino a distância do &lt;a href=&#34;www.coursera.org&#34; title=&#34;coursera.org&#34;&gt;coursera&lt;/a&gt; de algoritmos, lá o professor diz que a linguagem utilizada para desenvolver os exercícios é Java então não tem pra onde correr.&lt;/p&gt;&#xA;&lt;p&gt;Espero que seja proveitoso, é o meu segundo curso de ensino a distância que faço e estou muito empolgado com os professores e a possibilidade de aumentar mais as minhas habilidades.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pare! Quero descer.</title>
+      <link>https://mulatinho.net/2013/08/11/pare-quero-descer/</link>
+      <pubDate>Sun, 11 Aug 2013 19:18:45 +0000</pubDate>
+      <guid>https://mulatinho.net/2013/08/11/pare-quero-descer/</guid>
+      <description>&lt;p&gt;Foda é ficar velho, e eu que sou tão novo (alguns dizem.),&#xA;Já imagino o amanhã. Se hoje teus amigos já não são tão amigos assim,&#xA;Imagina daqui a vinte e cinco anos. E o rock n roll? ficou para trás e muitos&#xA;abandonaram, passaram, preferem curtir uma coisa engraçada do programa do Gugu.&#xA;Não tem mais Gugu? Ah tá eu sou &amp;lsquo;oldie&amp;rsquo;. Sabe? Envelhece e fica melhor.&#xA;Não acredita? Pergunta a minha mulher :-) Mas voltando ao assunto;&#xA;Recife que era hardcore hoje é emocore. E o pior: a turma curte.&#xA;Tu procura uma coisa boa para fazer no dia-a-dia e te dão as seguintes opções:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Meu dia a dia usando o GIT</title>
+      <link>https://mulatinho.net/2013/05/09/meu-dia-a-dia-usando-o-git/</link>
+      <pubDate>Thu, 09 May 2013 20:22:20 +0000</pubDate>
+      <guid>https://mulatinho.net/2013/05/09/meu-dia-a-dia-usando-o-git/</guid>
+      <description>&lt;p&gt;O GIT é um controlador de versão criado por Linus Torvalds, na minha opinião um dos maiores &amp;lsquo;integradores&amp;rsquo; de código do mundo, afinal ele tee que fazer merge de milhões de linhas de código durante vários anos, então rapaziada o GIT é fera mesmo. Depois de anos usando o Subversion como alternativa ao CVS me rendi a simplicidade e facilidade de uso do git por uma série de razões, então abaixo mostro o meu dia a dia usando o GIT em várias situações diferentes afim de mostrar para vocês como é fácil de resolver seus problemas de versionamento.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>deixando os repositórios atualizados</title>
+      <link>https://mulatinho.net/2013/05/05/deixando-os-repositorios-atualizados/</link>
+      <pubDate>Mon, 06 May 2013 00:58:39 +0000</pubDate>
+      <guid>https://mulatinho.net/2013/05/05/deixando-os-repositorios-atualizados/</guid>
+      <description>&lt;p&gt;Para quem desenvolve ou acompanha um projeto livre e precisa estar sempre atualizado com os últimos commits segue um script que ajuda bastante no processo, por enquanto só deve funcionar no git e no subversion.&lt;/p&gt;&#xA;&lt;p&gt;Se você tem uma pasta apenas para os repositórios como eu ( &lt;em&gt;/home/mulatinho/repo&lt;/em&gt;) basta adicionar o script abaixo e definir as variáveis &lt;em&gt;$subdir&lt;/em&gt; (caso tenha subdiretórios com repositórios) e a &lt;em&gt;$nodir&lt;/em&gt; (caso não queira incluir arquivos e/ou diretórios na atualização). Segue os exemplos:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Adicionando suporte ao samba</title>
+      <link>https://mulatinho.net/2013/05/04/adicionando-suporte-ao-samba/</link>
+      <pubDate>Sun, 05 May 2013 00:54:31 +0000</pubDate>
+      <guid>https://mulatinho.net/2013/05/04/adicionando-suporte-ao-samba/</guid>
+      <description>&lt;p&gt;Voltando a programar bem depois de um tempo parado fazendo apenas scripts, resolvi adicionar suporte no meu gerenciador de arquivos ao samba e o ssh, por enquanto o ssh tá apenas na lista de estudos e pendências, mas o suporte ao samba já está virando uma realidade como pode ser visto abaixo. &lt;a href=&#34;https://github.com/mulatinho/sfm/blob/master/libsmb.c&#34; title=&#34;código fonte da libsmb.c&#34; target=&#34;_blank&#34;&gt;Clicando aqui&lt;/a&gt; você pode vêr o código do fonte se quiser maiores detalhes do algoritmo.&lt;/p&gt;&#xA;&lt;p&gt;Fazendo algumas alterações para demonstração temos isso aqui.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sou mais você..</title>
+      <link>https://mulatinho.net/2013/05/03/sou-mais-voce/</link>
+      <pubDate>Fri, 03 May 2013 23:06:52 +0000</pubDate>
+      <guid>https://mulatinho.net/2013/05/03/sou-mais-voce/</guid>
+      <description>&lt;p&gt;Abençoa-me Deus&#xA;Para que eu possa ver a verdade sempre,&#xA;E que sentindo a verdade eu seja forte,&#xA;E que me sentindo forte eu possa também ser justo,&#xA;E que na justiça também exista sabedoria,&#xA;Para que eu não seja apenas mais um, e sim alguém que faça a diferença.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>hardscan atualizado!</title>
+      <link>https://mulatinho.net/2013/05/01/hardscan-atualizado/</link>
+      <pubDate>Wed, 01 May 2013 03:23:04 +0000</pubDate>
+      <guid>https://mulatinho.net/2013/05/01/hardscan-atualizado/</guid>
+      <description>&lt;p&gt;(texto antigo, 2009 por ae)&lt;/p&gt;&#xA;&lt;p&gt;Decidi mexer um pouco nos códigos antigos e meu &lt;a href=&#34;https://github.com/mulatinho/pub/blob/master/hardscan.c&#34; title=&#34;hardscan code&#34; target=&#34;_blank&#34;&gt;escaneador de portas (código fonte aqui)&lt;/a&gt; foi o escolhido, tinha subido ele pro repositório bem sujo e resolvi atualizá-lo, agora o portscan por IP consegue fazer milhares de requisições em paralelo em apenas poucos segundos e te fornece todas as portas abertas. Quem quiser dar uma olhada melhor basta baixar o fonte e compilar conforme o final do post. Veja alguns exemplos do &amp;lsquo;hardscan&amp;rsquo; em uso:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Inocência...</title>
+      <link>https://mulatinho.net/2013/04/19/inocencia/</link>
+      <pubDate>Fri, 19 Apr 2013 00:37:41 +0000</pubDate>
+      <guid>https://mulatinho.net/2013/04/19/inocencia/</guid>
+      <description>&lt;p&gt;talvez a melhor epoca da vida&#xA;de qual lembro-me com muito carinho&#xA;seja a inocência&lt;/p&gt;&#xA;&lt;p&gt;doce e bela existiu,&#xA;triste e sem aviso ela partiu&lt;/p&gt;&#xA;&lt;p&gt;alguns dizem que os sábios sao os mestres&#xA;eu digo que sao as crianças,&#xA;com elas estao as virtudes que jamais teremos novamente&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Você...</title>
+      <link>https://mulatinho.net/2013/04/13/voce/</link>
+      <pubDate>Sat, 13 Apr 2013 01:20:51 +0000</pubDate>
+      <guid>https://mulatinho.net/2013/04/13/voce/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&amp;ldquo;Teu sorriso é o meu paraíso,&lt;/em&gt;&#xA;&lt;em&gt;Teus olhos, a minha viagem,&lt;/em&gt;&#xA;&lt;em&gt;Tua boca, o meu maior desejo,&lt;/em&gt;&#xA;&lt;em&gt;Teu corpo, minha perdição,&lt;/em&gt;&#xA;&lt;em&gt;Teu amor, o meu sonho.&lt;/em&gt; &lt;em&gt;Tudo isso, você, minha louca paixão.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Mulatinho. 2007.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ficha básica linux</title>
+      <link>https://mulatinho.net/2013/04/12/card-comandos-basicos-no-linux/</link>
+      <pubDate>Sat, 13 Apr 2013 01:16:36 +0000</pubDate>
+      <guid>https://mulatinho.net/2013/04/12/card-comandos-basicos-no-linux/</guid>
+      <description>&lt;p&gt;Nossa, isso é velhão, deve ser bem de 2005.. pode servir pra alguém &amp;gt;:]&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;COMANDOS BÁSICOS                                 EDITANDO ARQUIVOS COM O VIM&#xA;&#xA;1. Entrar em um sub-diretório &amp;#39;paul&amp;#39; dentro      1. Abrir um arquivo com o VIM para edição&#xA;   do diretório &amp;#39;home&amp;#39; do &amp;#39;/&amp;#39;.                      $ vim /tmp/teste.txt&#xA;   $ cd /home/paul&#xA;                                                 1. Comandos a serem digitados  dentro do VIM&#xA;1. Listar o conteúdo do subdiretório &amp;#39;paul&amp;#39;         para ações de edição nos arquivos.&#xA;   $ ls /home/paul&#xA;                                                 &amp;#39;ESC&amp;#39;    Volta ao modo de comandos do VIM.&#xA;1. Copiar &amp;#39;x1&amp;#39; para o diretório &amp;#39;/home/paul&amp;#39;     &amp;#39;INSERT&amp;#39; Edita o texto apartir do cursor.&#xA;   $ cp x1 /home/paul/                           &amp;#39;dd&amp;#39;     Deleta a linha em que está o cursor&#xA;                                                 &amp;#39;yy&amp;#39;     Copiar a linha apartir do cursor.&#xA;1. Copiar todos arquivos que comecem por &amp;#39;x&amp;#39; no&#xA;   diretório &amp;#39;/billy&amp;#39; para subdiretório &amp;#39;src&amp;#39;&#xA;   que se encontra no diretório &amp;#39;usr&amp;#39;            - MODO DE COMANDO DO VIM&#xA;   $ cp /billy/x* /usr/src                       &amp;#39;:split &amp;#39; abre outra  janela dentro&#xA;                                                 do VIM para editar um novo &amp;#34;&amp;#34;&#xA;1. Mover subdiretório &amp;#39;/billy/joe&amp;#39; para &amp;#39;/rock&amp;#39;  &amp;#39;:r &amp;#39; lê o conteúdo  do &amp;#34;&amp;#34;&#xA;   $ mv /billy/joe /rock                         jogando-o dentro do arquivo editado atual.&#xA;                                                 &amp;#39;:s/texto/subtexto/g&amp;#39; modifica  toda palavra&#xA;1. Remover todos os arquivos do diretório /tmp   &amp;#34;texto&amp;#34; por &amp;#34;subtexto&amp;#34; no arquivo atual.&#xA;   que iniciem por &amp;#39;x&amp;#39; e terminem por &amp;#39;.zip&amp;#39;     &amp;#39;:q!&amp;#39; sai do VIM sem salvar as alterações.&#xA;   $ rm x*.zip                                   &amp;#39;:w&amp;#39; salva todas as alterações do arquivo.&#xA;                                                 &amp;#39;:x&amp;#39; salva alterações e sai do arquivo.&#xA;&#xA;COMANDOS BÁSICOS DE ADMINISTRAÇÃO                ARQUIVOS IMPORTANTES E/OU DE CONFIGURAÇÃO&#xA;&#xA;1. Listar processos do sistema linux             /etc/fstab, pontos de  montagem automático e&#xA;   $ ps aux                                      seus sistemas de  arquivos que serão usados.&#xA;                                                 /etc/passwd, arquivo  de  usuários e senhas.&#xA;1. Pesquisar na lista de processos, um processo  /etc/hosts, declaração de  hosts  que  serão&#xA;   específico chamado de &amp;#39;thunderbird&amp;#39;           reconhecidos localmente pela máquina.&#xA;   $ ps aux | grep thunderbird                   /etc/inittab,  niveis  de  inicialização  do&#xA;                                                 sistema e definição de alguns comandos.&#xA;1. Mata processo pelo seu PID (Process ID)       /etc/profile, definição de dados e variáveis&#xA;   $ kill -9 1245                                além de comandos para todos os usuários.&#xA;                                                 /var/log/messages,  arquivo de log  contendo&#xA;1. Mata processo pelo nome do mesmo              informações vitais ao sistema e de segurança&#xA;   $ killall -9 thunderbird&#xA;                                                 DIRETÓRIOS IMPORTANTES&#xA;1. Adicionar um Usuário &amp;#39;mulatinho&amp;#39; no Linux&#xA;   # adduser mulatinho                           /etc, diretório onde  se encontram a maioria&#xA;                                                 dos arquivos de configuração do Linux.&#xA;1. Removendo Usuário &amp;#39;mulatinho&amp;#39; do Linux        /usr, diretório onde  está grande parte  dos&#xA;   # userdel mulatinho &amp;amp;&amp;amp; rm -rf /home/mulatinho software utilizados pelo linux, além de suas&#xA;                                                 bibliotecas, ícones e binários d aplicativos&#xA;1. Mudando senha do usuário &amp;#39;mulatinho&amp;#39; no linux /dev, local onde estão todos os dispositivos&#xA;   # passwd mulatinho                            e periféricos referenciados por nomes.&#xA;                                                 /home, diretório de usuários do linux.&#xA;1. Mudando dono e grupo de um arquivo            /proc, coleta de informações do sistema.&#xA;   # chown :               /lib, bibliotecas do sistema linux.&#xA;&#xA;COMANDOS DE REDE                                 COMANDOS DE GERENCIAMENTO DE PACOTES RED-HAT&#xA;&#xA;1. Setando IP na interface de rede &amp;#39;eth0&amp;#39;        1. Visualizando  TODOS os pacotes instalados&#xA;   # ifconfig eth0 192.168.0.10                     $ rpm -qa&#xA;&#xA;1. Setando a máscara da placa de rede &amp;#39;eth0&amp;#39;     2. Listando conteúdo de um pacote&#xA;   # ifconfig eth0 netmask 255.0.0.0                $ rpm -ql&#xA;&#xA;1. Adicionando/Removendo faixa de rede na rota   3. Mostrando informações resumidas do pacote&#xA;   # route add/del -net 192.168.0.0 dev eth0       $ rpm -qi&#xA;   netmask 255.0.0.0 broadcast 192.168.0.255&#xA;                                                 1. Instalando um pacote .RPM no sistema&#xA;1. Adicionando Rota de rede padrão, aonde no        # rpm -hiv&#xA;   no exemplo nosso gateway é o &amp;#39;192.168.0.1&amp;#39;&#xA;   # route add default gw 192.168.0.1            5. Desinstalando um pacote .RPM do sistema&#xA;                                                    # rpm -e&#xA;1. Testando se o gateway/ip está OK e na rede.&#xA;   # ping 192.168.0.1                            6. Descobrindo um nome de um pacote  apartir&#xA;                                                    de um arquivo existente no sistema&#xA;1. Scaneando a rede atrás de um IP para ver o       $ rpm -qf /bin/df&#xA;   tráfego na intranet/internet de dados.&#xA;   # tcpdump -i eth0 | grep &amp;#34;192.168.0.232&amp;#34;&#xA;&#xA;1. Mostrar portas abertas na máquina&#xA;   $ netstat -natup&#xA;&#xA;COMANDOS A NÍVEL DO SISTEMA DE ARQUIVOS          EXPRESSÕES REGULARES&#xA;&#xA;1. Vendo o espaço ocupado/disponível em disco    1. Modificando todas as palavras &amp;#39;INSERTF&amp;#39; e&#xA;   nas partições montadas no sistema                &amp;#39;BLOB&amp;#39; por &amp;#39;INSERT&amp;#39; e &amp;#39;BYTEA&amp;#39; respectiva-&#xA;   $ df -Th                                         mente no arquivo &amp;#39;teste.txt&amp;#39;&#xA;                                                    $ sed -e &amp;#39;s/INSERTF/INSERT/g;&#xA;1. Vendo tamanho de um diretório ou arquivo         s/BLOB/BYTEA/g&amp;#39; teste.txt&#xA;   $ du -hs /home/mulatinho&#xA;                                                 1. Deletar todas  as linhas que  tenham  uma&#xA;1. Montando um volume de CD-ROM, no exemplo,        palavra &amp;#39;ALTER TABLE&amp;#39; no arquivo &amp;#39;ts.sql&amp;#39;&#xA;   /dev/hda, no diretório &amp;#39;/mnt&amp;#39;                    $ sed -e &amp;#39;/ALTER TABLE/d&amp;#39; ts.sql&#xA;   # mount -t iso9660 /dev/hda /mnt&#xA;                                                 1. Em uma variavel com uma série de palavras&#xA;1. Desmontando um volume do sistema                 buscar um valor e retornar NULO caso  nao&#xA;   # umount /mnt (onde /mnt eh o local montado)     a encontre, ou a palavra caso encontre.&#xA;                                                    $ echo &amp;#34;Mensagem de amor&amp;#34; | sed -e&#xA;1. Saber que em que tipo de formato está um         &amp;#34;/amor/!d; s/.*amor.*/amor/&amp;#34;&#xA;   arquivo do nosso sistema&#xA;   $ file /billy/joe/jack.zip                    4. Imprimir na tela o segundo campo da linha&#xA;                                                    $ awk &amp;#39;{ print $2; }&amp;#39; /tmp/arquivo.txt&#xA;1. Criar um diretório no Linux&#xA;   $ mkdir /mnt/pendrive                         5. Matar todos os processos que tenham  nome&#xA;                                                    de &amp;#39;vim&amp;#39; usando uma linha!&#xA;1. Remover uma pasta e seus sub-diretórios          $ PIDS=`ps aux | awk &amp;#39;{ print $1; }&amp;#39;&#xA;   $ rm -rf /mnt/pendrive                           for PID in $PIDS; do kill -9 $PID; done&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Bem, se bem..</title>
+      <link>https://mulatinho.net/2013/04/13/bem-se-bem/</link>
+      <pubDate>Sat, 13 Apr 2013 01:10:54 +0000</pubDate>
+      <guid>https://mulatinho.net/2013/04/13/bem-se-bem/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&amp;ldquo;meu bem, espero que quando leia isto esteja bem,&lt;/em&gt; &lt;em&gt;e saiba principalmente que ainda te quero muito bem,&lt;/em&gt; &lt;em&gt;e viva intensamente hoje e o amanhã como se não houvesse ninguém&amp;hellip;&lt;/em&gt; &lt;em&gt;sonhe comigo quando não houver ninguém,&lt;/em&gt; &lt;em&gt;me ame escondido de tudo e todos quando se sentir qüen,&lt;/em&gt; &lt;em&gt;faça amor comigo com palavras que sempre usou tão bem,&lt;/em&gt; &lt;em&gt;chame-me por telepatia e nunca duvide que te escuto muito bem,&lt;/em&gt; &lt;em&gt;vem, meu bem, vem..&lt;/em&gt; &lt;em&gt;vem amar meu seu bem, meu bem..&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Melhores do código aberto em 2012</title>
+      <link>https://mulatinho.net/2013/02/05/melhores-do-codigo-aberto-em-2012/</link>
+      <pubDate>Tue, 05 Feb 2013 21:30:28 +0000</pubDate>
+      <guid>https://mulatinho.net/2013/02/05/melhores-do-codigo-aberto-em-2012/</guid>
+      <description>&lt;p&gt;[caption id=&amp;quot;&amp;quot; align=&amp;ldquo;alignright&amp;rdquo; width=&amp;ldquo;224&amp;rdquo;]&lt;img src=&#34;https://lqo-thequestionsnetw.netdna-ssl.com/questions/images/LinuxQuestions.png&#34; alt=&#34;LinuxQuestions.Org&#34;&gt; LinuxQuestions.Org[/caption]&lt;/p&gt;&#xA;&lt;p&gt;Agora que o blog tá com a opção de tradutor do google acho que dá para falar em português e quem precisar transformar em inglês. Eis que ontem (dia 04 de Fevereiro) saiu mais uma edição do fórum linuxquestions.org das melhores ferramentas de código aberto de 2012, claro que essa enquete é só do pessoal do fórum mas apesar disto é muito original pois além de existir uma boa quantidade de usuários na comunidade muitos deles são experts. Veja &lt;a href=&#34;http://www.linuxquestions.org/questions/linux-news-59/2012-linuxquestions-org-members-choice-award-winners-4175448592/&#34; title=&#34;best tools in open source 2012&#34; target=&#34;_blank&#34;&gt;aqui a lista completa&lt;/a&gt; divulgada no site, o meu destaque vai para o Slackware como desktop, achei bem interessante essa votação pois apesar de ser usuário desta distribuição desde 1999 sei que muita gente quer distância por ainda ser complicada de mexer para alguns, o slackware é atualmente a distribuição linux mais antiga e contém atualizações constantes de uma pequena equipe comandada pelo Patrick Volkerding.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Poem of Chief Tecumseh</title>
+      <link>https://mulatinho.net/2012/06/04/poem-of-chief-tecumseh/</link>
+      <pubDate>Tue, 05 Jun 2012 00:11:56 +0000</pubDate>
+      <guid>https://mulatinho.net/2012/06/04/poem-of-chief-tecumseh/</guid>
+      <description>&lt;p&gt;pt_BR:&#xA;&lt;em&gt;&amp;ldquo;Viva sua vida de forma que o medo da morte nunca possa entrar em seu coração. Nunca incomode ninguém por causa de sua religião: Respeite os outros em seus pontos de vista, e exija que eles respeitem os seus. Ame sua vida, aperfeiçoe sua vida,embeleze todas as coisas em sua vida. Busque fazer sua vida longa e de serviços para seu povo. Prepare uma canção fúnebre nobre para o dia quando você atravessar a grande passagem.&lt;/em&gt; &lt;em&gt;Sempre dê uma palavra ou sinal de saudação quando encontrar ou cruzar com um estranho em um local solitário. Demonstre respeito a todas as pessoas, mas não se rebaixe a ninguém. Quando você se levantar de manhã, agradeça pela luz, pela sua vida e força. Dê graças por seu alimento e pela alegria de viver. Se você não vir nenhuma razão para dar graças, a falha se encontra em você mesmo.&lt;/em&gt; &lt;em&gt;Não toque o aguardente venenoso que transforma os sábios em tolos e rouba deles suas visões. Quando chegar sua hora de morrer, não seja como aqueles cujos corações estão preenchidos de medo da morte, e que quando a hora deles chega eles choram e rezam por um pouco mais de tempo para viverem suas vidas novamente de uma forma diferente.&lt;/em&gt; &lt;em&gt;Cante sua canção de morte, e morra como um herói indo para casa.&amp;rdquo;&lt;/em&gt;&#xA;~ Chefe Tecumseh.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Welcome to my place!</title>
+      <link>https://mulatinho.net/</link>
+      <pubDate>Sun, 18 Mar 2012 15:55:55 +0000</pubDate>
+      <guid>https://mulatinho.net/</guid>
+      <description>&lt;h1 id=&#34;hi-im-alexandre-mulatinho&#34;&gt;Hi, I&amp;rsquo;m Alexandre Mulatinho&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;DevOps | Site Reliability Engineer | Software Engineer&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Linux | Kubernetes | Network Security&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;&#xA;&lt;p&gt;Highly skilled DevOps and Site Reliability Engineer with over a &lt;strong&gt;decade of experience in Linux, networking and system troubleshooting; mor than six years of experience in cloud architecture and automation&lt;/strong&gt;. Proficient in managing cloud-based infrastructures, optimizing CI/CD pipelines, and ensuring high availability. &lt;strong&gt;Passionate about solving complex challenges&lt;/strong&gt; and continuously learning in the tech space.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Um capítulo inesquecível!</title>
+      <link>https://mulatinho.net/2011/11/28/um-capitulo-inesquecivel/</link>
+      <pubDate>Mon, 28 Nov 2011 23:50:14 +0000</pubDate>
+      <guid>https://mulatinho.net/2011/11/28/um-capitulo-inesquecivel/</guid>
+      <description>&lt;p&gt;1 BEM-AVENTURADO o homem que não anda segundo o conselho dos ímpios, nem se detém no caminho dos pecadores, nem se assenta na roda dos escarnecedores.&lt;/p&gt;&#xA;&lt;p&gt;2 Antes tem o seu prazer na lei do SENHOR, e na sua lei medita de dia e de noite.&lt;/p&gt;&#xA;&lt;p&gt;3 Pois será como a árvore plantada junto a ribeiros de águas, a qual dá o seu fruto no seu tempo; as suas folhas não cairão, e tudo quanto fizer prosperará.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Need of store the return code in shell script.</title>
+      <link>https://mulatinho.net/2011/10/24/need-of-store-the-return-code-in-shell-script/</link>
+      <pubDate>Mon, 24 Oct 2011 14:02:19 +0000</pubDate>
+      <guid>https://mulatinho.net/2011/10/24/need-of-store-the-return-code-in-shell-script/</guid>
+      <description>&lt;p&gt;So here I am again posting about shell script, in these days I was needing store the return code of an script in multiple places and then in the final of this shell show the status of these return codes.&lt;/p&gt;&#xA;&lt;p&gt;So basically I was needing check every command or sub-script that was running  in the main code, as far we know every time that one command or script are executed the value of &amp;lsquo;$?&amp;rsquo; is changed, so if I run an command that return different of zero (fail) and then some thing that return zero (success) and check the return code in the last line I will never know that in the final of script something went wrong.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wake up! The Media is only interested in sell magazines!!</title>
+      <link>https://mulatinho.net/2011/10/20/wake-up-the-media-is-only-interested-in-sell-magazines/</link>
+      <pubDate>Fri, 21 Oct 2011 01:36:28 +0000</pubDate>
+      <guid>https://mulatinho.net/2011/10/20/wake-up-the-media-is-only-interested-in-sell-magazines/</guid>
+      <description>&lt;p&gt;What&amp;rsquo;s happening with the IT world? Millions die every day and only one or two that are in the media are important, recently  Steve Jobs died with cancer, yeah its sad, a time ago one friend mine died of cancer too and was too much sad. But wtf ? Every day you see people dying with hungry, without money, with violence, and a lot of sad things too. Why Steve Jobs is so important ?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reflexões de uma quinta-feira.. ;)</title>
+      <link>https://mulatinho.net/2011/07/14/reflexoes-de-uma-quinta-feira/</link>
+      <pubDate>Thu, 14 Jul 2011 22:05:56 +0000</pubDate>
+      <guid>https://mulatinho.net/2011/07/14/reflexoes-de-uma-quinta-feira/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Ablepsifobia - medo de ficar cego&lt;/em&gt;&#xA;&lt;em&gt;Acluofobia - medo ou horror exagerado &amp;ndash; escuridão.&lt;/em&gt;&#xA;&lt;em&gt;Acrofobia - medo de altura.&lt;/em&gt;&#xA;&lt;em&gt;Cleptofobia - medo de ser roubado&lt;/em&gt;&#xA;&lt;em&gt;Enoclofobia - medo de multidão&lt;/em&gt;&#xA;&lt;em&gt;Fobia Social - medo de estar sendo avaliado negativamente (socialmente)&lt;/em&gt;&#xA;&lt;em&gt;Gerascofobia - medo de envelhecer&lt;/em&gt;&#xA;&lt;em&gt;Isolofobia - medo da solidão, de estar sozinho, o medo de ficar isolado&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Os medos, todos nós temos medo de alguma coisa mas acho que os dois maiores medos que podemos ter são: o medo de novos desafios e o medo de perder as pessoas que admiramos e/ou amamos (afinal um dia todas elas se vão e essa é a única certeza absoluta que temos em nossas vidas), quem não tem medo de perder um pai ou uma mãe? Um(a) grande amigo(a)? Principalmente se este(a) em questão for uma pessoa sábia, carismática, companheira, humilde e boa educadora. Quanto sofrimento haverá nessa separação? Quantas lembranças boas esmagarão o coração de saudades daqueles que ficarem? E daqueles que se vão?&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GLIBC: Introduction and Error Reporting</title>
+      <link>https://mulatinho.net/2011/02/13/glibc-introduction-and-error-reporting/</link>
+      <pubDate>Sun, 13 Feb 2011 21:42:16 +0000</pubDate>
+      <guid>https://mulatinho.net/2011/02/13/glibc-introduction-and-error-reporting/</guid>
+      <description>&lt;p&gt;Artigo em Português do Brasil:&#xA;&lt;a href=&#34;http://pe.slackwarebrasil.org/wikipe/index.php?title=TEXTOS:glibc01e02&#34; target=&#34;_blank&#34;&gt;http://pe.slackwarebrasil.org/wikipe/index.php?title=TEXTOS:glibc01e02&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hey guys,&lt;/p&gt;&#xA;&lt;p&gt;Been a while since I&amp;rsquo;ve posted here, I have already exceeded what was agreed with you, put a small article here all week under the GNU libc, but to resolve the pending here are my first small tests and reviews on Chapter 1 and 2 .&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Intro&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Chapter 1 as one would expect only serves as an introduction to manual and the ANSI C, but with some important information for new developers in C language and especially in the use of GCC. For example, the book considers all the examples will be presented here and in the book are compiled with the argument &lt;em&gt;&amp;rsquo;-ansi&amp;rsquo;&lt;/em&gt; which tells GCC to use the standard ANSI C.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Utilizando a saída da shell na linguagem C.</title>
+      <link>https://mulatinho.net/2011/02/13/utilizando-a-saida-da-shell-na-linguagem-c/</link>
+      <pubDate>Sun, 13 Feb 2011 21:40:46 +0000</pubDate>
+      <guid>https://mulatinho.net/2011/02/13/utilizando-a-saida-da-shell-na-linguagem-c/</guid>
+      <description>&lt;p&gt;E em se falando novamente em coisas nerds, principalmente na parte da programação eu diria que o meu amor é o C e a minha paixão é o Shell Script, como na computação e também na vida podemos integrar dois sentimentos num único apenas. Há casos em que os opostos definivamente se atraem como em paixões platônicas em que o ódio e o amor estão constantemente juntos o que me faz lembrar uma frase de um poeta: &amp;lsquo;difícil é deixar viver&amp;hellip;&amp;rsquo; ligando estes conceitos a marginalidade da sociedade. Ora pois, se amar é tão gostoso por quê continuar amando é tão difícil? se odiar é tão ruim por quê o ódio continua presente em nossas vidas? são mistérios que como dizem por aí só descobriremos quando partirmos dessa pra melhor ou então num daqueles momentos que só se tem uma vez na vida. Como esquecer um grande amor que tenha sido perdido por um acidente, uma mentira, uma verdade? Viver é o algoritmo mais difícil de nossas vidas e pra isso devemos unir todas as linguages, sejam elas do amor ou do ódio para conseguirmos sobreviver dia-a-dia. Depois dessa confusão de idéias vai ae abaixo &amp;lsquo;uma pequena integração&amp;rsquo; de C com Shell Script!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bash Scripting</title>
+      <link>https://mulatinho.net/2011/02/13/bash-scripting-2/</link>
+      <pubDate>Sun, 13 Feb 2011 21:39:54 +0000</pubDate>
+      <guid>https://mulatinho.net/2011/02/13/bash-scripting-2/</guid>
+      <description>&lt;p&gt;Texto de 2006, adicionado ao blog.&lt;/p&gt;&#xA;&lt;p&gt;Há muito tempo eu escrevi uma introdução ao bash script e olhando ontem, resolvi fazer uma adaptação aqui no blog e colocar pra o pessoal ler, quem sabe alguém que esteja iniciando no mundo unix se interesse :-) Este texto contém uma visão introdutória sobre o que é uma shell e como a manipular, mas especificamente a Bourne-Again SHell (BASH).&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;ÍNDICE&lt;/strong&gt; &lt;strong&gt;1. - A SHELL NO LINUX&lt;/strong&gt;&#xA;&lt;strong&gt;1.1 - O que é uma shell?&lt;/strong&gt;&#xA;&lt;strong&gt;1.2 - Principais tarefas da shell.&lt;/strong&gt; &lt;strong&gt;2. - O BÁSICO DO BÁSICO.&lt;/strong&gt;&#xA;&lt;strong&gt;2.1 - Conectivos padrões e retornos lógicos.&lt;/strong&gt;&#xA;&lt;strong&gt;2.2 - A matemática na shell.&lt;/strong&gt;&#xA;&lt;strong&gt;2.3 - Tipos de parametros.&lt;/strong&gt; &lt;strong&gt;3. - VARIÁVEIS&lt;/strong&gt;&#xA;&lt;strong&gt;3.1 - Variáveis ambiente.&lt;/strong&gt;&#xA;&lt;strong&gt;3.2 - Atribuindo comandos à variáveis.&lt;/strong&gt; &lt;strong&gt;4. - ESTRUTURAS DE LOOP E CONDIÇÕES&lt;/strong&gt;&#xA;&lt;strong&gt;4.1 - Usando loops.&lt;/strong&gt;&#xA;&lt;strong&gt;4.2 - Fazendo condições.&lt;/strong&gt; &lt;strong&gt;5. - AVANÇANDO&lt;/strong&gt; &lt;strong&gt;5.1 - Redirecionando entrada/saída de dados.&lt;/strong&gt;&#xA;&lt;strong&gt;5.2 - Usando comandos em background e adcionando interrupções.&lt;/strong&gt;&#xA;&lt;strong&gt;5.3 - Alguns comandos: sed, cut, wc, od.&lt;/strong&gt;&#xA;&lt;strong&gt;5.4 - Cores no terminal.&lt;/strong&gt; &lt;strong&gt;6. - ARQUIVOS DE CONFIGURAÇÃO&lt;/strong&gt;&#xA;&lt;strong&gt;6.1 - .bashrc&lt;/strong&gt;&#xA;&lt;strong&gt;6.2 - .bash_history&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Natureza, o lixo eletrônico e o LTSP.</title>
+      <link>https://mulatinho.net/2011/02/13/a-natureza-o-lixo-eletronico-e-o-ltsp/</link>
+      <pubDate>Sun, 13 Feb 2011 21:38:22 +0000</pubDate>
+      <guid>https://mulatinho.net/2011/02/13/a-natureza-o-lixo-eletronico-e-o-ltsp/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://2.bp.blogspot.com/_KmHes8D-1T0/ST5vUoWPlWI/AAAAAAAAAGY/-8x4cRiHRnk/s1600-h/ltsp_diagram.gif&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://2.bp.blogspot.com/_KmHes8D-1T0/ST5vUoWPlWI/AAAAAAAAAGY/-8x4cRiHRnk/s320/ltsp_diagram.gif&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;É lastimável como a sociedade Brasileira trata o lixo, e mais recentemente o lixo eletrônico, na era da tecnologia moderna aonde os relacionamentos são iniciados em salas de bate papo via internet o ser humano ainda não aprendeu a enamorar-se pela natureza.&lt;/p&gt;&#xA;&lt;p&gt;O lixo eletrônico, peças de computador contendo problemas no hardware ou simplesmente esquecidas por serem consideradas ultrapassadas (ex.: Pentium MMX, AMD K6-II 500Mhz, 486, etc.) estão cada vez mais sendo descartadas pela sociedade na natureza mas alguns jovens em Recife estão se unindo em torno de uma solução, o LTSP, que em português significa Projeto de Servidores de Terminais Linux, e tem como objetivo básico utilizar máquinas interconectadas via redes ethernet (e em breve wireless) a uma série de computadores, centralizando os dados em apenas um computador.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Alguns posts antigos.</title>
+      <link>https://mulatinho.net/2011/02/13/alguns-posts-antigos/</link>
+      <pubDate>Sun, 13 Feb 2011 21:36:35 +0000</pubDate>
+      <guid>https://mulatinho.net/2011/02/13/alguns-posts-antigos/</guid>
+      <description>&lt;h2 id=&#34;utilizando-senhas-no-netbsd&#34;&gt;Utilizando senhas no NetBSD.&lt;/h2&gt;&#xA;&lt;p&gt;É, tive um problema com as senhas no NetBSD recentemente, pô! A mudança de um sistema operacional pra outro é meio complicado, foi mais fácil pra mim porque sempre usei Linux (baseado no UNIX) desde 1999! Mas ainda sim tem algumas coisinhas que são bem diferentes! Na instalação do NetBSD (o que foi me dito) tem uma parte que diz a você qual tipo de encriptação você quer usar para proteger suas senhas (a padrão é DES), só que tem um detalhe bem interessante pra aqueles viciados em segurança por obscuridade, a senha DES tem no máximo 8/9 caracteres (nao me lembro ao certo agora), ou seja, uma senha fraca pra um bruteforce, então você tem que fazer mudanças no seu sistema! A primeira coisa que você deve fazer é ler os manuais dos comando &amp;lsquo;pwhash&amp;rsquo; e &amp;lsquo;pwd_mkdb&amp;rsquo; (respectivamente, um criador de senhas e um atualizador das senhas no banco de dados interno do sistema operacional), as sintaxes são bem simples! Pra você criar uma nova senha você faz:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Criptografando seu disco no Linux</title>
+      <link>https://mulatinho.net/2011/02/13/criptografando-seu-disco-no-linux/</link>
+      <pubDate>Sun, 13 Feb 2011 21:33:50 +0000</pubDate>
+      <guid>https://mulatinho.net/2011/02/13/criptografando-seu-disco-no-linux/</guid>
+      <description>&lt;p&gt;Olá,&lt;/p&gt;&#xA;&lt;p&gt;Recentemente senti necessidade de me proteger mais, o mundo anda violento, não só fisicamente como digitalmente e você pode têr suas informações roubadas a qualquer momento, seja deixando uma brecha no seu computador remotamente ou simplesmente esquecendo seu notebook na sala e alguém acessando-o atrás de informações.&lt;/p&gt;&#xA;&lt;p&gt;Pesquisando um pouco eu descobri o cryptsetup, é um software para encriptar partições lógicas, ele funciona muito bem e só deixa um usuário acessar sua partição mediante a uma passphrase, logo se o usuário não souber essa passphrase, todos os dados que ele conseguir obtêr da partição será criptado e ele não conseguirá extrair informações úteis.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Usando o &#39;find&#39; no unix.</title>
+      <link>https://mulatinho.net/2011/02/13/usando-o-find-no-unix/</link>
+      <pubDate>Sun, 13 Feb 2011 21:31:48 +0000</pubDate>
+      <guid>https://mulatinho.net/2011/02/13/usando-o-find-no-unix/</guid>
+      <description>&lt;p&gt;Há muito tempo eu vejo queixas de usuários dos diversos unices (linux,bsd,unix..) em achar arquivos e diretórios &amp;lsquo;perdidos&amp;rsquo;, para mim isso nunca foi muito difícil porque sempre usei o comando &amp;rsquo; &lt;strong&gt;find&lt;/strong&gt;&amp;rsquo;, eu achava que todo mundo conhecia pelo o menos sua sintaxe básica de pesquisa mas tenho visto muita gente que usa unices e literalmente perdem arquivos por todo canto do sistema, tendo em vista essa idéia resolvi escrever um pouco aqui sobre como utilizar este comando no linux:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docs</title>
+      <link>https://mulatinho.net/docs/</link>
+      <pubDate>Sun, 13 Feb 2011 20:12:37 +0000</pubDate>
+      <guid>https://mulatinho.net/docs/</guid>
+      <description>&lt;p&gt;Fique a vontade para baixar os arquivos e se desejar usá-los para suas próprias apresentações e artigos bastando apenas preservar o nome do autor original, aqui eu listo artigos escritos neste blog, pdf&amp;rsquo;s de artigos mais técnicos e algumas apresentações em eventos que participei. Espero que veja algo de útil para você :-)&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Artigos Técnicos&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mulatinho.wordpress.com/wp-content/uploads/2015/04/ltsp-basico.pdf&#34; title=&#34;LTSP basics!! Dont forget your old computers ;)&#34; target=&#34;_blank&#34;&gt;Guia basico do LTSP (nao jogue seu antigo computador no lixo)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mulatinho.wordpress.com/wp-content/uploads/2015/04/dat-tapes.pdf&#34; title=&#34;Dealing with storage tapes in linux&#34; target=&#34;_blank&#34;&gt;Utilizando storages com fitas DAT no linux&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mulatinho.wordpress.com/wp-content/uploads/2015/04/mlt-altadisponibilidadedbrdheartbeat-140118192709-phpapp01.pdf&#34; target=&#34;_blank&#34;&gt;Alta disponibilidade com drbd e heartbeat&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;WebLog / Outros&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GNU C Library</title>
+      <link>https://mulatinho.net/2011/02/13/gnu-c-library/</link>
+      <pubDate>Sun, 13 Feb 2011 18:41:31 +0000</pubDate>
+      <guid>https://mulatinho.net/2011/02/13/gnu-c-library/</guid>
+      <description>&lt;p&gt;In these days I was thinking &amp;ldquo;I never stop and read the whole documentation of &lt;a href=&#34;http://www.gnu.org/software/libc/manual/html_node/index.html&#34; title=&#34;The GNU C Library Documentation&#34; target=&#34;_blank&#34;&gt;GNU C library&lt;/a&gt;&amp;rdquo; and that&amp;rsquo;s not good, I really known a good portion of functions but not them all and also I never wrote so much to my blog in english (my second language?).&lt;/p&gt;&#xA;&lt;p&gt;So i will try to learn more functions and also try to write more here in english. To do this i will post every week some of my tests while i&amp;rsquo;m reading the GNU C Library book written by Sandra Loosemore and the GNU Boys ;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Toshiba NB205 on Slackware!</title>
+      <link>https://mulatinho.net/2011/02/13/toshiba-nb205-on-slackware/</link>
+      <pubDate>Sun, 13 Feb 2011 18:27:21 +0000</pubDate>
+      <guid>https://mulatinho.net/2011/02/13/toshiba-nb205-on-slackware/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.pcwet.com/wp-content/uploads/2009/11/toshiba-nb205-n310-blue-open_angle-450.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://www.pcwet.com/wp-content/uploads/2009/11/toshiba-nb205-n310-blue-open_angle-450.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;strong&gt;Intro&lt;/strong&gt;&#xA;Hello Slakers!&lt;/p&gt;&#xA;&lt;p&gt;I will talk about how to installing and use Slakware in a NB 205 from Toshiba. First of all i have to admit that i stayed really impressed with the design of NB205, he&amp;rsquo;s fully portable and light, the screen with a 10.1&amp;quot; have a bad news: she only can do 1024x600 of screen size, but not for us, slackers! obviously! ;) Even being netbook this machine has a good performance and excelent battery duration time! Generally this happens because of his ATOM N280 1.6GHz that use minus power and are designed for running in two units of execution even that is not a dual-processor. He has a beautiful keyboard design, a nice webcam of 1.3 megapixels and a good acceleration in multimedia applications. So before anything else, lets see some more informations about his technical specifications, down:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A alegria de viver de UNIX</title>
+      <link>https://mulatinho.net/2010/04/16/a-alegria-de-viver-de-unix/</link>
+      <pubDate>Fri, 16 Apr 2010 18:03:53 +0000</pubDate>
+      <guid>https://mulatinho.net/2010/04/16/a-alegria-de-viver-de-unix/</guid>
+      <description>&lt;p&gt;Quantos aqui não lembram quando a mamãe dizia: &amp;lsquo;meu filho, agradeça todos os dias por tudo que você tem&amp;rsquo;. Eu posso dizer que esse conselho eu adotei e também que através disto considero-me um previlegiado, uso Linux há mais de 10 anos e tenho oportunidade de realmente &amp;lsquo;BRINCAR&amp;rsquo; no meu trabalho, pois trabalho com o mesmo Sistema Operacional diariamente e através do conhecimento que tenho consigo migrar vários ambientes para este sistema maravilhoso.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Por que usar Slackware?</title>
+      <link>https://mulatinho.net/2010/01/18/por-que-usar-slackware/</link>
+      <pubDate>Mon, 18 Jan 2010 20:12:51 +0000</pubDate>
+      <guid>https://mulatinho.net/2010/01/18/por-que-usar-slackware/</guid>
+      <description>&lt;p&gt;Muita gente me pergunta: Por que cargas d&amp;rsquo;agua você usa Slackware como sistema operacional? Ué, for KISS (Keep It Simple Stupid), para manter simples o que é simples estúpido! ;) Tirando a brincadeira, fiz uma tradução há algumas semanas de um artigo do Eric Hameleers (AlienBOB) no qual ele fala porque ele usa Slackware em vez de outras distribuições, não é que ele e eu temos opiniões semelhantes? :)&lt;/p&gt;&#xA;&lt;p&gt;Segue o link da tradução abaixo:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>É fácil achar com o &#39;find&#39;!</title>
+      <link>https://mulatinho.net/2010/01/18/e-facil-achar-com-o-find/</link>
+      <pubDate>Mon, 18 Jan 2010 17:44:45 +0000</pubDate>
+      <guid>https://mulatinho.net/2010/01/18/e-facil-achar-com-o-find/</guid>
+      <description>&lt;p&gt;Há muito tempo eu vejo queixas de usuários dos diversos unices (linux,bsd,unix..) em achar arquivos e diretórios &amp;lsquo;perdidos&amp;rsquo;, para mim isso nunca foi muito difícil porque sempre usei o comando &amp;rsquo; &lt;strong&gt;find&lt;/strong&gt;&amp;rsquo;, eu achava que todo mundo conhecia pelo o menos sua sintaxe básica de pesquisa mas tenho visto muita gente que usa unices e literalmente perdem arquivos por todo canto do sistema, tendo em vista essa idéia resolvi escrever um pouco aqui sobre como utilizar este comando no linux:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Slackware 64-bit!</title>
+      <link>https://mulatinho.net/2010/01/14/slackware-64-bit/</link>
+      <pubDate>Fri, 15 Jan 2010 00:51:41 +0000</pubDate>
+      <guid>https://mulatinho.net/2010/01/14/slackware-64-bit/</guid>
+      <description>&lt;p&gt;É como eu pensei, as primeiras impressões que eu tive da versão 64-bit do Slakware foi de que ainda falta bastante coisa, todavia eu devo dizer que em termos de performance como é de se imaginar é perfeito! As aplicações são realmente bastante rápidas e você sente uma grande potência mesmo no meu humilde Core 2 Duo 1.86GHz, ainda não tentei compilar novamente o kernel de uma forma mais adaptada à minha máquina mas tenho grandes esperanças quando isso acontecer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>All</title>
+      <link>https://mulatinho.net/all/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mulatinho.net/all/</guid>
+      <description>archives</description>
+    </item>
+    <item>
+      <title>Search</title>
+      <link>https://mulatinho.net/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mulatinho.net/search/</guid>
+      <description>Search</description>
+    </item>
+  </channel>
+</rss>

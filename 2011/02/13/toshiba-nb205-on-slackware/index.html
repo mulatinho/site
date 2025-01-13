@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+<script defer language="javascript" type="text/javascript" src="/js/bundle.min.145453261a7755f5042a854c4213501d215a8fbe34c08d181c40f803f1315e74.js"></script>
+
+
+
+
+
+
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="icon" href=/favicon.png>
+
+    
+    
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+
+
+<!-- Open Graph image and Twitter Card metadata -->
+
+<title itemprop="name">Alexandre Mulatinho - Toshiba NB205 on Slackware!</title>
+<meta property="og:title" content=Alexandre&#32;Mulatinho&#32;-&#32;Toshiba&#32;NB205&#32;on&#32;Slackware! />
+<meta name="twitter:title" content=Alexandre&#32;Mulatinho&#32;-&#32;Toshiba&#32;NB205&#32;on&#32;Slackware! />
+<meta itemprop="name" content=Alexandre&#32;Mulatinho&#32;-&#32;Toshiba&#32;NB205&#32;on&#32;Slackware! />
+<meta name="application-name" content=Alexandre&#32;Mulatinho&#32;-&#32;Toshiba&#32;NB205&#32;on&#32;Slackware! />
+<meta property="og:site_name" content="Alexandre Mulatinho Blog" />
+
+
+<meta name="description" content="" />
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+
+<base href="https://mulatinho.net/2011/02/13/toshiba-nb205-on-slackware/" />
+<link rel="canonical" href="https://mulatinho.net/2011/02/13/toshiba-nb205-on-slackware/" itemprop="url" />
+<meta name="url" content="https://mulatinho.net/2011/02/13/toshiba-nb205-on-slackware/" />
+<meta name="twitter:url" content="https://mulatinho.net/2011/02/13/toshiba-nb205-on-slackware/" />
+<meta property="og:url" content="https://mulatinho.net/2011/02/13/toshiba-nb205-on-slackware/" />
+
+
+<meta property="og:updated_time" content="2011-02-13T18:27:21Z" />
+
+
+<link rel="sitemap" type="application/xml" title="Sitemap" href='https://mulatinho.net/sitemap.xml' />
+
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+
+
+
+<meta property="fb:admins" content="" />
+
+
+<meta name="apple-mobile-web-app-title" content="Alexandre Mulatinho Blog" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.140.2">
+
+
+    
+    
+
+<link type="text/css" rel="stylesheet" href="/css/bundle.min.94a339836f89f0d25f31980cb6b0631da21e20af128308747ce44e0525eb16ef.css">
+
+
+    
+    <style>
+    body {
+        --sidebar-bg-color: #202020;
+        --sidebar-img-border-color: #515151;
+        --sidebar-p-color: #909090;
+        --sidebar-h1-color: #FFF;
+        --sidebar-a-color: #FFF;
+        --sidebar-socials-color: #FFF;
+        --text-color: #222;
+        --bkg-color: #FAF9F6;
+        --post-title-color: #303030;
+        --list-color: #5A5A5A;
+        --link-color: #268BD2;
+        --date-color: #515151;
+        --table-border-color: #E5E5E5;
+        --table-stripe-color: #F9F9F9;
+        --code-color: #000;
+        --code-background-color: #E5E5E5;
+        --code-block-color: #FFF;
+        --code-block-background-color: #272822;
+        --moon-sun-color: #FFF;
+        --moon-sun-background-color: #515151;
+    }
+    body.dark-theme {
+        --text-color: #EEE;
+        --bkg-color: #121212;
+        --post-title-color: #DBE2E9;
+        --list-color: #9D9D9D;
+        --link-color: #268BD2;
+        --date-color: #9A9A9A;
+        --table-border-color: #515151;
+        --table-stripe-color: #202020;
+        --code-color: #FFF;
+        --code-background-color: #515151;
+        --code-block-color: #FFF;
+        --code-block-background-color: #272822;
+    }
+    body {
+        background-color: var(--bkg-color);
+    }
+</style>
+
+</head>
+
+    <body class="dark-theme">
+        <div class="wrapper">
+            <aside class="sidebar">
+    <div class="container sidebar-sticky">
+        <div class="light-dark" align="right">
+    <button class="btn-light-dark" title="Toggle light/dark mode">
+        <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M6 .278a.768.768 0 0 1 .08.858a7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277c.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316a.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71C0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        </svg>
+        <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M8 12a4 4 0 1 0 0-8a4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg>
+    </button>
+</div>
+
+        <div class="sidebar-about">
+    <h1 class="brand">
+        
+        
+            <a href="https://mulatinho.net/">
+                <h1>Alexandre Mulatinho</h1>
+            </a>
+        
+    </h1>
+    <p class="lead">
+    the home of an brazilian software engineer
+    </p>
+</div>
+
+        <center>
+
+    <a target="_blank" class="social" title="GitHub" href="https://github.com/mulatinho">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="-2 -2 24 24">
+            <path fill="currentColor" d="M18.88 1.099C18.147.366 17.265 0 16.233 0H3.746C2.714 0 1.832.366 1.099 1.099C.366 1.832 0 2.714 0 3.746v12.487c0 1.032.366 1.914 1.099 2.647c.733.733 1.615 1.099 2.647 1.099H6.66c.19 0 .333-.007.429-.02a.504.504 0 0 0 .286-.169c.095-.1.143-.245.143-.435l-.007-.885c-.004-.564-.006-1.01-.006-1.34l-.3.052c-.19.035-.43.05-.721.046a5.555 5.555 0 0 1-.904-.091a2.026 2.026 0 0 1-.872-.39a1.651 1.651 0 0 1-.572-.8l-.13-.3a3.25 3.25 0 0 0-.41-.663c-.186-.243-.375-.407-.566-.494l-.09-.065a.956.956 0 0 1-.17-.156a.723.723 0 0 1-.117-.182c-.026-.061-.004-.111.065-.15c.07-.04.195-.059.378-.059l.26.04c.173.034.388.138.643.311a2.1 2.1 0 0 1 .631.677c.2.355.44.626.722.813c.282.186.566.28.852.28c.286 0 .533-.022.742-.065a2.59 2.59 0 0 0 .585-.196c.078-.58.29-1.028.637-1.34a8.907 8.907 0 0 1-1.333-.234a5.314 5.314 0 0 1-1.223-.507a3.5 3.5 0 0 1-1.047-.872c-.277-.347-.505-.802-.683-1.365c-.177-.564-.266-1.215-.266-1.952c0-1.049.342-1.942 1.027-2.68c-.32-.788-.29-1.673.091-2.652c.252-.079.625-.02 1.119.175c.494.195.856.362 1.086.5c.23.14.414.257.553.352a9.233 9.233 0 0 1 2.497-.338c.859 0 1.691.113 2.498.338l.494-.312a6.997 6.997 0 0 1 1.197-.572c.46-.174.81-.221 1.054-.143c.39.98.424 1.864.103 2.653c.685.737 1.028 1.63 1.028 2.68c0 .737-.089 1.39-.267 1.957c-.177.568-.407 1.023-.689 1.366a3.65 3.65 0 0 1-1.053.865c-.42.234-.828.403-1.223.507a8.9 8.9 0 0 1-1.333.235c.45.39.676 1.005.676 1.846v3.11c0 .147.021.266.065.357a.36.36 0 0 0 .208.189c.096.034.18.056.254.064c.074.01.18.013.318.013h2.914c1.032 0 1.914-.366 2.647-1.099c.732-.732 1.099-1.615 1.099-2.647V3.746c0-1.032-.367-1.914-1.1-2.647z"/>
+        </svg>
+    </a>
+
+
+
+    <a target="_blank" class="social" title="LinkedIn" href="https://linkedin.com/in/mulatinho">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5c0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7c-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5c67.2 0 79.7 44.3 79.7 101.9V416z"/>
+        </svg>
+    </a>
+
+
+
+
+
+
+
+
+
+
+    <a target="_blank" class="social" title="Facebook" href="https://facebook.com">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48c27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/>
+        </svg>
+    </a>
+
+
+
+
+
+
+    <a target="_blank" class="social" title="RSS Feed" href="/posts/index.xml">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 1280.000000 1280.000000">
+            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="currentColor">
+                <path d="M2295 11929 c-284 -12 -642 -45 -707 -65 -17 -5 -18 -63 -18 -1039 0 -569 4 -1036 8 -1039 5 -3 74 6 153 19 510 86 1168 95 1789 25 1348 -153 2602 -677 3670 -1531 385 -308 820 -744 1126 -1129 842 -1060 1362 -2313 1514 -3650 70 -621 61 -1279 -25 -1789 -13 -79 -22 -148 -19 -153 3 -4 471 -8 1039 -8 l1035 0 5 23 c51 225 85 942 67 1419 -23 605 -77 1044 -198 1617 -294 1400 -927 2734 -1823 3846 -1043 1295 -2364 2259 -3909 2854 -1158 447 -2451 656 -3707 600z"/>
+                <path d="M2255 7845 c-269 -25 -620 -81 -667 -106 -17 -9 -18 -55 -18 -899 0 -706 3 -890 13 -890 6 0 66 18 132 41 130 44 288 79 467 105 154 21 577 30 749 15 1207 -107 2267 -823 2814 -1902 166 -327 268 -637 330 -1001 38 -227 48 -384 42 -662 -8 -348 -44 -590 -126 -831 -23 -66 -41 -126 -41 -132 0 -10 184 -13 890 -13 844 0 890 1 899 18 27 50 88 452 110 725 14 162 14 624 1 782 -59 703 -233 1323 -545 1945 -481 956 -1313 1788 -2270 2268 -620 310 -1239 483 -1940 542 -165 14 -669 10 -840 -5z"/>
+                <path d="M2519 3815 c-391 -66 -725 -336 -868 -703 -79 -201 -96 -462 -45 -677 83 -344 338 -641 666 -774 116 -47 205 -69 330 -80 412 -39 811 153 1040 500 193 292 240 648 128 981 -135 403 -492 699 -914 757 -100 14 -241 12 -337 -4z"/>
+            </g>
+        </svg>
+    </a>
+
+
+    <a target="_blank" class="social" title="Email" href="mailto:alex.mulatinho@yahoo.com">
+       <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 485.211 485.211">
+            <path fill="currentColor" d="M301.393,241.631L464.866,424.56H20.332l163.474-182.928l58.801,51.443L301.393,241.631z M462.174,60.651H23.027 l219.579,192.142L462.174,60.651z M324.225,221.67l160.986,180.151V80.792L324.225,221.67z M0,80.792v321.029L160.972,221.64 L0,80.792z"/>
+       </svg>
+    </a>
+
+
+
+</center>
+
+        <nav>
+    <ul class="sidebar-nav">
+
+        
+        
+        
+	<center>
+        
+            
+
+            <h2><a href="/"><b>About</b></a></h2>
+        
+	<center>
+        
+            
+
+            <h2><a href="/docs/"><b>Docs</b></a></h2>
+        
+	<center>
+        
+            
+
+            <h2><a href="/software/"><b>Softwares</b></a></h2>
+        
+	<center>
+        
+            
+
+            <h2><a href="/posts/"><b>Posts</b></a></h2>
+        
+	</center>
+    </ul>
+</nav>
+
+        <p class="footnote">
+&copy; 2025 Alexandre Mulatinho Blog.<br/>
+Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a target="_blank" href="https://github.com/lukeorth/poison">poison</a>
+</p>
+
+  </div>
+</aside>
+
+            <main class="content container">
+                <div class="post">
+  <div class="info">
+  <h1 class="post-title">
+    <a href="https://mulatinho.net/2011/02/13/toshiba-nb205-on-slackware/">Toshiba NB205 on Slackware!</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+        
+          <span>mulatinho - </span>
+        
+      
+      
+      <time datetime=" 2011-02-13T18:27:21Z" class="post-date">
+        February 13, 2011
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>7 mins read</span>
+      </span>
+    </div>
+
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+  <p><a href="http://www.pcwet.com/wp-content/uploads/2009/11/toshiba-nb205-n310-blue-open_angle-450.jpg" target="_blank"><img src="http://www.pcwet.com/wp-content/uploads/2009/11/toshiba-nb205-n310-blue-open_angle-450.jpg" alt=""></a><strong>Intro</strong>
+Hello Slakers!</p>
+<p>I will talk about how to installing and use Slakware in a NB 205 from Toshiba. First of all i have to admit that i stayed really impressed with the design of NB205, he&rsquo;s fully portable and light, the screen with a 10.1&quot; have a bad news: she only can do 1024x600 of screen size, but not for us, slackers! obviously! ;) Even being netbook this machine has a good performance and excelent battery duration time! Generally this happens because of his ATOM N280 1.6GHz that use minus power and are designed for running in two units of execution even that is not a dual-processor. He has a beautiful keyboard design, a nice webcam of 1.3 megapixels and a good acceleration in multimedia applications. So before anything else, lets see some more informations about his technical specifications, down:</p>
+<p>P.S. Anyway this document isn&rsquo;t finished yet.</p>
+<p><strong>Technical Details</strong></p>
+<p>\* Motherboard: Toshiba KAVAA - Chipset: Intel Callistoga-GSE i945GSE
+\* Processor: Intel Atom N280 1.6GHz
+\* Memory: DDR2-800/400/333/266 MHz - Comes to 1GB but you can upgrade to 2 GB.
+\* Video: Intel GMA 950 (1280x600)
+\* Hard Disk: 160 GB 5400 RPM SATA-II
+\* Webcam, Bluetooth, Ether/Wifi Network gigabit, Battery Life is 8 Hours!!!</p>
+<p><strong>CPU</strong><code># cat /proc/cpuinfo processor    : 0 vendor_id    : GenuineIntel cpu family    : 6 model        : 28 model name    : Intel(R) Atom(TM) CPU N280   @ 1.66GHz stepping    : 2 cpu MHz        : 1000.000 cache size    : 512 KB physical id    : 0 siblings    : 2 core id        : 0 cpu cores    : 1 apicid        : 0 initial apicid    : 0 fdiv_bug    : no hlt_bug        : no f00f_bug    : no coma_bug    : no fpu        : yes fpu_exception    : yes cpuid level    : 10 wp        : yes flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx constant_tsc arch_perfmon pebs bts pni dtes64 monitor ds_cpl est tm2 ssse3 xtpr pdcm lahf_lm bogomips    : 3325.16 clflush size    : 64 power management:</code> <strong>PCI Devices</strong><code># lspci 00:00.0 Host bridge: Intel Corporation Mobile 945GME Express Memory Controller Hub (rev 03) 00:02.0 VGA compatible controller: Intel Corporation Mobile 945GME Express Integrated Graphics Controller (rev 03) 00:02.1 Display controller: Intel Corporation Mobile 945GM/GMS/GME, 943/940GML Express Integrated Graphics Controller (rev 03) 00:1b.0 Audio device: Intel Corporation 82801G (ICH7 Family) High Definition Audio Controller (rev 02) 00:1c.0 PCI bridge: Intel Corporation 82801G (ICH7 Family) PCI Express Port 1 (rev 02) 00:1c.1 PCI bridge: Intel Corporation 82801G (ICH7 Family) PCI Express Port 2 (rev 02) 00:1c.2 PCI bridge: Intel Corporation 82801G (ICH7 Family) PCI Express Port 3 (rev 02) 00:1c.3 PCI bridge: Intel Corporation 82801G (ICH7 Family) PCI Express Port 4 (rev 02) 00:1d.0 USB Controller: Intel Corporation 82801G (ICH7 Family) USB UHCI Controller #1 (rev 02) 00:1d.1 USB Controller: Intel Corporation 82801G (ICH7 Family) USB UHCI Controller #2 (rev 02) 00:1d.2 USB Controller: Intel Corporation 82801G (ICH7 Family) USB UHCI Controller #3 (rev 02) 00:1d.3 USB Controller: Intel Corporation 82801G (ICH7 Family) USB UHCI Controller #4 (rev 02) 00:1d.7 USB Controller: Intel Corporation 82801G (ICH7 Family) USB2 EHCI Controller (rev 02) 00:1e.0 PCI bridge: Intel Corporation 82801 Mobile PCI Bridge (rev e2) 00:1f.0 ISA bridge: Intel Corporation 82801GBM (ICH7-M) LPC Interface Bridge (rev 02) 00:1f.1 IDE interface: Intel Corporation 82801G (ICH7 Family) IDE Controller (rev 02) 00:1f.2 SATA controller: Intel Corporation 82801GBM/GHM (ICH7 Family) SATA AHCI Controller (rev 02) 00:1f.3 SMBus: Intel Corporation 82801G (ICH7 Family) SMBus Controller (rev 02) 03:00.0 Network controller: Atheros Communications Inc. AR9285 Wireless Network Adapter (PCI-Express) (rev 01) 04:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8101E/RTL8102E PCI Express Fast Ethernet controller (rev 02)</code><strong>USB Devices</strong> <code># lsusb Bus 001 Device 002: ID 04f2:b128 Chicony Electronics Co., Ltd Bus 001 Device 003: ID 0bda:0159 Realtek Semiconductor Corp. Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub</code> <strong>Hard Disk</strong><code># fdisk -l Disk /dev/sda: 160.0 GB, 160041885696 bytes 255 heads, 63 sectors/track, 19457 cylinders Units = cylinders of 16065 * 512 = 8225280 bytes Disk identifier: 0x91c391c3</code> <strong>The Simple Hack of Screen</strong>
+The netbook video driver can only hit a 1024x600 size of screen, but we can change this using the &lsquo;xrandr&rsquo; command to hit 1280x750 virtual. For do that you need to change &lsquo;~/.xinitrc&rsquo; and before you call your window manager you make a call of these command:
+<code>xrandr --output LVDS --mode 1024x600 --scale 1.25x1.25</code></p>
+<p>Here is my &lsquo;&rsquo;&rsquo;/etc/X11/xorg.conf&rsquo;&rsquo;&rsquo;:
+<code>Section &quot;Module&quot; Load        &quot;dbe&quot;   # Double buffer extension SubSection  &quot;extmod&quot; Option    &quot;omit xfree86-dga&quot;   # don't initialise the DGA extension EndSubSection Load        &quot;type1&quot; Load        &quot;freetype&quot; Load       &quot;glx&quot; EndSection</code></p>
+<p>Section &ldquo;Files&rdquo;
+RgbPath &ldquo;/usr/share/X11/rgb&rdquo;
+FontPath &ldquo;/usr/share/fonts/local/&rdquo;
+FontPath &ldquo;/usr/share/fonts/misc/&rdquo;
+FontPath &ldquo;/usr/share/fonts/OTF/&rdquo;
+FontPath &ldquo;/usr/share/fonts/TTF/&rdquo;
+FontPath &ldquo;/usr/share/fonts/Type1/&rdquo;
+FontPath &ldquo;/usr/share/fonts/CID/&rdquo;
+FontPath &ldquo;/usr/share/fonts/Speedo/&rdquo;
+FontPath &ldquo;/usr/share/fonts/75dpi/:unscaled&rdquo;
+FontPath &ldquo;/usr/share/fonts/100dpi/:unscaled&rdquo;
+FontPath &ldquo;/usr/share/fonts/75dpi/&rdquo;
+FontPath &ldquo;/usr/share/fonts/100dpi/&rdquo;
+FontPath &ldquo;/usr/share/fonts/cyrillic/&rdquo;
+EndSection</p>
+<p>Section &ldquo;InputDevice&rdquo;
+Driver &ldquo;kbd&rdquo;
+Option &ldquo;XkbRules&rdquo; &ldquo;xorg&rdquo;
+Option &ldquo;XkbModel&rdquo; &ldquo;pc105&rdquo;
+Option &ldquo;XkbLayout&rdquo; &ldquo;us&rdquo;
+EndSection</p>
+<p>Section &ldquo;InputDevice&rdquo;
+Identifier &ldquo;Mouse1&rdquo;
+Driver &ldquo;mouse&rdquo;
+Option &ldquo;Protocol&rdquo; &ldquo;PS/2&rdquo;
+Option &ldquo;Device&rdquo; &ldquo;/dev/mouse&rdquo;
+EndSection</p>
+<p>Section &ldquo;Monitor&rdquo;
+Identifier &ldquo;My Monitor&rdquo;
+HorizSync 31.5 - 50.0
+VertRefresh 40-90
+EndSection</p>
+<p>Section &ldquo;Device&rdquo;
+Identifier &ldquo;Intel GMA950&rdquo;
+Driver &ldquo;intel&rdquo;
+EndSection</p>
+<p>Section &ldquo;Screen&rdquo;
+Device &ldquo;Intel GMA950&rdquo;
+Monitor &ldquo;My Monitor&rdquo;
+DefaultDepth 24
+Subsection &ldquo;Display&rdquo;
+Depth 8
+Modes &ldquo;1024x600&rdquo; &ldquo;800x600&rdquo; &ldquo;640x480&rdquo;
+EndSubsection
+Subsection &ldquo;Display&rdquo;
+Depth 16
+Modes &ldquo;1024x768&rdquo; &ldquo;800x600&rdquo; &ldquo;640x480&rdquo;
+EndSubsection
+Subsection &ldquo;Display&rdquo;
+Depth 24
+Modes &ldquo;1024x600&rdquo; &ldquo;800x600&rdquo; &ldquo;640x480&rdquo;
+Virtual 1280 750
+EndSubsection
+Subsection &ldquo;Display&rdquo;
+Depth 32
+Modes &ldquo;1024x600&rdquo; &ldquo;800x600&rdquo; &ldquo;640x480&rdquo;
+Virtual 1280 750
+EndSubsection
+EndSection</p>
+<p>Section &ldquo;ServerLayout&rdquo;
+Identifier &ldquo;Simple Layout&rdquo;
+Screen &ldquo;Screen 1&rdquo;
+InputDevice &ldquo;Mouse1&rdquo; &ldquo;CorePointer&rdquo;
+InputDevice &ldquo;Keyboard1&rdquo; &ldquo;CoreKeyboard&rdquo;
+EndSection</p>
+<p><strong>Some of Network</strong>
+\* 03:00.0 Network controller: Atheros Communications Inc. AR9285 Wireless Network Adapter (PCI-Express) (rev 01)
+\* 04:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8101E/RTL8102E PCI Express Fast Ethernet controller (rev 02)</p>
+<p>With those cards the netbook can give a improve in network performance and will grow like a little monster in your network, with a wifi module called &lsquo;ath9k&rsquo; and network module called &lsquo;r8169&rsquo; they can do great things :)</p>
+<p><strong>Bluetooth</strong>
+To get things done you will need to download the &lsquo;omnibook&rsquo; package and compile in your slackware version. Once you do it you can follow these commands to test your connection:</p>
+<p>`# modprobe -v omnibook
+insmod /lib/modules/2.6.29.6-smp/extra/omnibook.ko ectype=12 userset=1 wifi=1 bluetooth=1</p>
+<h1 id="hciconfig">hciconfig</h1>
+<p>hci0:    Type: USB
+BD Address: 00:22:58:FF:C2:DC ACL MTU: 310:10 SCO MTU: 64:8
+UP RUNNING PSCAN ISCAN
+RX bytes:692 acl:0 sco:0 events:24 errors:0
+TX bytes:581 acl:0 sco:0 commands:24 errors:0`</p>
+<p># hcitool scan
+Scanning &hellip;
+00:21:FC:B1:AC:97 Rosangela<!-- raw HTML omitted -->
+To be honest thats the best i could do with Bluetooth right now.</p>
+<p><strong>Raw Ethernet</strong></p>
+<p>The easy way to setup your network is with DHCP. To make this you must change the file:&rsquo;&rsquo;&rsquo;/etc/rc.d/rc.inet1.conf&rsquo;&rsquo;&rsquo; to:</p>
+<p><code>;IFNAME[0]=&quot;eth0&quot; USE_DHCP[0]=&quot;yes&quot;</code>
+Or with IP fix:
+<code>IFNAME[0]=&quot;eth0&quot; USE_DHCP=&quot;no&quot; IPADDR[0]=&quot;192.168.0.10&quot; NETMASK[0]=&quot;255.255.255.0&quot; GATEWAY=&quot;192.168.0.254&quot;</code></p>
+<p>Or you can set your ip manually in console with these commands:</p>
+<p># ifconfig eth0 192.168.0.25
+# route add default gw 192.168.0.254</p>
+<p><strong>Raw Wifi</strong>
+If you want to use WPA/PSK:</p>
+<p>wpa_passphrase <!-- raw HTML omitted --> <!-- raw HTML omitted -->
+# wpa_passphrase house littled0g &gt; /etc/wpa_supplicant.conf.home
+If you see the file &lsquo;/etc/wpa_supplicant.conf.home&rsquo;
+network={
+ssid=&ldquo;house&rdquo;
+#psk=&ldquo;littled0g&rdquo;
+psk=9dbaaf7031fd8cbc03674337ee9c724b65811b36546d2234676060b4144872b8
+}</p>
+<p><strong>Minimum Tests of I/O</strong>
+# time dd bs=1k count=1000 if=/dev/urandom of=/dev/zero
+1000+0 records in
+1000+0 records out
+1024000 bytes (1.0 MB) copied, 0.588823 s, 1.7 MB/s</p>
+<p>real 0m0.593s
+user 0m0.003s
+sys 0m0.582s
+# time dd bs=1k count=100000 if=/dev/urandom of=/dev/zero
+100000+0 records in
+100000+0 records out
+102400000 bytes (102 MB) copied, 56.0481 s, 1.8 MB/s</p>
+<p>real 0m56.053s
+user 0m0.131s
+sys 0m55.874s
+# time dd bs=1k count=200000 if=/dev/urandom of=/tmp/mkshit
+100000+0 records in
+100000+0 records out
+204800000 bytes (205 MB) copied, 120.184 s, 1.7 MB/s</p>
+<p>real 2m0.189s
+user 0m0.445s
+sys 1m58.237s</p>
+<p><strong>My Opinion About the Slakware in this Netbook</strong>
+\* You will not be unsatisfied.
+\* You need to buy at least one in your life. Only U$490.
+\* Excelent to use like a second &rsquo;notebook&rsquo; in your home and your work.</p>
+
+  
+  
+
+  
+</div>
+            </main>
+            
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+  
+
+        </div>
+    </body>
+</html>

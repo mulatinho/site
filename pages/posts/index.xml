@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Alexandre Mulatinho Blog</title>
+    <link>https://mulatinho.net/pages/</link>
+    <description>Recent content in Pages on Alexandre Mulatinho Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Jun 2017 23:49:58 +0000</lastBuildDate>
+    <atom:link href="https://mulatinho.net/pages/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software</title>
+      <link>https://mulatinho.net/software/</link>
+      <pubDate>Fri, 23 Jun 2017 23:49:58 +0000</pubDate>
+      <guid>https://mulatinho.net/software/</guid>
+      <description>&lt;p&gt;Below, you&amp;rsquo;ll find a collection of projects I&amp;rsquo;ve developed, each tailored to solve specific problems or explore particular areas of programming. All of these projects are hosted on GitHub. The purpose of listing them here is to introduce you to these tools and invite you to explore, use, or even contribute to their development.&lt;/p&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re interested in learning more or getting involved, simply click on the links provided. Your feedback, contributions, and ideas are always welcome.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Welcome to my place!</title>
+      <link>https://mulatinho.net/</link>
+      <pubDate>Sun, 18 Mar 2012 15:55:55 +0000</pubDate>
+      <guid>https://mulatinho.net/</guid>
+      <description>&lt;h1 id=&#34;hi-im-alexandre-mulatinho&#34;&gt;Hi, I&amp;rsquo;m Alexandre Mulatinho&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;DevOps | Site Reliability Engineer | Software Engineer&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Linux | Kubernetes | Network Security&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;&#xA;&lt;p&gt;Highly skilled DevOps and Site Reliability Engineer with over a &lt;strong&gt;decade of experience in Linux, networking and system troubleshooting; mor than six years of experience in cloud architecture and automation&lt;/strong&gt;. Proficient in managing cloud-based infrastructures, optimizing CI/CD pipelines, and ensuring high availability. &lt;strong&gt;Passionate about solving complex challenges&lt;/strong&gt; and continuously learning in the tech space.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docs</title>
+      <link>https://mulatinho.net/docs/</link>
+      <pubDate>Sun, 13 Feb 2011 20:12:37 +0000</pubDate>
+      <guid>https://mulatinho.net/docs/</guid>
+      <description>&lt;p&gt;Fique a vontade para baixar os arquivos e se desejar usá-los para suas próprias apresentações e artigos bastando apenas preservar o nome do autor original, aqui eu listo artigos escritos neste blog, pdf&amp;rsquo;s de artigos mais técnicos e algumas apresentações em eventos que participei. Espero que veja algo de útil para você :-)&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Artigos Técnicos&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mulatinho.wordpress.com/wp-content/uploads/2015/04/ltsp-basico.pdf&#34; title=&#34;LTSP basics!! Dont forget your old computers ;)&#34; target=&#34;_blank&#34;&gt;Guia basico do LTSP (nao jogue seu antigo computador no lixo)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mulatinho.wordpress.com/wp-content/uploads/2015/04/dat-tapes.pdf&#34; title=&#34;Dealing with storage tapes in linux&#34; target=&#34;_blank&#34;&gt;Utilizando storages com fitas DAT no linux&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mulatinho.wordpress.com/wp-content/uploads/2015/04/mlt-altadisponibilidadedbrdheartbeat-140118192709-phpapp01.pdf&#34; target=&#34;_blank&#34;&gt;Alta disponibilidade com drbd e heartbeat&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;WebLog / Outros&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

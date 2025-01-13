@@ -56,11 +56,11 @@
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">Alexandre Mulatinho - Welcome to my place!</title>
-<meta property="og:title" content=Alexandre&#32;Mulatinho&#32;-&#32;Welcome&#32;to&#32;my&#32;place! />
-<meta name="twitter:title" content=Alexandre&#32;Mulatinho&#32;-&#32;Welcome&#32;to&#32;my&#32;place! />
-<meta itemprop="name" content=Alexandre&#32;Mulatinho&#32;-&#32;Welcome&#32;to&#32;my&#32;place! />
-<meta name="application-name" content=Alexandre&#32;Mulatinho&#32;-&#32;Welcome&#32;to&#32;my&#32;place! />
+<title itemprop="name">Alexandre Mulatinho - How to upload to Amazon S3 using REST</title>
+<meta property="og:title" content=Alexandre&#32;Mulatinho&#32;-&#32;How&#32;to&#32;upload&#32;to&#32;Amazon&#32;S3&#32;using&#32;REST />
+<meta name="twitter:title" content=Alexandre&#32;Mulatinho&#32;-&#32;How&#32;to&#32;upload&#32;to&#32;Amazon&#32;S3&#32;using&#32;REST />
+<meta itemprop="name" content=Alexandre&#32;Mulatinho&#32;-&#32;How&#32;to&#32;upload&#32;to&#32;Amazon&#32;S3&#32;using&#32;REST />
+<meta name="application-name" content=Alexandre&#32;Mulatinho&#32;-&#32;How&#32;to&#32;upload&#32;to&#32;Amazon&#32;S3&#32;using&#32;REST />
 <meta property="og:site_name" content="Alexandre Mulatinho Blog" />
 
 
@@ -70,14 +70,14 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="https://mulatinho.net/" />
-<link rel="canonical" href="https://mulatinho.net/" itemprop="url" />
-<meta name="url" content="https://mulatinho.net/" />
-<meta name="twitter:url" content="https://mulatinho.net/" />
-<meta property="og:url" content="https://mulatinho.net/" />
+<base href="https://mulatinho.net/2016/10/26/how-to-upload-to-amazon-s3-using-rest/" />
+<link rel="canonical" href="https://mulatinho.net/2016/10/26/how-to-upload-to-amazon-s3-using-rest/" itemprop="url" />
+<meta name="url" content="https://mulatinho.net/2016/10/26/how-to-upload-to-amazon-s3-using-rest/" />
+<meta name="twitter:url" content="https://mulatinho.net/2016/10/26/how-to-upload-to-amazon-s3-using-rest/" />
+<meta property="og:url" content="https://mulatinho.net/2016/10/26/how-to-upload-to-amazon-s3-using-rest/" />
 
 
-<meta property="og:updated_time" content="2012-03-18T15:55:55Z" />
+<meta property="og:updated_time" content="2016-10-26T12:37:35Z" />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='https://mulatinho.net/sitemap.xml' />
@@ -285,7 +285,7 @@ Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
                 <div class="post">
   <div class="info">
   <h1 class="post-title">
-    <a href="https://mulatinho.net/">Welcome to my place!</a>
+    <a href="https://mulatinho.net/2016/10/26/how-to-upload-to-amazon-s3-using-rest/">How to upload to Amazon S3 using REST</a>
   </h1>
 
   <div class="headline">
@@ -296,8 +296,8 @@ Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
         
       
       
-      <time datetime=" 2012-03-18T15:55:55Z" class="post-date">
-        March 18, 2012
+      <time datetime=" 2016-10-26T12:37:35Z" class="post-date">
+        October 26, 2016
       </time>
       
       <span> - </span>
@@ -306,7 +306,7 @@ Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
           
         
 
-        <span>3 mins read</span>
+        <span>2 mins read</span>
       </span>
     </div>
 
@@ -319,80 +319,44 @@ Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
   
 </div>
 
-  <h1 id="hi-im-alexandre-mulatinho">Hi, I&rsquo;m Alexandre Mulatinho</h1>
-<p><strong>DevOps | Site Reliability Engineer | Software Engineer</strong></p>
-<p><strong>Linux | Kubernetes | Network Security</strong></p>
-<hr>
-<h2 id="about-me">About Me</h2>
-<p>Highly skilled DevOps and Site Reliability Engineer with over a <strong>decade of experience in Linux, networking and system troubleshooting; mor than six years of experience in cloud architecture and automation</strong>. Proficient in managing cloud-based infrastructures, optimizing CI/CD pipelines, and ensuring high availability. <strong>Passionate about solving complex challenges</strong> and continuously learning in the tech space.</p>
-<hr>
-<h2 id="skills-and-technologies">Skills and Technologies</h2>
-<p>My main background is on Linux / Unix (BSD/OSX) environments. I can make systems which uses cloud (IaaS) with infrastructure as code (Terraform, Kubernetes, Ansible), (SaaS/PaaS) developing it on web (Node.js / React.js), systems software and GUI Desktop (C / Shell-scripting, Python, Electron, C++) and also on Mobile with Swift and React Native; All that with efficiency and I love to learn almost everything in technology. ;)</p>
-<p>I really like work with <em>KVM/LibVirt, Kubernetes, Terraform, Ansible, Vagrant, Docker</em>, CI; Amazon and Google Cloud; <strong>I love to programming</strong> in C, Golang, Shell Scripting, Node.js and Python; <em>I know very good</em>: SQL; Automated Tests; Application Servers; Information Security; Firewalls, Routers. These are my tech skills:</p>
+  <p>Hello friends!</p>
+<p>Look on the internet a alternative way to upload files on Amazon S3 without <strong>AWS-SDK</strong> and then you will know that is a dificult thing for many; Wait a second, why someone will need to use S3 without the Amazon SDK? That&rsquo;s the problem! We all know that sometimes you can&rsquo;t do simple a import/require in some lib written by another guy/girl to turn things to into a easy way. That&rsquo;s the beauty of an challenge.</p>
+<p>So to win that, all you need to do is read two docs of Amazon:</p>
 <ul>
-<li><strong>Linux Expert</strong> <em>that uses, system administer and system develop in more than 15 years</em></li>
-<li>Automating deployments and infrastructure using <strong>Terraform</strong>, <strong>Ansible</strong>, and <strong>Kubernetes</strong></li>
-<li>Optimizing cloud platforms, including <strong>Google Cloud Platform (GCP)</strong> and <strong>AWS</strong></li>
-<li>Ensuring system availability and performance using <strong>CI/CD pipelines</strong> with deep experience in <strong>Gitlab CI, GitHub Actions</strong> and <strong>Travis CI</strong>, monitoring tools like <strong>Prometheus</strong> and <strong>Grafana</strong>, and advanced <strong>troubleshooting</strong> techniques</li>
-<li><strong>Certificates</strong>: Linux Professional Certified Level 2
-<a href="https://drive.google.com/file/d/1Ps6YJPYfBexDHnwtWRwu09a2e-TR5Axd/view" target="_blank">certificate link</a></li>
-<li><strong>Programming</strong>: C, Go, Shell Script, Node.js, JavaScript, TypeScript, Python.</li>
-<li><strong>DevOps Tools</strong>: GitLab CI, GitHub Actions, Jenkins, Prometheus, Grafana, Loki.</li>
-<li><strong>Databases</strong>: PostgreSQL, MySQL, MongoDB, SQLite.</li>
+<li>[1] <a href="http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPUT.html" target="_blank">http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPUT.html</a></li>
+<li>[2] <a href="http://docs.aws.amazon.com/general/latest/gr/signature-version-4.html" target="_blank">http://docs.aws.amazon.com/general/latest/gr/signature-version-4.html</a></li>
 </ul>
-<p>I am passionate about <strong>solving complex challenges</strong>, improving system reliability, and contributing to <strong>open-source projects</strong>.</p>
-<hr>
-<h2 id="notable-projects">Notable Projects</h2>
-<h3 id="kubernetes-infrastructure-automation"><strong>Kubernetes Infrastructure Automation</strong></h3>
-<ul>
-<li>Automated multi-region Kubernetes clusters using <strong>Terraform</strong> and <strong>Ansible</strong>.</li>
-<li>Deployed <strong>Prometheus</strong> and <strong>Grafana</strong> for monitoring and alerting, achieving <strong>99.9% uptime</strong>.</li>
-<li><strong>Technologies</strong>: GCP, Kubernetes, Terraform, Prometheus, Grafana</li>
+<p>The first documentation describes how you handle the HTTP PUT using simple REST and the second describes how to implements the Amazon signature based on <strong>AWS_ACCESS_KEY</strong> and <strong>AWS_SECRET_KEY</strong>;</p>
+<p>Backing to the problem, days ago in my work we need to face this problem: the development version of a framework that we use can&rsquo;t import AWS-SDK into project and after the mess that this problem caused, it make me think in do this post on blog;</p>
+<p>I was already do it a year ago using shell-script when I need to automatize a build process of MacOS to send the <em>.IPA</em> into S3, so I start to do some changes in code and finally written two new version: one in shell script and other in node.js; The principal problem found, the root of many problems to some guys is the signature process, as described on Amazon docs all you need to sign is:</p>
+<pre tabindex="0"><code>HTTP-RESOURCE
+MD5_BASE64_HASH
+mimetype
+DateInIsoUTCTime
+someHeadersOfAmazon
+fullPathOfObjectFile
+</code></pre><ul>
+<li><strong>HTTP-RESOURCE</strong> is just the HTTP REQUEST TYPE: PUT/GET..</li>
+<li><strong>MD5_BASE64_HASH</strong> is one of the tricks of Amazon Doc (bad trick)</li>
+<li><strong>mimetype</strong> i just use <strong>application/octet-stream</strong> works for all types of file</li>
+<li><strong>DateInIsoUTCTime</strong> like -&gt; Wed, 26 Oct 2016 12:09:45 +0000</li>
+<li><strong>someHeadersOfAmazon</strong> extra header of Amazon that you need to pass</li>
+<li><strong>fullPathOfObjectFile</strong> /yourBucketName/dir1/subdir2/yourFile.jpg</li>
 </ul>
-<h3 id="cicd-pipeline-for-microservices"><strong>CI/CD Pipeline for Microservices</strong></h3>
-<ul>
-<li>Developed a robust CI/CD pipeline using <strong>GitHub Actions</strong> and <strong>FluxCD</strong>, enabling faster and reliable deployments.</li>
-<li>Integrated <strong>Keycloak</strong> for centralized authentication and improved system security.</li>
-<li><strong>Technologies</strong>: Kubernetes, GitHub Actions, FluxCD, Keycloak</li>
-</ul>
-<h3 id="cloud-cost-optimization-project"><strong>Cloud Cost Optimization Project</strong></h3>
-<ul>
-<li>Migrated legacy systems to <strong>GCP</strong>, reducing cloud costs by <strong>40%</strong> while improving performance.</li>
-<li>Created <strong>IaC templates</strong> to standardize deployments across environments.</li>
-<li><strong>Technologies</strong>: GCP, Terraform, Linux</li>
-</ul>
-<hr>
-<h2 id="support-my-work">Support My Work</h2>
-<p>Whether it’s a coffee, a token of appreciation, or a way to say “thanks,” every bit makes a difference and is deeply appreciated. 🙏</p>
-<p>Here are the donation options:</p>
-<ul>
-<li>
-<p><strong>Bitcoin (BTC)</strong>:<br>
-Address: <code>bc1qkws3ne346ekt27alnjvfe68f2wfv5qz2mzngh5</code><br>
-Suggested Amount: <code>0.0003 BTC</code><br>
-<a href="bitcoin:bc1qkws3ne346ekt27alnjvfe68f2wfv5qz2mzngh5?amount=0.00030000&amp;label=AlexDonation">Donate Bitcoin</a></p>
-</li>
-<li>
-<p><strong>Ethereum (ETH)</strong>:<br>
-Address: <code>0x3c9c8fE4dAC3D666eC7C58d9bFD91afb74a64E7E</code><br>
-Suggested Amount: <code>0.0082 ETH</code><br>
-<a href="ethereum:0x3c9c8fE4dAC3D666eC7C58d9bFD91afb74a64E7E?amount=0.0082&amp;label=AlexDonation">Donate Ethereum</a></p>
-</li>
-</ul>
-<p>Every contribution helps me improve and grow, and it motivates me to continue sharing high-quality work with all of you.</p>
-<p>Thank you so much for your generosity and support. You are a part of what makes this journey possible. 💙</p>
-<hr>
-<h2 id="lets-connect">Let&rsquo;s Connect</h2>
-<p>Feel free to reach out to me or explore my work on the following platforms:</p>
-<ul>
-<li><strong>LinkedIn</strong>: <a href="https://linkedin.com/in/mulatinho" target="_blank">linkedin.com/in/mulatinho</a></li>
-<li><strong>GitHub</strong>: <a href="https://github.com/mulatinho" target="_blank">github.com/mulatinho</a></li>
-<li><strong>Stack Overflow</strong>: <a href="https://stackoverflow.com/users/1624613/alex" target="_blank">stackoverflow.com/users/1624613/alex</a></li>
-<li><strong>HackerRank</strong>: <a href="https://www.hackerrank.com/profile/mulatinho" target="_blank">hackerrank.com/profile/mulatinho</a></li>
-</ul>
-<h3 id="contact-me">Contact Me</h3>
-<p>If you&rsquo;re looking to collaborate or have opportunities related to <strong>DevOps</strong> and <strong>SRE</strong> roles, you can reach me at:
-<a href="mailto:alex.mulatinho@yahoo.com" title="alex&#39;s e-mail">alex.mulatinho@yahoo.com</a></p>
+<p>Or in resume:</p>
+<pre tabindex="0"><code>PUT
+YUORQaKyyJWlorHlFqBtCQ==
+application/octet-stream
+Fri, 25 Nov 2016 14:27:42 +0000
+x-amz-acl:public-read
+/2e8dae9c-aad2-4d10-8abc-a7e24d80b4af/darwinorigins.jpg
+</code></pre><p>If you type one character byte wrong then your signature will receive the error below when you try to send your file:</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->SignatureDoesNotMatch<!-- raw HTML omitted --><!-- raw HTML omitted -->The request signature we calculated does not match the signature you provided. Check your key and signing method.<!-- raw HTML omitted --><!-- raw HTML omitted -->AKIAIJ5QILNVUULONEGQ<!-- raw HTML omitted --></p>
+<p>So, later I will post more details here if someone needs and also the node.js code using just the builtin libs: crypto, fs, https and buffer; until then that&rsquo;s the cURL version</p>
+<p><a href="https://gist.github.com/mulatinho/cf148b96248ad5d1d49e8fd84c982454" target="_blank">https://gist.github.com/mulatinho/cf148b96248ad5d1d49e8fd84c982454</a></p>
+<p>And the node.JS version, using just native modules;</p>
+<p><a href="https://gist.github.com/mulatinho/28e01801d92d3d0000e7935d854b9fd8" target="_blank">https://gist.github.com/mulatinho/28e01801d92d3d0000e7935d854b9fd8</a></p>
+<p>Hope it helps someone! :)</p>
 
   
   
@@ -405,25 +369,7 @@ Suggested Amount: <code>0.0082 ETH</code><br>
     <div class="article-toc ">
     <div class="toc-wrapper">
       <h4 id="contents"></h4>
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#about-me">About Me</a></li>
-    <li><a href="#skills-and-technologies">Skills and Technologies</a></li>
-    <li><a href="#notable-projects">Notable Projects</a>
-      <ul>
-        <li><a href="#kubernetes-infrastructure-automation"><strong>Kubernetes Infrastructure Automation</strong></a></li>
-        <li><a href="#cicd-pipeline-for-microservices"><strong>CI/CD Pipeline for Microservices</strong></a></li>
-        <li><a href="#cloud-cost-optimization-project"><strong>Cloud Cost Optimization Project</strong></a></li>
-      </ul>
-    </li>
-    <li><a href="#support-my-work">Support My Work</a></li>
-    <li><a href="#lets-connect">Let&rsquo;s Connect</a>
-      <ul>
-        <li><a href="#contact-me">Contact Me</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+      <nav id="TableOfContents"></nav>
     </div>
 </div>
 

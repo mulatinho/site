@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+<script defer language="javascript" type="text/javascript" src="/js/bundle.min.145453261a7755f5042a854c4213501d215a8fbe34c08d181c40f803f1315e74.js"></script>
+
+
+
+
+
+
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="icon" href=/favicon.png>
+
+    
+    
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+
+
+<!-- Open Graph image and Twitter Card metadata -->
+
+<title itemprop="name">Alexandre Mulatinho - How I build and install almost every package in my slackware linux</title>
+<meta property="og:title" content=Alexandre&#32;Mulatinho&#32;-&#32;How&#32;I&#32;build&#32;and&#32;install&#32;almost&#32;every&#32;package&#32;in&#32;my&#32;slackware&#32;linux />
+<meta name="twitter:title" content=Alexandre&#32;Mulatinho&#32;-&#32;How&#32;I&#32;build&#32;and&#32;install&#32;almost&#32;every&#32;package&#32;in&#32;my&#32;slackware&#32;linux />
+<meta itemprop="name" content=Alexandre&#32;Mulatinho&#32;-&#32;How&#32;I&#32;build&#32;and&#32;install&#32;almost&#32;every&#32;package&#32;in&#32;my&#32;slackware&#32;linux />
+<meta name="application-name" content=Alexandre&#32;Mulatinho&#32;-&#32;How&#32;I&#32;build&#32;and&#32;install&#32;almost&#32;every&#32;package&#32;in&#32;my&#32;slackware&#32;linux />
+<meta property="og:site_name" content="Alexandre Mulatinho Blog" />
+
+
+<meta name="description" content="" />
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+
+<base href="https://mulatinho.net/2014/11/13/how-i-build-almost-every-package-in-my-slackware-linux/" />
+<link rel="canonical" href="https://mulatinho.net/2014/11/13/how-i-build-almost-every-package-in-my-slackware-linux/" itemprop="url" />
+<meta name="url" content="https://mulatinho.net/2014/11/13/how-i-build-almost-every-package-in-my-slackware-linux/" />
+<meta name="twitter:url" content="https://mulatinho.net/2014/11/13/how-i-build-almost-every-package-in-my-slackware-linux/" />
+<meta property="og:url" content="https://mulatinho.net/2014/11/13/how-i-build-almost-every-package-in-my-slackware-linux/" />
+
+
+<meta property="og:updated_time" content="2014-11-13T03:04:34Z" />
+
+
+<link rel="sitemap" type="application/xml" title="Sitemap" href='https://mulatinho.net/sitemap.xml' />
+
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+
+
+
+<meta property="fb:admins" content="" />
+
+
+<meta name="apple-mobile-web-app-title" content="Alexandre Mulatinho Blog" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.140.2">
+
+
+    
+    
+
+<link type="text/css" rel="stylesheet" href="/css/bundle.min.94a339836f89f0d25f31980cb6b0631da21e20af128308747ce44e0525eb16ef.css">
+
+
+    
+    <style>
+    body {
+        --sidebar-bg-color: #202020;
+        --sidebar-img-border-color: #515151;
+        --sidebar-p-color: #909090;
+        --sidebar-h1-color: #FFF;
+        --sidebar-a-color: #FFF;
+        --sidebar-socials-color: #FFF;
+        --text-color: #222;
+        --bkg-color: #FAF9F6;
+        --post-title-color: #303030;
+        --list-color: #5A5A5A;
+        --link-color: #268BD2;
+        --date-color: #515151;
+        --table-border-color: #E5E5E5;
+        --table-stripe-color: #F9F9F9;
+        --code-color: #000;
+        --code-background-color: #E5E5E5;
+        --code-block-color: #FFF;
+        --code-block-background-color: #272822;
+        --moon-sun-color: #FFF;
+        --moon-sun-background-color: #515151;
+    }
+    body.dark-theme {
+        --text-color: #EEE;
+        --bkg-color: #121212;
+        --post-title-color: #DBE2E9;
+        --list-color: #9D9D9D;
+        --link-color: #268BD2;
+        --date-color: #9A9A9A;
+        --table-border-color: #515151;
+        --table-stripe-color: #202020;
+        --code-color: #FFF;
+        --code-background-color: #515151;
+        --code-block-color: #FFF;
+        --code-block-background-color: #272822;
+    }
+    body {
+        background-color: var(--bkg-color);
+    }
+</style>
+
+</head>
+
+    <body class="dark-theme">
+        <div class="wrapper">
+            <aside class="sidebar">
+    <div class="container sidebar-sticky">
+        <div class="light-dark" align="right">
+    <button class="btn-light-dark" title="Toggle light/dark mode">
+        <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M6 .278a.768.768 0 0 1 .08.858a7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277c.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316a.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71C0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        </svg>
+        <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M8 12a4 4 0 1 0 0-8a4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg>
+    </button>
+</div>
+
+        <div class="sidebar-about">
+    <h1 class="brand">
+        
+        
+            <a href="https://mulatinho.net/">
+                <h1>Alexandre Mulatinho</h1>
+            </a>
+        
+    </h1>
+    <p class="lead">
+    the home of an brazilian software engineer
+    </p>
+</div>
+
+        <center>
+
+    <a target="_blank" class="social" title="GitHub" href="https://github.com/mulatinho">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="-2 -2 24 24">
+            <path fill="currentColor" d="M18.88 1.099C18.147.366 17.265 0 16.233 0H3.746C2.714 0 1.832.366 1.099 1.099C.366 1.832 0 2.714 0 3.746v12.487c0 1.032.366 1.914 1.099 2.647c.733.733 1.615 1.099 2.647 1.099H6.66c.19 0 .333-.007.429-.02a.504.504 0 0 0 .286-.169c.095-.1.143-.245.143-.435l-.007-.885c-.004-.564-.006-1.01-.006-1.34l-.3.052c-.19.035-.43.05-.721.046a5.555 5.555 0 0 1-.904-.091a2.026 2.026 0 0 1-.872-.39a1.651 1.651 0 0 1-.572-.8l-.13-.3a3.25 3.25 0 0 0-.41-.663c-.186-.243-.375-.407-.566-.494l-.09-.065a.956.956 0 0 1-.17-.156a.723.723 0 0 1-.117-.182c-.026-.061-.004-.111.065-.15c.07-.04.195-.059.378-.059l.26.04c.173.034.388.138.643.311a2.1 2.1 0 0 1 .631.677c.2.355.44.626.722.813c.282.186.566.28.852.28c.286 0 .533-.022.742-.065a2.59 2.59 0 0 0 .585-.196c.078-.58.29-1.028.637-1.34a8.907 8.907 0 0 1-1.333-.234a5.314 5.314 0 0 1-1.223-.507a3.5 3.5 0 0 1-1.047-.872c-.277-.347-.505-.802-.683-1.365c-.177-.564-.266-1.215-.266-1.952c0-1.049.342-1.942 1.027-2.68c-.32-.788-.29-1.673.091-2.652c.252-.079.625-.02 1.119.175c.494.195.856.362 1.086.5c.23.14.414.257.553.352a9.233 9.233 0 0 1 2.497-.338c.859 0 1.691.113 2.498.338l.494-.312a6.997 6.997 0 0 1 1.197-.572c.46-.174.81-.221 1.054-.143c.39.98.424 1.864.103 2.653c.685.737 1.028 1.63 1.028 2.68c0 .737-.089 1.39-.267 1.957c-.177.568-.407 1.023-.689 1.366a3.65 3.65 0 0 1-1.053.865c-.42.234-.828.403-1.223.507a8.9 8.9 0 0 1-1.333.235c.45.39.676 1.005.676 1.846v3.11c0 .147.021.266.065.357a.36.36 0 0 0 .208.189c.096.034.18.056.254.064c.074.01.18.013.318.013h2.914c1.032 0 1.914-.366 2.647-1.099c.732-.732 1.099-1.615 1.099-2.647V3.746c0-1.032-.367-1.914-1.1-2.647z"/>
+        </svg>
+    </a>
+
+
+
+    <a target="_blank" class="social" title="LinkedIn" href="https://linkedin.com/in/mulatinho">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5c0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7c-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5c67.2 0 79.7 44.3 79.7 101.9V416z"/>
+        </svg>
+    </a>
+
+
+
+
+
+
+
+
+
+
+    <a target="_blank" class="social" title="Facebook" href="https://facebook.com">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48c27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/>
+        </svg>
+    </a>
+
+
+
+
+
+
+    <a target="_blank" class="social" title="RSS Feed" href="/posts/index.xml">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 1280.000000 1280.000000">
+            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="currentColor">
+                <path d="M2295 11929 c-284 -12 -642 -45 -707 -65 -17 -5 -18 -63 -18 -1039 0 -569 4 -1036 8 -1039 5 -3 74 6 153 19 510 86 1168 95 1789 25 1348 -153 2602 -677 3670 -1531 385 -308 820 -744 1126 -1129 842 -1060 1362 -2313 1514 -3650 70 -621 61 -1279 -25 -1789 -13 -79 -22 -148 -19 -153 3 -4 471 -8 1039 -8 l1035 0 5 23 c51 225 85 942 67 1419 -23 605 -77 1044 -198 1617 -294 1400 -927 2734 -1823 3846 -1043 1295 -2364 2259 -3909 2854 -1158 447 -2451 656 -3707 600z"/>
+                <path d="M2255 7845 c-269 -25 -620 -81 -667 -106 -17 -9 -18 -55 -18 -899 0 -706 3 -890 13 -890 6 0 66 18 132 41 130 44 288 79 467 105 154 21 577 30 749 15 1207 -107 2267 -823 2814 -1902 166 -327 268 -637 330 -1001 38 -227 48 -384 42 -662 -8 -348 -44 -590 -126 -831 -23 -66 -41 -126 -41 -132 0 -10 184 -13 890 -13 844 0 890 1 899 18 27 50 88 452 110 725 14 162 14 624 1 782 -59 703 -233 1323 -545 1945 -481 956 -1313 1788 -2270 2268 -620 310 -1239 483 -1940 542 -165 14 -669 10 -840 -5z"/>
+                <path d="M2519 3815 c-391 -66 -725 -336 -868 -703 -79 -201 -96 -462 -45 -677 83 -344 338 -641 666 -774 116 -47 205 -69 330 -80 412 -39 811 153 1040 500 193 292 240 648 128 981 -135 403 -492 699 -914 757 -100 14 -241 12 -337 -4z"/>
+            </g>
+        </svg>
+    </a>
+
+
+    <a target="_blank" class="social" title="Email" href="mailto:alex.mulatinho@yahoo.com">
+       <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 485.211 485.211">
+            <path fill="currentColor" d="M301.393,241.631L464.866,424.56H20.332l163.474-182.928l58.801,51.443L301.393,241.631z M462.174,60.651H23.027 l219.579,192.142L462.174,60.651z M324.225,221.67l160.986,180.151V80.792L324.225,221.67z M0,80.792v321.029L160.972,221.64 L0,80.792z"/>
+       </svg>
+    </a>
+
+
+
+</center>
+
+        <nav>
+    <ul class="sidebar-nav">
+
+        
+        
+        
+	<center>
+        
+            
+
+            <h2><a href="/"><b>About</b></a></h2>
+        
+	<center>
+        
+            
+
+            <h2><a href="/docs/"><b>Docs</b></a></h2>
+        
+	<center>
+        
+            
+
+            <h2><a href="/software/"><b>Softwares</b></a></h2>
+        
+	<center>
+        
+            
+
+            <h2><a href="/posts/"><b>Posts</b></a></h2>
+        
+	</center>
+    </ul>
+</nav>
+
+        <p class="footnote">
+&copy; 2025 Alexandre Mulatinho Blog.<br/>
+Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a target="_blank" href="https://github.com/lukeorth/poison">poison</a>
+</p>
+
+  </div>
+</aside>
+
+            <main class="content container">
+                <div class="post">
+  <div class="info">
+  <h1 class="post-title">
+    <a href="https://mulatinho.net/2014/11/13/how-i-build-almost-every-package-in-my-slackware-linux/">How I build and install almost every package in my slackware linux</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+        
+          <span>mulatinho - </span>
+        
+      
+      
+      <time datetime=" 2014-11-13T03:04:34Z" class="post-date">
+        November 13, 2014
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>5 mins read</span>
+      </span>
+    </div>
+
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+  <p>About two or three years ago I met the <a href="http://www.slackbuilds.org/" title="Slackbuilds Project" target="_blank">SlackBuilds Project</a> on a mail list and learned to love it! As all slack users know, the philosophy of our distribution is the principle of KISS (Keep It Simple Stupid) and the strong support for developers.</p>
+<p>What I don&rsquo;t understand is why some other slackwares don&rsquo;t know and/or use the SlackBuilds git tree in his local system to build packages, one in twelve times that I look for some cool app I do not found there, so I decide to put here some of what I do to build at least 70% of my packages.</p>
+<p><strong>1. First download all the slackbuilds git tree to your local file system.</strong></p>
+<pre tabindex="0"><code>$ git clone git://slackbuilds.org/slackbuilds.git
+</code></pre><p><strong>2. Keep updated!</strong></p>
+<pre tabindex="0"><code>$ cd slackbuilds &amp;&amp; git fetch origin &amp;&amp; git pull
+</code></pre><p><strong>3. Browse your options by category</strong></p>
+<pre tabindex="0"><code>slackbuilds# ls -l
+total 416
+-rw-r--r-- 1 root root 233080 Nov 11 20:24 ChangeLog.txt
+-rw-r--r-- 1 root root 258 Sep 15 2013 README
+drwxr-xr-x 189 root root 4096 Nov 11 20:24 academic/
+drwxr-xr-x 15 root root 4096 Apr 13 2014 accessibility/
+drwxr-xr-x 268 root root 12288 Oct 17 22:27 audio/
+drwxr-xr-x 12 root root 4096 Oct 17 22:27 business/
+drwxr-xr-x 286 root root 12288 Oct 17 22:27 desktop/
+drwxr-xr-x 401 root root 12288 Nov 11 20:24 development/
+drwxr-xr-x 374 root root 12288 Oct 17 22:27 games/
+drwxr-xr-x 46 root root 4096 Oct 17 22:27 gis/
+drwxr-xr-x 184 root root 4096 Nov 11 20:24 graphics/
+drwxr-xr-x 41 root root 4096 Oct 17 22:27 ham/
+drwxr-xr-x 87 root root 4096 Apr 13 2014 haskell/
+drwxr-xr-x 728 root root 20480 Nov 11 20:24 libraries/
+drwxr-xr-x 141 root root 4096 Nov 11 20:24 misc/
+drwxr-xr-x 162 root root 4096 Nov 11 20:24 multimedia/
+drwxr-xr-x 520 root root 20480 Nov 11 20:24 network/
+drwxr-xr-x 146 root root 4096 Oct 17 22:27 office/
+drwxr-xr-x 333 root root 20480 Nov 11 20:24 perl/
+drwxr-xr-x 270 root root 12288 Nov 11 20:24 python/
+drwxr-xr-x 14 root root 4096 Oct 17 22:27 ruby/
+drwxr-xr-x 582 root root 20480 Nov 11 20:24 system/
+</code></pre><p><strong>4. Search and see the directory structure</strong></p>
+<pre tabindex="0"><code>slackbuilds# find . -iname &#39;*vlc*&#39;
+./multimedia/vlc
+./multimedia/vlc/vlc.info
+./multimedia/vlc/vlc.SlackBuild
+slackbuilds# cd multimedia/vlc/
+slackbuilds/multimedia/vlc# ls
+README doinst.sh.in patch-freerdp.diff patch-projectM-fontpath.diff slack-desc vlc.SlackBuild vlc.info
+</code></pre><p><strong>5. Install with just three commands</strong></p>
+<pre tabindex="0"><code># source *info; wget -c $DOWNLOAD; sh *SlackBuild
+</code></pre><p>And that&rsquo;s it! It will generate a .t?z package of slackware on &lsquo;/tmp&rsquo; directory to you run &lsquo;installpkg&rsquo; permitting you to run the binary/script installed. Easy and cool way to find your packages quickly and compile them with your architecture optimized.</p>
+<pre tabindex="0"><code># upgradepkg --reinstall --install-new /tmp/SBo/*vlc*
+</code></pre><p><strong>And if I can&rsquo;t find my package there!?</strong> Can you build yourself this new package? Why not? A slackbuild is just a basic shell script and in this case have almost the same code of all others, you just need to change a few things to make your Slackbuild script too, and perhaps put they on github or something like that,</p>
+<p>You just need four files! Like in the example below with &lsquo;gmrun&rsquo;:</p>
+<pre tabindex="0"><code>$ README gmrun.SlackBuild gmrun.info slack-desc
+</code></pre><p>Lets look a sample of &lsquo;.info&rsquo; file</p>
+<pre tabindex="0"><code>PRGNAM=&#34;gmrun&#34;
+VERSION=&#34;0.9.2&#34;
+HOMEPAGE=&#34;http://sourceforge.net/projects/gmrun/&#34;
+DOWNLOAD=&#34;http://downloads.sourceforge.net/gmrun/gmrun-0.9.2.tar.gz&#34;
+MD5SUM=&#34;6cef37a968006d9496fc56a7099c603c&#34;
+DOWNLOAD_x86_64=&#34;&#34;
+MD5SUM_x86_64=&#34;&#34;
+MAINTAINER=&#34;Binh Nguyen&#34;
+EMAIL=&#34;binhnguyen@fastmail.fm&#34;
+APPROVED=&#34;rworkman&#34;
+</code></pre><p>Now take a look into &lsquo;slack-desc&rsquo; file</p>
+<pre tabindex="0"><code># HOW TO EDIT THIS FILE:
+# The &#34;handy ruler&#34; below makes it easier to edit a package description.  Line
+# up the first &#39;|&#39; above the &#39;:&#39; following the base package name, and the &#39;|&#39;
+# on the right side marks the last column you can put a character in.  You must
+# make exactly 11 lines for the formatting to be correct.  It&#39;s also
+# customary to leave one space after the &#39;:&#39;.
+
+     |-----handy-ruler----------------------------------------------------|
+gmrun: gmrun (A simple program which provides a run program window)
+gmrun:
+gmrun: gmrun is a simple GTK program which provides a &#34;run program&#34; window.
+gmrun: It features a bash-like TAB completion, Ctrl-R/Ctrl-S for searching
+gmrun: through the history and URL handlers for any user defined prefix.
+gmrun:
+gmrun: Homepage: http://sourceforge.net/projects/gmrun/
+gmrun:
+gmrun:
+gmrun:
+gmrun:
+</code></pre><p>And finally into an .SlackBuild file</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/sh
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>PRGNAM<span style="color:#f92672">=</span>gmrun
+</span></span><span style="display:flex;"><span>VERSION<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>VERSION<span style="color:#66d9ef">:-</span>0.9.2<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>BUILD<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>BUILD<span style="color:#66d9ef">:-</span>1<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>TAG<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>TAG<span style="color:#66d9ef">:-</span>_SBo<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -z <span style="color:#e6db74">&#34;</span>$ARCH<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span> uname -m <span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> in
+</span></span><span style="display:flex;"><span>    i?86<span style="color:#f92672">)</span> export ARCH<span style="color:#f92672">=</span>i486 ;;
+</span></span><span style="display:flex;"><span>    arm*<span style="color:#f92672">)</span> export ARCH<span style="color:#f92672">=</span>arm ;;
+</span></span><span style="display:flex;"><span>       *<span style="color:#f92672">)</span> export ARCH<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span> uname -m <span style="color:#66d9ef">)</span> ;;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">esac</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>CWD<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>TMP<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>TMP<span style="color:#66d9ef">:-</span>/tmp/SBo<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>PKG<span style="color:#f92672">=</span>$TMP/package-$PRGNAM
+</span></span><span style="display:flex;"><span>OUTPUT<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>OUTPUT<span style="color:#66d9ef">:-</span>/tmp<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$ARCH<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;i486&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  SLKCFLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-O2 -march=i486 -mtune=i686&#34;</span>
+</span></span><span style="display:flex;"><span>  LIBDIRSUFFIX<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$ARCH<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;i686&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  SLKCFLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-O2 -march=i686 -mtune=i686&#34;</span>
+</span></span><span style="display:flex;"><span>  LIBDIRSUFFIX<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$ARCH<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;x86_64&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  SLKCFLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-O2 -fPIC&#34;</span>
+</span></span><span style="display:flex;"><span>  LIBDIRSUFFIX<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;64&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>  SLKCFLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-O2&#34;</span>
+</span></span><span style="display:flex;"><span>  LIBDIRSUFFIX<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>set -eu
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>rm -rf $PKG
+</span></span><span style="display:flex;"><span>mkdir -p $TMP $PKG $OUTPUT
+</span></span><span style="display:flex;"><span>cd $TMP
+</span></span><span style="display:flex;"><span>rm -rf $PRGNAM-$VERSION
+</span></span><span style="display:flex;"><span>tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
+</span></span><span style="display:flex;"><span>cd $PRGNAM-$VERSION
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>chown -R root:root .
+</span></span><span style="display:flex;"><span>find -L .
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">(</span> -perm <span style="color:#ae81ff">777</span> -o -perm <span style="color:#ae81ff">775</span> -o -perm <span style="color:#ae81ff">750</span> -o -perm <span style="color:#ae81ff">711</span> -o -perm <span style="color:#ae81ff">555</span>
+</span></span><span style="display:flex;"><span>  -o -perm <span style="color:#ae81ff">511</span> <span style="color:#f92672">)</span> -exec chmod <span style="color:#ae81ff">755</span> <span style="color:#f92672">{}</span> ; -o
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">(</span> -perm <span style="color:#ae81ff">666</span> -o -perm <span style="color:#ae81ff">664</span> -o -perm <span style="color:#ae81ff">640</span> -o -perm <span style="color:#ae81ff">600</span> -o -perm <span style="color:#ae81ff">444</span>
+</span></span><span style="display:flex;"><span> -o -perm <span style="color:#ae81ff">440</span> -o -perm <span style="color:#ae81ff">400</span> <span style="color:#f92672">)</span> -exec chmod <span style="color:#ae81ff">644</span> <span style="color:#f92672">{}</span> ;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>CFLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$SLKCFLAGS<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>./configure
+</span></span><span style="display:flex;"><span>  --prefix<span style="color:#f92672">=</span>/usr
+</span></span><span style="display:flex;"><span>  --libdir<span style="color:#f92672">=</span>/usr/lib<span style="color:#e6db74">${</span>LIBDIRSUFFIX<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>  --localstatedir<span style="color:#f92672">=</span>/var
+</span></span><span style="display:flex;"><span>  --sysconfdir<span style="color:#f92672">=</span>/etc
+</span></span><span style="display:flex;"><span>  --build<span style="color:#f92672">=</span>$ARCH-slackware-linux
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>make
+</span></span><span style="display:flex;"><span>make install DESTDIR<span style="color:#f92672">=</span>$PKG
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>find $PKG -print0 | xargs -0 file | grep -e <span style="color:#e6db74">&#34;executable&#34;</span> -e <span style="color:#e6db74">&#34;shared object&#34;</span> | grep ELF
+</span></span><span style="display:flex;"><span>  | cut -f <span style="color:#ae81ff">1</span> -d : | xargs strip --strip-unneeded 2&gt; /dev/null <span style="color:#f92672">||</span> true
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+</span></span><span style="display:flex;"><span>cp -a AUTHORS COPYING ChangeLog INSTALL NEWS README $PKG/usr/doc/$PRGNAM-$VERSION
+</span></span><span style="display:flex;"><span>cat $CWD/$PRGNAM.SlackBuild &gt; $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mkdir -p $PKG/install
+</span></span><span style="display:flex;"><span>cat $CWD/slack-desc &gt; $PKG/install/slack-desc
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cd $PKG
+</span></span><span style="display:flex;"><span>/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.<span style="color:#e6db74">${</span>PKGTYPE<span style="color:#66d9ef">:-</span>tgz<span style="color:#e6db74">}</span>
+</span></span></code></pre></div><p>The variables PRGNAM, VERSION and BUILD are respectively the name of program, his version and perhaps a build number, you also need to understand the basic aspects of install to build your new package, be him a tar or zip file or a have a python setup, to put your own build scheme change lines 51-60 and if you want browse the source and know how the things happen on this software just move your mind to ‘/tmp/SBo’ ;) Hope you enjoy it and share your builds with us!</p>
+
+  
+  
+
+  
+</div>
+            </main>
+            
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+  
+
+        </div>
+    </body>
+</html>
