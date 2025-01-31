@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Alexandre Mulatinho Blog</title>
+    <link>https://mulatinho.net/tags/tools/</link>
+    <description>Recent content in Tools on Alexandre Mulatinho Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 31 Jan 2025 12:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mulatinho.net/tags/tools/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CurrencyCalc: A Simple Currency Converter</title>
+      <link>https://mulatinho.net/posts/currencycalc/</link>
+      <pubDate>Fri, 31 Jan 2025 12:00:00 +0000</pubDate>
+      <guid>https://mulatinho.net/posts/currencycalc/</guid>
+      <description>&lt;h2 id=&#34;introducing-currencycalc-a-simple-currency-converter&#34;&gt;Introducing CurrencyCalc: A Simple Currency Converter&lt;/h2&gt;&#xA;&lt;p&gt;Need a quick and efficient way to convert currencies? Meet &lt;strong&gt;&lt;a href=&#34;https://mulatinho.net/currencycalc.html&#34; target=&#34;_blank&#34;&gt;CurrencyCalc&lt;/a&gt;&lt;/strong&gt;, a lightweight currency conversion tool designed for ease of use and accuracy.&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-use-currencycalc&#34;&gt;Why Use CurrencyCalc?&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fast and Simple&lt;/strong&gt;: No unnecessary complexity, just enter your values and get instant conversions.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Accessible&lt;/strong&gt;: Works directly in your browser, no installation required.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Lightweight&lt;/strong&gt;: Designed for efficiency without bloated features.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;how-to-use-it&#34;&gt;How to Use It?&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Visit &lt;strong&gt;&lt;a href=&#34;https://mulatinho.net/currencycalc.html&#34; target=&#34;_blank&#34;&gt;CurrencyCalc&lt;/a&gt;&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Enter the amount and select the currencies.&lt;/li&gt;&#xA;&lt;li&gt;Get the converted value instantly.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Start converting now and make your currency calculations effortless!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -6,8 +6,15 @@
     <description>Recent content on Alexandre Mulatinho Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Oct 2017 01:22:49 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jan 2025 12:00:00 +0000</lastBuildDate>
     <atom:link href="https://mulatinho.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CurrencyCalc: A Simple Currency Converter</title>
+      <link>https://mulatinho.net/posts/currencycalc/</link>
+      <pubDate>Fri, 31 Jan 2025 12:00:00 +0000</pubDate>
+      <guid>https://mulatinho.net/posts/currencycalc/</guid>
+      <description>&lt;h2 id=&#34;introducing-currencycalc-a-simple-currency-converter&#34;&gt;Introducing CurrencyCalc: A Simple Currency Converter&lt;/h2&gt;&#xA;&lt;p&gt;Need a quick and efficient way to convert currencies? Meet &lt;strong&gt;&lt;a href=&#34;https://mulatinho.net/currencycalc.html&#34; target=&#34;_blank&#34;&gt;CurrencyCalc&lt;/a&gt;&lt;/strong&gt;, a lightweight currency conversion tool designed for ease of use and accuracy.&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-use-currencycalc&#34;&gt;Why Use CurrencyCalc?&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fast and Simple&lt;/strong&gt;: No unnecessary complexity, just enter your values and get instant conversions.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Accessible&lt;/strong&gt;: Works directly in your browser, no installation required.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Lightweight&lt;/strong&gt;: Designed for efficiency without bloated features.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;how-to-use-it&#34;&gt;How to Use It?&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Visit &lt;strong&gt;&lt;a href=&#34;https://mulatinho.net/currencycalc.html&#34; target=&#34;_blank&#34;&gt;CurrencyCalc&lt;/a&gt;&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Enter the amount and select the currencies.&lt;/li&gt;&#xA;&lt;li&gt;Get the converted value instantly.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Start converting now and make your currency calculations effortless!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Blog migration!</title>
       <link>https://mulatinho.net/2017/10/01/blog-migration/</link>
@@ -275,7 +282,7 @@
       <description>&lt;p&gt;pt_BR:&#xA;&lt;em&gt;&amp;ldquo;Viva sua vida de forma que o medo da morte nunca possa entrar em seu coração. Nunca incomode ninguém por causa de sua religião: Respeite os outros em seus pontos de vista, e exija que eles respeitem os seus. Ame sua vida, aperfeiçoe sua vida,embeleze todas as coisas em sua vida. Busque fazer sua vida longa e de serviços para seu povo. Prepare uma canção fúnebre nobre para o dia quando você atravessar a grande passagem.&lt;/em&gt; &lt;em&gt;Sempre dê uma palavra ou sinal de saudação quando encontrar ou cruzar com um estranho em um local solitário. Demonstre respeito a todas as pessoas, mas não se rebaixe a ninguém. Quando você se levantar de manhã, agradeça pela luz, pela sua vida e força. Dê graças por seu alimento e pela alegria de viver. Se você não vir nenhuma razão para dar graças, a falha se encontra em você mesmo.&lt;/em&gt; &lt;em&gt;Não toque o aguardente venenoso que transforma os sábios em tolos e rouba deles suas visões. Quando chegar sua hora de morrer, não seja como aqueles cujos corações estão preenchidos de medo da morte, e que quando a hora deles chega eles choram e rezam por um pouco mais de tempo para viverem suas vidas novamente de uma forma diferente.&lt;/em&gt; &lt;em&gt;Cante sua canção de morte, e morra como um herói indo para casa.&amp;rdquo;&lt;/em&gt;&#xA;~ Chefe Tecumseh.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Welcome to my place!</title>
+      <title>Blog | Alex&#39;s Hello World</title>
       <link>https://mulatinho.net/</link>
       <pubDate>Sun, 18 Mar 2012 15:55:55 +0000</pubDate>
       <guid>https://mulatinho.net/</guid>
