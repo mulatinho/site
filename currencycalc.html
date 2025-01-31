@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href=/favicon.png>
+
+<!-- Open Graph image and Twitter Card metadata -->
+
+<title itemprop="name">Calculate the Money Value!</title>
+<meta property="og:title" content="Calculate the Money Value!" />
+<meta name="twitter:title" content="Calculate the Money Value!" />
+<meta itemprop="name" content=Alexandre&#32;Mulatinho&#32;-&#32;Welcome&#32;to&#32;my&#32;place! />
+<meta name="application-name" content=Alexandre&#32;Mulatinho&#32;-&#32;Welcome&#32;to&#32;my&#32;place! />
+<meta property="og:site_name" content="Alexandre Mulatinho Blog" />
+
+
+<meta name="description" content="" />
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+
+<base href="https://mulatinho.net/" />
+<link rel="canonical" href="https://mulatinho.net/" itemprop="url" />
+<meta name="url" content="https://mulatinho.net/" />
+<meta name="twitter:url" content="https://mulatinho.net/" />
+<meta property="og:url" content="https://mulatinho.net/" />
+
+<link rel="sitemap" type="application/xml" title="Sitemap" href='https://mulatinho.net/sitemap.xml' />
+
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+
+<meta name="apple-mobile-web-app-title" content="Alexandre Mulatinho Blog" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<style>
+    h1 { font-family: 'Orbitron';font-size: 22px; }
+    label, button { font-family: 'Orbitron';font-size: 14px; }
+    input, textarea { font-family: 'Orbitron';font-size: 12px; }
+    p { font-family: 'Orbitron'; font-size: 16px; text-align: justify; }
+    span { font-family: 'Orbitron'; font-size: 14px; white-space: nowrap; }
+</style>
+</head>
+
+<body class="dark-theme">
+<div class="container">
+    <br/>
+    <center>
+        <h1>CurrencyCalc</h1>
+    </center>
+    <br/>
+    <br/>
+    <div class="row g-3">
+        <div class="col-md-9">
+           <p>CurrencyCalc is a versatile web tool designed for seamless currency conversion, supporting popular cryptocurrencies like Bitcoin (BTC) and Ethereum (ETH), alongside traditional currencies such as the US Dollar (USD), Brazilian Real (BRL), and Euro (EUR). The tool allows users to effortlessly convert between any of these currencies, offering real-time exchange rates for accurate and up-to-date calculations. Whether you're a cryptocurrency enthusiast, a traveler managing multiple currencies, or someone tracking international transactions, CurrencyCalc simplifies the process with an intuitive interface and reliable performance.</p>
+        </div>
+        <div class="col-md-3">
+            <center><p><b>Today's Currency Prices in US Dollar.</b></p></center>
+            <div class="row g-3">
+                <p id="USDValue"></p>
+            </div>
+
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <form id="moneyForm" action="javascript:void(0);">
+    <div class="row g-3">
+        <div class="col-md-4">
+            <label for="fromCurrency" class="form-label">From Currency</label>
+            <select class="form-select" id="fromCurrency" required>
+            <option value="USD" selected>USD US Dollar</option>
+            <option value="EUR">EUR Euro</option>
+            <option value="BRL">BRL Brazilian Real</option>
+            <option value="BTC">BTC Crypto Bitcoin</option>
+            <option value="ETH">ETH Crypto Ethereum</option>
+            </select>
+            <div class="invalid-feedback">
+            Please select a valid currency.
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="toCurrency" class="form-label">To Currency</label>
+            <select class="form-select" id="toCurrency" required>
+            <option value="BTC" selected>BTC Crypto Bitcoin</option>
+            <option value="ETH">ETH Crypto Ethereum</option>
+            <option value="USD">USD US Dollar</option>
+            <option value="EUR">EUR Euro</option>
+            <option value="BRL">BRL Brazilian Real</option>
+            </select>
+            <div class="invalid-feedback">
+            Please select a valid currency.
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="amount" class="form-label">Amount</label>
+            <input type="number" class="form-control" id="amount" step="0.0001" placeholder="0.0000" min="0.000000" max="1000000" required>
+            <div class="invalid-feedback">
+                0.0000
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row g-3 align-items-start">
+        <div class="col-md-4">
+            <button type="submit" class="btn btn-primary">Convert amount</button>
+        </div>
+        <div class="col-md-4">
+            <input type="number" class="form-control" id="currencyResult" placeholder="0.0000" disabled>
+            <div class="invalid-feedback">
+                0.0000
+            </div>
+            <label for="currencyResult" class="form-label">Result</label>
+        </div>
+        <div class="col-md-4">
+            <textarea id="conversionHistory" style="min-width: 100%;" rows=4 placeholder="conversion history" disabled></textarea>
+        </div>
+    </div>
+    </form>
+
+    <script src="currencycalc-obf.js"></script>
+</div>
