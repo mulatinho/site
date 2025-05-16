@@ -6,8 +6,15 @@
     <description>Recent content on Alexandre Mulatinho Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 May 2025 10:43:43 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 15 May 2025 22:43:43 -0300</lastBuildDate>
     <atom:link href="https://mulatinho.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MLT Release 1.0.5</title>
+      <link>https://mulatinho.net/posts/mlt-release-1.0.5/</link>
+      <pubDate>Thu, 15 May 2025 22:43:43 -0300</pubDate>
+      <guid>https://mulatinho.net/posts/mlt-release-1.0.5/</guid>
+      <description>&lt;h1 id=&#34;mlt-release-105&#34;&gt;MLT Release 1.0.5&lt;/h1&gt;&#xA;&lt;p&gt;May 15, 2025&lt;/p&gt;&#xA;&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;MLT 1.0.5 introduces enhanced macros, improved output formatting, and better test suite management.&lt;/p&gt;&#xA;&lt;h1 id=&#34;highlights&#34;&gt;Highlights&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;New Macros: Added mlt_streq and mlt_strneq for string comparisons.&lt;/li&gt;&#xA;&lt;li&gt;Colorized Output: Test results now display with clear indicators: [ OK] for pass (green) and [ERR] for fail (red).&lt;/li&gt;&#xA;&lt;li&gt;Test Suites: Support for organizing tests into suites with execution time tracking.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Documentation: Updated README with detailed usage examples and integration guidelines.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>MLT Release 1.0.3</title>
       <link>https://mulatinho.net/posts/mlt-release-1.0.3/</link>
@@ -293,7 +300,7 @@
       <link>https://mulatinho.net/</link>
       <pubDate>Sun, 18 Mar 2012 15:55:55 +0000</pubDate>
       <guid>https://mulatinho.net/</guid>
-      <description>&lt;h1 id=&#34;hi-im-alexandre-mulatinho&#34;&gt;Hi, I&amp;rsquo;m Alexandre Mulatinho&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;DevOps | Site Reliability Engineer | Software Engineer&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Linux | Kubernetes | Network Security&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;&#xA;&lt;p&gt;Highly skilled DevOps and Site Reliability Engineer with over a &lt;strong&gt;decade of experience in Linux, networking and system troubleshooting; more than seven years of experience in cloud architecture and automation&lt;/strong&gt;. Proficient in managing cloud-based infrastructures, optimizing CI/CD pipelines, and ensuring high availability. &lt;strong&gt;Passionate about solving complex challenges&lt;/strong&gt; and continuously learning in the tech space.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;hi-im-alexandre-mulatinho&#34;&gt;Hi, I&amp;rsquo;m Alexandre Mulatinho&lt;/h1&gt;&#xA;&lt;p&gt;I started working with &lt;strong&gt;Linux&lt;/strong&gt; back in my &lt;em&gt;teenage years&lt;/em&gt;, mostly coding in &lt;strong&gt;C and Shell Scripting&lt;/strong&gt;, I think that gave me a strong foundation in low-level systems and scripting. Over the years, &lt;em&gt;I have managed&lt;/em&gt; Linux infrastructure across different industries, well before the cloud became what it is today - so I have experience &lt;em&gt;building &lt;strong&gt;high availability and fault tolerant systems&lt;/strong&gt; in the hard way&lt;/em&gt;. I am a &lt;strong&gt;self-driven and focused&lt;/strong&gt; &lt;em&gt;software developer&lt;/em&gt; with a passion for &lt;strong&gt;DevOps/SRE&lt;/strong&gt;. I have &lt;em&gt;8+ years of experience&lt;/em&gt; &lt;strong&gt;working remotely&lt;/strong&gt; and in startups and more than &lt;strong&gt;20+ years working in the IT&lt;/strong&gt;. I enjoy &lt;em&gt;learning, problem-solving, open-source technologies, optimizing systems, and designing solutions&lt;/em&gt; that &lt;strong&gt;enhance reliability and efficiency&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Um capítulo inesquecível!</title>

@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Alexandre Mulatinho Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 May 2025 10:43:43 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 15 May 2025 22:43:43 -0300</lastBuildDate>
     <atom:link href="https://mulatinho.net/posts/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MLT Release 1.0.5</title>
+      <link>https://mulatinho.net/posts/mlt-release-1.0.5/</link>
+      <pubDate>Thu, 15 May 2025 22:43:43 -0300</pubDate>
+      <guid>https://mulatinho.net/posts/mlt-release-1.0.5/</guid>
+      <description>&lt;h1 id=&#34;mlt-release-105&#34;&gt;MLT Release 1.0.5&lt;/h1&gt;&#xA;&lt;p&gt;May 15, 2025&lt;/p&gt;&#xA;&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;MLT 1.0.5 introduces enhanced macros, improved output formatting, and better test suite management.&lt;/p&gt;&#xA;&lt;h1 id=&#34;highlights&#34;&gt;Highlights&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;New Macros: Added mlt_streq and mlt_strneq for string comparisons.&lt;/li&gt;&#xA;&lt;li&gt;Colorized Output: Test results now display with clear indicators: [ OK] for pass (green) and [ERR] for fail (red).&lt;/li&gt;&#xA;&lt;li&gt;Test Suites: Support for organizing tests into suites with execution time tracking.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Documentation: Updated README with detailed usage examples and integration guidelines.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>MLT Release 1.0.3</title>
       <link>https://mulatinho.net/posts/mlt-release-1.0.3/</link>
